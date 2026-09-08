@@ -1,0 +1,2854 @@
+Package: adwaita-icon-theme-symbolic
+Architecture: all
+Version: 49.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: x11/gnome
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: gdk-pixbuf, gtk+3, hicolor-icon-theme
+Filename: ./adwaita-icon-theme-symbolic_49.0-r0_all.deb
+Size: 92104
+MD5sum: 62bc4432d9eac433f614f40a6d96cc39
+SHA1: 593747fd0fd47e6992004178abd7db430e077395
+SHA256: 59390882a8a41f272cc28b4aec8aaa895945a7850df934d82386d7187fcc9461
+SHA512: 41d0c367ca2236cb9e1dc960db39f9b73d00c0417ce66d7f2f171927a99f89114cb71ed50fea6a828a9c02d722e7005c6508dd0b0f13efdffe0b3ecff06721db
+Homepage: https://gitlab.gnome.org/GNOME/adwaita-icon-theme
+Description: GTK+ icon theme
+ The Adwaita icon theme is the default icon theme of the GNOME desktop
+ This package package contains an icon theme for Gtk+ 3 applications.
+OE: adwaita-icon-theme
+PackageArch: all
+
+Package: alsa-topology-conf
+Architecture: all
+Version: 1.2.5.1-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./alsa-topology-conf_1.2.5.1-r0_all.deb
+Size: 10968
+MD5sum: f88d52869b9ad8833c029250b47f9510
+SHA1: 677c412ebeda0ea5e6356ef8d0349b45f8af8af9
+SHA256: 5e53e85679e9782c233f363b818adecc0968afc80e7214fd573e04ed4afaea9f
+SHA512: b7c6d229a8307459d898a28c48d155e22983999877ba5fec4590f57e17fa56061926c442838d723cacc64c48d54d3db665a87b16c9c6eca0b770a7c60f86df48
+Homepage: https://alsa-project.org
+Description: ALSA topology configuration files
+ Provides a method for audio drivers to load their mixers, routing, PCMs
+ and capabilities from user space at runtime without changing any driver
+ source code.
+OE: alsa-topology-conf
+PackageArch: all
+
+Package: alsa-ucm-conf
+Architecture: all
+Version: 1.2.15.3-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./alsa-ucm-conf_1.2.15.3-r0_all.deb
+Size: 81452
+MD5sum: 2c3b340b08dfed4190360fd0c1a711e7
+SHA1: d3e45887f1c9ab08b2a26530cc8f04f939d5dfbd
+SHA256: 4aad2f56288b724d9d2f61dbf28c82b880ef10fc1fff3ef32cd278c7b2b33a43
+SHA512: 8983e5d22cac69f3c384976658b658845697dd9d9282a48b809746845301a507cbc4950f0510edbda61c31e52deb0d1e8b0769724404549432411c11f2e94d6d
+Homepage: https://alsa-project.org
+Description: ALSA Use Case Manager configuration
+ This package contains ALSA Use Case Manager configuration of audio
+ input/output names and routing for specific audio hardware. They can be
+ used with the alsaucm tool.
+OE: alsa-ucm-conf
+PackageArch: all
+
+Package: hicolor-icon-theme
+Architecture: all
+Version: 0.18-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./hicolor-icon-theme_0.18-r0_all.deb
+Size: 7912
+MD5sum: bd65e8c0921b9b418b136fa4b50bd780
+SHA1: 7a34ea8fa99a3cb049c7366fffd7bee18ad2b7c6
+SHA256: cb70e874d6cd8ac1c595d0327bf1bc6b71d24cdf46ef7738f825ae6649b22dd7
+SHA512: a308fda971c72baff82717aa26bc613ba2837edda1434025ff3de5b3f02eaa7459dd4e654cdcba579da0a3bf882b616e532ebed1d5a2616170dfd1f52034855c
+Homepage: https://www.freedesktop.org/wiki/Software/icon-theme
+Description: Default icon theme that all icon themes automatically inherit from
+ The hicolor-icon-theme package contains a default fallback theme for
+ implementations of the icon theme specification.
+OE: hicolor-icon-theme
+PackageArch: all
+
+Package: liberation-fonts
+Architecture: all
+Version: 1:2.1.5-r0
+Multi-Arch: foreign
+Priority: optional
+Section: x11/fonts
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: fontconfig-utils
+Filename: ./liberation-fonts_2.1.5-r0_all.deb
+Size: 1471232
+MD5sum: e50b9cbbc4749f1602370cc9883db297
+SHA1: b280253c94d2f6a84484e15df3f2d36dd6b62d5b
+SHA256: 8e92accd9380be2ae91be83b4f04043150f84242706a21667d22f71ad6926e4b
+SHA512: c0200a855e2fcbb4c660d3e5757242c4ab63da24abda0e730ca98bf82ed34d3eff60dc0b1884716d3ee8edfb9e4a8d132c97a7bedc900daa8b23531b5cba5140
+Homepage: https://github.com/liberationfonts/liberation-fonts
+Description: Liberation(tm) Fonts
+ The Liberation(tm) Fonts is a font family originally created by
+ Ascender(c) which aims at metric compatibility with Arial, Times New
+ Roman, Courier New.
+OE: liberation-fonts
+PackageArch: all
+
+Package: linux-firmware-amd-pmf-license
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./linux-firmware-amd-pmf-license_20260410-r0_all.deb
+Size: 2396
+MD5sum: fa4c7987104f23ca0ab9f9be0a013375
+SHA1: 6171aa4405e8c6af36b0f63ca8ccc1ec16434a7b
+SHA256: 10f4531bf7e7f1818102627d5a1edc6cfee2eba97823e14782c4f30a612ce4b4
+SHA512: bfc36f46a503412c0545eb27744bee2b4750434365f8f5be64cc03ebc1582adf236a225dd91931f4b0f4741c5bfb5fd3fe761bf5fb9f53ffada04dfe29dd4e2f
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amd-pmf
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amd-pmf-license
+Filename: ./linux-firmware-amd-pmf_20260410-r0_all.deb
+Size: 9552
+MD5sum: d289b117a071525e87fe4ee3eef62f6f
+SHA1: d4c238ffb74936344baeaa92875a270b7a5c2a69
+SHA256: ce24d9d6baa34acf742bb20399a3f9222a0dfdde1517aee0690d23d3ba5b250d
+SHA512: 7c614043539b62e177844673c1dc138e6cab07f7da2a4c1e1c16eeacffa0b54cc0814cea514084150693a7a9b0016ca89c019a0e5e86957a4d09c5e7bcb8c026
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amd-sev-license
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./linux-firmware-amd-sev-license_20260410-r0_all.deb
+Size: 2792
+MD5sum: 9238c08d5dc37b6ed71d53e341551936
+SHA1: 6f51f55cbdf34568e260e6c48bdb41fc4f0cae0b
+SHA256: 98a9a1c9f91020479c8c1de0c042c41f4991efa0c2325de74e8a846d4cbbf2b3
+SHA512: 5a443f2226194820b5a7393a7b51e1a2a969dea192f64489e1b1394dc079cb0618f104f34fdab1e5ddf0cf79e70cf75dc895683ba2adc908a11cee71b0a84810
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amd-ucode-license
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./linux-firmware-amd-ucode-license_20260410-r0_all.deb
+Size: 2796
+MD5sum: e26914d6f189d265a663671014eb53fa
+SHA1: e6c141a5b483a421ee96f7544055bac24ba59fd1
+SHA256: 980fb27151ef4f4e22cd269d249be2ce54f79de65231af303e68d64e1737400a
+SHA512: c889adcfbf60de918d9d418eea00596b3b01b7da6555d9aa9b823097124ef07b8a55b1e657041c409f2366a22db079c802292e73b3460b5790f1216179d6c6e2
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-aldebaran
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-aldebaran_20260410-r0_all.deb
+Size: 552528
+MD5sum: ed707b4054a4120604e62597b3675f86
+SHA1: 5c4a53afded44318b5f5cc43a25ae3de70746b6f
+SHA256: 3c11590e1ab5f53de85481d2771a0046c19001d93b3bf841f5cd66f20e28baff
+SHA512: 005e3e648d49c64d13214455d80c80ce431be4a15741e52612f73e22c8046e1d54db0f5a35b482127314bababed172cb7aa5d5d85beca2c4846d68031c801c4b
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-carrizo
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-carrizo_20260410-r0_all.deb
+Size: 286592
+MD5sum: 8a105b34ed852ffd57434063b11346f0
+SHA1: 3ec6027976b65e65eedb7bb5d0549344449ec255
+SHA256: a9c96ce93b63990f8509e4b5d1c6c212ec4a66d8b6405dc5cceb9ed29f30053d
+SHA512: aa034d222a2400351bbec42a1224ea0ada4aef16a7433e716fb8be36cea4214289cbc26e171fd466979c61e029e8b44cfa117b142249a6f9cc3eb6a414fc0841
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-cezanne
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-cezanne_20260410-r0_all.deb
+Size: 445140
+MD5sum: f55496ca0edc3c28fa52b277f465dfa6
+SHA1: 28f88c81992328f32b7a0176e594cf2a67e0d388
+SHA256: 8a191aec7ac8c6cbd62d12f7e1306aac1c182923653dce15d07465a261972d4f
+SHA512: e2bac82ebbe9780841f55940495f7005863d91fbd3bd67f9f0808b6a6d9909f6e2c6fdae88c8eb0fad1bc0a341b845be52f3835221b821dd0ea8c27e15270640
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-fiji
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-fiji_20260410-r0_all.deb
+Size: 324316
+MD5sum: 685e5d07d8246e8410d6ecf67df8e33f
+SHA1: 084906066c450e52e1774ac7a3e0d5e2b84e67f4
+SHA256: 79694b88be258b2d4d32cb9b5d9e1edf948aa6952c560056135c96b4c542d797
+SHA512: cba564f070d09b60dd61d655080db46016a0f9130117206ec45448c5387761b50bb500cc612152fa75ffbb5abc6c8ebf231a8aab1bd32f05db8b3fd35738ccfd
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-hawaii
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-hawaii_20260410-r0_all.deb
+Size: 266336
+MD5sum: aeaba6a59b3ddc82176dadf3bb02c1f2
+SHA1: 472cc1f0fa65b5d3efc270904e06cdc6fb9f91aa
+SHA256: 12f766ffb94deff766c6b6458f0648a8ecbe5ebb8d5485f11e68e504032ced4d
+SHA512: 187e550796a71516d4004b77436f8658bdcd5abc80dbe7f67a84dbaeb06c0ac61782460854c77fd761493f2536d74b83659715654c23468c2653642da165a8f8
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-license
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./linux-firmware-amdgpu-license_20260410-r0_all.deb
+Size: 2392
+MD5sum: 3a9885b183925356f5f79ec3187b960e
+SHA1: e5c3ffe0dd8b3b5be17380b016cfabc5ede35450
+SHA256: 941fc98361d244f7aa1ae1b80615486b336064ef87fd01c7164ed61a0ec7ceb5
+SHA512: cde6dec6cfefe4e8ab8fc80566a3b91e63dbe52cd9716f56b7b73f5e632cc42ac1a82a96c063c7b496796b00d448bd0d31735295fcc524b21bf2446dcdf46592
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-misc
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-misc_20260410-r0_all.deb
+Size: 10816508
+MD5sum: e6c97646d74de056b902128e5b21898a
+SHA1: 4d2a773492d24a59bead69f986f04a0e15f90990
+SHA256: 252de6a282b65766e280c219993beec71cd64b6ef03b3b76649d4b433691b6ed
+SHA512: f72583494c049c8a949ce375a889767e085c7f86ced8b8d7beded209e1fd1558aed3001982f54efb6bafea3a23f4a4a26fbe9ba86b7e0cd3b97fc18443dcd0b6
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-navi10
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-navi10_20260410-r0_all.deb
+Size: 570292
+MD5sum: 89dba91e0e64b25d1635ba201282e18e
+SHA1: ba0d45bbd051052f5864e711d81087c02f1dc0de
+SHA256: 986ba6d89634e7a772e279479010038220cdb900cd5f0c28b29ae3405605169f
+SHA512: 369d2ccc3261d40237c0ef180fb9939ffd7ea71f73ffdf6a53e23b3d9c4db6c07dc4901942bcbb9a38160e56e501a4130539168cf5b4cfd01d5ffd6699ff3ce9
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-navi14
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-navi14_20260410-r0_all.deb
+Size: 571900
+MD5sum: e4545451c9d43a7445d0fd4426b7ca9a
+SHA1: 8c740db2c286b34df7b434ea0e72194fc1efbde8
+SHA256: 643a41fecf9e71779c080f412e9aa42b68073e337a0166f1d66eb5f336dee373
+SHA512: 10c40a6e70b1967e6159926515bfb9547f16c2d35c44dbc4097f21afdcf02fea1cedc6b63bcc69777e32625931764d446c4b04e921d4eaa31f04de78e870cf13
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-navi21
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-navi21_20260410-r0_all.deb
+Size: 868520
+MD5sum: 5beef0b79e0754578d6b8880b0ce0164
+SHA1: f8c933ae77d755cd82e0c0a0eb1f836bfe201ac6
+SHA256: 40dd221ca9349ce30bfb2b707c8c31cd66df4b65c6c40d8f1a61d412f877caca
+SHA512: 39b47c6c271453eb66b334c825efd7462791474a35343f75ab229829ca69e086bb65a86c16ab4892fb3ddd132ed71945a8a1ca82e2f93f10b20a22399483ab38
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-navi22
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-navi22_20260410-r0_all.deb
+Size: 829380
+MD5sum: 431b6b4e0c6800716f52ee3e6db12a09
+SHA1: d8c25682efa322d761a0c6d5bbf0acc6d089fb59
+SHA256: c24359053db28d8cf685a827d9d78bb09302a8c895735bb1af4017a7ab04be9d
+SHA512: 796b598be918c6a7979e3fb49161530428e501daff74b0c90bb92274ace3e67b035536bac2196f5a1f403b243f715344c60d863e87bc99cd916f42f53d3ecd65
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-navi23
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-navi23_20260410-r0_all.deb
+Size: 812200
+MD5sum: 2c7c99fe0ade64a8059433344e593d90
+SHA1: dfb0297a64e86c54299a19a983a3adc6ffdee3bd
+SHA256: b9b1ef4dc2bc81d41d8c6803c8b7ea9c46e78698ae128d6e8f4440eab691f1be
+SHA512: 7cd8aa80c5088ec628ac6bc1b6191f267b3dd8b1933154617cda136e22e589158c2a809537f6073dd33c02854fba97a3e763cbecb8c401e240d4ac0e2f50d0bb
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-navi24
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-navi24_20260410-r0_all.deb
+Size: 811716
+MD5sum: 0aae8d05d5892cdade79f3d7840a481c
+SHA1: b2b00ab11c93ec4a2214f90ab1d3853faad93371
+SHA256: ca4d3ebe8b0c393bef1f3cc21d1ad40bd2284953d9a9c881fc8ff5329484a251
+SHA512: 2dd491d86cf9218cf84a888dab9443cceba334336877af5b2a1541143cc7e07e7ae8b04d0fb4fea253971d79bd90eacaadbd3a97344bb2804f3e79b4b1842c2b
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-navi31
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-navi31_20260410-r0_all.deb
+Size: 1067264
+MD5sum: c712706b7a7e4b9cc5c50be427114c50
+SHA1: b182be62891d9d9cd4be5c37695277a1518d2dea
+SHA256: 325eea95e54575e5c1709df5041dc6babec21627d8c65db2ce37b7fd169e1de4
+SHA512: 8821a3fdcb3842f940ea3dc343e7dbcbac117a62cdbe1a5758b5381a21898c412120b6b0035c5efce9d3c59cbfcef770ee62201e6482e6bbc9bd024ad3dfd6eb
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-navi32
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-navi32_20260410-r0_all.deb
+Size: 645584
+MD5sum: 75a99040786d1a3cf96f5f6905f90a85
+SHA1: 8cacc64ed585af726f24a9647aa6e3c953a60443
+SHA256: 9d495859175b04a38e5bfb13b462ec63c8c94a988e8d7f821cca0aeae5371430
+SHA512: 5adab8d7bddb3a9f5fd5741e0a1aea48951904e2f8a98b2bf8e7831b806dc127f670d5e39d45c52b7f1085a48dd9b078d998f2b170c52087c196b968ca2952f8
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-oland
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-oland_20260410-r0_all.deb
+Size: 174444
+MD5sum: cef0ca8359fcd66829ea83c91b2de77c
+SHA1: e087b08ccc1ff33cae443caa2b5eb26a874d4075
+SHA256: df1515c2fce3b43d5c51ae7050396b40293e33bb29a429ba50cb664cd576087d
+SHA512: 3769d4841ae3e4467d9000ff0915b157a490f00850108e4cf77b8e831b2765fc362512ada4a38449047d9dc14bdb581e0f837e74a343417480f1ef9fe92ebe90
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-polaris10
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-polaris10_20260410-r0_all.deb
+Size: 431788
+MD5sum: e5b3232f97bc42a1c9fd378cb6d449c4
+SHA1: 65620d5f3bd79e1166b7c68499a4b4800f55ef51
+SHA256: b0975303b04c465d73253223fc2124efb324078eef78b9aa3829ab81740562c2
+SHA512: cb1f8ba4f5669ceb10973b4720a1389a283532b396d0859617529cf81768f414dfc9126907545c7af3109a0898105e26082428018c08bae20fb601bc177ed93b
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-polaris11
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-polaris11_20260410-r0_all.deb
+Size: 431072
+MD5sum: 8439e5f62c9d40f197225d9ea4ea10cf
+SHA1: 8a86c22a47397866ea2228edb8299926e595816e
+SHA256: 7de445783ba7de1ccea28ea96f48ac08ca71c0c2b5660bc6ecc2815ee364fb53
+SHA512: c717c525e6d2ef627f8e5d65985ba3efcca4e476800953b07863b3bc4b75814b197ed8ee2d59813fc1b49203d02b0d6f6a3f40bd67099456de5177d3a27fbb3e
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-polaris12
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-polaris12_20260410-r0_all.deb
+Size: 411380
+MD5sum: 266f63ea27118483c44db73c4ede08ef
+SHA1: 3e7bbb17b0dda221a6ce10d296fad8dda9bf80a0
+SHA256: 73a7f25395fdfd5a617e01205e5042dc69c66f8319f60237eaa1845e44c60a91
+SHA512: 1a9431c748404d03a173468bd7fe3b00cc43e4758f58a5341a37fd94e2ab702d550153f2eb51891e97c7e312b7d9601fd74c39b548abc09fa844afd32f618b5b
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-raven
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-raven_20260410-r0_all.deb
+Size: 359220
+MD5sum: 42e3b54f19e8da588ade98211d54ebd5
+SHA1: 75f55f542722545a2d5152b3f91a8a9ef103e273
+SHA256: c1f694bc1f907dc11d2bbab76331afd48cca6d14ccbb040786c08684daa44d6e
+SHA512: f4fcfe8723886cafee2e5b5ae1cefaa969f87278b64bd21a89a4c1fa77c5fd73f88a08ec940fd06808e31b69541a57f3f325c67bc32be68791bbb479181c5184
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-rembrandt
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-rembrandt_20260410-r0_all.deb
+Size: 701048
+MD5sum: b0fd76d85fdcab9fea164b45e48c7ab8
+SHA1: 3fd2877318fd5f5ae03176a354c1b3e25141e0d5
+SHA256: d91e27afe49c48afef70eaf55daa0581a7be805f23e32e0761372566f04f8edf
+SHA512: 4a69f44cc2f3ca61777619232d0de68520a8ef13d39ce776a25c895a5a13b3068afd82a7e0616a01259c78e0923b766d9f1c5a4504d9113e0e7e5c6be2e20e39
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-renoir
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-renoir_20260410-r0_all.deb
+Size: 445684
+MD5sum: 3354b59e3dc4d9215a6789dec7e714a0
+SHA1: 34cbf2b74b7adcf83784111378252ec73638e279
+SHA256: b13462d5c4b24e82f51b1cf5992d2f5af144fef8f5f2d9a7f1a6e347ac4cf106
+SHA512: 6a2563435ee81d5672308cc2e8bf326771a23010b118ea4685cce2ad9dda6b6ae74d0bfb2cec7b1ad0ccaa02f3f3bc919ba8d819c50a5be3bf2ca4f8c8b1628f
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-stoney
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-stoney_20260410-r0_all.deb
+Size: 274012
+MD5sum: 7b32460e8a39223186ae713907511218
+SHA1: 647f0d8eb3aae185485cf96674bd34e4d7efafea
+SHA256: 3fadb26514658c55c7fd30a469c2499251292d97f5a1a78cdf494763dccbb1eb
+SHA512: 2256a30b9bd255b87edede1443824022cdb8bacd27f0f02b8dfc3bdccccbd6922f5cce5a69672b20b8fe86fe90038b265204cdb5fe846fd7753ec0ef4ab95410
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-tonga
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-tonga_20260410-r0_all.deb
+Size: 378128
+MD5sum: f3090da1931576f35f0e940529d9742a
+SHA1: 2466ffd5aa31b98639ec404499884464c0fddf95
+SHA256: f37b0b83a33d5fe8b788efc63a13c41cf8839a16685987ff5c2c904b0b3ded47
+SHA512: f2e063071bd7cf3ede7f62b0472f188373abb7c04c1b2fa65fd82b606febe94dd2defecc950e005e611f54e0b5fdec52a17f6d2a66431fd5f6246581e63b9f43
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-topaz
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-topaz_20260410-r0_all.deb
+Size: 78320
+MD5sum: 05733286f3f66eb30232835016531670
+SHA1: 57d465d243d7b67a2a9510f92d1412be8cd1ff0d
+SHA256: 90734b18baabd5a3a07a5f6c0e0ac134ecc38fea9aa946fa30a67fcaf803b646
+SHA512: fe60325a3c937532510777e0bceb9c82dc969df3e1185f2fc40f10b93cf28e4da2557eb280e7566d7e14bf38590d7dfc66357daa4a297b1ec40e0c3c6ba2b3b6
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-vega10
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-vega10_20260410-r0_all.deb
+Size: 663004
+MD5sum: 2b8102ccc129313d0d983bf604677957
+SHA1: d911aeb6b8f340ad95079b2189cddcef44ca35f7
+SHA256: abedfc302eef64a66f33b63cb9dd536224f753f95143d74dd55d36de1050f39e
+SHA512: 01bfd21e5f8a1ca8d5e50e0cc0c93003651b3634dd7429bf45495b1360f81abda940648012a536d9227774d262e80d29d9f10e42914a8b5909dab6eb4671b023
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu-vega12
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Filename: ./linux-firmware-amdgpu-vega12_20260410-r0_all.deb
+Size: 665708
+MD5sum: 465590f8f2488483b28581f70171fdc5
+SHA1: b721aa922bdba75bfe885909c3539ad679d34850
+SHA256: ef4c714f9ec3247da1299427b853ca0b6982cc3a656239c3f1b6c04400b7814c
+SHA512: ce87d9a74dc728cbbf3e4c59d26758f894119aa1933b553b170dec36be087557e3513c5d2325dbeb39808ac94156cd024c3ef1ab67aa9e1e8c76cf89068ef828
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdgpu
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdgpu-license
+Recommends: linux-firmware-amdgpu-aldebaran, linux-firmware-amdgpu-carrizo, linux-firmware-amdgpu-cezanne, linux-firmware-amdgpu-fiji, linux-firmware-amdgpu-hawaii, linux-firmware-amdgpu-license, linux-firmware-amdgpu-misc, linux-firmware-amdgpu-navi10, linux-firmware-amdgpu-navi14, linux-firmware-amdgpu-navi21, linux-firmware-amdgpu-navi22, linux-firmware-amdgpu-navi23, linux-firmware-amdgpu-navi24, linux-firmware-amdgpu-navi31, linux-firmware-amdgpu-navi32, linux-firmware-amdgpu-oland, linux-firmware-amdgpu-polaris10, linux-firmware-amdgpu-polaris11, linux-firmware-amdgpu-polaris12, linux-firmware-amdgpu-raven, linux-firmware-amdgpu-rembrandt, linux-firmware-amdgpu-renoir, linux-firmware-amdgpu-stoney, linux-firmware-amdgpu-tonga, linux-firmware-amdgpu-topaz, linux-firmware-amdgpu-vega10, linux-firmware-amdgpu-vega12
+Filename: ./linux-firmware-amdgpu_20260410-r0_all.deb
+Size: 1040
+MD5sum: 6b2cc36341b871e60e5b5afbf64b20d5
+SHA1: 1bb8027b21ecb0477dfaab8da28bdf6e8b3dbc22
+SHA256: a12bfa775b672eb35655801298d78aeaf5825eb5fd59f9ec69de57884d248b11
+SHA512: 5f856facf9961e00c98042ce414155753f4437eb1328c81c0a7260ea35e0c6c435854aba20f86dea45865f15434a7c6600c263ff676fff8c162d4e4907a0a6f8
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdnpu-license
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./linux-firmware-amdnpu-license_20260410-r0_all.deb
+Size: 1680
+MD5sum: 942fa8c445c4cfb26ffdfe75921a42e5
+SHA1: dbcd0ab687696b3ca117f6ca6a34a39455e87ed4
+SHA256: 9c9f73c3ee36b89548bdea2b1281f83eb08884e66959eaab6b66fa877ccaa381
+SHA512: 9265a72566d54084a97d6856564503bd9ad8a9d7da6274850312f6b4838d540e4bcdd8505063d69cd6b793722abd1c2b4f94e3824aa222f81550d05d43c7daae
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-amdxdna
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amdnpu-license
+Filename: ./linux-firmware-amdxdna_20260410-r0_all.deb
+Size: 243300
+MD5sum: abf4f97d60f5ad4f693afd5460aa8168
+SHA1: 5db7c837bd391033b61b275baf589dbca65c8930
+SHA256: 349bc46b8ae6637ceac46e0c7e80848e745ed5030514c4f20b3ce791628833ea
+SHA512: 920d158d08a4b300e63848bab3710ac74f25914105500b6dd87a0baa16774a2da8889780abca87b987cb6da4fec4face3b55d3f228dbaf96ab8dd85228a5be10
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath10k-license
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./linux-firmware-ath10k-license_20260410-r0_all.deb
+Size: 2364
+MD5sum: c989af751c5fcdcfd20a7061ca121c8a
+SHA1: 500d178a4556e90d18078f273e40205d6e4ff227
+SHA256: 949ae687962d74b03ed5bf2cb5700cb79d742dc0466e1a60b0b979e7206a4d4b
+SHA512: f9d3d6f883a26c588dd06bc2e44fb5209ad503bfd791756d8607dfc8bf09fca76d5dff64a02cb56412d71fbcc82ea9e376ad18885efca39b4cab75c9fcf8e845
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath10k-qca4019
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ath10k-license
+Filename: ./linux-firmware-ath10k-qca4019_20260410-r0_all.deb
+Size: 460264
+MD5sum: 5010c9d0ee6cc938293f8e126771ce81
+SHA1: a64aab1d18d99708fcc2020bfb783fccf2e1e15d
+SHA256: bb8afdb9513d0661fe0959e898fe6f34f75dd32d9d806770ea64a596b1c81545
+SHA512: c104eacda842a407b5f54a9fc92a5f88bfa34eb0d498f6a665c5aeab2dbfbce77e5aab578f1559ff84ac8bba2967723fe5e79a874931e03b5adda23db552e554
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath10k-qca6174
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ath10k-license
+Filename: ./linux-firmware-ath10k-qca6174_20260410-r0_all.deb
+Size: 1068316
+MD5sum: b9ddff85c34514f756d44c1e6b257ba3
+SHA1: 2fceb05a1362987cecb962b9ce6992f34c7534cb
+SHA256: 3478581c8e08f14121a25c31ed1c1469f81c5a1052f51998dfc6f41329fb1a77
+SHA512: 54a2334b8db20d42048a836ad693b7b5592c30bbd76cd8deeafefad6842b60ffc0ae336696b4dbe0f91497b579001d3173f2d4b4616f439eeee417fb4f39f57b
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath10k-qca9377
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ath10k-license
+Filename: ./linux-firmware-ath10k-qca9377_20260410-r0_all.deb
+Size: 949884
+MD5sum: 24ac39c6d5868249aa11fbbffd018e37
+SHA1: 5eccd5a1a35ebd66fbd8e97c4eba057fe0a008a0
+SHA256: f3f999e1c58a1930cf2c8d05a6b6bea04bc1bd6b28188b5dae005450a4568d6c
+SHA512: 5b4fe4d63655a00ca2cc8b4b1df525ded11593e32ad888f78d19128720551fd4e5ef4dd300c890b70adc974c612fda14d8262b2199cf9d18698080ef584cd0a1
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath10k-qca9887
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ath10k-license
+Filename: ./linux-firmware-ath10k-qca9887_20260410-r0_all.deb
+Size: 203212
+MD5sum: cf15efa165e5cf864fa6c783e81869e6
+SHA1: a38aafdb7d0350b6d54ba22d723131d2557da0bc
+SHA256: 06cc48479f8ec83b45467bae91c31848ff585981cbc1abed0bd900f38273ddd8
+SHA512: bddc82709019a6adc22039a8614db21cdc0aa0f5d4553b215dcc1a265daf8ae757a56a8d5b0dde28130cac14b703eb0f4d99fe3235184b2ff86abf301bb87f5a
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath10k-qca9888
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ath10k-license
+Filename: ./linux-firmware-ath10k-qca9888_20260410-r0_all.deb
+Size: 501260
+MD5sum: f396240a9264d79243eeb9623078947f
+SHA1: f32a7781f22138e4e26b0b8627e9bb4124426fa1
+SHA256: d5fe40df00da267e478707024d741db5eadd4525f2675c8f3f6cddad42094dfe
+SHA512: 0be1b0892490738b724e13a8d89152d40b6ea1eee9fb9023277b31b709c22651f92b835da4e02ec989686249f507dfaad81f333c9ce0e40ca800f945dcade71b
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath10k-qca988x
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ath10k-license
+Filename: ./linux-firmware-ath10k-qca988x_20260410-r0_all.deb
+Size: 273808
+MD5sum: c1e1575ea6e696e12dd1bc548f2c435e
+SHA1: 6f343c18804d0b1b2437646f186fec751bb1b13b
+SHA256: 13566dbe13922debfb9c348f177003ee5bab98b4bb1dfe28289efa284bd60c55
+SHA512: a2b5ac9de026ad353973aae3a25bdb95214d93b91591716deea385ffefdc9c86b8fc051238cd432d9e6a36be34cd80898e3eef59367e30e73d8de5f09c4d50af
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath10k-qca9984
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ath10k-license
+Filename: ./linux-firmware-ath10k-qca9984_20260410-r0_all.deb
+Size: 494116
+MD5sum: 7f78694a5ecdaeae0f5762c9400d598c
+SHA1: 365d3cf91a2915bd8f07d21d9b917c479c094ba6
+SHA256: 29526de2450b4eda66b6ec4abaf9aecdd23a0442155f6696b807807916942b1b
+SHA512: a62b422dc5a85cafe08a60341a7ca221deee0a987420879d3abd57adbed261be344927695336d4183e24d270830fcbc5688987f4899dcac2c04bbccf37271a64
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath10k-qca99x0
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ath10k-license
+Filename: ./linux-firmware-ath10k-qca99x0_20260410-r0_all.deb
+Size: 355816
+MD5sum: 73614557fb83f3bc1adf02405ccd0e04
+SHA1: 26fed47eb82bc47f635e4989ab659f981f5babc5
+SHA256: 538aa7e35a09f411c08c665fc9462d559b3e55ccdaf2c6d80f4ce51655170015
+SHA512: 5c6f9fbe27033e4b7ef3ae61cdcd97a414fde2762eada10d8885821f03bef9db478d3f3f1ce9b612adfc9ccf15cfe56f776db3266f9caa3bbe0ca1f9d15beaf3
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath10k-wcn3990
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ath10k-license
+Filename: ./linux-firmware-ath10k-wcn3990_20260410-r0_all.deb
+Size: 21996
+MD5sum: 885fb068498cb2af0e147c6ed73370bb
+SHA1: 7a3322b912d2c2fa2b7b7f2ec4cda7676fb18820
+SHA256: 226ac00dcc770284dc956e4a326818f819b77a6b2648324442ae788172244618
+SHA512: 9245c8653673ab0efac2522628b730a44a5c4acdc618eb5c969ae42b4c1e4f22ad79f8b6ecb222f842f22a9ff8f2347e790060b182f15cb8de85fbbae3c774f7
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath10k
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ath10k-license
+Recommends: linux-firmware-ath10k-license, linux-firmware-ath10k-qca4019, linux-firmware-ath10k-qca6174, linux-firmware-ath10k-qca9377, linux-firmware-ath10k-qca9887, linux-firmware-ath10k-qca9888, linux-firmware-ath10k-qca988x, linux-firmware-ath10k-qca9984, linux-firmware-ath10k-qca99x0, linux-firmware-ath10k-wcn3990, linux-firmware-qualcommatheros-ath10k-license
+Filename: ./linux-firmware-ath10k_20260410-r0_all.deb
+Size: 968
+MD5sum: f5bed2d5393bc61d4eef9ee612b64fa9
+SHA1: 06f204754391579a7484d3fde22d20f831f6e791
+SHA256: 77fe88efecc020503b6e967689bd9de45a83d284fbe1c631a1e8c5daeb369be1
+SHA512: c94e747d08bea3236f65b9465c9e0a469d3af6854d48330f1ca71c57735488937fc647d62079d9d5f4fde92834c0a653ea5112fe3248fbde8395e8e7d0fa14fc
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath11k-ipq5018
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ath10k-license
+Filename: ./linux-firmware-ath11k-ipq5018_20260410-r0_all.deb
+Size: 1756656
+MD5sum: 332160e9e09500d3d725cf7690e917d0
+SHA1: f3b34c43bebcfebb18e6b9a25977562e783a8e16
+SHA256: eff4755709395f5f941d7769a4f9549d52b96a48bfa706a9b2e620dd9e68e856
+SHA512: ce5259384c040009ec793a1e5bc83ea13f7d06b8f11d2703b4a03d76dc50fa3d47b7d3013197ac8fb2764fc418848f095117d61ed7533e2b230c2988c7bd9c7b
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath11k-ipq6018
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ath10k-license
+Filename: ./linux-firmware-ath11k-ipq6018_20260410-r0_all.deb
+Size: 1840728
+MD5sum: 4b7d8c7b62c1f3c6535b2a0497ae9c63
+SHA1: 004ea958f50bdfb37cbbbad2bb9ee565bb55f7c9
+SHA256: 1c342209f101ff0c073b593346766817e4bc4d03b4bfdfd6f80ae66abe0372e3
+SHA512: 0c8d7be7e44600931b5ec1500c462c1f9ccd912b86793e50822536511d90df08872788cd6ab46db4c7b9f93826a7c0eeef8a9a9942e68eaf760ef5eb1ea32662
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath11k-ipq8074
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ath10k-license
+Filename: ./linux-firmware-ath11k-ipq8074_20260410-r0_all.deb
+Size: 2231724
+MD5sum: e2332592d20bcf5bbdfaccd266ce6c74
+SHA1: 12baa586162c1cb3de774feeb54c116570f50a26
+SHA256: 37c5a6067867ac0f58b30b0f0f15d1893955f261b9fc9ebc76b1b8f3c3df0784
+SHA512: 16d283ee04ebec820a6d3eb9e6173efac686bb62df6048f25d7c524319921aa44715bbacf66e80f6fd9623b3dfd73ecbd2c752f310eaa267cde1634def8d42da
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath11k-qca2066
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ath10k-license
+Filename: ./linux-firmware-ath11k-qca2066_20260410-r0_all.deb
+Size: 1993492
+MD5sum: 2e7fdb827056aeabc3f554f04e4b6861
+SHA1: b78150ce9331adf744289c287fdd3f73d8d76d90
+SHA256: 1a9994fe51bcd580f3bca6ef3e261b4e9d93dbfcb60155a20deb69746f3a8fc1
+SHA512: 225a469bd717f084c26cb81b1e2af83a8bb68f232451e59f38646a2196495f0ebabd41ce62c5907cd8a5ac4075e389c8c26ee3bb6886fa3498e1657c7a0860e4
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath11k-qca6390
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ath10k-license
+Filename: ./linux-firmware-ath11k-qca6390_20260410-r0_all.deb
+Size: 1406568
+MD5sum: 83a2aaa4ba769b8218a28d6d26180bc2
+SHA1: 64878848c2758913fa424d0c1aec9ad316df27c4
+SHA256: 6f5adcd39faa11094c8bd781b008ff0f071a75623505514f0b7c67b9931a293f
+SHA512: b58da91937a203dfa4888c44bbaaf11594e10cc0e08342e66e2bcacb6a04b1f9630e2654d3ded195c8b474e197093323dbc5f5515b482a0b15d09136a89a7c83
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath11k-qca6698aq
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ath10k-license
+Filename: ./linux-firmware-ath11k-qca6698aq_20260410-r0_all.deb
+Size: 1953004
+MD5sum: 676b9d9eecd61b2dc219a851a00e4e30
+SHA1: db3d30ea8762a87a664a644d23a68a2dd60fe385
+SHA256: 3e68711678fa003758fcd87318e4430f360e2b491c0cf23613b147941bc908ab
+SHA512: cb22f994192a67992898659e928cd22c8710a6bf8682067e49c8c4f930f69873a1113173756208b1feafb60df6451f8d213732ecce3c649dc5faab4e1241c18b
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath11k-qcn9074
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ath10k-license
+Filename: ./linux-firmware-ath11k-qcn9074_20260410-r0_all.deb
+Size: 1830148
+MD5sum: 2f5a86b865471303ab059996403c72c0
+SHA1: 69e3e02d8962ed771b2ad6530149ddbc0b7394d8
+SHA256: 688c671a563676d2d084657b6d931e3ace5d9a7e2352a1f5cf85aab1804c35f8
+SHA512: 27119e10ed1bc11880af456a4795e97561c52131c48d684f4f25d7e5b1507fc47130817a33b51efb8cf4d60b6846178dc59562bc214ac571a338d88ccce4ac84
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath11k-wcn6750
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ath10k-license
+Filename: ./linux-firmware-ath11k-wcn6750_20260410-r0_all.deb
+Size: 4829740
+MD5sum: c66a4514d2ee18c8fef5a095ab9863ea
+SHA1: 49c4795ce92a5e92e39c5139a76cca418a7dbad1
+SHA256: 60932654ec54d24f5a297321f32a37e65fc7d30feefca6514f6487a185e48619
+SHA512: 115d0682444c5734662f177a749c01b54df170a5ec1c35529868b890ad48728edde5e57d7ab53042f767e6d60c819fbd7d24c3ea59822cdf625c9e32065063e8
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath11k-wcn6855
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ath10k-license
+Filename: ./linux-firmware-ath11k-wcn6855_20260410-r0_all.deb
+Size: 3674920
+MD5sum: 137d76a36e79e260485dcd93f053141a
+SHA1: 12b5c513c8ff10b6974cec942f28c1545cd38883
+SHA256: 26720be007fc6dab1297bc056c66be769657f1b82cfe93618ab877acc4775db0
+SHA512: 81073c36e0f478f3763b1fd1cfa118ea1c1ca895930b96a5f69edcad86e5f157047ff1fccfb1a6916a6688992e9955dad85d710f74496c0edb9ebb358f65756a
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath11k
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ath10k-license
+Recommends: linux-firmware-ath11k-ipq5018, linux-firmware-ath11k-ipq6018, linux-firmware-ath11k-ipq8074, linux-firmware-ath11k-qca2066, linux-firmware-ath11k-qca6390, linux-firmware-ath11k-qca6698aq, linux-firmware-ath11k-qcn9074, linux-firmware-ath11k-wcn6750, linux-firmware-ath11k-wcn6855
+Filename: ./linux-firmware-ath11k_20260410-r0_all.deb
+Size: 968
+MD5sum: 748726a1e820a6f06a02965508c6ad0b
+SHA1: 1d032a5cb26e748b33225509053d0035894a572a
+SHA256: 07d547bd0ed8621c58583569d5652e6bb6211331c3ea63c982d698f9b4a97ff7
+SHA512: c669b689ac6ef117169c8318673630fc97dd19cb755f828afbe1fefac2fc5069cff37fd183e596a2fb3828f386370385e6394509fd29e192cf6fe824083a70d6
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath12k-qcn9274
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ath10k-license
+Filename: ./linux-firmware-ath12k-qcn9274_20260410-r0_all.deb
+Size: 3589308
+MD5sum: 54b0c02f6d91bb66e7d55a2baff7e8e2
+SHA1: 857f0a27cd0e25a4df3e17fe907e86cacf18878b
+SHA256: 5deae080c46eed0753eb36e6b976597f1a7a659f54e2e25192171353d7221bb9
+SHA512: 5e102d6900f541cdc3321d0fc014a3dcb6035b9b458103f900d862bb2b02cd061aabf5fbf5719626577cc7dbdc64440b224fa8da73ba5bbb3b83342454822c1c
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath12k-wcn7850
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ath10k-license
+Filename: ./linux-firmware-ath12k-wcn7850_20260410-r0_all.deb
+Size: 5447180
+MD5sum: 6d7945bce336014b52e648ac42dbcbb7
+SHA1: ddadb9943fe5eaa70c1f95bb3f3e353cb65e7d45
+SHA256: fd82233c184b750f0a9c70a4f3e97273e7e02c07a9ae882cf235ec41ddeebc83
+SHA512: 57c2471505590655a5437db71cb46231ecf84a32b418fbd6743bb0b849ca10725653dd5160d6e1e930619e03f1a36139283b1145b374fae40187a6d136724775
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath12k
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ath10k-license
+Recommends: linux-firmware-ath12k-qcn9274, linux-firmware-ath12k-wcn7850
+Filename: ./linux-firmware-ath12k_20260410-r0_all.deb
+Size: 932
+MD5sum: 548080aab712ebab4cc23f750227e3b6
+SHA1: 197966c81bfe6efebf7c72456378928306c5f40d
+SHA256: 03716bad5bf85eb76f1c6b843737f656c02a81d40b3f3d55c371904772f72743
+SHA512: a26b1d75e94008ee4f11473b8fe6db331da7de4e9d419fa2eaccca2490ae7e43bb61c77b4de4925b3ff17cc11abfdd4b0e3d62971351ee64bdda654801df393b
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath3k
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./linux-firmware-ath3k_20260410-r0_all.deb
+Size: 155196
+MD5sum: b31270ba5c6fb4f942f3d91881560ffc
+SHA1: b657698056f1f5127592f1c8287441d4521f861a
+SHA256: 05d7a029c2260f1e477e314e43ab231f540aa5c43f08dd484eec49af04c4b9f3
+SHA512: f73b573ac40c0c57189be1f67fc7ee980df1f83a53babc4bf819ff33770d25d1632ca08097e21ac6d2390e8e768b2d6cfecfad746961684b5b6b08d41f07c18f
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath6k
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-atheros-license
+Filename: ./linux-firmware-ath6k_20260410-r0_all.deb
+Size: 523248
+MD5sum: 3d1798b70162166def77c9d6196cd129
+SHA1: 6a068cd3281814f64fa708a469ec393635c6ca63
+SHA256: 54dbc1645445c0a4ea5a2fd502322b87d0f2834fcaa0697325730f52b6f896c9
+SHA512: 79b74dc2eb6a19bdb00557240e812b82eb5d15a3806d01ad1b36381f60871a0fd8ccdaae544ea9f7561559c579c3893bdaf9e7103e2d7db4895698721c0f5792
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ath9k
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-atheros-license
+Filename: ./linux-firmware-ath9k_20260410-r0_all.deb
+Size: 101716
+MD5sum: cc2176f7587ef729383d4c704db34fc7
+SHA1: 0c6d81c43862bd053bb07a66e50c26252075c5cd
+SHA256: a7580e9aca7e422a0963ad7b035c10133ee71a570163264cbcf696a083ef3c70
+SHA512: ce541efb61a150232562fba725329a3f1e6057c3987e4e81559c1e38d012d2414b06219f34bdf595cee36ea296698936bda18f76652c133d4204c639abb18684
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-atheros-license
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./linux-firmware-atheros-license_20260410-r0_all.deb
+Size: 2056
+MD5sum: d8bb2afe682e49a661223f571ca71d82
+SHA1: 29f763f5ffb4cab9710f62fb8d8ca58f63a94053
+SHA256: 4663dd5dd3c79e6599668148a7d42ea898bfb733760dbc1f801faf5fd6165a19
+SHA512: 74d6e8514eb90b7e9d944de2d87db154ef72c9f25c1f22e704e7b000dff0de3e79e5e70792aa96cacc2fd5046c221fe2dc4dafb73317af8d13568cb58711940c
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-e100-license
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./linux-firmware-e100-license_20260410-r0_all.deb
+Size: 1780
+MD5sum: fb16c000ad0027b387c1b91c67dd7f54
+SHA1: 53a69b794a1a8581a6c7dce8ecf57da58b6999b8
+SHA256: a44c8f584a8a395771a66bd8b815b2508ad1fe0ffabc85a8cde2fbf503efa902
+SHA512: cfda8ec223e96d092e185cd3cf5ea85e63bff577101f925ee69c989928a3a69cb059aec9c0aee8e454a0ae565500f528dfe54254ce16f16780a659d4c32c82a6
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-e100
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-e100-license
+Filename: ./linux-firmware-e100_20260410-r0_all.deb
+Size: 1520
+MD5sum: 699754888c94b9cb12caa1f5eaf7994e
+SHA1: ac8418ef977cb7bf08cbebd5e320082989ea411d
+SHA256: 58cde31f8670091ffab18686e74413fff3b05720cee7f4531994cd9ceea33542
+SHA512: 503b81be90b878bd01ef3c0bf58c5f0d64503ccd543849238aa32900fde9588713094a8f4ff136c79a784f276fbad5c8ad1c7ef24b547a1a21b1bb924b023915
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-i915-license
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./linux-firmware-i915-license_20260410-r0_all.deb
+Size: 2112
+MD5sum: fd3efe998e4a635ba2b2358c5e38fc0a
+SHA1: c8993cd55ebda93aeedc487e4971bcf0f52697a7
+SHA256: 4dd2908d1130a2c9911b0b3d5d398ac8d81b5736bf3bfc401b4f0df76943511f
+SHA512: 671b2b73475543925be28c9a51f21f3c5176eaf26759e1da6514c5f973fb55dd7eba46e1b9e6555d6732ab3dc682549f152fe4cee30bcb608be088d46a11f3ce
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-i915
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-i915-license
+Filename: ./linux-firmware-i915_20260410-r0_all.deb
+Size: 4724236
+MD5sum: 5b21a95d1f0634b6388619827e552f92
+SHA1: 409966a059a1c7801b1d8304ef7eefda8e267610
+SHA256: 4f8f17f90693f880271c0f8ecfe178f38171bb164fa8f4f64a2e96bd155f1f1f
+SHA512: 48bb82f5dce665f461a11ff7a6adf9fe7954ea53a45044699f0fb93f43539e9230cc85a9d3df4c11a5b00bd0e10d67949e53e69bf605227bca0d250dd95af505
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ibt-11-5
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ibt-license
+Filename: ./linux-firmware-ibt-11-5_20260410-r0_all.deb
+Size: 362884
+MD5sum: d4e980034e2c3cbfe2a26875d1c1b950
+SHA1: a71bdbf45bf8bb0d0d16915c82c436761a9d15b4
+SHA256: a0a883ecb231b75ce227042ae47d08217cea47c21438f0e83c8b39f6757df987
+SHA512: 950c0fc50bf7e430342f6e01b1261be8b56c7f69b75362152950989cfccca2d696002068dff01cc915cec6d455654ac2c78d762a79af3e425e9f2baf84aa0e12
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ibt-12-16
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ibt-license
+Filename: ./linux-firmware-ibt-12-16_20260410-r0_all.deb
+Size: 362836
+MD5sum: 9089414e64baa57ed490e5deafc436c7
+SHA1: cdfc72d582b938f218580771431177ff64d6ec7d
+SHA256: 816ff6314275943d063b2631845c23866ee4238e9fc617581b41f4401f6c5302
+SHA512: 9f44401219bb50820a3ef90105dae895a57a837abbc6fdc02cfc44463e0edf4c5985b5f30e61a39e4d080bc6a48ec0bfa0a909c43b9dacf96eff139f506cdeec
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ibt-17
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ibt-license
+Filename: ./linux-firmware-ibt-17_20260410-r0_all.deb
+Size: 687484
+MD5sum: c75e24e5aed61993ecbd7fa61d9eb216
+SHA1: f66cb678a69a560ebf3922d10d06dc2087b2ccfa
+SHA256: 3235e9e3698dfe5274793fc75e2528e8ec7716f2d23a3d92218bf7b4b7a3a465
+SHA512: 026b88e45628a40c3792ad20878ee5e7ccd9d692cf93f9f7fd4e7e336aa2f3fcaaf13024de7893930a847a7b5692f32c70b9a7c4984193bbc12b83973eddf35a
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ibt-18
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ibt-license
+Filename: ./linux-firmware-ibt-18_20260410-r0_all.deb
+Size: 687436
+MD5sum: 8aca416eef33cc9ce752da75d2f0cb47
+SHA1: 14af7b1dff16cee36f6451220fa431497339a9b9
+SHA256: c90e68a4cf77d193067e73c557c816f6c5f59516ca5aa1d6a0ceb2463069ed97
+SHA512: 5ccccc993d33bf4dd76aa78a3ae3f803e77aaaf509728ea4e66bffb19f0ed9541911790a04c55a4900d1afe48d122b7f14be1cdb65ab0a4c51cb3d4fe7201544
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ibt-20
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ibt-license
+Filename: ./linux-firmware-ibt-20_20260410-r0_all.deb
+Size: 476252
+MD5sum: 1c4587b9211acd2e5ee874c392370870
+SHA1: 1afc20fffaf453f94a0e041ede97901cf0e34b00
+SHA256: 38a870ea3e451a39d176c381d68e79b9b1068ca35e7f9d1d62aa959f15b1c22b
+SHA512: 1a3160bcb488a4332ff4540b5e74e3df203a4a7fec112fc498588b0405537b2e5a8886474d30014802aaa767f962a66b3e194aa59c99be704d83c814c3e82d3b
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ibt-hw-37-7
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ibt-license
+Filename: ./linux-firmware-ibt-hw-37-7_20260410-r0_all.deb
+Size: 29020
+MD5sum: b80a7e175f982f384f5d9d629d2eadbd
+SHA1: 5178460b103ad21a8fa50a437bb3f4df45fcaeab
+SHA256: 1601a83c40ea1a9b862c39995e9a683249b98951f4e32976c1f116237662a93e
+SHA512: dcb4626486c7d5f52054dde7c78e3b227bd2fb34a2d4998ed0a873c093834ba730cf36f16e272625dd08300ce63bf94011f9639af0c57cda8473f52304c14a49
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ibt-hw-37-8
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./linux-firmware-ibt-hw-37-8_20260410-r0_all.deb
+Size: 60188
+MD5sum: 0b9bc2647a60e9bc86eb4f5bba7ad35d
+SHA1: b88b8625b57782fe5a83ea486da07e39f1466a2d
+SHA256: b9dc5e512175a72ac8915044035fa50d8a0a2b7976c4226b9819fec4d7490608
+SHA512: a66682e0dd5b9d07b552f1760328a673ee9073d44d9f39b4cf291618f3f1aaf728d4d0d73eb4ba0f99720c0e2fb18e5b66fd6f91c03fbfd9dbbe1a2d06edaabf
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ibt-license
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./linux-firmware-ibt-license_20260410-r0_all.deb
+Size: 2104
+MD5sum: d59814441a5bab52a8c3ca75e78bfa49
+SHA1: e5dc4d895cd1ba2a04df872aea516f5978c67627
+SHA256: 45c5e8a82c6e8085bba1ab327181ebd16557855b760fa7fb09fca6f4df6c6402
+SHA512: 20a0e3924ad18683feaf42d1a683630968a4c8a88bb479b3859f0be921283b496044c7d97e6dbcd403991dce0bb6a1b870a6f83a35c9b7d04746576f027e4979
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ibt-misc
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-ibt-license
+Filename: ./linux-firmware-ibt-misc_20260410-r0_all.deb
+Size: 6070752
+MD5sum: 82422fcd4ba77206b18d1dfa5ee72d33
+SHA1: bc45085ddd8bfa079fce338d533378dd1422a418
+SHA256: beab416731c6e168d913b1f7c289c21598289e9469d4e6de44c224668378836c
+SHA512: 4bf7530cc72a5fc48c492b797e19d9c4b1f6f1072da5bfe0c5253413ef43b1ab31edb0cca0cfd821b82cf5a6e754ea84e7fada121ddb4e8f32474a5718d4d2c8
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-ibt
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: linux-firmware-ibt-11-5, linux-firmware-ibt-12-16, linux-firmware-ibt-17, linux-firmware-ibt-18, linux-firmware-ibt-20, linux-firmware-ibt-hw-37-7, linux-firmware-ibt-hw-37-8, linux-firmware-ibt-license, linux-firmware-ibt-misc
+Filename: ./linux-firmware-ibt_20260410-r0_all.deb
+Size: 940
+MD5sum: ca6bcd4db8bc4fb181100cb72fd28540
+SHA1: 1672bc74a86dfda74da119c9e205991317b1e688
+SHA256: 77e2a1275acd20c9f4a8f2c1428d0f2e5af8ebcc6df14904f9ed96f364b1d402
+SHA512: e3df3aafff272916ad28da6971ebe5289723a966cd9d1c5aefe2c40fdecd3563705f0a5acc89ff0a7d277109a044f1e84520205596375b8248a7fe667640a95f
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-iwlwifi-135-6
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-iwlwifi-license
+Filename: ./linux-firmware-iwlwifi-135-6_20260410-r0_all.deb
+Size: 206576
+MD5sum: 493d9a4fc742753315dff85e678d1b36
+SHA1: 2c7f32a1f28b642bf67bcad6ded8673c41b3b3d4
+SHA256: 48b00bcdfb18fc9ba6464edeb9608a59ef988c5bb5f1d19baa7eae6ff7a29b7d
+SHA512: b6a8eba5bba3530a6f5def1eaa54d8db6ad6ee0804c4d69a9904fb79181149a4abbe7352b35f9ca5fda00424a55026dee39b2ed3a96f0921e8ec57f7029e9bbe
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-iwlwifi-3160-17
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-iwlwifi-license
+Filename: ./linux-firmware-iwlwifi-3160-17_20260410-r0_all.deb
+Size: 218952
+MD5sum: 23bb33a81f0ec13262c5a752b985ae28
+SHA1: ea586899f1a75fef746b2f74209f7bce7057a8af
+SHA256: 7ecbf600da9d1c16dcca2856239690bb4193d8980227862bb684731e2ec76d4d
+SHA512: 1d406e58c202966b12438e064002867669b23b08fcc1a343953146ad6a14da0893a1e094112f12dd540b506102d490b5a4c7a601fa0b021fe43c4c9c66a980d4
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-iwlwifi-6000-4
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-iwlwifi-license
+Filename: ./linux-firmware-iwlwifi-6000-4_20260410-r0_all.deb
+Size: 133120
+MD5sum: 8a0ed2526aa18994412c96246e568671
+SHA1: db96b7e1cf3b19d8ebcfafc5b2c6439f6e9880a5
+SHA256: 3a6f92c58aabee661b420cf6d07e178952d2baa3f9d253bbb2ce48009b0a1955
+SHA512: 38adb1fd05b0ed152bd16ec0f47affd3308837a14c0a72be6daee7f9b5d041c2842a25fa2b9abed357be4887787f5fba98ec49f429f84e5073aad723e025aaa9
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-iwlwifi-6000g2a-6
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-iwlwifi-license
+Filename: ./linux-firmware-iwlwifi-6000g2a-6_20260410-r0_all.deb
+Size: 183628
+MD5sum: 39ad7b87620a4dd865d7c7533ff99078
+SHA1: 35f8cf8a687049354d45e75c79cca741017d37e6
+SHA256: 5eddd95f4b30ee0203c0480d06710ef7e968b165d9ed5714bc38d8955513780c
+SHA512: a8315c70470792d179b3638747442a6234b434fe2a36ec6e525200a8d8426610b71eb2855b3f96fc65fd0de9ec62b97fbbeae12571d0c4ff596b9cdd845e0377
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-iwlwifi-6000g2b-6
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-iwlwifi-license
+Filename: ./linux-firmware-iwlwifi-6000g2b-6_20260410-r0_all.deb
+Size: 185424
+MD5sum: 2b3e6dcf8092b0881eca61bd9b859b58
+SHA1: 6a72b9bc349c24276d8b84488f4014673e861f67
+SHA256: 9e7e5bbace8120d83231a2ec427c0debe13b630f0174c9f8c83baaf7a93128fa
+SHA512: ab021e8514428c6db9534ba90783d6a6863a94216209a7c1a007eee3db211993af9f16bdabb897c6021ed253637f35d3c0e38936f64c35a252e2c5c53a8d28e7
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-iwlwifi-6050-5
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-iwlwifi-license
+Filename: ./linux-firmware-iwlwifi-6050-5_20260410-r0_all.deb
+Size: 140008
+MD5sum: 7967e01cd84d50d3194595bbf2f8c6fd
+SHA1: b7df67a097702576fc712b4249c1d9efe96d7c5d
+SHA256: e743a205ba59785f050217a8f27b343ffb1866839c3e9546dc18e25c823a175d
+SHA512: 77bf2feab9cda9eb2ca9b773d9d6723012f6df751427dbe0a76885f42c46669b3205707491a940acff2d5c2eb249456d1590d92ac6c4488ff89bcf1ab7a0bf60
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-iwlwifi-7260
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: linux-firmware-iwlwifi-7260-7, linux-firmware-iwlwifi-7260-8, linux-firmware-iwlwifi-7260-9
+Depends: linux-firmware-iwlwifi-license
+Conflicts: linux-firmware-iwlwifi-7260-7, linux-firmware-iwlwifi-7260-8, linux-firmware-iwlwifi-7260-9
+Replaces: linux-firmware-iwlwifi-7260-7, linux-firmware-iwlwifi-7260-8, linux-firmware-iwlwifi-7260-9
+Filename: ./linux-firmware-iwlwifi-7260_20260410-r0_all.deb
+Size: 243872
+MD5sum: fb86ec7f38385cc90512a4408ed1e1e7
+SHA1: 7163bcf783de0ef5e97314adc17fa6c08ad3157c
+SHA256: cc89cfcecec337d54ada27fe1ba3b0cd5d26d36238a6e95173ea48057f170b11
+SHA512: 9b565f4757cff6ee768e91f7de2b357f268d7ea3a12a11e50f97371e83b6ed689fcc553cd948f119977cfceaa66c3ae2cc845c681690318979bca64138a4e3b0
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-iwlwifi-7265
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: linux-firmware-iwlwifi-7265-8, linux-firmware-iwlwifi-7265-9
+Depends: linux-firmware-iwlwifi-license
+Conflicts: linux-firmware-iwlwifi-7265-8, linux-firmware-iwlwifi-7265-9
+Replaces: linux-firmware-iwlwifi-7265-8, linux-firmware-iwlwifi-7265-9
+Filename: ./linux-firmware-iwlwifi-7265_20260410-r0_all.deb
+Size: 259956
+MD5sum: 21acc55296721eab087d5723dea46f8e
+SHA1: a652c694fb2f61c6ef8bfbf6ca2dbf632348a072
+SHA256: 64be28d2cf59a426ec52322fff794a6a664d01ead9bffc3ce5e371378678337d
+SHA512: a95029049cf74a825db11ceddec4a2772352f85949e5fa7a968d9a5a5870a00998c9064a23e45e64185d914a0d4c3a1a331d46a6077f2bb6400d5c731fc34fde
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-iwlwifi-7265d
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-iwlwifi-license
+Filename: ./linux-firmware-iwlwifi-7265d_20260410-r0_all.deb
+Size: 270352
+MD5sum: 6f46e93687f9a4af4367239d5328bc0b
+SHA1: 9e660562b095761ca85f4834327243e738b80659
+SHA256: cfad5d7474746331e181c69f8c81edeb496327f1450acb0c4259b02e24db43d3
+SHA512: 8ab32206ab04e7d798e8cd771bb397e9b922978a56f2d212e6dc71203468c3a16f890666f775cda2574fd3f0c1dca0cd6c3391c5a3f902a0d7d726a2a015d789
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-iwlwifi-8000c
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-iwlwifi-license
+Filename: ./linux-firmware-iwlwifi-8000c_20260410-r0_all.deb
+Size: 513284
+MD5sum: a4de5023210c07f3414185a6607af5ba
+SHA1: 5cd4fa395411b51243bbcaeacaa2a87c2f1223fa
+SHA256: 7cdeb66b173ba12db4b11457d2379c39b37d8956e8100a2b96b1385a7380e942
+SHA512: cde388f1a75d44bebaadfa14c478fbb5a236eaaae1dfcb663f8217199176dc9e5c814455f007bbc65deec0871a02f31906521899288c6e25ea38eb53b6e3f771
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-iwlwifi-8265
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-iwlwifi-license
+Filename: ./linux-firmware-iwlwifi-8265_20260410-r0_all.deb
+Size: 519348
+MD5sum: 829ba515e4e1773ee4bff32c48ae3a74
+SHA1: dc3302205da30ce78bf8efd88930cac2ba3c3c84
+SHA256: 8c0be9f50209a39e31ad6cf424a223e418756503185432bf85da93aaffa7adce
+SHA512: 64691e2cb9cf28297349606290059bff3b79c844caa398ba7a231245090c4ce58e1dffba3f9f056ee53c03e89d5c41516684ef6b1d66ed80aee9f81dd27650ee
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-iwlwifi-9000
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-iwlwifi-license
+Filename: ./linux-firmware-iwlwifi-9000_20260410-r0_all.deb
+Size: 893048
+MD5sum: 477b0c2604811e9a18d763e115ab4cae
+SHA1: a08eb3b1c4065cfc504b4efdda52a0ee8a8397a0
+SHA256: 7a03c803b6a0d379a058a569f0d3477b8c5ca75cf92a0bea3d73ad0e91c9426f
+SHA512: 3dfa27ff1ab2db6724b825e2ad8b8af2d4e695e2a219a1b4774f77e21b93907494b4ebe68731ec58b90d2a9a8ee887d56916577b0358288b8ae29015e950e2d0
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-iwlwifi-9260
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-iwlwifi-license
+Filename: ./linux-firmware-iwlwifi-9260_20260410-r0_all.deb
+Size: 889356
+MD5sum: e3b3f1b2bf59223a8f9ea815842ae195
+SHA1: 559aee4db1e4a8a99d26c296884b4870b6546c8f
+SHA256: 8b7f0cd50dafe55ccf5a2cb40c0d7a2470126d7ee2e6eedc55b8c7366619ecc7
+SHA512: a5ef5dd187a2d42ad02711dce7e69d1286f475c0c43288e7552a247befc0429bd55b3e438319e6ae2f29634fe53d59612480e693f0e6853c9a64295bee325c73
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-iwlwifi-license
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./linux-firmware-iwlwifi-license_20260410-r0_all.deb
+Size: 2116
+MD5sum: 31e9afb889c3429a28974e09c0a0a463
+SHA1: 96c453a3f872601fda1d66003f1f735f8675cfc9
+SHA256: 7e37dcf2019bd968f9d469545f7e367dcb9e01bb03a86fb17a0082724a7edea9
+SHA512: 2a825af032064967ea6dbf9f87ae6b15566173d8def87c17dec292f1d87f0e65c3df55f2fc8f3a2a48b1e6655f12b61a8116bc3f7d32b2d97b5b9949d4523b09
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-iwlwifi-misc
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-iwlwifi-license
+Filename: ./linux-firmware-iwlwifi-misc_20260410-r0_all.deb
+Size: 27951820
+MD5sum: adc47610b72307851609addd6f126588
+SHA1: ced5732063fa216cf0596dfc7a103af1666d3448
+SHA256: e815dd2045def109f9203a6acea8535dd36a78b245e42c5d934c97ea47f66385
+SHA512: e4b84cf6e2eb61013acf1f41a22c12771ae045ac66558ce0397d430a4f5ebdb0ae3ae68ef09a9a203c381c2118dc41a76bd681db9f5e58975982a47433f4dd6c
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-iwlwifi
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: linux-firmware-iwlwifi-135-6, linux-firmware-iwlwifi-3160-10, linux-firmware-iwlwifi-3160-12, linux-firmware-iwlwifi-3160-13, linux-firmware-iwlwifi-3160-16, linux-firmware-iwlwifi-3160-17, linux-firmware-iwlwifi-3160-7, linux-firmware-iwlwifi-3160-8, linux-firmware-iwlwifi-3160-9, linux-firmware-iwlwifi-6000-4, linux-firmware-iwlwifi-6000g2a-5, linux-firmware-iwlwifi-6000g2a-6, linux-firmware-iwlwifi-6000g2b-5, linux-firmware-iwlwifi-6000g2b-6, linux-firmware-iwlwifi-6050-4, linux-firmware-iwlwifi-6050-5, linux-firmware-iwlwifi-7260, linux-firmware-iwlwifi-7265, linux-firmware-iwlwifi-7265d, linux-firmware-iwlwifi-8000c, linux-firmware-iwlwifi-8265, linux-firmware-iwlwifi-9000, linux-firmware-iwlwifi-9260, linux-firmware-iwlwifi-license, linux-firmware-iwlwifi-misc
+Filename: ./linux-firmware-iwlwifi_20260410-r0_all.deb
+Size: 996
+MD5sum: ec0933cdbc7e55e8ea13713a6f531748
+SHA1: 96510bbf2597e3e0ee45654ebd3f8082377f534a
+SHA256: fdf2c95e719843ae6dbac20a294a6acad7fb24521495aa82f00ff42bac7ca2e1
+SHA512: d2b446998c37c248a41b60de2a6e148b8ef922d7e93c224b0a5bfd88da6ea937b45b3455775292583f8fbcadf426701ef8c1e57d3870179de632555b6cc130c1
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-license
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./linux-firmware-license_20260410-r0_all.deb
+Size: 10084
+MD5sum: 2379fbcd2d676eec8db9f0fc571a5f56
+SHA1: a4c51c14b061b4b976ff1299eb01037717d6dc1c
+SHA256: 61326efa6d4a563682c11f72e369a10b2bc8e0aecce6c1020edfe3ec94323388
+SHA512: b155c89d555c8a7adecbacabe54774a0efff00ca699ba407db2f78dfc2abe61d138d821ccf987079cd8335db781c0263ae3c60f0d0b18c7acad14b119e5cd984
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-liquidio
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./linux-firmware-liquidio_20260410-r0_all.deb
+Size: 599460
+MD5sum: cbde29846765961b46ddde5de3ea3f69
+SHA1: 13af04003212aa861121a6010b1f816fd2a5895c
+SHA256: 922420b8d97e45cd77b47428f9969f03f996e8fe3a13a7fb1b1cf372dd5c6b3a
+SHA512: 8b70c0ff9958560bd5a6da74f7cac12f0652e9e70f6161450b64370d7bfde528dc9a6095aca6f34ecabe9dc789f98da12b412121784661be1dd5b1918a895450
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-microcode-amd
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-amd-ucode-license
+Filename: ./linux-firmware-microcode-amd_20260410-r0_all.deb
+Size: 247876
+MD5sum: f44ba274fcae9e6f11b517df31892465
+SHA1: 6c6fa737865124907a4f139b3761464518245625
+SHA256: 4e7c1ac786c63b0de5c1871ecd95ea4ac2de9cb9b65202b45ecef3cb77645194
+SHA512: ddaffd858e279b1156142997597a377e917743de6186d65e8c57e422bae40f17e38b9622c5ab9eddf5131a0e961261a06a7c6bc9a0b0a0ea6fdd20e6f2c40c60
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-radeon-license
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./linux-firmware-radeon-license_20260410-r0_all.deb
+Size: 2396
+MD5sum: 1c32cf51a11f58c02a219d6249bfae4b
+SHA1: 876a6ea6c99d1ac29206b5b622a510b0a1e57fd1
+SHA256: 2a8c18756bda694c416f16051ccb4de593b0836816b7158a9eb13a599a28a4e3
+SHA512: 17dd063e4bea3513707058b5f0a0434b135eac1e924f1df6ed227047f5109fcff44ea65e07c06c1d63280fc83ea19ec1775333218da81e009d5cbf6c14dce8ca
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-radeon
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-radeon-license
+Filename: ./linux-firmware-radeon_20260410-r0_all.deb
+Size: 830440
+MD5sum: 06d16e4eb3bb1ac12dac4b5ad6e43983
+SHA1: cf6f283138f52bcf2414abcde574c53337c7c1eb
+SHA256: 09d293ddcc212f8238a377d6355caf7f1527db70c4379004cc1a387c71df2610
+SHA512: bdf6e50c3b1dda0edd4bd9ea90d19dacba93b5b28cbfe27add6011e6f62b055d4cbebd673e2a2b97729bb8329d36ac436059e4620f3d2a9e44d85335dbf279e4
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-rtl-license
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./linux-firmware-rtl-license_20260410-r0_all.deb
+Size: 2124
+MD5sum: 087cd84744614958c54e681ada66435e
+SHA1: d4798ca6680cd1c6e774e1fd2e3100bc49f4d73b
+SHA256: 680533d3d0a2e8b6c802ec8a0b327b3c904a1bbcb89d7b2f1374439779147f20
+SHA512: 1f2f872d87a7d93e4b53cc295cb2069383b12dd5ad6d614a1620c129a103d40120905a1a1c549855139f1837822c05b740597ee81b823cacaa309902b5909632
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-rtl-nic
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-whence-license
+Filename: ./linux-firmware-rtl-nic_20260410-r0_all.deb
+Size: 35100
+MD5sum: 14642e1698d1a98d7cd67f8e9f8e05e6
+SHA1: 8fddb496f5726bc6a2820a84e0e73683b1833b78
+SHA256: 4cedb677f8cea4e95cd4ede77d77958c79ae0a78f165056af7c8ea2504a48a93
+SHA512: 842aff8fbf7f2c2728f7ff8d205a100acee2311147f431b845a71a4501eb019fe3d3c7bc0d605cc24771a952681840e3593880faf877fd619314074a8612d6d1
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-rtl8168
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-whence-license
+Filename: ./linux-firmware-rtl8168_20260410-r0_all.deb
+Size: 10376
+MD5sum: 9ce7b6054fa185536672ecafcda354ed
+SHA1: 2307452f8c3e4c7b7dfb2f70be73efdc59b55d3a
+SHA256: f57fd173da4f7cef983c5e421aa35c5dcb30dc8b098bfad49b470c13854e5b70
+SHA512: 2f14411942c0dece34c1c7617c3df237e222116e8674ac60d94dc2b9b57cf3f46f54c1138d5ec090db11d1db6cb37294a9bd9fd00483cdb9b9329a6186d95a65
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-rtl8188
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-rtl-license
+Filename: ./linux-firmware-rtl8188_20260410-r0_all.deb
+Size: 25424
+MD5sum: 2af27069524dbce09573329fa5a5ab86
+SHA1: fabb203f79e22b34d04810a0d20b3ca8be150f42
+SHA256: d38f27dbeb88e9f663eaf69ef1f2e3b3bcee2541dbafcfc12c2a4bd1fb4b815f
+SHA512: 9a539c3caf37dbdbb0f551cfef8da84853b523e215eaa48f836f8993d5f45a4e4f118cff8d6d465d2b66726828a642c8c77f90d667b3cf090e12a75239eeab06
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-rtl8192
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-rtl-license
+Filename: ./linux-firmware-rtl8192_20260410-r0_all.deb
+Size: 122468
+MD5sum: b95511891839884fa34775401cf2839b
+SHA1: 70646831227d164f13c7936f14532c49d0ccad7e
+SHA256: 48a8e8971db0531eac67eb247506ff488e25b5cb4895b127e9fbe67e3d458691
+SHA512: 68a097ac1ab6c7e9f98dabdce0c14baa37a4b2dc027d028da7eb553e74f724179289c8410a900de015db5a1d62655f5ca4728258dcc3d888be10699b9a7524c2
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-rtl8192ce
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-rtl-license
+Filename: ./linux-firmware-rtl8192ce_20260410-r0_all.deb
+Size: 17704
+MD5sum: 12dfd419e690a704b6959979ea0a8cd2
+SHA1: 7b76ad703b0f2ace811fedc08247f86377b6bea3
+SHA256: f2959388dd7e944aead1196bd598076e2efef4e9e12418d43a09b5a4fb098b81
+SHA512: 3436c32cd0b0823abd24266dc75c80baf162c8d830d8979c8c582e00dccf513be12a2292a75656bc1e72c2d0074d1fdfca140ca22bc93ff14e1e39cfed602c61
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-rtl8192cu
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-rtl-license
+Filename: ./linux-firmware-rtl8192cu_20260410-r0_all.deb
+Size: 15772
+MD5sum: 3d53a363afa3f573d3a4478b87ddd1d0
+SHA1: 2dc88ab21597c28a5ac13a9812cd5d8a6b8f2933
+SHA256: 6894d3e4cedf0b0513cecf6b1f19b3b08ba29b29ca63c29db698830975535c93
+SHA512: ed62a03acc14078fd12cc4211e0d8ccde3d1ff808de0bd8df7129f04e68419ff104fb05168b527ac805d0207033c6abe18d45b09456116daee1294faed3be00a
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-rtl8192su
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-rtl-license
+Filename: ./linux-firmware-rtl8192su_20260410-r0_all.deb
+Size: 52140
+MD5sum: 5e9486b7308f50a208b74b949029234a
+SHA1: d1f4ca7433e750663710231888b0ecfc64e0e756
+SHA256: 17e377f37b71b4b0d22883be43336c9b21e014734d8264fa2ccd756872782e3a
+SHA512: 92390d0e340dd922c0300788532c1e9c70bd7a21ea76d5f7eb6d569c14242d8278061e7bfdcfc1c05e5447df0462b190cca85d210c5c6028bcbf433e2fc661e6
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-rtl8703
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-rtl-license
+Filename: ./linux-firmware-rtl8703_20260410-r0_all.deb
+Size: 24432
+MD5sum: 0f70bb5154015cb509fe0bc8f03f412d
+SHA1: ec388c80fb421871ac7d16d9d480bdc96eda4885
+SHA256: e181e8a453460348802a441631588ae896abf2de698ff87ba90873e15df0a04f
+SHA512: 2136d843b54fbec6e5891cb05ace4b5fddc4ee8ae63031b22b1de18f2100179bc8ebbf6dd0b09ae6fcecf57d0fe8338badcb8569125757add68342dacc84313d
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-rtl8710
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-rtl-license
+Filename: ./linux-firmware-rtl8710_20260410-r0_all.deb
+Size: 21320
+MD5sum: c01d192e37977f3d1ee0b50760d48f24
+SHA1: 47b2761e51b5199c417de717ab54d632c25aaf86
+SHA256: 31efbb75c0b225acd30a2d36791f1e78d122383b2930b77cda1631b0bd23c15a
+SHA512: 5d8b16de817c6ba4b2acd990758d1ffa35ae554f5b4a89fa4932e9350f088dfaff628187a2fd66906fe8cbbe7e08fdb1b45f701b2f963096455d9bc3c1185664
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-rtl8723
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-rtl-license, linux-firmware-rtl8821
+Filename: ./linux-firmware-rtl8723_20260410-r0_all.deb
+Size: 207364
+MD5sum: d288b06923c948645e0656f2ae6c97c5
+SHA1: 8b9345dbca15967db0d53d9d1facf32cccc94122
+SHA256: 686f77297eadaf3aa971db821be15581807f33ac978c9bcffe5831d6b3e8c8ac
+SHA512: 6f882a2cc4a1a7727a8442fb77d463f7409a626770955093c9fa774d355799f80ec090060681c8632b96cbefbf662140b911fe29bfadf7ffde9ced3897625d9a
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-rtl8761
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-rtl-license
+Filename: ./linux-firmware-rtl8761_20260410-r0_all.deb
+Size: 65120
+MD5sum: 31889b7b2da5a81c3017c440bfe92804
+SHA1: 7b829aef94bf70827a16092ca92b81faf0752dd0
+SHA256: d6c4e0601fae6d95d52ee2b65d7f5c306f45c2a06c1d421babfe787487d64d27
+SHA512: c2a6e587525d354157de85a66ab4659861b39100ef905eb7eacabc0460db2e7ee429a59e51233502c32cdd42240f58d218bab021be4e7958112999b2e3f3c2fd
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-rtl8812
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-rtl-license
+Filename: ./linux-firmware-rtl8812_20260410-r0_all.deb
+Size: 50896
+MD5sum: 8a2695484c3e32b123e4cbf60bd2e9ef
+SHA1: b5e539b8fa110e5c840ee90bcf163707bdfe1196
+SHA256: b756936f994f5b136cb4a881f07c36bf87fa4eb644509989bcf43291e50ca7b8
+SHA512: 1ef2e1327bae525b7909ea76bec5be45757be737d25e313d824e932cabdd834ddf286b4f57251eff4118c099952e2b4898c9fcd476ae334fc60343ede2e60c7b
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-rtl8814
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-rtl-license
+Filename: ./linux-firmware-rtl8814_20260410-r0_all.deb
+Size: 33972
+MD5sum: 44dd5d9535f1f76cc6efd0552304f1a7
+SHA1: 2e83cb2b8a7e80b061d31fb9dc09cd04ee948f9a
+SHA256: b20970829783a67282a9fd902dbdbc6e6248fd890e14fc4407d1f39bed97a63e
+SHA512: fa5d9b112de09cb1b0213f89688920238c6b7eeb7e8febd22d1324537a16f6021c4f5047d55b925630951ccf06302f4b212e1ecf52d20dd0770751e9ff02f17c
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-rtl8821
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-rtl-license, linux-firmware-rtl8761
+Filename: ./linux-firmware-rtl8821_20260410-r0_all.deb
+Size: 149636
+MD5sum: 13e2728fa5aaee1e506ec985fce26018
+SHA1: 7c4f85dafbaa5434475c402f6fd12b52d7254f2e
+SHA256: 45a2579f89724a05748be23704b4a4e3561e893ad01046533a30b0535a4b5880
+SHA512: 970cc7e0cba745aab338a9d8f287509c4830cc58de9fe8d194f61879f49a8c6ffd0c2127670574fed65a0d31b41a1306a062d0dac68e4604a7809ae719bd158a
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-rtl8822
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-rtl-license, linux-firmware-rtl8761
+Filename: ./linux-firmware-rtl8822_20260410-r0_all.deb
+Size: 280836
+MD5sum: 8cd9d9b088864f387d938ce809f0e945
+SHA1: 40e31cd27a28ad1173ebecd71517d9a8fa7a6a0b
+SHA256: 909f1d8b6aa7cc599a0c51534e330012437ea1ed62e4919c1da461222c05b219
+SHA512: b4d3a0a7cb3537ad632fc4b6272f5b3b2d0bfd25766392894687fc48cb41ea14e7a161690e1bcdbd0eb9e5eda53d13c9c90995df7c8673d6c793670c225da90a
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-rtl8851
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-rtl-license, linux-firmware-rtl8761
+Filename: ./linux-firmware-rtl8851_20260410-r0_all.deb
+Size: 245908
+MD5sum: 81f1d591aca85a52c45dc1fcc208c9b4
+SHA1: eae6a26588b3e1f5eac87e4ce3cf133d7fba1c6b
+SHA256: b9bb13ceb716da57de8ecd02576c6062fdc2f66ecaa377c899ec36372b58288c
+SHA512: 5261517cf65fba28104c886d5236a2a6b50bfb19ebc729ee732f60fcef99dc07d8cc7c8a89c51a65872e3bd9b8448948ac74854126b7460c4ecfea8ca1e37d49
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-rtl8852
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-rtl-license, linux-firmware-rtl8761
+Filename: ./linux-firmware-rtl8852_20260410-r0_all.deb
+Size: 1387328
+MD5sum: 7f8459db90398a1f358d5de9684ab713
+SHA1: 53300accdf04330f7dd31e8861dcc2cb67a85328
+SHA256: 43684b741bb9af24c9c0b441b4a7b5537c7c21c484fb81e64aab3a0f60cb6046
+SHA512: 93d895ad22ce8e3e00e3c894393170e21922881e6c29f569eebe7a48d5cf994817ce0fc12d62e3c1f8635a6e765c74962fe7ea42342ad2b12ef24ad3cb97421a
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-rtl8922
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-rtl-license
+Filename: ./linux-firmware-rtl8922_20260410-r0_all.deb
+Size: 763456
+MD5sum: f3f42cb93601d30a677bbc54a001f676
+SHA1: 9eb5f94b9edb9b7c7f25df8ad19936c10c0b46fa
+SHA256: 9c98b7bde80d912bfd3f01e5c647ff0d78948d0339c062cacc12069119cf466b
+SHA512: 60614603a2c1a241d97ccef458074c38b25d12adb4a1c83b3f458460fd527445508f62abbd2482969b73a8a959c92dddcb39b889cc71575ee5ab2eaa802b4da4
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware-whence-license
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./linux-firmware-whence-license_20260410-r0_all.deb
+Size: 39280
+MD5sum: e8692c56e0ce5ed5ff002a9f5eec935b
+SHA1: b2e082e1dbe2521f5d33b311734866272f55964d
+SHA256: ff1550a6175d445d6009ce458fe2310e23c35180eb6d5ecc4856aa7a0c9fe290
+SHA512: b912ad9401d3c2e540b82e9fbcf731fefdba4269f3fcf6efc8e591faa2b2db63ea7843b145d4f36016ce79cc4a153faa275a720bab94347977ca630a8bbd79b6
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: linux-firmware
+Architecture: all
+Version: 1:20260410-r0
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-license, linux-firmware-whence-license
+Recommends: linux-firmware-3c574-cs, linux-firmware-3c589-cs, linux-firmware-abilis-license, linux-firmware-adsp-sst, linux-firmware-adsp-sst-license, linux-firmware-advansys, linux-firmware-advansys-license, linux-firmware-aeonsemi-license, linux-firmware-agere-license, linux-firmware-airoha-license, linux-firmware-airoha-npu, linux-firmware-alacritech-license, linux-firmware-amd-pmf, linux-firmware-amd-pmf-license, linux-firmware-amd-sev-license, linux-firmware-amd-ucode-license, linux-firmware-amdgpu, linux-firmware-amdgpu-aldebaran, linux-firmware-amdgpu-carrizo, linux-firmware-amdgpu-cezanne, linux-firmware-amdgpu-fiji, linux-firmware-amdgpu-hawaii, linux-firmware-amdgpu-license, linux-firmware-amdgpu-misc, linux-firmware-amdgpu-navi10, linux-firmware-amdgpu-navi14, linux-firmware-amdgpu-navi21, linux-firmware-amdgpu-navi22, linux-firmware-amdgpu-navi23, linux-firmware-amdgpu-navi24, linux-firmware-amdgpu-navi31, linux-firmware-amdgpu-navi32, linux-firmware-amdgpu-oland, linux-firmware-amdgpu-polaris10, linux-firmware-amdgpu-polaris11, linux-firmware-amdgpu-polaris12, linux-firmware-amdgpu-raven, linux-firmware-amdgpu-rembrandt, linux-firmware-amdgpu-renoir, linux-firmware-amdgpu-stoney, linux-firmware-amdgpu-tonga, linux-firmware-amdgpu-topaz, linux-firmware-amdgpu-vega10, linux-firmware-amdgpu-vega12, linux-firmware-amdnpu-license, linux-firmware-amdxdna, linux-firmware-amlogic, linux-firmware-amlogic-license, linux-firmware-amlogic-vdec, linux-firmware-amlogic-vdec-license, linux-firmware-amphion-vpu, linux-firmware-amphion-vpu-license, linux-firmware-an8811hb, linux-firmware-ar3k, linux-firmware-ar3k-license, linux-firmware-ar5523, linux-firmware-ar9170, linux-firmware-as102, linux-firmware-as21xxx, linux-firmware-ath10k, linux-firmware-ath10k-license, linux-firmware-ath10k-qca4019, linux-firmware-ath10k-qca6174, linux-firmware-ath10k-qca9377, linux-firmware-ath10k-qca9887, linux-firmware-ath10k-qca9888, linux-firmware-ath10k-qca988x, linux-firmware-ath10k-qca9984, linux-firmware-ath10k-qca99x0, linux-firmware-ath10k-wcn3990, linux-firmware-ath11k, linux-firmware-ath11k-ipq5018, linux-firmware-ath11k-ipq6018, linux-firmware-ath11k-ipq8074, linux-firmware-ath11k-qca2066, linux-firmware-ath11k-qca6390, linux-firmware-ath11k-qca6698aq, linux-firmware-ath11k-qcn9074, linux-firmware-ath11k-wcn6750, linux-firmware-ath11k-wcn6855, linux-firmware-ath12k, linux-firmware-ath12k-qcn9274, linux-firmware-ath12k-wcn7850, linux-firmware-ath3k, linux-firmware-ath6k, linux-firmware-ath9k, linux-firmware-atheros-license, linux-firmware-atmel-license, linux-firmware-atomisp, linux-firmware-atusb, linux-firmware-bcm-0a5c-6410, linux-firmware-bcm-0bb4-0306, linux-firmware-bcm43012, linux-firmware-bcm43143, linux-firmware-bcm43236b, linux-firmware-bcm43241b0, linux-firmware-bcm43241b4, linux-firmware-bcm43241b5, linux-firmware-bcm43242a, linux-firmware-bcm4329, linux-firmware-bcm4329-fullmac, linux-firmware-bcm4330, linux-firmware-bcm4334, linux-firmware-bcm43340, linux-firmware-bcm4335, linux-firmware-bcm43362, linux-firmware-bcm4339, linux-firmware-bcm43430, linux-firmware-bcm43430a0, linux-firmware-bcm43455, linux-firmware-bcm4350, linux-firmware-bcm4350c2, linux-firmware-bcm4354, linux-firmware-bcm4356, linux-firmware-bcm4356-pcie, linux-firmware-bcm43569, linux-firmware-bcm43570, linux-firmware-bcm4358, linux-firmware-bcm43602, linux-firmware-bcm4366b, linux-firmware-bcm4366c, linux-firmware-bcm4371, linux-firmware-bcm4373, linux-firmware-bcm43xx, linux-firmware-bcm43xx-hdr, linux-firmware-bcm54591, linux-firmware-bfa-license, linux-firmware-bmi260, linux-firmware-bmi260-license, linux-firmware-bnx2, linux-firmware-bnx2x, linux-firmware-broadcom-license, linux-firmware-ca0132, linux-firmware-ca0132-license, linux-firmware-cadence-license, linux-firmware-carl9170, linux-firmware-cavium-license, linux-firmware-cbfw, linux-firmware-cc33xx, linux-firmware-ccp, linux-firmware-cf8381, linux-firmware-cf8385, linux-firmware-chelsio-firmware-license, linux-firmware-cirrus, linux-firmware-cirrus-cs42l45, linux-firmware-cirrus-license, linux-firmware-cnm, linux-firmware-cnm-license, linux-firmware-cnn55xx, linux-firmware-conexant-license, linux-firmware-cpia2, linux-firmware-ct2fw, linux-firmware-ctfw, linux-firmware-cw1200, linux-firmware-cw1200-license, linux-firmware-cx231xx, linux-firmware-cx23418, linux-firmware-cx23840, linux-firmware-cx23885, linux-firmware-cxgb3, linux-firmware-cxgb3-license, linux-firmware-cxgb4, linux-firmware-cypress-license, linux-firmware-dabusb, linux-firmware-dabusb-license, linux-firmware-dell-license, linux-firmware-dib0700, linux-firmware-dib0700-license, linux-firmware-drxk, linux-firmware-drxk-license, linux-firmware-dsp56k, linux-firmware-dvb-ttpci, linux-firmware-e100, linux-firmware-e100-license, linux-firmware-emi26, linux-firmware-emi26-license, linux-firmware-en8811h, linux-firmware-ene-firmware-license, linux-firmware-ene-ub6250, linux-firmware-fw-sst-0f28-license, linux-firmware-go7007, linux-firmware-go7007-license, linux-firmware-go7007-s2250, linux-firmware-gspi8682, linux-firmware-gspi8686, linux-firmware-gspi8688, linux-firmware-hfi1, linux-firmware-hfi1-license, linux-firmware-hp-license, linux-firmware-i915, linux-firmware-i915-license, linux-firmware-ib-qib, linux-firmware-ib-qib-license, linux-firmware-ibt, linux-firmware-ibt-11-5, linux-firmware-ibt-12-16, linux-firmware-ibt-17, linux-firmware-ibt-18, linux-firmware-ibt-20, linux-firmware-ibt-hw-37-7, linux-firmware-ibt-hw-37-8, linux-firmware-ibt-license, linux-firmware-ibt-misc, linux-firmware-ice, linux-firmware-ice-enhanced, linux-firmware-ice-enhanced-license, linux-firmware-ice-license, linux-firmware-imx-sdma-imx6q, linux-firmware-imx-sdma-imx7d, linux-firmware-imx-sdma-license, linux-firmware-inside-secure, linux-firmware-inside-secure-license, linux-firmware-intcsst2-license, linux-firmware-intel-ipu6-isys, linux-firmware-intel-ipu7-isys, linux-firmware-intel-license, linux-firmware-intel-vpu, linux-firmware-intel-vpu-license, linux-firmware-io-edgeport, linux-firmware-io-ti, linux-firmware-ipu3-firmware-license, linux-firmware-ipu3-imgu, linux-firmware-isci, linux-firmware-ish-lnlm, linux-firmware-ish-lnlm-12128606, linux-firmware-ish-lnlm-39ceeaf8, linux-firmware-ish-lnlm-53c4ffad, linux-firmware-ish-ptl, linux-firmware-ish-ptl-39ceeaf8, linux-firmware-ish-ptl-53c4ffad, linux-firmware-ish-wcl, linux-firmware-it9135, linux-firmware-it913x-license, linux-firmware-ivsc-license, linux-firmware-iwlwifi, linux-firmware-iwlwifi-135-6, linux-firmware-iwlwifi-3160-10, linux-firmware-iwlwifi-3160-12, linux-firmware-iwlwifi-3160-13, linux-firmware-iwlwifi-3160-16, linux-firmware-iwlwifi-3160-17, linux-firmware-iwlwifi-3160-7, linux-firmware-iwlwifi-3160-8, linux-firmware-iwlwifi-3160-9, linux-firmware-iwlwifi-6000-4, linux-firmware-iwlwifi-6000g2a-5, linux-firmware-iwlwifi-6000g2a-6, linux-firmware-iwlwifi-6000g2b-5, linux-firmware-iwlwifi-6000g2b-6, linux-firmware-iwlwifi-6050-4, linux-firmware-iwlwifi-6050-5, linux-firmware-iwlwifi-7260, linux-firmware-iwlwifi-7265, linux-firmware-iwlwifi-7265d, linux-firmware-iwlwifi-8000c, linux-firmware-iwlwifi-8265, linux-firmware-iwlwifi-9000, linux-firmware-iwlwifi-9260, linux-firmware-iwlwifi-license, linux-firmware-iwlwifi-misc, linux-firmware-ixp4xx-license, linux-firmware-ixp4xx-npe, linux-firmware-kaweth, linux-firmware-kaweth-license, linux-firmware-keyspan, linux-firmware-keyspan-license, linux-firmware-keyspan-pda, linux-firmware-lenovo-license, linux-firmware-license, linux-firmware-linaro-license, linux-firmware-liquidio, linux-firmware-lontium-license, linux-firmware-lt8713sx, linux-firmware-lt9611uxc, linux-firmware-mali-csffw-arch1010, linux-firmware-mali-csffw-arch1012, linux-firmware-mali-csffw-arch108, linux-firmware-mali-csffw-arch118, linux-firmware-mali-csffw-arch128, linux-firmware-mali-csffw-arch138, linux-firmware-mali-csffw-license, linux-firmware-marvell-license, linux-firmware-mediatek, linux-firmware-mediatek-license, linux-firmware-mei-vsc-hw, linux-firmware-mellanox, linux-firmware-mga, linux-firmware-mga-license, linux-firmware-mhdp8546, linux-firmware-microchip, linux-firmware-microchip-license, linux-firmware-microcode-amd, linux-firmware-mont-tsse, linux-firmware-montage-license, linux-firmware-moxa, linux-firmware-moxa-license, linux-firmware-mt7601u, linux-firmware-mt7650, linux-firmware-mt76x-license, linux-firmware-mt76x2, linux-firmware-mwl8k, linux-firmware-mwlwifi, linux-firmware-myri10ge, linux-firmware-myri10ge-firmware-license, linux-firmware-netronome, linux-firmware-netronome-license, linux-firmware-nvidia-gpu, linux-firmware-nvidia-license, linux-firmware-nvidia-tegra, linux-firmware-nvidia-tegra-k1, linux-firmware-nxp-license, linux-firmware-nxp-mc, linux-firmware-nxp-mc-license, linux-firmware-nxp-sr1xx, linux-firmware-nxp8987-sdio, linux-firmware-nxp8997-common, linux-firmware-nxp8997-pcie, linux-firmware-nxp8997-sdio, linux-firmware-nxp9098-common, linux-firmware-nxp9098-pcie, linux-firmware-nxp9098-sdio, linux-firmware-nxpiw416-sdio, linux-firmware-nxpiw612-sdio, linux-firmware-olpc, linux-firmware-olpc-license, linux-firmware-orinoco, linux-firmware-pcie-rcar, linux-firmware-pcie8897, linux-firmware-pcie8997, linux-firmware-pcnet-cs, linux-firmware-phanfw, linux-firmware-phanfw-license, linux-firmware-powervr, linux-firmware-powervr-license, linux-firmware-prestera, linux-firmware-qat, linux-firmware-qat-license, linux-firmware-qca, linux-firmware-qca-qca2066, linux-firmware-qca-qca61x4-serial, linux-firmware-qca-qca61x4-usb, linux-firmware-qca-qca6390, linux-firmware-qca-qca6698, linux-firmware-qca-qcc2072, linux-firmware-qca-wcn3950, linux-firmware-qca-wcn3988, linux-firmware-qca-wcn399x, linux-firmware-qca-wcn6750, linux-firmware-qca-wcn685x, linux-firmware-qca-wcn7850, linux-firmware-qcom-2-license, linux-firmware-qcom-adreno-a2xx, linux-firmware-qcom-adreno-a3xx, linux-firmware-qcom-adreno-a4xx, linux-firmware-qcom-adreno-a530, linux-firmware-qcom-adreno-a612, linux-firmware-qcom-adreno-a623, linux-firmware-qcom-adreno-a630, linux-firmware-qcom-adreno-a640, linux-firmware-qcom-adreno-a650, linux-firmware-qcom-adreno-a660, linux-firmware-qcom-adreno-a663, linux-firmware-qcom-adreno-a702, linux-firmware-qcom-adreno-a730, linux-firmware-qcom-adreno-a740, linux-firmware-qcom-adreno-g705, linux-firmware-qcom-adreno-g709, linux-firmware-qcom-adreno-g715, linux-firmware-qcom-adreno-g800, linux-firmware-qcom-adreno-g801, linux-firmware-qcom-adreno-g802, linux-firmware-qcom-aic100, linux-firmware-qcom-apq8016-modem, linux-firmware-qcom-apq8016-wifi, linux-firmware-qcom-apq8096-adreno, linux-firmware-qcom-apq8096-audio, linux-firmware-qcom-apq8096-modem, linux-firmware-qcom-glymur-adreno, linux-firmware-qcom-glymur-audio, linux-firmware-qcom-glymur-compute, linux-firmware-qcom-kaanapali-adreno, linux-firmware-qcom-kaanapali-audio, linux-firmware-qcom-kaanapali-compute, linux-firmware-qcom-kaanapali-soccp, linux-firmware-qcom-license, linux-firmware-qcom-qcm2290-adreno, linux-firmware-qcom-qcm2290-audio, linux-firmware-qcom-qcm2290-modem, linux-firmware-qcom-qcm2290-wifi, linux-firmware-qcom-qcm6490-adreno, linux-firmware-qcom-qcm6490-audio, linux-firmware-qcom-qcm6490-compute, linux-firmware-qcom-qcm6490-ipa, linux-firmware-qcom-qcm6490-qupv3fw, linux-firmware-qcom-qcm6490-wifi, linux-firmware-qcom-qcs615-adreno, linux-firmware-qcom-qcs615-audio, linux-firmware-qcom-qcs615-compute, linux-firmware-qcom-qcs615-qupv3fw, linux-firmware-qcom-qcs6490-radxa-dragon-q6a-audio, linux-firmware-qcom-qcs6490-radxa-dragon-q6a-compute, linux-firmware-qcom-qcs6490-thundercomm-rubikpi3-audio, linux-firmware-qcom-qcs8300-adreno, linux-firmware-qcom-qcs8300-audio, linux-firmware-qcom-qcs8300-compute, linux-firmware-qcom-qcs8300-generalpurpose, linux-firmware-qcom-qcs8300-qupv3fw, linux-firmware-qcom-qdu100, linux-firmware-qcom-qrb4210-adreno, linux-firmware-qcom-qrb4210-audio, linux-firmware-qcom-qrb4210-compute, linux-firmware-qcom-qrb4210-modem, linux-firmware-qcom-qrb4210-wifi, linux-firmware-qcom-sa8775p-adreno, linux-firmware-qcom-sa8775p-audio, linux-firmware-qcom-sa8775p-compute, linux-firmware-qcom-sa8775p-generalpurpose, linux-firmware-qcom-sa8775p-qupv3fw, linux-firmware-qcom-sc8280xp-lenovo-x13s-adreno, linux-firmware-qcom-sc8280xp-lenovo-x13s-audio, linux-firmware-qcom-sc8280xp-lenovo-x13s-compat, linux-firmware-qcom-sc8280xp-lenovo-x13s-compute, linux-firmware-qcom-sc8280xp-lenovo-x13s-sensors, linux-firmware-qcom-sc8280xp-lenovo-x13s-vpu, linux-firmware-qcom-sdm845-adreno, linux-firmware-qcom-sdm845-audio, linux-firmware-qcom-sdm845-compute, linux-firmware-qcom-sdm845-modem, linux-firmware-qcom-sdm845-thundercomm-db845c-sensors, linux-firmware-qcom-sdx35-foxconn-firehose, linux-firmware-qcom-sdx61-foxconn-firehose, linux-firmware-qcom-shikra-qupv3fw, linux-firmware-qcom-sm8150-adreno, linux-firmware-qcom-sm8250-adreno, linux-firmware-qcom-sm8250-audio, linux-firmware-qcom-sm8250-compute, linux-firmware-qcom-sm8250-thundercomm-rb5-sensors, linux-firmware-qcom-sm8350-adreno, linux-firmware-qcom-sm8450-adreno, linux-firmware-qcom-sm8450-audio-tplg, linux-firmware-qcom-sm8550-adreno, linux-firmware-qcom-sm8550-audio-tplg, linux-firmware-qcom-sm8650-adreno, linux-firmware-qcom-sm8650-audio-tplg, linux-firmware-qcom-sm8750-adreno, linux-firmware-qcom-sm8750-audio, linux-firmware-qcom-sm8750-compute, linux-firmware-qcom-venus-1.8, linux-firmware-qcom-venus-4.2, linux-firmware-qcom-venus-5.2, linux-firmware-qcom-venus-5.4, linux-firmware-qcom-venus-6.0, linux-firmware-qcom-vpu, linux-firmware-qcom-x1e80100-adreno, linux-firmware-qcom-x1e80100-asus-vivobook-16-audio-tplg, linux-firmware-qcom-x1e80100-asus-vivobook-s15-audio-tplg, linux-firmware-qcom-x1e80100-asus-zenbook-a14-audio-tplg, linux-firmware-qcom-x1e80100-audio, linux-firmware-qcom-x1e80100-compute, linux-firmware-qcom-x1e80100-dell-inspiron-14-plus-7441-audio-tplg, linux-firmware-qcom-x1e80100-dell-latitude-7455-audio-tplg, linux-firmware-qcom-x1e80100-dell-xps13-9345-adreno, linux-firmware-qcom-x1e80100-dell-xps13-9345-audio, linux-firmware-qcom-x1e80100-dell-xps13-9345-compute, linux-firmware-qcom-x1e80100-hp-omnibook-x14-audio-tplg, linux-firmware-qcom-x1e80100-lenovo-t14s-g6-adreno, linux-firmware-qcom-x1e80100-lenovo-t14s-g6-audio, linux-firmware-qcom-x1e80100-lenovo-t14s-g6-compute, linux-firmware-qcom-x1e80100-lenovo-t14s-g6-vpu, linux-firmware-qcom-x1e80100-lenovo-yoga-slim7x-adreno, linux-firmware-qcom-x1e80100-lenovo-yoga-slim7x-audio, linux-firmware-qcom-x1e80100-lenovo-yoga-slim7x-compute, linux-firmware-qcom-x1e80100-lenovo-yoga-slim7x-vpu, linux-firmware-qcom-x1e80100-qupv3fw, linux-firmware-qcom-x1p42100-adreno, linux-firmware-qcom-yamato-license, linux-firmware-qed, linux-firmware-qla1280, linux-firmware-qla1280-license, linux-firmware-qla2xxx, linux-firmware-qla2xxx-license, linux-firmware-qualcommatheros-ath10k-license, linux-firmware-r128, linux-firmware-r8a779g-pcie-phy-license, linux-firmware-r8a779x-usb3-license, linux-firmware-radeon, linux-firmware-radeon-license, linux-firmware-ralink, linux-firmware-ralink-license, linux-firmware-rockchip-dptx, linux-firmware-rockchip-license, linux-firmware-rp2, linux-firmware-rp2-license, linux-firmware-rs9113, linux-firmware-rs9116, linux-firmware-rsi-91x, linux-firmware-rt1320, linux-firmware-rt1320-license, linux-firmware-rtl-license, linux-firmware-rtl-nic, linux-firmware-rtl8168, linux-firmware-rtl8188, linux-firmware-rtl8192, linux-firmware-rtl8192ce, linux-firmware-rtl8192cu, linux-firmware-rtl8192su, linux-firmware-rtl8703, linux-firmware-rtl8710, linux-firmware-rtl8723, linux-firmware-rtl8761, linux-firmware-rtl8812, linux-firmware-rtl8814, linux-firmware-rtl8821, linux-firmware-rtl8822, linux-firmware-rtl8851, linux-firmware-rtl8852, linux-firmware-rtl8922, linux-firmware-rvu-cptpf, linux-firmware-s5p-mfc, linux-firmware-s5p-mfc-license, linux-firmware-sd8385, linux-firmware-sd8682, linux-firmware-sd8686, linux-firmware-sd8688, linux-firmware-sd8787, linux-firmware-sd8797, linux-firmware-sd8801, linux-firmware-sd8887, linux-firmware-sd8897, linux-firmware-sd8977, linux-firmware-sd8997, linux-firmware-sensoray-license, linux-firmware-serial-cs, linux-firmware-siano-license, linux-firmware-slicoss, linux-firmware-smc91c92-cs, linux-firmware-smsmdtv, linux-firmware-snd-intel-sst-core, linux-firmware-snd-maestro3, linux-firmware-snd-sb16-csp, linux-firmware-snd-soc-avs, linux-firmware-snd-soc-catpt, linux-firmware-starfire, linux-firmware-sw-serial, linux-firmware-sxg, linux-firmware-tehuti, linux-firmware-tehuti-license, linux-firmware-tg3, linux-firmware-ti-connectivity-license, linux-firmware-ti-keystone, linux-firmware-ti-keystone-license, linux-firmware-ti-tas2563, linux-firmware-ti-tas2781, linux-firmware-ti-tas2783, linux-firmware-ti-tspa-license, linux-firmware-ti-usb-3410-5052, linux-firmware-ti-vpe, linux-firmware-tigon-license, linux-firmware-tlg2300, linux-firmware-tlg2300-license, linux-firmware-typhoon, linux-firmware-typhoon-license, linux-firmware-ueagle-atm, linux-firmware-ueagle-atm4-firmware-license, linux-firmware-usb8388, linux-firmware-usb8682, linux-firmware-usb8766, linux-firmware-usb8797, linux-firmware-usb8801, linux-firmware-usb8897, linux-firmware-usb8997, linux-firmware-usbdux, linux-firmware-vt6656, linux-firmware-vt6656-license, linux-firmware-vxge, linux-firmware-vxge-license, linux-firmware-wfx, linux-firmware-wfx-license, linux-firmware-whence-license, linux-firmware-whiteheat, linux-firmware-wil6210, linux-firmware-wilc1000, linux-firmware-wilc3000, linux-firmware-wl1251, linux-firmware-wl1251-license, linux-firmware-wl12xx, linux-firmware-wl18xx, linux-firmware-wlcommon, linux-firmware-xc4000, linux-firmware-xc4000-license, linux-firmware-xc5000, linux-firmware-xc5000-license, linux-firmware-xc5000c, linux-firmware-xc5000c-license, linux-firmware-xe, linux-firmware-xe-license, linux-firmware-xhci-rcar
+Filename: ./linux-firmware_20260410-r0_all.deb
+Size: 3440
+MD5sum: dee50d0170c6e327cd49af25397a9bf7
+SHA1: 40d35b66f74637d4ca17c0f41f074ded819d6976
+SHA256: 4da2c800cc84f881b91801fca1c3632e8e618e45fd738090953dfc685ea5ea6a
+SHA512: 45afbb5ee31af5637d875ca0560f7f998697d0f16802e5545332cb83de74112dc5cf07a41a9bb0931532e65c471a0177d4cf7d810beb2fb4b5777ed0b6d95777
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+OE: linux-firmware
+PackageArch: all
+
+Package: packagegroup-core-weston
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: wayland-utils, weston, weston-examples, weston-init
+Filename: ./packagegroup-core-weston_1.0-r0_all.deb
+Size: 824
+MD5sum: 7ba9b04e466930970c3f49b07265808a
+SHA1: 693a1569e0d95b09197bfda58a8e4f35292315f0
+SHA256: 7f4cde772f0f487146a950bfde1b6ca3d03102b18bf27369aa8ec001263f12c8
+SHA512: 0f1fad53c53a9eff93e30b69a65e1295f32a08841cf68a7ccb1e9845aee3534edaf8df503a85db31ecb5780d0b5d4c236d991ca791783f86dbce7a5b2fec420a
+Description: Basic Weston compositor setup
+ Packages required to set up a basic working Weston session
+OE: packagegroup-core-weston
+PackageArch: all
+
+Package: ttf-dejavu-common
+Architecture: all
+Version: 2.37-r0
+Multi-Arch: foreign
+Priority: optional
+Section: fonts
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./ttf-dejavu-common_2.37-r0_all.deb
+Size: 1024
+MD5sum: 4d4079193bfdb0c596d7073f66048864
+SHA1: 9be158ad426f4e9aaaf818d7be8915c971faf50a
+SHA256: 412d1ff07aa2479b52a275050a791e7a0a51b762e8609c9acc4c73f9c5171b93
+SHA512: 0dc8ba5448d4b16c381632cdd7588e6f9aea755d79ba50ff6db509200b9214d97965f6a14acc8d6091ea1f0c1336a4537977d3a32ff964b335c115242b65b371
+Homepage: http://dejavu.sourceforge.net/wiki/
+Description: DejaVu font - TTF Edition
+ DejaVu font - TTF Edition.
+OE: ttf-dejavu
+PackageArch: all
+
+Package: ttf-dejavu-sans-mono
+Architecture: all
+Version: 2.37-r0
+Multi-Arch: foreign
+Priority: optional
+Section: fonts
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: fontconfig-utils, ttf-dejavu-common
+Filename: ./ttf-dejavu-sans-mono_2.37-r0_all.deb
+Size: 406504
+MD5sum: 6eceee42853de313cd649d98928d8ec2
+SHA1: cbd7040657b434c551811aaf0a74f7d9c970af29
+SHA256: 87ac3b85ac2ae4b30c02cb33fb1f9008b907762eba8e30b5612ef962b8a8fd38
+SHA512: 597a57075c5e8a6809ea043a68a6f5c824f96a376f1ff7f87b94d7577116199470302c8462846fdae87a49efe69b1572f2616ab27bd42f768e640c58244e83c3
+Homepage: http://dejavu.sourceforge.net/wiki/
+Description: DejaVu font - TTF Edition
+ DejaVu font - TTF Edition.
+OE: ttf-dejavu
+PackageArch: all
+
+Package: ttf-dejavu-sans
+Architecture: all
+Version: 2.37-r0
+Multi-Arch: foreign
+Priority: optional
+Section: fonts
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: fontconfig-utils, ttf-dejavu-common
+Filename: ./ttf-dejavu-sans_2.37-r0_all.deb
+Size: 821576
+MD5sum: c6068ceb46b280d3110a55889ee086dc
+SHA1: 93d8bdbc4f2f4859f2694279ac12f9761a3c69ed
+SHA256: 994fe8a338ea8dbd3475b7872892d6f364d26c63c189e9828e639c4334b65f5e
+SHA512: f5ea063c0a99a90c2902f132a2e1d749ed0d8bebdf9e0ffb4f59d818455c33501ef316b1fb2590df1d73931b4b45885dcd1147341aaba7c359a0dd55378a5075
+Homepage: http://dejavu.sourceforge.net/wiki/
+Description: DejaVu font - TTF Edition
+ DejaVu font - TTF Edition.
+OE: ttf-dejavu
+PackageArch: all
+
+Package: ttf-dejavu-serif
+Architecture: all
+Version: 2.37-r0
+Multi-Arch: foreign
+Priority: optional
+Section: fonts
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: fontconfig-utils, ttf-dejavu-common
+Filename: ./ttf-dejavu-serif_2.37-r0_all.deb
+Size: 476028
+MD5sum: 475e40e594e23ffa13c230626e757935
+SHA1: 94e0751a2114c083c07abce78d5e28810f82fa4f
+SHA256: 185605c868d9c4c77a2c222878ea8285e790061f17e7692b5b19af528692a259
+SHA512: b80fcab0fb59883392f8a286bb8994dca453143ae56b459098d2a64969feb28142d34a51b44923bc82cfaa2268297590abf41f04182253ca50cb76cd76606b27
+Homepage: http://dejavu.sourceforge.net/wiki/
+Description: DejaVu font - TTF Edition
+ DejaVu font - TTF Edition.
+OE: ttf-dejavu
+PackageArch: all
+
+Package: wayland-protocols-dev
+Architecture: all
+Version: 1.47-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: wayland-protocols (= 1.47-r0)
+Filename: ./wayland-protocols-dev_1.47-r0_all.deb
+Size: 21588
+MD5sum: 19405e2b1290ccf6f9e5732d22525336
+SHA1: a665cd274091d259b52d3d420e3fe274b7661e5f
+SHA256: 838610e86652435c0ae6e9fa47b69925ed42311095882f0706c7b8c87d59b710
+SHA512: e3ab2ece87f9bf331d8a0961161ab89a757dbe9a013ae1a718046ead8b47974737c90ce4dbd7aee42736f812aefef32df5b4876733fbbaed2292ef5d637b9efe
+Homepage: http://wayland.freedesktop.org
+Description: Collection of additional Wayland protocols - Development files
+ Wayland protocols that add functionality not available in the Wayland
+ core protocol. Such protocols either add completely new functionality, or
+ extend the functionality of some other protocol either in Wayland core,
+ or some other protocol in wayland-protocols.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+OE: wayland-protocols
+PackageArch: all
+
+Package: wayland-protocols
+Architecture: all
+Version: 1.47-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./wayland-protocols_1.47-r0_all.deb
+Size: 109776
+MD5sum: f7b21d321c23010f6b2cc92453fba4cb
+SHA1: 7f60ed1629725c22cf266e0b252d862201f9d0af
+SHA256: b2236a5f7b64271f98fe0fb5c1be3f8e83e295b1fb9e4a6fe28fca96c144567d
+SHA512: 2889ef1ec54bccc8ddd9fb6d706dd7b4fe216889398c5171a78379877a93d4235a95602bab9a30f9d56af61b707c7e991ae5b004c96a1d21b15b439935231104
+Homepage: http://wayland.freedesktop.org
+Description: Collection of additional Wayland protocols
+ Wayland protocols that add functionality not available in the Wayland
+ core protocol. Such protocols either add completely new functionality, or
+ extend the functionality of some other protocol either in Wayland core,
+ or some other protocol in wayland-protocols.
+OE: wayland-protocols
+PackageArch: all
+
+Package: weston-upgrade
+Architecture: all
+Version: 1.0
+Priority: optional
+Section: metapackages
+Maintainer: feed <feed@local>
+Depends: 7zip,acl,acl-dev,adwaita-icon-theme-symbolic,alsa-conf,alsa-topology-conf,alsa-ucm-conf,alsa-utils,alsa-utils-aconnect,alsa-utils-alsa-info,alsa-utils-alsaconf,alsa-utils-alsactl,alsa-utils-alsaloop,alsa-utils-alsamixer,alsa-utils-alsatplg,alsa-utils-alsaucm,alsa-utils-amidi,alsa-utils-amixer,alsa-utils-aplay,alsa-utils-aseqdump,alsa-utils-aseqnet,alsa-utils-aseqsend,alsa-utils-axfer,alsa-utils-iecset,alsa-utils-nhlt-dmic-info,alsa-utils-speaker-test,at-spi2-core,at-spi2-core-locale-en-gb,attr,attr-dev,autoconf,automake,avahi-daemon,avahi-libnss-mdns,avahi-locale-en-gb,badloop,base-files-dev,base-passwd-dev,bash-dev,binutils,binutils-dev,bluez5,bluez5-obex,bridge-utils,brotli,bzip2,bzip2-dev,connman,coreutils-dev,cpp,cpp-symlinks,curl,curl-dev,desktop-file-utils,diffutils,diffutils-dev,dmidecode,dosfstools,e2fsprogs,e2fsprogs-badblocks,e2fsprogs-dumpe2fs,e2fsprogs-mke2fs,e2fsprogs-resize2fs,elfutils,elfutils-dev,ethtool,f2fs-tools,ffmpeg,file,file-dev,findutils,findutils-dev,fontconfig-utils,g++,g++-symlinks,gawk-dev,gcc,gcc-dev,gcc-symlinks,gettext,gfortran,gfortran-symlinks,glib-networking,glib-networking-locale-en-gb,glibc-binary-localedata-c,glibc-binary-localedata-en-gb,glibc-binary-localedata-en-us,glibc-gconv,glibc-gconv-iso8859-1,glmark2,glslang,gnu-config,gptfdisk,graphviz,grep,grep-dev,gstreamer1.0,gstreamer1.0-libav,gstreamer1.0-locale-en-gb,gstreamer1.0-plugins-bad,gstreamer1.0-plugins-bad-accurip,gstreamer1.0-plugins-bad-adpcmdec,gstreamer1.0-plugins-bad-adpcmenc,gstreamer1.0-plugins-bad-aes,gstreamer1.0-plugins-bad-aiff,gstreamer1.0-plugins-bad-analyticsoverlay,gstreamer1.0-plugins-bad-apps,gstreamer1.0-plugins-bad-asfmux,gstreamer1.0-plugins-bad-audiobuffersplit,gstreamer1.0-plugins-bad-audiofxbad,gstreamer1.0-plugins-bad-audiolatency,gstreamer1.0-plugins-bad-audiomixmatrix,gstreamer1.0-plugins-bad-audiovisualizers,gstreamer1.0-plugins-bad-autoconvert,gstreamer1.0-plugins-bad-bayer,gstreamer1.0-plugins-bad-bluez,gstreamer1.0-plugins-bad-bz2,gstreamer1.0-plugins-bad-camerabin,gstreamer1.0-plugins-bad-closedcaption,gstreamer1.0-plugins-bad-codecalpha,gstreamer1.0-plugins-bad-codectimestamper,gstreamer1.0-plugins-bad-coloreffects,gstreamer1.0-plugins-bad-curl,gstreamer1.0-plugins-bad-dash,gstreamer1.0-plugins-bad-debugutilsbad,gstreamer1.0-plugins-bad-decklink,gstreamer1.0-plugins-bad-dtls,gstreamer1.0-plugins-bad-dvb,gstreamer1.0-plugins-bad-dvbsubenc,gstreamer1.0-plugins-bad-dvbsuboverlay,gstreamer1.0-plugins-bad-dvdspu,gstreamer1.0-plugins-bad-faceoverlay,gstreamer1.0-plugins-bad-fbdevsink,gstreamer1.0-plugins-bad-festival,gstreamer1.0-plugins-bad-fieldanalysis,gstreamer1.0-plugins-bad-freeverb,gstreamer1.0-plugins-bad-frei0r,gstreamer1.0-plugins-bad-gaudieffects,gstreamer1.0-plugins-bad-gdp,gstreamer1.0-plugins-bad-geometrictransform,gstreamer1.0-plugins-bad-hls,gstreamer1.0-plugins-bad-id3tag,gstreamer1.0-plugins-bad-insertbin,gstreamer1.0-plugins-bad-inter,gstreamer1.0-plugins-bad-interlace,gstreamer1.0-plugins-bad-ipcpipeline,gstreamer1.0-plugins-bad-ivfparse,gstreamer1.0-plugins-bad-ivtc,gstreamer1.0-plugins-bad-jp2kdecimator,gstreamer1.0-plugins-bad-jpegformat,gstreamer1.0-plugins-bad-legacyrawparse,gstreamer1.0-plugins-bad-locale-en-gb,gstreamer1.0-plugins-bad-meta,gstreamer1.0-plugins-bad-midi,gstreamer1.0-plugins-bad-mpegpsdemux,gstreamer1.0-plugins-bad-mpegpsmux,gstreamer1.0-plugins-bad-mpegtsdemux,gstreamer1.0-plugins-bad-mpegtsmux,gstreamer1.0-plugins-bad-mse,gstreamer1.0-plugins-bad-mxf,gstreamer1.0-plugins-bad-netsim,gstreamer1.0-plugins-bad-pcapparse,gstreamer1.0-plugins-bad-pnm,gstreamer1.0-plugins-bad-proxy,gstreamer1.0-plugins-bad-qsv,gstreamer1.0-plugins-bad-removesilence,gstreamer1.0-plugins-bad-rfbsrc,gstreamer1.0-plugins-bad-rist,gstreamer1.0-plugins-bad-rsvg,gstreamer1.0-plugins-bad-rtmp2,gstreamer1.0-plugins-bad-rtpmanagerbad,gstreamer1.0-plugins-bad-rtponvif,gstreamer1.0-plugins-bad-sbc,gstreamer1.0-plugins-bad-sdpelem,gstreamer1.0-plugins-bad-segmentclip,gstreamer1.0-plugins-bad-shm,gstreamer1.0-plugins-bad-siren,gstreamer1.0-plugins-bad-smooth,gstreamer1.0-plugins-bad-smoothstreaming,gstreamer1.0-plugins-bad-sndfile,gstreamer1.0-plugins-bad-speed,gstreamer1.0-plugins-bad-subenc,gstreamer1.0-plugins-bad-switchbin,gstreamer1.0-plugins-bad-timecode,gstreamer1.0-plugins-bad-transcode,gstreamer1.0-plugins-bad-ttmlsubs,gstreamer1.0-plugins-bad-unixfd,gstreamer1.0-plugins-bad-uvcgadget,gstreamer1.0-plugins-bad-uvch264,gstreamer1.0-plugins-bad-va,gstreamer1.0-plugins-bad-videofiltersbad,gstreamer1.0-plugins-bad-videoframe-audiolevel,gstreamer1.0-plugins-bad-videoparsersbad,gstreamer1.0-plugins-bad-videosignal,gstreamer1.0-plugins-bad-vmnc,gstreamer1.0-plugins-bad-vulkan,gstreamer1.0-plugins-bad-waylandsink,gstreamer1.0-plugins-bad-webp,gstreamer1.0-plugins-base,gstreamer1.0-plugins-base-adder,gstreamer1.0-plugins-base-alsa,gstreamer1.0-plugins-base-app,gstreamer1.0-plugins-base-apps,gstreamer1.0-plugins-base-audioconvert,gstreamer1.0-plugins-base-audiomixer,gstreamer1.0-plugins-base-audiorate,gstreamer1.0-plugins-base-audioresample,gstreamer1.0-plugins-base-audiotestsrc,gstreamer1.0-plugins-base-basedebug,gstreamer1.0-plugins-base-compositor,gstreamer1.0-plugins-base-dsd,gstreamer1.0-plugins-base-encoding,gstreamer1.0-plugins-base-gio,gstreamer1.0-plugins-base-locale-en-gb,gstreamer1.0-plugins-base-meta,gstreamer1.0-plugins-base-ogg,gstreamer1.0-plugins-base-opengl,gstreamer1.0-plugins-base-overlaycomposition,gstreamer1.0-plugins-base-pango,gstreamer1.0-plugins-base-pbtypes,gstreamer1.0-plugins-base-playback,gstreamer1.0-plugins-base-rawparse,gstreamer1.0-plugins-base-subparse,gstreamer1.0-plugins-base-tcp,gstreamer1.0-plugins-base-theora,gstreamer1.0-plugins-base-typefindfunctions,gstreamer1.0-plugins-base-videoconvertscale,gstreamer1.0-plugins-base-videorate,gstreamer1.0-plugins-base-videotestsrc,gstreamer1.0-plugins-base-volume,gstreamer1.0-plugins-base-vorbis,gstreamer1.0-plugins-base-ximagesink,gstreamer1.0-plugins-base-xvimagesink,gstreamer1.0-plugins-good,gstreamer1.0-plugins-good-adaptivedemux2,gstreamer1.0-plugins-good-alaw,gstreamer1.0-plugins-good-alpha,gstreamer1.0-plugins-good-alphacolor,gstreamer1.0-plugins-good-apetag,gstreamer1.0-plugins-good-audiofx,gstreamer1.0-plugins-good-audioparsers,gstreamer1.0-plugins-good-auparse,gstreamer1.0-plugins-good-autodetect,gstreamer1.0-plugins-good-avi,gstreamer1.0-plugins-good-cairo,gstreamer1.0-plugins-good-cutter,gstreamer1.0-plugins-good-debug,gstreamer1.0-plugins-good-deinterlace,gstreamer1.0-plugins-good-dtmf,gstreamer1.0-plugins-good-effectv,gstreamer1.0-plugins-good-equalizer,gstreamer1.0-plugins-good-flac,gstreamer1.0-plugins-good-flv,gstreamer1.0-plugins-good-flxdec,gstreamer1.0-plugins-good-gdkpixbuf,gstreamer1.0-plugins-good-goom,gstreamer1.0-plugins-good-goom2k1,gstreamer1.0-plugins-good-icydemux,gstreamer1.0-plugins-good-id3demux,gstreamer1.0-plugins-good-imagefreeze,gstreamer1.0-plugins-good-interleave,gstreamer1.0-plugins-good-isomp4,gstreamer1.0-plugins-good-jpeg,gstreamer1.0-plugins-good-lame,gstreamer1.0-plugins-good-level,gstreamer1.0-plugins-good-locale-en-gb,gstreamer1.0-plugins-good-matroska,gstreamer1.0-plugins-good-meta,gstreamer1.0-plugins-good-monoscope,gstreamer1.0-plugins-good-mpg123,gstreamer1.0-plugins-good-mulaw,gstreamer1.0-plugins-good-multifile,gstreamer1.0-plugins-good-multipart,gstreamer1.0-plugins-good-navigationtest,gstreamer1.0-plugins-good-ossaudio,gstreamer1.0-plugins-good-png,gstreamer1.0-plugins-good-pulseaudio,gstreamer1.0-plugins-good-replaygain,gstreamer1.0-plugins-good-rtp,gstreamer1.0-plugins-good-rtpmanager,gstreamer1.0-plugins-good-rtsp,gstreamer1.0-plugins-good-shapewipe,gstreamer1.0-plugins-good-smpte,gstreamer1.0-plugins-good-soup,gstreamer1.0-plugins-good-spectrum,gstreamer1.0-plugins-good-speex,gstreamer1.0-plugins-good-taglib,gstreamer1.0-plugins-good-udp,gstreamer1.0-plugins-good-video4linux2,gstreamer1.0-plugins-good-videobox,gstreamer1.0-plugins-good-videocrop,gstreamer1.0-plugins-good-videofilter,gstreamer1.0-plugins-good-videomixer,gstreamer1.0-plugins-good-wavenc,gstreamer1.0-plugins-good-wavparse,gstreamer1.0-plugins-good-ximagesrc,gstreamer1.0-plugins-good-xingmux,gstreamer1.0-plugins-good-y4m,gstreamer1.0-plugins-ugly,gstreamer1.0-plugins-ugly-asf,gstreamer1.0-plugins-ugly-dvdlpcmdec,gstreamer1.0-plugins-ugly-dvdsub,gstreamer1.0-plugins-ugly-locale-en-gb,gstreamer1.0-plugins-ugly-meta,gstreamer1.0-plugins-ugly-realmedia,gtk+3-demo,gtk+3-locale-en,gtk+3-locale-en-gb,hicolor-icon-theme,htop,hwloc,i2c-tools,icu,ifupdown,iperf3,iproute2,iproute2-ip,iptables,iptables-module-ip6t-ah,iptables-module-ip6t-dnpt,iptables-module-ip6t-dst,iptables-module-ip6t-eui64,iptables-module-ip6t-frag,iptables-module-ip6t-hbh,iptables-module-ip6t-hl,iptables-module-ip6t-icmp6,iptables-module-ip6t-ipv6header,iptables-module-ip6t-mh,iptables-module-ip6t-netmap,iptables-module-ip6t-reject,iptables-module-ip6t-rt,iptables-module-ip6t-snpt,iptables-module-ip6t-srh,iptables-module-ipt-ah,iptables-module-ipt-clusterip,iptables-module-ipt-ecn,iptables-module-ipt-icmp,iptables-module-ipt-netmap,iptables-module-ipt-realm,iptables-module-ipt-reject,iptables-module-ipt-ttl,iptables-module-ipt-ulog,iptables-module-xt-addrtype,iptables-module-xt-audit,iptables-module-xt-bpf,iptables-module-xt-cgroup,iptables-module-xt-checksum,iptables-module-xt-classify,iptables-module-xt-cluster,iptables-module-xt-comment,iptables-module-xt-connbytes,iptables-module-xt-connlimit,iptables-module-xt-connmark,iptables-module-xt-connsecmark,iptables-module-xt-conntrack,iptables-module-xt-cpu,iptables-module-xt-ct,iptables-module-xt-dccp,iptables-module-xt-devgroup,iptables-module-xt-dscp,iptables-module-xt-ecn,iptables-module-xt-esp,iptables-module-xt-hashlimit,iptables-module-xt-helper,iptables-module-xt-hmark,iptables-module-xt-idletimer,iptables-module-xt-ipcomp,iptables-module-xt-iprange,iptables-module-xt-ipvs,iptables-module-xt-led,iptables-module-xt-length,iptables-module-xt-limit,iptables-module-xt-log,iptables-module-xt-mac,iptables-module-xt-mark,iptables-module-xt-multiport,iptables-module-xt-nat,iptables-module-xt-nfacct,iptables-module-xt-nflog,iptables-module-xt-nfqueue,iptables-module-xt-osf,iptables-module-xt-owner,iptables-module-xt-physdev,iptables-module-xt-pkttype,iptables-module-xt-policy,iptables-module-xt-quota,iptables-module-xt-rateest,iptables-module-xt-recent,iptables-module-xt-rpfilter,iptables-module-xt-sctp,iptables-module-xt-secmark,iptables-module-xt-set,iptables-module-xt-socket,iptables-module-xt-standard,iptables-module-xt-statistic,iptables-module-xt-string,iptables-module-xt-synproxy,iptables-module-xt-tcp,iptables-module-xt-tcpmss,iptables-module-xt-tcpoptstrip,iptables-module-xt-tee,iptables-module-xt-time,iptables-module-xt-tos,iptables-module-xt-tproxy,iptables-module-xt-trace,iptables-module-xt-u32,iptables-module-xt-udp,iptables-modules,keyutils,lcms,ldd,lib64-setup,libarchive-dev,libasm1,libasound2,libass9,libatomic-dev,libatomic1,libatopology2,libavahi-common3,libavahi-core7,libavcodec62,libavdevice62,libavfilter11,libavformat62,libavutil60,libbfd,libbsd0,libc-malloc-debug0,libc6-dev,libc6-extra-nss,libc6-thread-db,libc6-utils,libcaca,libcairo-gobject2,libcairo2,libcap-dev,libcap-ng,libclc,libclc-dev,libcrypt-dev,libcurl4,libdaemon0,libdebuginfod1,libdisplay-info3,libdouble-conversion3,libdrm-amdgpu1,libdrm-dev,libdrm-etnaviv1,libdrm-freedreno1,libdrm-intel1,libdrm-nouveau2,libdrm-omap1,libdrm-radeon1,libdrm-tests,libdrm2,libdw1,libedit-dev,libedit0,libegl-mesa,libegl-mesa-dev,libell0,libepoxy0,liberation-fonts,libevdev,libexif12,libexpat-dev,libfdisk1,libffi-dev,libflac14,libfontconfig1,libfontenc1,libform5,libformw5,libfreetype6,libfribidi0,libgallium,libgbm-dev,libgbm1,libgcc-s-dev,libgcrypt-dev,libgdbm-compat4,libgdbm-dev,libgdbm6,libgdk-pixbuf-2.0-0,libgdk-pixbuf-2.0-bin,libgdk-pixbuf-2.0-loader-gif,libgdk-pixbuf-2.0-loader-xpm,libgdk-pixbuf-2.0-locale-en-gb,libgettextlib,libgettextsrc,libgfortran-dev,libgfortran5,libgl-mesa,libgl-mesa-dev,libgles1-mesa,libgles1-mesa-dev,libgles2-mesa,libgles2-mesa-dev,libglfw3,libglib-2.0-locale-en-gb,libglib-2.0-utils,libglog2,libglu1,libgmp-dev,libgmpxx4,libgnutls-dev,libgnutls-openssl27,libgnutls30,libgnutlsxx30,libgpg-error-dev,libgphoto2-6,libgphoto2-camlibs,libgphoto2-port12,libgpiod,libgpiod-manager-cfg,libgpiod-tools,libgstadaptivedemux-1.0-0,libgstallocators-1.0-0,libgstanalytics-1.0-0,libgstapp-1.0-0,libgstaudio-1.0-0,libgstbadaudio-1.0-0,libgstbasecamerabinsrc-1.0-0,libgstcodecparsers-1.0-0,libgstcodecs-1.0-0,libgstcuda-1.0-0,libgstdxva-1.0-0,libgstfft-1.0-0,libgstgl-1.0-0,libgstinsertbin-1.0-0,libgstisoff-1.0-0,libgstmpegts-1.0-0,libgstmse-1.0-0,libgstpbutils-1.0-0,libgstphotography-1.0-0,libgstplay-1.0-0,libgstplayer-1.0-0,libgstriff-1.0-0,libgstrtp-1.0-0,libgstrtsp-1.0-0,libgstsctp-1.0-0,libgstsdp-1.0-0,libgsttag-1.0-0,libgsttranscoder-1.0-0,libgsturidownloader-1.0-0,libgstva-1.0-0,libgstvideo-1.0-0,libgstvulkan-1.0-0,libgstwayland-1.0-0,libgstwebrtc-1.0-0,libgtk-3.0,libgudev-1.0-0,libharfbuzz0,libhwloc15,libical,libice6,libicudata78,libicui18n78,libicuio78,libicutu78,libicuuc78,libidn2-0,libidn2-dev,libinput10,libjpeg62,libjpeg8,libjson-c-dev,libkcapi1,liblastlog2-2,libllvmspirvlib-dev,libllvmspirvlib22.1,libltdl7,liblz-dev,liblz1,libmenu5,libmenuw5,libmicrohttpd-dev,libmicrohttpd12,libmnl0,libmp3lame0,libmpc-dev,libmpc3,libmpfr-dev,libncurses5,libncursesw5,libnetplan1,libnghttp2-14,libnl-3-200,libnl-genl-3-200,libnl-route-3-200,libnss-db2,libnvme,libogg0,libopcodes,libopencv-alphamat413,libopencv-aruco413,libopencv-bgsegm413,libopencv-bioinspired413,libopencv-calib3d413,libopencv-ccalib413,libopencv-core413,libopencv-datasets413,libopencv-dpm413,libopencv-face413,libopencv-features2d413,libopencv-flann413,libopencv-fuzzy413,libopencv-gapi413,libopencv-hfs413,libopencv-highgui413,libopencv-img-hash413,libopencv-imgcodecs413,libopencv-imgproc413,libopencv-intensity-transform413,libopencv-line-descriptor413,libopencv-ml413,libopencv-objdetect413,libopencv-optflow413,libopencv-phase-unwrapping413,libopencv-photo413,libopencv-plot413,libopencv-quality413,libopencv-rapid413,libopencv-reg413,libopencv-rgbd413,libopencv-saliency413,libopencv-sfm413,libopencv-shape413,libopencv-signal413,libopencv-stereo413,libopencv-stitching413,libopencv-structured-light413,libopencv-superres413,libopencv-surface-matching413,libopencv-tracking413,libopencv-ts413,libopencv-video413,libopencv-videoio413,libopencv-videostab413,libopencv-xfeatures2d413,libopencv-ximgproc413,libopencv-xobjdetect413,libopencv-xphoto413,liborc-0.4-0,libpam-dev,libpanel5,libpanelw5,libpciaccess-dev,libpciaccess0,libpcre1,libpcre2-16-0,libpcre2-32-0,libpcre2-dev,libpixman-1-0,libplacebo351,libpng16-16,libpsl5,libpthread-stubs-dev,libpulse-simple0,libpulse0,libpulsecommon,libpython3.14-1.0,libquadmath-dev,libquadmath0,libreadline-dev,librsvg-2-2,librsvg-2-gtk,libsamplerate0,libsbc1,libsdl2-2.0-0,libseccomp-dev,libsm6,libsndfile1,libsndio,libsoup,libsoup-3.0-locale-en-gb,libspeex1,libsqlite3-dev,libss2,libstdc++-dev,libswresample6,libswscale9,libtag2,libtasn1-6,libtasn1-dev,libtheora,libtic5,libticw5,libtiff6,libtirpc3,libtool,libtraceevent1,libunistring-dev,libunistring5,libunwind,libusb-1.0-0,libuuid-dev,libv4l,libva,libva-initial-dev,libva-utils,libva-wayland2,libva-x11-2,libvdpau1,libvorbis,libvte-2.91-0,libvulkan-dev,libvulkan1,libwebp,libweston-14-0,libx11-dev,libx11-locale,libx11-xcb1,libxau-dev,libxcb-composite0,libxcb-damage0,libxcb-dbe0,libxcb-dev,libxcb-dpms0,libxcb-dri2-0,libxcb-dri3-0,libxcb-glx0,libxcb-present0,libxcb-randr0,libxcb-record0,libxcb-render0,libxcb-res0,libxcb-screensaver0,libxcb-shape0,libxcb-shm0,libxcb-sync1,libxcb-xf86dri0,libxcb-xfixes0,libxcb-xinerama0,libxcb-xinput0,libxcb-xkb1,libxcb-xtest0,libxcb-xv0,libxcb-xvmc0,libxcomposite1,libxcursor1,libxcvt,libxdamage-dev,libxdamage1,libxdmcp-dev,libxext-dev,libxext6,libxfixes-dev,libxfixes3,libxfont1,libxfont2-2,libxft2,libxi6,libxkbcommon-x11-0,libxkbcommon0,libxkbfile1,libxml2-dev,libxmu6,libxpresent1,libxrandr-dev,libxrandr2,libxrender-dev,libxrender1,libxshmfence-dev,libxshmfence1,libxss1,libxt6,libxtst6,libxv1,libxxf86vm-dev,libxxf86vm1,libyaml-0-2,libz-dev,linux-firmware,linux-firmware-amd-pmf,linux-firmware-amd-pmf-license,linux-firmware-amd-sev-license,linux-firmware-amd-ucode-license,linux-firmware-amdgpu,linux-firmware-amdgpu-aldebaran,linux-firmware-amdgpu-carrizo,linux-firmware-amdgpu-cezanne,linux-firmware-amdgpu-fiji,linux-firmware-amdgpu-hawaii,linux-firmware-amdgpu-license,linux-firmware-amdgpu-misc,linux-firmware-amdgpu-navi10,linux-firmware-amdgpu-navi14,linux-firmware-amdgpu-navi21,linux-firmware-amdgpu-navi22,linux-firmware-amdgpu-navi23,linux-firmware-amdgpu-navi24,linux-firmware-amdgpu-navi31,linux-firmware-amdgpu-navi32,linux-firmware-amdgpu-oland,linux-firmware-amdgpu-polaris10,linux-firmware-amdgpu-polaris11,linux-firmware-amdgpu-polaris12,linux-firmware-amdgpu-raven,linux-firmware-amdgpu-rembrandt,linux-firmware-amdgpu-renoir,linux-firmware-amdgpu-stoney,linux-firmware-amdgpu-tonga,linux-firmware-amdgpu-topaz,linux-firmware-amdgpu-vega10,linux-firmware-amdgpu-vega12,linux-firmware-amdnpu-license,linux-firmware-amdxdna,linux-firmware-ath10k,linux-firmware-ath10k-license,linux-firmware-ath10k-qca4019,linux-firmware-ath10k-qca6174,linux-firmware-ath10k-qca9377,linux-firmware-ath10k-qca9887,linux-firmware-ath10k-qca9888,linux-firmware-ath10k-qca988x,linux-firmware-ath10k-qca9984,linux-firmware-ath10k-qca99x0,linux-firmware-ath10k-wcn3990,linux-firmware-ath11k,linux-firmware-ath11k-ipq5018,linux-firmware-ath11k-ipq6018,linux-firmware-ath11k-ipq8074,linux-firmware-ath11k-qca2066,linux-firmware-ath11k-qca6390,linux-firmware-ath11k-qca6698aq,linux-firmware-ath11k-qcn9074,linux-firmware-ath11k-wcn6750,linux-firmware-ath11k-wcn6855,linux-firmware-ath12k,linux-firmware-ath12k-qcn9274,linux-firmware-ath12k-wcn7850,linux-firmware-ath3k,linux-firmware-ath6k,linux-firmware-ath9k,linux-firmware-atheros-license,linux-firmware-e100,linux-firmware-e100-license,linux-firmware-i915,linux-firmware-i915-license,linux-firmware-ibt,linux-firmware-ibt-11-5,linux-firmware-ibt-12-16,linux-firmware-ibt-17,linux-firmware-ibt-18,linux-firmware-ibt-20,linux-firmware-ibt-hw-37-7,linux-firmware-ibt-hw-37-8,linux-firmware-ibt-license,linux-firmware-ibt-misc,linux-firmware-iwlwifi,linux-firmware-iwlwifi-135-6,linux-firmware-iwlwifi-3160-17,linux-firmware-iwlwifi-6000-4,linux-firmware-iwlwifi-6000g2a-6,linux-firmware-iwlwifi-6000g2b-6,linux-firmware-iwlwifi-6050-5,linux-firmware-iwlwifi-7260,linux-firmware-iwlwifi-7265,linux-firmware-iwlwifi-7265d,linux-firmware-iwlwifi-8000c,linux-firmware-iwlwifi-8265,linux-firmware-iwlwifi-9000,linux-firmware-iwlwifi-9260,linux-firmware-iwlwifi-license,linux-firmware-iwlwifi-misc,linux-firmware-license,linux-firmware-liquidio,linux-firmware-microcode-amd,linux-firmware-radeon,linux-firmware-radeon-license,linux-firmware-rtl-license,linux-firmware-rtl-nic,linux-firmware-rtl8168,linux-firmware-rtl8188,linux-firmware-rtl8192,linux-firmware-rtl8192ce,linux-firmware-rtl8192cu,linux-firmware-rtl8192su,linux-firmware-rtl8703,linux-firmware-rtl8710,linux-firmware-rtl8723,linux-firmware-rtl8761,linux-firmware-rtl8812,linux-firmware-rtl8814,linux-firmware-rtl8821,linux-firmware-rtl8822,linux-firmware-rtl8851,linux-firmware-rtl8852,linux-firmware-rtl8922,linux-firmware-whence-license,linux-libc-headers-dev,llvm,llvm-dev,locale-base-c,locale-base-en-gb,locale-base-en-us,lshw,luajit,m4,make,make-dev,matchbox-terminal,md4c,media-ctl,mesa-demos,mesa-demos-info,mesa-megadriver,mesa-tools,mesa-vulkan-drivers,mobile-broadband-provider-info,mokutil,mpg123,mpv,mtdev,ncurses-dev,netplan,nettle,nettle-dev,nlohmann-json,numactl,nvme-cli,ofono,opencv,opencv-apps,opencv-samples,openjpeg,openssl-dev,packagegroup-amd-gpu-hang,packagegroup-amd-gstreamer,packagegroup-amd-secure-vaapi,packagegroup-amd-uprof,packagegroup-amd-utils,packagegroup-base,packagegroup-base-extended,packagegroup-base-ipv6,packagegroup-base-nfs,packagegroup-base-zeroconf,packagegroup-core-buildessential,packagegroup-core-weston,packagegroup-distro-base,packagegroup-machine-base,pango,parted,perf,perl-dev,perl-module-attributes,perl-module-base,perl-module-builtin,perl-module-bytes,perl-module-carp,perl-module-class-struct,perl-module-constant,perl-module-cwd,perl-module-data-dumper,perl-module-dynaloader,perl-module-errno,perl-module-exporter,perl-module-exporter-heavy,perl-module-fcntl,perl-module-feature,perl-module-file-basename,perl-module-file-compare,perl-module-file-copy,perl-module-file-find,perl-module-file-glob,perl-module-file-path,perl-module-file-spec,perl-module-file-spec-unix,perl-module-file-stat,perl-module-file-temp,perl-module-getopt-long,perl-module-getopt-long-parser,perl-module-io,perl-module-io-file,perl-module-io-handle,perl-module-io-seekable,perl-module-list-util,perl-module-mro,perl-module-overload,perl-module-overload-numbers,perl-module-overloading,perl-module-parent,perl-module-pod-usage,perl-module-posix,perl-module-re,perl-module-scalar-util,perl-module-selectsaver,perl-module-symbol,perl-module-term-cap,perl-module-text-parsewords,perl-module-thread-queue,perl-module-threads,perl-module-threads-shared,perl-module-tie-hash,perl-module-xsloader,pkgconf,python3-asyncio,python3-audio,python3-cffi,python3-codecs,python3-compile,python3-compression,python3-core,python3-crypt,python3-ctypes,python3-cycler,python3-datetime,python3-dateutil,python3-dbus,python3-debugger,python3-dev,python3-difflib,python3-doctest,python3-email,python3-fcntl,python3-html,python3-image,python3-io,python3-json,python3-kiwisolver,python3-logging,python3-math,python3-matplotlib,python3-mime,python3-misc,python3-mmap,python3-multiprocessing,python3-netclient,python3-netifaces,python3-netserver,python3-numbers,python3-numpy,python3-opencv,python3-packaging,python3-pickle,python3-pillow,python3-pip,python3-pkgutil,python3-plistlib,python3-pprint,python3-profile,python3-pycparser,python3-pydoc,python3-pygments,python3-pyparsing,python3-pytz,python3-pyyaml,python3-rich,python3-setuptools,python3-shell,python3-six,python3-stringold,python3-threading,python3-tomllib,python3-unittest,python3-unixadmin,python3-xml,python3-xmlrpc,qhull,read-edid,rpcbind,seatd,sed,sed-dev,shaderc,shadow-dev,shadow-securetty-dev,shared-mime-info-locale-en-gb,shunit2,slang,spidev-test,spirv-headers-dev,spirv-tools,spirv-tools-dev,spitools,stress-ng,tar,tbb,ttf-dejavu-common,ttf-dejavu-sans,ttf-dejavu-sans-mono,ttf-dejavu-serif,udev-extraconf,udev-extraconf-automount,udev-extraconf-autonet,umr,unzip,unzip-dev,util-linux,util-linux-addpart,util-linux-bits,util-linux-blkdiscard,util-linux-blkid,util-linux-blkpr,util-linux-blkzone,util-linux-blockdev,util-linux-cal,util-linux-cfdisk,util-linux-chcpu,util-linux-chfn,util-linux-chmem,util-linux-choom,util-linux-chrt,util-linux-chsh,util-linux-col,util-linux-colcrt,util-linux-colrm,util-linux-column,util-linux-coresched,util-linux-ctrlaltdel,util-linux-delpart,util-linux-dmesg,util-linux-eject,util-linux-enosys,util-linux-exch,util-linux-fadvise,util-linux-fallocate,util-linux-fdisk,util-linux-fincore,util-linux-findfs,util-linux-fsck.cramfs,util-linux-fsfreeze,util-linux-fstrim,util-linux-getopt,util-linux-hardlink,util-linux-hexdump,util-linux-hwclock,util-linux-ionice,util-linux-ipcmk,util-linux-ipcrm,util-linux-ipcs,util-linux-irqtop,util-linux-isosize,util-linux-kill,util-linux-last,util-linux-lastlog2,util-linux-ldattach,util-linux-logger,util-linux-look,util-linux-losetup,util-linux-lsclocks,util-linux-lscpu,util-linux-lsfd,util-linux-lsipc,util-linux-lsirq,util-linux-lslocks,util-linux-lslogins,util-linux-lsmem,util-linux-lsns,util-linux-mcookie,util-linux-mesg,util-linux-mkfs,util-linux-mkfs.cramfs,util-linux-more,util-linux-mountpoint,util-linux-namei,util-linux-nologin,util-linux-nsenter,util-linux-partx,util-linux-pipesz,util-linux-pivot-root,util-linux-prlimit,util-linux-readprofile,util-linux-rename,util-linux-renice,util-linux-resizepart,util-linux-rev,util-linux-rfkill,util-linux-rtcwake,util-linux-runuser,util-linux-script,util-linux-scriptlive,util-linux-scriptreplay,util-linux-setarch,util-linux-setpgid,util-linux-setpriv,util-linux-setsid,util-linux-setterm,util-linux-sfdisk,util-linux-su,util-linux-swaplabel,util-linux-switch-root,util-linux-taskset,util-linux-uclampset,util-linux-ul,util-linux-unshare,util-linux-utmpdump,util-linux-uuidd,util-linux-uuidgen,util-linux-uuidparse,util-linux-waitpid,util-linux-wall,util-linux-wdctl,util-linux-whereis,util-linux-wipefs,util-linux-write,util-linux-zramctl,util-macros-dev,vim,vim-common,vim-help,vim-syntax,vim-tutor,vim-vimrc,vim-xxd,vte-locale-en-gb,vulkan-headers,vulkan-headers-dev,vulkan-tools,wayland,wayland-dev,wayland-protocols,wayland-protocols-dev,wayland-utils,weston,weston-examples,weston-headlessboot-hotplug,weston-init,weston-xwayland,wpa-supplicant,wpa-supplicant-cli,wpa-supplicant-passphrase,wpa-supplicant-plugins,xcb-proto-dev,xkbcomp,xkeyboard-config,xkeyboard-config-locale-en-gb,xlsfonts,xorgproto-dev,xrandr,xrandr-dev,xtrans-dev,xwayland,xz,xz-dev,zstd,zstd-dev
+Filename: ./weston-upgrade_1.0_all.deb
+Size: 6398
+MD5sum: 7c5904bdae2371cb7eac83277903a1f2
+SHA1: 74b6ee61999eb7d5ae5c322815ef156bd0496c13
+SHA256: 17555a55f7299d983e0c7292e5ef70e9a76f639575a38e69be9c711ef6ad0222
+SHA512: d87fe6ef835edcaf9faa501d2ff1782578adb1cf803893e47ca67cb78f1be6f7cda493452d41d9dec40400a1ced0a39dc3017087ab36ea814ec161261f1481e8
+Description: upgrade core-image-minimal to the core-image-weston-amd package set
+
