@@ -1,0 +1,1659 @@
+Package: adwaita-icon-theme-cursors
+Architecture: all
+Version: 49.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: x11/gnome
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: gdk-pixbuf, gtk+3, hicolor-icon-theme
+Filename: ./adwaita-icon-theme-cursors_49.0-r0_all.deb
+Size: 291876
+MD5sum: aa68e3e4c79bb6998c3af0102a2270fe
+SHA1: 375b9f5319cd988abc5434fb971ea7c8afeabbbb
+SHA256: 2cc3d834398bdc122d7a01523bdaec5a5a393cabb60314d153a0cbae23eea6a5
+SHA512: 852287e340191b9dfe9bc3a06a8df4a943d50bd986e001ebcbfc7a9f57d256f38581ea09e0d200c38b9b41351a3f6078311959ddf0670cf99944a2322c48fcee
+Homepage: https://gitlab.gnome.org/GNOME/adwaita-icon-theme
+Description: GTK+ icon theme
+ The Adwaita icon theme is the default icon theme of the GNOME desktop
+ This package package contains an icon theme for Gtk+ 3 applications.
+OE: adwaita-icon-theme
+PackageArch: all
+
+Package: adwaita-icon-theme-dbg
+Architecture: all
+Version: 49.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./adwaita-icon-theme-dbg_49.0-r0_all.deb
+Size: 904
+MD5sum: cc2b10e74da328ff907a4343021bb375
+SHA1: 42f07f44cf9d93c391a785bf61eed2aeb63bcdcb
+SHA256: 7e7b47486af8b4d2eda618ff64d695e6c2e70761e80e32618a2a8426533b129c
+SHA512: b2dc0ce4ffa779b8949a2f9ef8514d1a116c1a1fc2ac4c1d258e16b9dc489629a1a6930806378a6aa05c914a78c31582dbcb325077a81bf878c96665e149fded
+Homepage: https://gitlab.gnome.org/GNOME/adwaita-icon-theme
+Description: GTK+ icon theme - Debugging files
+ The Adwaita icon theme is the default icon theme of the GNOME desktop
+ This package package contains an icon theme for Gtk+ 3 applications.
+ This package contains ELF symbols and related sources for debugging
+ purposes.
+OE: adwaita-icon-theme
+PackageArch: all
+
+Package: adwaita-icon-theme-dev
+Architecture: all
+Version: 49.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: adwaita-icon-theme (= 49.0-r0), gdk-pixbuf-dev, gtk+3-dev, hicolor-icon-theme-dev
+Filename: ./adwaita-icon-theme-dev_49.0-r0_all.deb
+Size: 1128
+MD5sum: 6cd559d91b57872ea211b05ac4dd6324
+SHA1: b4d1392ea17dc73ec6c26f1c905b8fc4bd2b2bb7
+SHA256: a284b734b48ce79a00e382ae04b92c2966c9aaaccc833f70d3e4633fc228eb9e
+SHA512: 26fd41f380ca5e02d8bf6186fca5016ade60f9cd76a4ae5c1781d1c2d8fe462a75c9abff8075fc4c326d648ec25d48b80d6d904f096d7994ff11c7af6e74c085
+Homepage: https://gitlab.gnome.org/GNOME/adwaita-icon-theme
+Description: GTK+ icon theme - Development files
+ The Adwaita icon theme is the default icon theme of the GNOME desktop
+ This package package contains an icon theme for Gtk+ 3 applications.
+ This package contains symbolic links, header files, and related items
+ necessary for software development.
+OE: adwaita-icon-theme
+PackageArch: all
+
+Package: adwaita-icon-theme-symbolic
+Architecture: all
+Version: 49.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: x11/gnome
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: gdk-pixbuf, gtk+3, hicolor-icon-theme
+Filename: ./adwaita-icon-theme-symbolic_49.0-r0_all.deb
+Size: 92108
+MD5sum: b06a71d96271068dc66f63f4957ac474
+SHA1: 31aa5d5f9cd8f2f247effb1517eff66ce8fc5241
+SHA256: e8b16b100bea2e12695e0355f0a8cc3c08f753febccbf409c1ea14f9cba495aa
+SHA512: c1eeb6be081bdaeecb862b19f4df5346cf8f24782fd6acd4e88b9657650f45daf818f804e44f98fb7b80a613a3e69675e7c5218df7e1adb59d9297c4162f50b3
+Homepage: https://gitlab.gnome.org/GNOME/adwaita-icon-theme
+Description: GTK+ icon theme
+ The Adwaita icon theme is the default icon theme of the GNOME desktop
+ This package package contains an icon theme for Gtk+ 3 applications.
+OE: adwaita-icon-theme
+PackageArch: all
+
+Package: adwaita-icon-theme
+Architecture: all
+Version: 49.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: x11/gnome
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: gnome-icon-theme
+Depends: gdk-pixbuf, gtk+3, hicolor-icon-theme
+Conflicts: gnome-icon-theme
+Replaces: gnome-icon-theme
+Filename: ./adwaita-icon-theme_49.0-r0_all.deb
+Size: 73432
+MD5sum: a18a9aa0f4c086fc161b92623a1abed0
+SHA1: 69e2f889c232576ff773613be23a9b77e22987d4
+SHA256: 67f767f840966f42607204ff60fa75fe41d6d551e051de0b6cbd10c78d27c74e
+SHA512: f1ce1766cacdc6a5b2251aa5b35992c420a09e12849abb19ea150c0ffe2f48a1f6715a5c38c6981ee7f6c0672a3f1ce9f4bfc37684a02c2322ba21966d2db2c0
+Homepage: https://gitlab.gnome.org/GNOME/adwaita-icon-theme
+Description: GTK+ icon theme
+ The Adwaita icon theme is the default icon theme of the GNOME desktop
+ This package package contains an icon theme for Gtk+ 3 applications.
+OE: adwaita-icon-theme
+PackageArch: all
+
+Package: alsa-topology-conf
+Architecture: all
+Version: 1.2.5.1-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./alsa-topology-conf_1.2.5.1-r0_all.deb
+Size: 10968
+MD5sum: f88d52869b9ad8833c029250b47f9510
+SHA1: 677c412ebeda0ea5e6356ef8d0349b45f8af8af9
+SHA256: 5e53e85679e9782c233f363b818adecc0968afc80e7214fd573e04ed4afaea9f
+SHA512: b7c6d229a8307459d898a28c48d155e22983999877ba5fec4590f57e17fa56061926c442838d723cacc64c48d54d3db665a87b16c9c6eca0b770a7c60f86df48
+Homepage: https://alsa-project.org
+Description: ALSA topology configuration files
+ Provides a method for audio drivers to load their mixers, routing, PCMs
+ and capabilities from user space at runtime without changing any driver
+ source code.
+OE: alsa-topology-conf
+PackageArch: all
+
+Package: alsa-ucm-conf
+Architecture: all
+Version: 1.2.15.3-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./alsa-ucm-conf_1.2.15.3-r0_all.deb
+Size: 81452
+MD5sum: 2c3b340b08dfed4190360fd0c1a711e7
+SHA1: d3e45887f1c9ab08b2a26530cc8f04f939d5dfbd
+SHA256: 4aad2f56288b724d9d2f61dbf28c82b880ef10fc1fff3ef32cd278c7b2b33a43
+SHA512: 8983e5d22cac69f3c384976658b658845697dd9d9282a48b809746845301a507cbc4950f0510edbda61c31e52deb0d1e8b0769724404549432411c11f2e94d6d
+Homepage: https://alsa-project.org
+Description: ALSA Use Case Manager configuration
+ This package contains ALSA Use Case Manager configuration of audio
+ input/output names and routing for specific audio hardware. They can be
+ used with the alsaucm tool.
+OE: alsa-ucm-conf
+PackageArch: all
+
+Package: amdgpu-firmware-dbg
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./amdgpu-firmware-dbg_1.0-r0_all.deb
+Size: 848
+MD5sum: 498ebe511d4c55067f4863c996b3f543
+SHA1: 5f46eb593cfe5e5b9672c8e78de4c4e22eb9fed9
+SHA256: 94de045273c30c41748c8a4d08253d26aba4ab96516695b48d39bb7ac6555bf7
+SHA512: d99e3a51306f8c01b46eb8e0c808f4801aa8020d9012537d6bcf0259a6824dab87da11628cf9db69a8c94114b410889506b378cfd0c2631668bc21eb630522ec
+Description: amdgpu-firmware version 1.0-r0 - Debugging files
+ These binaries provide kernel support for newer AMD GPUs  This package
+ contains ELF symbols and related sources for debugging purposes.
+OE: amdgpu-firmware
+PackageArch: all
+
+Package: amdgpu-firmware-dev
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: amdgpu-firmware (= 1.0-r0)
+Filename: ./amdgpu-firmware-dev_1.0-r0_all.deb
+Size: 876
+MD5sum: d3dfddc146fc15fda5b64e3387754b4b
+SHA1: 3adb94ad620b088bdefdcfa7aa8658d9288059d3
+SHA256: 6d1f65a8ec4e40c628a374b8cb8955e842b26755250a7e120fcc44d4ae22ca2d
+SHA512: 139ce4c5ad33b0395383e02ae2f93713cf6dbbb7a3ffbf39f46bb8b03171df58d188cdeb0c1b5c1424a88afe5bd2ba5aaf981363dcb44f55caaaf512b9fb0818
+Description: amdgpu-firmware version 1.0-r0 - Development files
+ These binaries provide kernel support for newer AMD GPUs  This package
+ contains symbolic links, header files, and related items necessary for
+ software development.
+OE: amdgpu-firmware
+PackageArch: all
+
+Package: amdgpu-firmware
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: linux-firmware-amdgpu
+Conflicts: linux-firmware-amdgpu
+Replaces: linux-firmware-amdgpu
+Filename: ./amdgpu-firmware_1.0-r0_all.deb
+Size: 1923604
+MD5sum: 780564e2545d1f618511cedfc270f028
+SHA1: 671d263b8ae1fb4a33cd6256bea0dd9d78256153
+SHA256: 778d9d3ee448a4ed951db73b5ce9535ee1a6f2a7cabf4bd7bd587d639f24e4ed
+SHA512: 5ed4a89767d3cd633e5ff0d323ee1f54d7b03b1f4087de3cc83f2be21c8ed473ee1922eb168058aabfdd0cb62d88a69f8b793997dbd74142e16c5b2086df52fc
+Description: amdgpu-firmware version 1.0-r0
+ These binaries provide kernel support for newer AMD GPUs
+OE: amdgpu-firmware
+PackageArch: all
+
+Package: ca-certificates-dbg
+Architecture: all
+Version: 20260223-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./ca-certificates-dbg_20260223-r0_all.deb
+Size: 944
+MD5sum: 8fc4c2430bcd2b206d1d2a4bf7014942
+SHA1: 3cff2d797c2fba3e9b6e29a9945ee1e996eb739c
+SHA256: e277bfd001306e5535ecada632c72317bdca73eb2d8512b2abdbc6c7cad7338b
+SHA512: a82feb6b714c4d250509b03eaed6b27b37af3dc6ef8bb96369f0e124d68df61987e56ef926ff1331dae5f6a94a3152c3a62c0f9e3959115e5651cfbeba6ff3ee
+Homepage: http://packages.debian.org/sid/ca-certificates
+Description: Common CA certificates - Debugging files
+ This package includes PEM files of CA certificates to allow SSL-based
+ applications to check for the authenticity of SSL connections. This
+ derived from Debian's CA Certificates.  This package contains ELF symbols
+ and related sources for debugging purposes.
+OE: ca-certificates
+PackageArch: all
+
+Package: ca-certificates-dev
+Architecture: all
+Version: 20260223-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: ca-certificates (= 20260223-r0), openssl-bin-dev, openssl-dev
+Filename: ./ca-certificates-dev_20260223-r0_all.deb
+Size: 988
+MD5sum: aa41e38218e1c12c0058ed4a0e817962
+SHA1: 8fb80aa46741e5ed871eca9724884643e7346e78
+SHA256: 16ea88afefc7794e94930beee30c4459027f2eae1a7c58f0d026790c7da96141
+SHA512: d065a77958f0bb80fc2d209a837dd0c995e8614c26493d7d501f256399b204a51fe1939dd95d770017c59bc3c825f4099d8b45fc9f5e28915451a76c1cf7c4e6
+Homepage: http://packages.debian.org/sid/ca-certificates
+Description: Common CA certificates - Development files
+ This package includes PEM files of CA certificates to allow SSL-based
+ applications to check for the authenticity of SSL connections. This
+ derived from Debian's CA Certificates.  This package contains symbolic
+ links, header files, and related items necessary for software
+ development.
+OE: ca-certificates
+PackageArch: all
+
+Package: ca-certificates
+Architecture: all
+Version: 20260223-r0
+Multi-Arch: foreign
+Priority: optional
+Section: misc
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: openssl, openssl-bin
+Filename: ./ca-certificates_20260223-r0_all.deb
+Size: 129140
+MD5sum: 9b090d8fc3097d7f96b82d157f218630
+SHA1: cae1cbd95ad49fb3343ae9ed61fe48318b1d9023
+SHA256: feaf2650c87a5619ce9883a25e402188fc9e7bc79a8c0384c54e6ec5a7281f89
+SHA512: 0a4f88a4adc3e5095813fe609d3701b68293a161c8901c8537f1a60607dc90de46dacc2c7e656173470be6181dfe880422c17229f7650fa14e21dcac375887e0
+Homepage: http://packages.debian.org/sid/ca-certificates
+Description: Common CA certificates
+ This package includes PEM files of CA certificates to allow SSL-based
+ applications to check for the authenticity of SSL connections. This
+ derived from Debian's CA Certificates.
+OE: ca-certificates
+PackageArch: all
+
+Package: encodings-dbg
+Architecture: all
+Version: 1:1.1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./encodings-dbg_1.1.0-r0_all.deb
+Size: 884
+MD5sum: ce2f8e22bdf800703ed179c88d3e406e
+SHA1: 171bf4a54de31d94285f51196f0e2c8b030e47d6
+SHA256: 5da59d75ceab79d9970e7d7008b6aaf26f6596f89f24fa60cb643a5f0ad93ba6
+SHA512: ae7a5d8285912c6380a59f14c2911adbb4d2cfc96f14e63ce6574ad3c747f0b5e527a7cb315c050616c25de5a36c1c7615e80a5c86d1ec2e2c619ba46810373e
+Homepage: http://www.x.org
+Description: The Xorg font encoding files - Debugging files
+ The encodings that map to specific characters for a number of Xorg and
+ common fonts.  This package contains ELF symbols and related sources for
+ debugging purposes.
+OE: encodings
+PackageArch: all
+
+Package: encodings-dev
+Architecture: all
+Version: 1:1.1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: encodings (= 1:1.1.0-r0)
+Filename: ./encodings-dev_1.1.0-r0_all.deb
+Size: 912
+MD5sum: e61bc41998d2451142cfab0d2d0ff6e3
+SHA1: 66333544ceb5070f6ea6a12e7fec47ac283a4cb6
+SHA256: 45cfd1852194bb96e0849463690b01e81892ff888c5609192ac8b341d6fe9c98
+SHA512: c6058627b88fd54de08e78697845b4ee9fb2ab6579a9e2c51377a61bd9a6b5a66ec2110da5d476841a742b9efe1207f1913dc21fcb517431787d34cfb9a3a3df
+Homepage: http://www.x.org
+Description: The Xorg font encoding files - Development files
+ The encodings that map to specific characters for a number of Xorg and
+ common fonts.  This package contains symbolic links, header files, and
+ related items necessary for software development.
+OE: encodings
+PackageArch: all
+
+Package: encodings
+Architecture: all
+Version: 1:1.1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: x11/fonts
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./encodings_1.1.0-r0_all.deb
+Size: 573400
+MD5sum: 3f9b380bbcf7bab09e4eaa53668a5af3
+SHA1: 70a671e2c82c080d49ac1a02ffa69d2071f5522a
+SHA256: bd6c8b0d4c00c33b35ae18dc67bb9c4a281fb07d8b031d74aba38f73365fc0d5
+SHA512: 2bea5f184679410e24e9b601d16417b651c64407cb68a48ea75436f5662200aa7e81bcc9cef5c99073b77cbbcbfcdf029ef9c0a2f29bb82887f278a200bff976
+Homepage: http://www.x.org
+Description: The Xorg font encoding files
+ The encodings that map to specific characters for a number of Xorg and
+ common fonts.
+OE: encodings
+PackageArch: all
+
+Package: hicolor-icon-theme-dbg
+Architecture: all
+Version: 0.18-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./hicolor-icon-theme-dbg_0.18-r0_all.deb
+Size: 932
+MD5sum: c37d1cc4105c6cb756d8627528e2d05b
+SHA1: 778c56ad2d8c446a8ddca49870b6a2657f36f1de
+SHA256: 541d24a40a8fcd82e6d51fc3c8cc4aebfb7925e60f4a9f32aa1bbd5ce7d7e349
+SHA512: 723fa31aa208c313036eebbc555ecf1d8a4092f8cbc31eb8f9a44564f50c9d9429639a085496bf7ed8e97dcc94e0f796f767818050ca38b80272c0c96d0f127a
+Homepage: https://www.freedesktop.org/wiki/Software/icon-theme
+Description: Default icon theme that all icon themes automatically inherit from - Debugging files
+ The hicolor-icon-theme package contains a default fallback theme for
+ implementations of the icon theme specification.  This package contains
+ ELF symbols and related sources for debugging purposes.
+OE: hicolor-icon-theme
+PackageArch: all
+
+Package: hicolor-icon-theme-dev
+Architecture: all
+Version: 0.18-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: hicolor-icon-theme (= 0.18-r0)
+Filename: ./hicolor-icon-theme-dev_0.18-r0_all.deb
+Size: 1128
+MD5sum: bcd2dd4b19ef6228490950f9ea2793ae
+SHA1: af80a4792133b29493228c57803e65aeb4b4a075
+SHA256: 6f51e10192886d3e1ddbd6d89fadb83d25b0a1ed47c9f1011bf02418540128b7
+SHA512: 65534d986789120047e666e2ab62807127a4c2069c6b3fc6a9906e7f8236d2b561a7cdf063b9814f104b3f11cd57c561d7c8bc0ec084a1a8eda43b5b32e8f508
+Homepage: https://www.freedesktop.org/wiki/Software/icon-theme
+Description: Default icon theme that all icon themes automatically inherit from - Development files
+ The hicolor-icon-theme package contains a default fallback theme for
+ implementations of the icon theme specification.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+OE: hicolor-icon-theme
+PackageArch: all
+
+Package: hicolor-icon-theme
+Architecture: all
+Version: 0.18-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./hicolor-icon-theme_0.18-r0_all.deb
+Size: 7912
+MD5sum: bd65e8c0921b9b418b136fa4b50bd780
+SHA1: 7a34ea8fa99a3cb049c7366fffd7bee18ad2b7c6
+SHA256: cb70e874d6cd8ac1c595d0327bf1bc6b71d24cdf46ef7738f825ae6649b22dd7
+SHA512: a308fda971c72baff82717aa26bc613ba2837edda1434025ff3de5b3f02eaa7459dd4e654cdcba579da0a3bf882b616e532ebed1d5a2616170dfd1f52034855c
+Homepage: https://www.freedesktop.org/wiki/Software/icon-theme
+Description: Default icon theme that all icon themes automatically inherit from
+ The hicolor-icon-theme package contains a default fallback theme for
+ implementations of the icon theme specification.
+OE: hicolor-icon-theme
+PackageArch: all
+
+Package: initramfs-framework-base
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: initramfs-module-rootfs
+Filename: ./initramfs-framework-base_1.0-r0_all.deb
+Size: 3064
+MD5sum: 42846bf16dbe37a5c03d533aa991605b
+SHA1: 2d5a971aa27e20627baeacd6b4c2ce9a7bb25b25
+SHA256: 61de746053061515b87f7d5c7de10355bb685e80fb1960ecde6951142327e65e
+SHA512: 447bc4f1668891e7e87d5f8f28979a7a0512cf7ba3123b32073b27fe9525649068878c0acef3db5993d42e0ee87f699f14f9c34e7c42647209f245f4d453b1f8
+Description: Modular initramfs system
+ Modular initramfs system.
+OE: initramfs-framework
+PackageArch: all
+
+Package: initramfs-module-debug
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: initramfs-framework-base
+Filename: ./initramfs-module-debug_1.0-r0_all.deb
+Size: 1476
+MD5sum: 353cbe07291ae234c2343c49819b6518
+SHA1: a2e05e61df79b2df1b0baf4c6725d775208ed9f1
+SHA256: 03052ae0af2516764bf2c4c8fba67627b12718b4359145a5c2535c0fd7458a3f
+SHA512: ee21fe6bd042ea69c3cc9167f0f221bc53b148237bbe717b57caa35ab3943b552940ec01dda9fb6a2b652070327c77c98fbdc048a45a0f7548a67838d13508fa
+Description: initramfs dynamic debug support
+ Modular initramfs system.
+OE: initramfs-framework
+PackageArch: all
+
+Package: initramfs-module-e2fs
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: initramfs-framework-base
+Filename: ./initramfs-module-e2fs_1.0-r0_all.deb
+Size: 1168
+MD5sum: b4a3976f243a56e7bc5b7eb831246c9a
+SHA1: 06b374ce59463849fc6ea5b9df88b6c13de84ed9
+SHA256: 39c2af002fa64880174e5bee6ad935a719aec972a51afc7169f513be30b8c87c
+SHA512: e7d1d19ed3867d7107aba453986a8734ddf3242dbfebe36ccb90fae5f944dc7398194d1af3f0d82cff5634086dfccb5b513fa6926577763cf9c187b5eecdda40
+Description: initramfs support for ext4/ext3/ext2 filesystems
+ Modular initramfs system.
+OE: initramfs-framework
+PackageArch: all
+
+Package: initramfs-module-exec
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: initramfs-framework-base
+Filename: ./initramfs-module-exec_1.0-r0_all.deb
+Size: 1168
+MD5sum: 15072569008bfcfa3344ed0bc55d4cd3
+SHA1: 1676d17c8e29f6d954c126fe4e7bf218bccd3e8d
+SHA256: 2480c89c2e29d1f003f93d341f83651d7416ce5c7a57e5b90cce8c73c523f71d
+SHA512: 34687af41857b34ccb16e603c4cf6811b903925c9b821facc61b1c577dfd0314e7da8c038365e6613006052322ad19a631585b4b10a2c06e6599df096bf545a7
+Description: initramfs support for easy execution of applications
+ Modular initramfs system.
+OE: initramfs-framework
+PackageArch: all
+
+Package: initramfs-module-lvm
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: initramfs-framework-base
+Filename: ./initramfs-module-lvm_1.0-r0_all.deb
+Size: 968
+MD5sum: 0cc781e4d3229b53e268beebf32ee179
+SHA1: 952c0fa2f31a1542869e0568409d8b8c2f4e369e
+SHA256: d1b5dff5b7359f5a337fb0e2b052a4bb7ec8fb8668bdd4704790dd7fde4f7d6f
+SHA512: 68f82c2326bfbe82c58104b23cd1bea23b4b1b25a266a88f1f77fe511826dc4a9fce7a8cd90341a572644e3650ac48289f81b5f5365c36e251f467fb7978c912
+Description: initramfs lvm rootfs support
+ Modular initramfs system.
+OE: initramfs-framework
+PackageArch: all
+
+Package: initramfs-module-mdev
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: busybox-mdev, initramfs-framework-base
+Filename: ./initramfs-module-mdev_1.0-r0_all.deb
+Size: 1172
+MD5sum: 62a80d37c898fbc2500f6cc455a02de2
+SHA1: a56d19572251fb2e2913c3d740e459fc09eb9a49
+SHA256: c1c6d926e313b7efa8da29a7b616d257de253a38b0bc1182ce8b8d7b922216b7
+SHA512: 5e649578e5271c61d4c6caf5965edd764e51fea8a8c725ce64bcd6374ce2e155765b5b8cf50808468b706f2b7e37e7f445062dca7cde2681df050ae5963c139d
+Description: initramfs support for mdev
+ Modular initramfs system.
+OE: initramfs-framework
+PackageArch: all
+
+Package: initramfs-module-nfsrootfs
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: initramfs-framework-base
+Filename: ./initramfs-module-nfsrootfs_1.0-r0_all.deb
+Size: 1320
+MD5sum: d306dff85a7e1a6c13170881079d611f
+SHA1: 668bc35337fea0c63d14d9901deeea0a2ef2cbcc
+SHA256: c797379684bf4cd54fbd470f9ef25fbac958b0c0b8858074701f15ee4e7a8dcd
+SHA512: e8af86ba1d1d52d20b89cdf40f749f3d55332584468b61107e6aa5ef17344b4c737d8406c152be5c3c182b3a9b28f014ef8254ea832b0251ec39eb27626269c7
+Description: initramfs support for locating and mounting the root partition via nfs
+ Modular initramfs system.
+OE: initramfs-framework
+PackageArch: all
+
+Package: initramfs-module-overlayroot
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: initramfs-framework-base, initramfs-module-rootfs
+Filename: ./initramfs-module-overlayroot_1.0-r0_all.deb
+Size: 2516
+MD5sum: 29fdadba82c1cc64ae6b0e3ce751b88d
+SHA1: 777ba5234c78cca3de52d377cc96d0274707e960
+SHA256: 3f9d5dedce128a792f879f65d5788b442b5aa3c5f0505d34c20fa9636ec580e4
+SHA512: 4a9c0dd859efc73ac6ae48173234d1e9a7f6bceba5a0eaec7866f0801ced01ca132a020a224d13ffd4f527d8896efcd1b433bf84297ab9262d71dbff2999dfd4
+Description: initramfs support for mounting a RW overlay on top of a RO root filesystem
+ Modular initramfs system.
+OE: initramfs-framework
+PackageArch: all
+
+Package: initramfs-module-rootfs
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: initramfs-framework-base
+Filename: ./initramfs-module-rootfs_1.0-r0_all.deb
+Size: 1656
+MD5sum: e74172be1c242fdee19cf8d7f329c744
+SHA1: cf1449707688b678126bd4425e96c771aa29627c
+SHA256: 8db6331785fa089e0c9b77f4f04512ecb672393fe9fee80dfdc07857c056b97f
+SHA512: de4f39af9b1ba1ee32d2dfd5fb74e38f32c5229b03b840c014786cd309411325f468ba7c6d1ee956868e33c325a83ad64c09584655238b2e8b8af023104878cf
+Description: initramfs support for locating and mounting the root partition
+ Modular initramfs system.
+OE: initramfs-framework
+PackageArch: all
+
+Package: initramfs-module-setup-live-dbg
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./initramfs-module-setup-live-dbg_1.0-r0_all.deb
+Size: 836
+MD5sum: e044febfb5c068e1349eb636bbe4ac89
+SHA1: 0d3ca3514c60b5b1243ee11008cb470fefb1ca1a
+SHA256: 460a8f4b38b6b190bfc464dd3481c284bbeda173e6d2c482489b402e29809f1d
+SHA512: fc4ce5e907399243953d21e8f3bdba724ef985c37b53239d75d4d718a1df30ae985efd84f3ee35f998ae0d3671537b03c8e6a8448c827981d8420575eb22e88b
+Description: initramfs-framework module for live booting - Debugging files
+ initramfs-framework module for live booting.  This package contains ELF
+ symbols and related sources for debugging purposes.
+OE: initramfs-module-setup-live
+PackageArch: all
+
+Package: initramfs-module-setup-live-dev
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: initramfs-framework-base-dev, initramfs-module-setup-live (= 1.0-r0), udev-extraconf-dev
+Filename: ./initramfs-module-setup-live-dev_1.0-r0_all.deb
+Size: 888
+MD5sum: 7a03e5f998c9e9575c6d7de9db9d36f7
+SHA1: 661408735a459ce4d2088fd26f079fa6c1a2319a
+SHA256: 331a22c880586fa9726b6ae6f86340fe4f6003fcdd699a02d6ecca00fe94ffb0
+SHA512: 56e684dfca1544da5374e9149935dad88dcee0b59d3f8d4bf0abdca1f5111ead595fb2be1417588c31289b7dede0371df2bdff1d0d42a7abb398fbc0af9cfb29
+Description: initramfs-framework module for live booting - Development files
+ initramfs-framework module for live booting.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+OE: initramfs-module-setup-live
+PackageArch: all
+
+Package: initramfs-module-setup-live
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: initramfs-framework-base, udev-extraconf
+Filename: ./initramfs-module-setup-live_1.0-r0_all.deb
+Size: 1620
+MD5sum: a5ed3e0bd9b1e65c3ec26a9ce66a6523
+SHA1: 868f8cf71b86d202c871b65f63db047e9e7b06ca
+SHA256: 4c4e1530f9b99437fba64d24bb24688bad8ee764a04201901ad9eb4ec8268f88
+SHA512: 778e5aadf732b1617b3c3c08523f49b1a18156548fbfdf3a5504eac9d92458cfc582af28d542c70aed8ece90dc9e122c4a0ea88bfcfa8bcf92050a33c2a006d8
+Description: initramfs-framework module for live booting
+ initramfs-framework module for live booting.
+OE: initramfs-module-setup-live
+PackageArch: all
+
+Package: initramfs-module-udev
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: initramfs-framework-base, udev
+Filename: ./initramfs-module-udev_1.0-r0_all.deb
+Size: 1396
+MD5sum: 21f7d04c91133b2ae42479ba77b3b4ec
+SHA1: 07c7b51e3cb15848909164efac526b6525a5abf6
+SHA256: 21e375a1a33ce512965a9bd8bfe3798012f87e5554983358a4c87cd72beecd6c
+SHA512: 0ce05245781ead2b3e311d280b082dcbb2a31d879bbddd2e5e3c17008947aef662c1c831dec3fc210e255240de4ffef1cc702bb1ff0fcfd851bd096018be1aef
+Description: initramfs support for udev
+ Modular initramfs system.
+OE: initramfs-framework
+PackageArch: all
+
+Package: iso-codes-dbg
+Architecture: all
+Version: 4.20.1-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./iso-codes-dbg_4.20.1-r0_all.deb
+Size: 988
+MD5sum: 9eaac017e8209f2307a5c90d38ddbc4b
+SHA1: 48cdd462fbadf7e0b94a2ef378ab20cd33c76208
+SHA256: a93e75e530f22cea06e43d743e3ea73bbdc027cdc83d832a924b18835631aced
+SHA512: 2328a43a0831811cd1bda3def1fbcd46d3b2b7b627d1d67d63d49a62513f6bd6e732d267145680cb79182165493dded98d26f5ca6fe4ac642fd062a330796ece
+Homepage: https://salsa.debian.org/iso-codes-team/iso-codes
+Description: ISO language, territory, currency, script codes and their translations - Debugging files
+ Provides lists of various ISO standards (e.g. country, language, language
+ scripts, and currency names) in one place, rather than repeated in many
+ programs throughout the system.  This package contains ELF symbols and
+ related sources for debugging purposes.
+OE: iso-codes
+PackageArch: all
+
+Package: iso-codes-dev
+Architecture: all
+Version: 4.20.1-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: iso-codes (= 4.20.1-r0)
+Filename: ./iso-codes-dev_4.20.1-r0_all.deb
+Size: 1412
+MD5sum: 158688373110672238b6c942d035416d
+SHA1: bceab541062bdbcade362dce33a0bcbb3a249cb0
+SHA256: 06bb5bde83a4099bbd21a68e6d130b586e9f5590a3faeb268c387ff420e05d31
+SHA512: 2023022c83b69b57df732124f936f7cd757d9cc940d5a08d4c9ff92cdc901b9c55eaf9e23bd69c2a833c9356e08a8857595d4b060870bbaef39082ef82eda822
+Homepage: https://salsa.debian.org/iso-codes-team/iso-codes
+Description: ISO language, territory, currency, script codes and their translations - Development files
+ Provides lists of various ISO standards (e.g. country, language, language
+ scripts, and currency names) in one place, rather than repeated in many
+ programs throughout the system.  This package contains symbolic links,
+ header files, and related items necessary for software development.
+OE: iso-codes
+PackageArch: all
+
+Package: iso-codes
+Architecture: all
+Version: 4.20.1-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./iso-codes_4.20.1-r0_all.deb
+Size: 258508
+MD5sum: 6bb797b1d27ec20c654638c2f0b0dc84
+SHA1: 22e097529e0847257543ca4ffa60545dd691e36b
+SHA256: 5a8c155b3317e8c6dc947c1bec1925c45607c9b9f9a96cd9a30149f019db60f3
+SHA512: 4b19bda43c013696a746ff7e98f5a148c9f51a4a26dab68736f7d24c9027909d5e74fce13cf8f31587fbda86012ce30ddd9dc993ed82b2566eede39ccbdcdb22
+Homepage: https://salsa.debian.org/iso-codes-team/iso-codes
+Description: ISO language, territory, currency, script codes and their translations
+ Provides lists of various ISO standards (e.g. country, language, language
+ scripts, and currency names) in one place, rather than repeated in many
+ programs throughout the system.
+OE: iso-codes
+PackageArch: all
+
+Package: liberation-fonts
+Architecture: all
+Version: 1:2.1.5-r0
+Multi-Arch: foreign
+Priority: optional
+Section: x11/fonts
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: fontconfig-utils
+Filename: ./liberation-fonts_2.1.5-r0_all.deb
+Size: 1471232
+MD5sum: e50b9cbbc4749f1602370cc9883db297
+SHA1: b280253c94d2f6a84484e15df3f2d36dd6b62d5b
+SHA256: 8e92accd9380be2ae91be83b4f04043150f84242706a21667d22f71ad6926e4b
+SHA512: c0200a855e2fcbb4c660d3e5757242c4ab63da24abda0e730ca98bf82ed34d3eff60dc0b1884716d3ee8edfb9e4a8d132c97a7bedc900daa8b23531b5cba5140
+Homepage: https://github.com/liberationfonts/liberation-fonts
+Description: Liberation(tm) Fonts
+ The Liberation(tm) Fonts is a font family originally created by
+ Ascender(c) which aims at metric compatibility with Arial, Times New
+ Roman, Courier New.
+OE: liberation-fonts
+PackageArch: all
+
+Package: netbase-dbg
+Architecture: all
+Version: 1:6.5-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./netbase-dbg_6.5-r0_all.deb
+Size: 884
+MD5sum: 46e828bceceef1fe45be5ded3e21510b
+SHA1: efcbd3f8a27403ddcf04bcfe492c90fc7764f642
+SHA256: 865b555ab7743c64b5aaed8c46b5349fa1ddc6bd98dfc463e864b85e89c76c29
+SHA512: 18d2cdb6f57a154243bdbcd9b9b4c0c6ebed50715b4f75d355e0eb4f56dae837277258c006238250cbecdcd51e1d73d4ed6c9a1a1e08d084940efaffc06b70e6
+Homepage: http://packages.debian.org/netbase
+Description: Basic TCP/IP networking support - Debugging files
+ This package provides the necessary infrastructure for basic TCP/IP based
+ networking  This package contains ELF symbols and related sources for
+ debugging purposes.
+OE: netbase
+PackageArch: all
+
+Package: netbase-dev
+Architecture: all
+Version: 1:6.5-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: netbase (= 1:6.5-r0)
+Filename: ./netbase-dev_6.5-r0_all.deb
+Size: 912
+MD5sum: 049bb8dff719a96a91fb52bfe71d3587
+SHA1: 032081937eca8c2e7d908870f130b7510095baf4
+SHA256: 776d0c940e49261ee68fb09120a6ade990f2ea376e0ddd0eb7a241daecd68585
+SHA512: cd54628751ae1ab6b7f8916b8b6afd76d810930fdbd460e0a6595ddcd240f768ae578de263e01e7fba6e193c9c0f824e2c18f1661e178cdc3dcb0767f7c417d1
+Homepage: http://packages.debian.org/netbase
+Description: Basic TCP/IP networking support - Development files
+ This package provides the necessary infrastructure for basic TCP/IP based
+ networking  This package contains symbolic links, header files, and
+ related items necessary for software development.
+OE: netbase
+PackageArch: all
+
+Package: netbase
+Architecture: all
+Version: 1:6.5-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./netbase_6.5-r0_all.deb
+Size: 8572
+MD5sum: d3d55b13e3d1b13f8913da0a78d66b05
+SHA1: a070fffcdad6759b19f887c957d216554387038a
+SHA256: 80e90d58e603d7344d9ad9632b920ecc238aa8bd364d9f48dbdaa122006ae432
+SHA512: 4bef3771b070cff7b23e47b3725f9a34167221279c8730c98d4d382e3b8a04417325873343b8efc08a6acaaac898f3d074b2e66900e28c66629c612acd6d9a49
+Homepage: http://packages.debian.org/netbase
+Description: Basic TCP/IP networking support
+ This package provides the necessary infrastructure for basic TCP/IP based
+ networking
+OE: netbase
+PackageArch: all
+
+Package: os-release-dbg
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./os-release-dbg_1.0-r0_all.deb
+Size: 892
+MD5sum: ae03575eabae5907059e349679c8c4d8
+SHA1: 3ae018dd02379331c0e79489b561b50a50424aa8
+SHA256: f2ebd866f4783c2c0af266764305f8d0e7de5d9192b6f140534ee573a3ede4f9
+SHA512: 7bf0c5c079b4135440fe459deb7b6a81ae13427bb5c38b2ff61a24ab6ee332d468c9de4bb86c5fde2c91efff3818dc71faa851f9882c49ab1668bffa3c86ba1d
+Homepage: https://www.freedesktop.org/software/systemd/man/os-release.html
+Description: Operating system identification - Debugging files
+ The /usr/lib/os-release file contains operating system identification
+ data.  This package contains ELF symbols and related sources for
+ debugging purposes.
+OE: os-release
+PackageArch: all
+
+Package: os-release-dev
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: os-release (= 1.0-r0)
+Filename: ./os-release-dev_1.0-r0_all.deb
+Size: 924
+MD5sum: ef693274238cd43a7819e0525c2122cd
+SHA1: 066b98289edfe168862ec9b69cf611f0894b5886
+SHA256: a9b6321aa503f1d4ab25e33e219556c702ecb826ea641ec0746711785bc68fb1
+SHA512: 3e6235a0444f8d2a6656b0f475bbbed9bfd90bc1ae9f723358793deca8a51c05880688dacad60ea6ea8a13a59cbd27faa052a05e9a7a220ddf9d0ca9c7cf622b
+Homepage: https://www.freedesktop.org/software/systemd/man/os-release.html
+Description: Operating system identification - Development files
+ The /usr/lib/os-release file contains operating system identification
+ data.  This package contains symbolic links, header files, and related
+ items necessary for software development.
+OE: os-release
+PackageArch: all
+
+Package: os-release-initrd
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: os-release
+Filename: ./os-release-initrd_1.0-r0_all.deb
+Size: 900
+MD5sum: f93b01f294be285a36f24c115f9f9b5d
+SHA1: 27e0e5efdfc1358a3a0308f9f70025b7cc85758a
+SHA256: 5665b6b086fc84dc71788233746f3767e3aa2180d271ae796040a4dc8b251d28
+SHA512: 016b95d9b256895356259f9cde07a2f9de3eb3ac3684c92f7d20997708f24d99f8305ba2f2968836da0eec3a79e13f1ed0b583c08468d521e5510658ed7853d1
+Homepage: https://www.freedesktop.org/software/systemd/man/os-release.html
+Description: Operating system identification
+ The /usr/lib/os-release file contains operating system identification
+ data.
+OE: os-release
+PackageArch: all
+
+Package: os-release
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./os-release_1.0-r0_all.deb
+Size: 1024
+MD5sum: 264487983ab478116263403b57889a1f
+SHA1: 6f3986b2fb27b728a66861b00d277b94fac36edc
+SHA256: 939f44b4d5f86941ef45ecd8f5c81d91ff1f7314dcd6061a35fe1335e25ecc1c
+SHA512: 9892a9faf29c3ca946f73ab847197b02ff9bcde1e92c59e1b4acc2533d828e02b43b35d4c6dae21fd2d2233b71ab101dfebcc61cdd602f4c87b2337f7711ad4e
+Homepage: https://www.freedesktop.org/software/systemd/man/os-release.html
+Description: Operating system identification
+ The /usr/lib/os-release file contains operating system identification
+ data.
+OE: os-release
+PackageArch: all
+
+Package: packagegroup-core-ssh-openssh-dbg
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: openssh-dbg
+Filename: ./packagegroup-core-ssh-openssh-dbg_1.0-r0_all.deb
+Size: 840
+MD5sum: 962497040f327efcbf4cbb2943e16f7c
+SHA1: beae9ace018d630e94d2a322bde45ad6bb083645
+SHA256: a5d8628a82900eb5c2f70e98671fc1400d7938b68bf18ff273433efe5c61b333
+SHA512: 02d72d89607230e1d51ac242f676d16ce920617d0d2881f59351375ce595181d87fc4215777d5da7017cd69cfa9495ad56fb57c205966bdca48b42f327e8164f
+Description: OpenSSH SSH client/server - Debugging files
+ OpenSSH SSH client/server.  This package contains ELF symbols and related
+ sources for debugging purposes.
+OE: packagegroup-core-ssh-openssh
+PackageArch: all
+
+Package: packagegroup-core-ssh-openssh-dev
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: openssh-dev, packagegroup-core-ssh-openssh (= 1.0-r0)
+Filename: ./packagegroup-core-ssh-openssh-dev_1.0-r0_all.deb
+Size: 864
+MD5sum: d718b38ded905882fab08ce1661a051b
+SHA1: a467b80e19ec0419f41d1c380ea220a28893cd55
+SHA256: f81be3e7ba0c862d392808f14db2a8d6f74486a884641feaa6337b7d7d7e3dbf
+SHA512: 58655a45ca77555832ea17ba47f68da6cac53fca06475bb0f031e999355913c2d1b256db96087bef203d9f58d4235bd156524258f51964309680021a331e54f0
+Description: OpenSSH SSH client/server - Development files
+ OpenSSH SSH client/server.  This package contains symbolic links, header
+ files, and related items necessary for software development.
+OE: packagegroup-core-ssh-openssh
+PackageArch: all
+
+Package: packagegroup-core-ssh-openssh
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: openssh
+Filename: ./packagegroup-core-ssh-openssh_1.0-r0_all.deb
+Size: 768
+MD5sum: d86f4310934d099c24a7f8aa00ae6164
+SHA1: 2b554892d82435f21fad403dcdb8cbd88b46985a
+SHA256: 32ff846c552d4e0be1dd98ff16ea75e7b0025624d15e7ef5a56add18a78af18d
+SHA512: 6bed81eee61bc44742df3b28cca56c362a89fae5e4789df9ea87f511936e704d0303e456f13d98149d67492375cd3d175ae8594928cd1f68a93ffdc040358ad6
+Description: OpenSSH SSH client/server
+ OpenSSH SSH client/server.
+OE: packagegroup-core-ssh-openssh
+PackageArch: all
+
+Package: packagegroup-core-weston-dbg
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: wayland-utils-dbg, weston-dbg, weston-examples-dbg, weston-init-dbg
+Filename: ./packagegroup-core-weston-dbg_1.0-r0_all.deb
+Size: 900
+MD5sum: 232404eef43433796e94ed67699a3e3b
+SHA1: 659f9629d1234b245421ac4b7823761241ccca69
+SHA256: e9417e3235412911f3eb120bbe569fda46b21258b8b6496f272145220cb65b59
+SHA512: 8d21b94e2b639f87297a9388d503ce7726b772afc012ccb3e077c736a35036d6092dfe881f7d112725a2ff1387c77d8fbc4a6ac767ecb6db2b08b8a458c859e1
+Description: Basic Weston compositor setup - Debugging files
+ Packages required to set up a basic working Weston session  This package
+ contains ELF symbols and related sources for debugging purposes.
+OE: packagegroup-core-weston
+PackageArch: all
+
+Package: packagegroup-core-weston-dev
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: packagegroup-core-weston (= 1.0-r0), wayland-utils-dev, weston-dev, weston-examples-dev, weston-init-dev
+Filename: ./packagegroup-core-weston-dev_1.0-r0_all.deb
+Size: 920
+MD5sum: 8316ea9effb760ebb55549196b61af6a
+SHA1: b7a6218f8b8e0c6042e5a9a8bfd48edf30ff63a0
+SHA256: 61df9274da33a66329e718a45bb3d8cf94e574100d564365767bfbc74c91c302
+SHA512: 32a8cfe45d265f0b76fea59122d4e73c5c88cdcfc9c53305671397e0922ac95f5f4c23e81885b2f8b33963ab2c588a304064d15d7bb78ff25e834b9e370361c3
+Description: Basic Weston compositor setup - Development files
+ Packages required to set up a basic working Weston session  This package
+ contains symbolic links, header files, and related items necessary for
+ software development.
+OE: packagegroup-core-weston
+PackageArch: all
+
+Package: packagegroup-core-weston
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: wayland-utils, weston, weston-examples, weston-init
+Filename: ./packagegroup-core-weston_1.0-r0_all.deb
+Size: 824
+MD5sum: 7ba9b04e466930970c3f49b07265808a
+SHA1: 693a1569e0d95b09197bfda58a8e4f35292315f0
+SHA256: 7f4cde772f0f487146a950bfde1b6ca3d03102b18bf27369aa8ec001263f12c8
+SHA512: 0f1fad53c53a9eff93e30b69a65e1295f32a08841cf68a7ccb1e9845aee3534edaf8df503a85db31ecb5780d0b5d4c236d991ca791783f86dbce7a5b2fec420a
+Description: Basic Weston compositor setup
+ Packages required to set up a basic working Weston session
+OE: packagegroup-core-weston
+PackageArch: all
+
+Package: run-postinsts-dbg
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./run-postinsts-dbg_1.0-r0_all.deb
+Size: 840
+MD5sum: 59a6522c2286e08d58f13df9da2d8399
+SHA1: cb688de94dc5de98235921cb7a53ab450eacbf28
+SHA256: b5554692f6208a791294645573260f4f5926e29593111f04bea3aeb11e0eab19
+SHA512: d9ff1c4f33a70e1e1b88106a68eb7896a53ee519874cb0464829eed8e12b000ef4922e2eee8fdaadb38d5f470c606c9d05862417ca1faab5fcf47de63afbbf28
+Description: Runs postinstall scripts on first boot of the target device - Debugging files
+ Runs postinstall scripts on first boot of the target device  This package
+ contains ELF symbols and related sources for debugging purposes.
+OE: run-postinsts
+PackageArch: all
+
+Package: run-postinsts-dev
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: run-postinsts (= 1.0-r0), util-linux-flock-dev
+Filename: ./run-postinsts-dev_1.0-r0_all.deb
+Size: 884
+MD5sum: e05ff7eda2677e8fc3046fd945563a23
+SHA1: 1e97dab51ce77f0b1004b73786a7da284a222fe4
+SHA256: 9ed7a482b44a7d7ef91c1856e8343803ae173cf7e8f802d380a178f4cad05e19
+SHA512: a5fa604cf72ffcb676b492169ef421bb1cf93777b099f4212c83455dbc536ca2e0b8214389d6168839c41a95e8732f8295ef2a74b1439d793eb0a744578372da
+Description: Runs postinstall scripts on first boot of the target device - Development files
+ Runs postinstall scripts on first boot of the target device  This package
+ contains symbolic links, header files, and related items necessary for
+ software development.
+OE: run-postinsts
+PackageArch: all
+
+Package: run-postinsts
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: util-linux-flock
+Filename: ./run-postinsts_1.0-r0_all.deb
+Size: 2592
+MD5sum: ab62f4641c6024539da8fccc45d30db2
+SHA1: 126cba3fee688233fb4e8a16b65e77f35b3f3fdf
+SHA256: c9f8f13487f5958ef6ecfde1e2147f9c4f6453f539898f774d87dbec758f2578
+SHA512: dc066af475eb0b71d35d93dee612e0d7288c210ac7decab60c54caacb016009e9f1d67e29f51b84e4dba09f3eef587a31f8cbe8939ff073c2f7e87bf9899b808
+Description: Runs postinstall scripts on first boot of the target device
+ Runs postinstall scripts on first boot of the target device
+OE: run-postinsts
+PackageArch: all
+
+Package: ttf-dejavu-common
+Architecture: all
+Version: 2.37-r0
+Multi-Arch: foreign
+Priority: optional
+Section: fonts
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./ttf-dejavu-common_2.37-r0_all.deb
+Size: 1024
+MD5sum: 4d4079193bfdb0c596d7073f66048864
+SHA1: 9be158ad426f4e9aaaf818d7be8915c971faf50a
+SHA256: 412d1ff07aa2479b52a275050a791e7a0a51b762e8609c9acc4c73f9c5171b93
+SHA512: 0dc8ba5448d4b16c381632cdd7588e6f9aea755d79ba50ff6db509200b9214d97965f6a14acc8d6091ea1f0c1336a4537977d3a32ff964b335c115242b65b371
+Homepage: http://dejavu.sourceforge.net/wiki/
+Description: DejaVu font - TTF Edition
+ DejaVu font - TTF Edition.
+OE: ttf-dejavu
+PackageArch: all
+
+Package: ttf-dejavu-mathtexgyre
+Architecture: all
+Version: 2.37-r0
+Multi-Arch: foreign
+Priority: optional
+Section: fonts
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: fontconfig-utils, ttf-dejavu-common
+Filename: ./ttf-dejavu-mathtexgyre_2.37-r0_all.deb
+Size: 210584
+MD5sum: 0767c95acd364dfa816ee0e04c7965ed
+SHA1: 9ed0166728de6e14e118fa5cbeb1d3f3cb1e5f5e
+SHA256: cfaefd50a81c5953d92ccb50aad450ba62d782cca67df3cada006f0e2f7ec2e0
+SHA512: 270c51478faba66763beb834f6dd21d6a3ea439ad3e6dd7e89e441bc23cfeeee25a30879c81ec6928828e3ee517272f213fb4c7ba534031627a459f34afbcbfa
+Homepage: http://dejavu.sourceforge.net/wiki/
+Description: DejaVu font - TTF Edition
+ DejaVu font - TTF Edition.
+OE: ttf-dejavu
+PackageArch: all
+
+Package: ttf-dejavu-sans-condensed
+Architecture: all
+Version: 2.37-r0
+Multi-Arch: foreign
+Priority: optional
+Section: fonts
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: fontconfig-utils, ttf-dejavu-common
+Filename: ./ttf-dejavu-sans-condensed_2.37-r0_all.deb
+Size: 676332
+MD5sum: 9590ec07b5d9a076517fe0212ecd5485
+SHA1: 251076c1662f861a994d0a6d520f20711de97560
+SHA256: c26388f2141649cea9089d4fb2f0f9db159b4c5e248fa5ac76372abd47c2a843
+SHA512: 0887115a3e301ac81a20d2c0a07908433021e95e31bbca6ef65dd09a028187ed862a99f68494735ea23516a1ec09a25c4d061b06f32d1ae4f0356c5c536f269e
+Homepage: http://dejavu.sourceforge.net/wiki/
+Description: DejaVu font - TTF Edition
+ DejaVu font - TTF Edition.
+OE: ttf-dejavu
+PackageArch: all
+
+Package: ttf-dejavu-sans-mono
+Architecture: all
+Version: 2.37-r0
+Multi-Arch: foreign
+Priority: optional
+Section: fonts
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: fontconfig-utils, ttf-dejavu-common
+Filename: ./ttf-dejavu-sans-mono_2.37-r0_all.deb
+Size: 406504
+MD5sum: 6eceee42853de313cd649d98928d8ec2
+SHA1: cbd7040657b434c551811aaf0a74f7d9c970af29
+SHA256: 87ac3b85ac2ae4b30c02cb33fb1f9008b907762eba8e30b5612ef962b8a8fd38
+SHA512: 597a57075c5e8a6809ea043a68a6f5c824f96a376f1ff7f87b94d7577116199470302c8462846fdae87a49efe69b1572f2616ab27bd42f768e640c58244e83c3
+Homepage: http://dejavu.sourceforge.net/wiki/
+Description: DejaVu font - TTF Edition
+ DejaVu font - TTF Edition.
+OE: ttf-dejavu
+PackageArch: all
+
+Package: ttf-dejavu-sans
+Architecture: all
+Version: 2.37-r0
+Multi-Arch: foreign
+Priority: optional
+Section: fonts
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: fontconfig-utils, ttf-dejavu-common
+Filename: ./ttf-dejavu-sans_2.37-r0_all.deb
+Size: 821576
+MD5sum: c6068ceb46b280d3110a55889ee086dc
+SHA1: 93d8bdbc4f2f4859f2694279ac12f9761a3c69ed
+SHA256: 994fe8a338ea8dbd3475b7872892d6f364d26c63c189e9828e639c4334b65f5e
+SHA512: f5ea063c0a99a90c2902f132a2e1d749ed0d8bebdf9e0ffb4f59d818455c33501ef316b1fb2590df1d73931b4b45885dcd1147341aaba7c359a0dd55378a5075
+Homepage: http://dejavu.sourceforge.net/wiki/
+Description: DejaVu font - TTF Edition
+ DejaVu font - TTF Edition.
+OE: ttf-dejavu
+PackageArch: all
+
+Package: ttf-dejavu-serif-condensed
+Architecture: all
+Version: 2.37-r0
+Multi-Arch: foreign
+Priority: optional
+Section: fonts
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: fontconfig-utils, ttf-dejavu-common
+Filename: ./ttf-dejavu-serif-condensed_2.37-r0_all.deb
+Size: 451444
+MD5sum: 8e79075172e5d97541a655eb6d66d1b2
+SHA1: d7303326c60364b2899af574d040a405264b7063
+SHA256: 8ba2a2574f15a19783ea6b439dde11d8eceb8ee78f0509e3f3f393ff0637c7a6
+SHA512: eeaf39f7a25f26d3bc09b55e92bc65011c6c4afcb4348d2bef9326fd697334e68aad0d3f23845daa135f0452cdaf061d160c01d5ad1da3bac7dcc84110863151
+Homepage: http://dejavu.sourceforge.net/wiki/
+Description: DejaVu font - TTF Edition
+ DejaVu font - TTF Edition.
+OE: ttf-dejavu
+PackageArch: all
+
+Package: ttf-dejavu-serif
+Architecture: all
+Version: 2.37-r0
+Multi-Arch: foreign
+Priority: optional
+Section: fonts
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: fontconfig-utils, ttf-dejavu-common
+Filename: ./ttf-dejavu-serif_2.37-r0_all.deb
+Size: 476028
+MD5sum: 475e40e594e23ffa13c230626e757935
+SHA1: 94e0751a2114c083c07abce78d5e28810f82fa4f
+SHA256: 185605c868d9c4c77a2c222878ea8285e790061f17e7692b5b19af528692a259
+SHA512: b80fcab0fb59883392f8a286bb8994dca453143ae56b459098d2a64969feb28142d34a51b44923bc82cfaa2268297590abf41f04182253ca50cb76cd76606b27
+Homepage: http://dejavu.sourceforge.net/wiki/
+Description: DejaVu font - TTF Edition
+ DejaVu font - TTF Edition.
+OE: ttf-dejavu
+PackageArch: all
+
+Package: tzdata-africa
+Architecture: all
+Version: 2026a-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./tzdata-africa_2026a-r0_all.deb
+Size: 4200
+MD5sum: 9c59e481f8ac11ef4605b7d331acf621
+SHA1: 0c8a42809f13be3ab346d3a6e01d14c33d9bf8ff
+SHA256: fcbff9dd7af633311decb9644e6089bbd0f85edfc5bfca85561293cb5d4313f1
+SHA512: bb1b287f56662adfb74f1469eec7ad1e58da5656484d57ffa46fc6cf936fb41ea677e50aa9c078e90f754d8d78ca6bc868bb03eec110b441ed9197701a7319e2
+Homepage: http://www.iana.org/time-zones
+Description: Timezone data
+ The Time Zone Database contains code and data that represent the history
+ of local time for many representative locations around the globe.
+OE: tzdata
+PackageArch: all
+
+Package: tzdata-americas
+Architecture: all
+Version: 2026a-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./tzdata-americas_2026a-r0_all.deb
+Size: 18332
+MD5sum: 4eaf5835d9ac2321d29a3c511bb3fad2
+SHA1: 7d823deb5f3331d5011434f18fea51c218734927
+SHA256: 3eb244dc00c721227740b4a2b5a479b10b14644da233ffb027d328e8052b4e56
+SHA512: d2bc72bd019d237fed9d95490d4d293c92293467669ee8d692894f945e2d470cf7775af4142065060d5800b3859f0a1997bb521569fd8e37b8e59641d6f2155f
+Homepage: http://www.iana.org/time-zones
+Description: Timezone data
+ The Time Zone Database contains code and data that represent the history
+ of local time for many representative locations around the globe.
+OE: tzdata
+PackageArch: all
+
+Package: tzdata-antarctica
+Architecture: all
+Version: 2026a-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./tzdata-antarctica_2026a-r0_all.deb
+Size: 2748
+MD5sum: 5bef905f4b463c0f3d1a42c0d6322c4e
+SHA1: 7ac05750215b1bd28eaef2b74d669f2722855610
+SHA256: dec6209d6588e7be03bcec8b1e1f38f2672e45da26081c29a51664f681763494
+SHA512: 862def2d13c92b1d5f6d2fa05c5c1ac073750f0f1ec75f6ab1caa0f9e271ce945badcf2b8ad7b3125edd27a9662e2eca832035dae12dbac833ca884395fe0a20
+Homepage: http://www.iana.org/time-zones
+Description: Timezone data
+ The Time Zone Database contains code and data that represent the history
+ of local time for many representative locations around the globe.
+OE: tzdata
+PackageArch: all
+
+Package: tzdata-arctic
+Architecture: all
+Version: 2026a-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./tzdata-arctic_2026a-r0_all.deb
+Size: 1280
+MD5sum: 2790526e1778399c55863b6abce43ca4
+SHA1: d5e07318209da4152b44c8f4ea1041de214a1bf6
+SHA256: 4cba49ad35bb1ced60c02141e84ea1e14279ab7db7a63fa1c32350a1aff8951c
+SHA512: f2d3053108a775765f002859f6f787f730a0254f2baaf75d25a230aa096ea269d5be66fbe228a66941c7a0867ad2a9761dcd35feb1e5a60762e2b986450ad155
+Homepage: http://www.iana.org/time-zones
+Description: Timezone data
+ The Time Zone Database contains code and data that represent the history
+ of local time for many representative locations around the globe.
+OE: tzdata
+PackageArch: all
+
+Package: tzdata-asia
+Architecture: all
+Version: 2026a-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./tzdata-asia_2026a-r0_all.deb
+Size: 12084
+MD5sum: 3b773d0e02e81d10a871d4385c3a66d7
+SHA1: 73de3ab22a7b2cbc98578a11ede085eb4c4cb84b
+SHA256: b3bc7d7618c8fd94685648a5f961bb9f14c8b533437f90b01eb612b0233baf32
+SHA512: 84df195851250cb4a5bf29ac75d2b765ad913d6af887ef4a11a41f3bdae2142d18cf0b7b97037b60fcf3f41a63dbc21c1a731c218ee3329779da04991c04af91
+Homepage: http://www.iana.org/time-zones
+Description: Timezone data
+ The Time Zone Database contains code and data that represent the history
+ of local time for many representative locations around the globe.
+OE: tzdata
+PackageArch: all
+
+Package: tzdata-atlantic
+Architecture: all
+Version: 2026a-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./tzdata-atlantic_2026a-r0_all.deb
+Size: 3144
+MD5sum: cdfab5bc01da48005b96296df39d8431
+SHA1: 7b75644d962eeaf41cbbcbd11d414997b03dff04
+SHA256: d3e60a33edcc642bb376e9f4e52a98b5e65284f2c0e46cb227bba63516182bbc
+SHA512: 5bc14b37b1b16c50d5b429d8aae6ee5288770425548c19c41e74c596fb475029c67acc4c256520f6d13e3110fd4ecc78cfb80b7411c6900ff5244e7e843c475a
+Homepage: http://www.iana.org/time-zones
+Description: Timezone data
+ The Time Zone Database contains code and data that represent the history
+ of local time for many representative locations around the globe.
+OE: tzdata
+PackageArch: all
+
+Package: tzdata-australia
+Architecture: all
+Version: 2026a-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./tzdata-australia_2026a-r0_all.deb
+Size: 2676
+MD5sum: e82ea81d09c403f3ceeee2fa45488270
+SHA1: 61aaeabdd271761994d61cdb4c677026aeafb53f
+SHA256: 47f32c32b2d3b438c65c3c77d7777b3676316326c78fce290736a8cea0afdb22
+SHA512: 8b8ea560b19b2939d4fe34078b164cb9d4f056827aaa86b04bbe041c30fbe3aa27203f6a07b4f5147c4ed269f9ed52ce005158a5e47dea620aa034c7a7f779ad
+Homepage: http://www.iana.org/time-zones
+Description: Timezone data
+ The Time Zone Database contains code and data that represent the history
+ of local time for many representative locations around the globe.
+OE: tzdata
+PackageArch: all
+
+Package: tzdata-core
+Architecture: all
+Version: 2026a-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./tzdata-core_2026a-r0_all.deb
+Size: 45384
+MD5sum: c4757c05da7c7b374b6a1a7006f9eccc
+SHA1: cb68185f0d7e1a3761fed94765b657586746ccfb
+SHA256: 4584b16d77bd9c35d04cb2b380f1d2de773b4b74d9f75b9e0d984c54b7c53536
+SHA512: 7448dbfa3c3bf5550583710424dd544e9a9a1a5a4ce2b69a30b3934e8aed4c2010f75f76c3e052aafbafc1adf052e2c93cefdd51f4f8efb71758dfc2a43cd0a4
+Homepage: http://www.iana.org/time-zones
+Description: Timezone data
+ The Time Zone Database contains code and data that represent the history
+ of local time for many representative locations around the globe.
+OE: tzdata
+PackageArch: all
+
+Package: tzdata-europe
+Architecture: all
+Version: 2026a-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./tzdata-europe_2026a-r0_all.deb
+Size: 7608
+MD5sum: df55a230e3b6b4be90394b1ccb8e806a
+SHA1: af39ee010881b00125d8b180fde0d733183152bb
+SHA256: b36c0667b70c870fbf720722fcfe036e81b3b4b0b97dc63468c4fd3f12e4d6b0
+SHA512: a2b39d7b9b0ce29e198b115ef1296207e4937a599c0b15bfcb3aba9c298072287d3cfa5a5eb64754926ecbedf7a7cb11e34b44b42aa8919381984bd5a5552f96
+Homepage: http://www.iana.org/time-zones
+Description: Timezone data
+ The Time Zone Database contains code and data that represent the history
+ of local time for many representative locations around the globe.
+OE: tzdata
+PackageArch: all
+
+Package: tzdata-misc
+Architecture: all
+Version: 2026a-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./tzdata-misc_2026a-r0_all.deb
+Size: 6420
+MD5sum: 1ee199c05bad587c089cc402ccedd5d2
+SHA1: 819bd205954ad03d4345eb116f28fc5c16c7deff
+SHA256: 7fa4a91b2822f9139e026653db0c8f0a2b1e0a9bacb35e93dca82656af567a15
+SHA512: 93a26ac54d1cade1e33cae717eb94c3dfb2d581712cce3d15d4eb320cabcfdeb740fffb2c3443d018c4177d022f32dbf5d8f0c8e9a4d54bfd67c8d1de3842638
+Homepage: http://www.iana.org/time-zones
+Description: Timezone data
+ The Time Zone Database contains code and data that represent the history
+ of local time for many representative locations around the globe.
+OE: tzdata
+PackageArch: all
+
+Package: tzdata-pacific
+Architecture: all
+Version: 2026a-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./tzdata-pacific_2026a-r0_all.deb
+Size: 4356
+MD5sum: 4232c592a46ecfb1d464ca755011761a
+SHA1: a4d8a0f6ae37e2413c800ddcbaf2c6deec593f69
+SHA256: f93e8dc76fa4754d6e25cf75cf30e1d07de76d0339f631133ea93701ecb3524f
+SHA512: 6078f8c535cbf4f3a094c4522fd78ec6049da1fbbb339f6026dfc82195d824129050f00b5600abbebb7fc863661446e75e177adc2d8285a16ff7811c7a401899
+Homepage: http://www.iana.org/time-zones
+Description: Timezone data
+ The Time Zone Database contains code and data that represent the history
+ of local time for many representative locations around the globe.
+OE: tzdata
+PackageArch: all
+
+Package: tzdata-posix
+Architecture: all
+Version: 2026a-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./tzdata-posix_2026a-r0_all.deb
+Size: 45776
+MD5sum: 2d6b069c6dbf29648438dd2aefc56b2d
+SHA1: 75a4d85a7426842ff7172cad97d45542835e9c14
+SHA256: 185d6bbfe1e21732e84ea7306d89980a20acd56ab50f9305a363ce7b55bd40a3
+SHA512: f760f2dd2a1398a13152b6ee5bb9d59a03e9e8b76c17d0473552bdf7810cb83c8718180343333ad94efa02a622fc2366a556f036f121b16aa4592c094ff05d95
+Homepage: http://www.iana.org/time-zones
+Description: Timezone data
+ The Time Zone Database contains code and data that represent the history
+ of local time for many representative locations around the globe.
+OE: tzdata
+PackageArch: all
+
+Package: tzdata-right
+Architecture: all
+Version: 2026a-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./tzdata-right_2026a-r0_all.deb
+Size: 47764
+MD5sum: abfb74c952c4c6bb081f4a07486b4ca5
+SHA1: e4c2bee1e079768c9a63e113b439c0a14a24bad8
+SHA256: f69561acfc71fc196f511ec056e556684e6e035fcabe92c2db1edbce65447bcf
+SHA512: 6885ae81646b4d21ca87d2eccbc9865a7e0482411de27f331cfef3f815cf528f14c7c4a7de3a455a78bda5707bbe2d200b59a3046ed3da32df548e8778b19c0b
+Homepage: http://www.iana.org/time-zones
+Description: Timezone data
+ The Time Zone Database contains code and data that represent the history
+ of local time for many representative locations around the globe.
+OE: tzdata
+PackageArch: all
+
+Package: tzdata
+Architecture: all
+Version: 2026a-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: tzdata-africa, tzdata-americas, tzdata-antarctica, tzdata-arctic, tzdata-asia, tzdata-atlantic, tzdata-australia, tzdata-core, tzdata-europe, tzdata-misc, tzdata-pacific, tzdata-posix, tzdata-right
+Filename: ./tzdata_2026a-r0_all.deb
+Size: 1224
+MD5sum: 27e203d1a3a34b379bcc0ae416de5259
+SHA1: 05dfefa5f36af2f34f717590e2771207d62c31c0
+SHA256: 120f56fca2fa2dae4059c5a0dda8b00dc3e30da409a14fd1db7c414f206d2dd8
+SHA512: 44081bec7b9bb0cdc3bdedab17402c5508744a7e32d64e9b41d5d3bb7ce01b0984874eac94253f1cd76506c8eaceb2eaf162b9ef8d4a7ea317dcdece339b708f
+Homepage: http://www.iana.org/time-zones
+Description: Timezone data
+ The Time Zone Database contains code and data that represent the history
+ of local time for many representative locations around the globe.
+OE: tzdata
+PackageArch: all
+
+Package: volatile-binds-dbg
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./volatile-binds-dbg_1.0-r0_all.deb
+Size: 840
+MD5sum: 83dcdf9c55f841622cffb97f497c5237
+SHA1: faed55c0bf71c71be8b03c670bab448006604741
+SHA256: 4ecf7faade37573d3dff3dae917117042c60e9d40a32aee97a184e28d72346e3
+SHA512: c439a64546088c91f3b59aab776415eac38158c04ea1cdefe6c28d69d17b08a1f0104b5f6cee88028809bd1232250d30b7e16fffde6dcf510f00fd92435db87d
+Description: Volatile bind mount setup and configuration for read-only-rootfs - Debugging files
+ Volatile bind mount setup and configuration for read-only-rootfs  This
+ package contains ELF symbols and related sources for debugging purposes.
+OE: volatile-binds
+PackageArch: all
+
+Package: volatile-binds-dev
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: volatile-binds (= 1.0-r0)
+Filename: ./volatile-binds-dev_1.0-r0_all.deb
+Size: 872
+MD5sum: 24ebb1e90819b035f0485ca495e311aa
+SHA1: 8047597d33299f0472130764add68a5b94abd525
+SHA256: 3fcca3dcb6271b7348eca0a9c4ea2b4e0aa269b50e7d0876a8f7c07ccc47c2e1
+SHA512: c094eda2f514607d8b1f70a40ab251bcbb624b878e5e3e1b76e6192ac180e70dd586b30f150a7b5d181323c2bf4fcbdb5aed3985c66f68d64630d6178ae51f05
+Description: Volatile bind mount setup and configuration for read-only-rootfs - Development files
+ Volatile bind mount setup and configuration for read-only-rootfs  This
+ package contains symbolic links, header files, and related items
+ necessary for software development.
+OE: volatile-binds
+PackageArch: all
+
+Package: volatile-binds
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./volatile-binds_1.0-r0_all.deb
+Size: 2792
+MD5sum: c10f928c8957a297f271c519c1aa6736
+SHA1: fab73858202cc6b5720aab130bbd433af38eab27
+SHA256: 22aa06320c92c39b7f5e42a647992686d58e5f833e0c33c6f72f2ad1ca6560d8
+SHA512: c1bc40bad5217da295ff7a2c74a1ce2e4712025bece340eb416c382166da5af84d209ff17c60dca4a7c0275e797ba032e6b84a62982389b07e1bfd0ef1f0c8df
+Description: Volatile bind mount setup and configuration for read-only-rootfs
+ Volatile bind mount setup and configuration for read-only-rootfs
+OE: volatile-binds
+PackageArch: all
+
+Package: wayland-protocols-dbg
+Architecture: all
+Version: 1.47-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./wayland-protocols-dbg_1.47-r0_all.deb
+Size: 960
+MD5sum: b9a227784483bf7ba004f3ee3cf1fdfe
+SHA1: ac71c9fde812174c3ec612b38c66e8ead53dc2b6
+SHA256: 38a7931d792508e656cf80b067aa9a14d9d16c88a658106eb904df52fc674376
+SHA512: 2f9f62b577896f681695a8de0b4054f6549f2528dfdd2379f79e400d6e8e138e40e8024ed2f33c6a736cff10f4e7c3ae9229b6cf07ccc20556166cee7b8e45dc
+Homepage: http://wayland.freedesktop.org
+Description: Collection of additional Wayland protocols - Debugging files
+ Wayland protocols that add functionality not available in the Wayland
+ core protocol. Such protocols either add completely new functionality, or
+ extend the functionality of some other protocol either in Wayland core,
+ or some other protocol in wayland-protocols.  This package contains ELF
+ symbols and related sources for debugging purposes.
+OE: wayland-protocols
+PackageArch: all
+
+Package: wayland-protocols-dev
+Architecture: all
+Version: 1.47-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: wayland-protocols (= 1.47-r0)
+Filename: ./wayland-protocols-dev_1.47-r0_all.deb
+Size: 21588
+MD5sum: 19405e2b1290ccf6f9e5732d22525336
+SHA1: a665cd274091d259b52d3d420e3fe274b7661e5f
+SHA256: 838610e86652435c0ae6e9fa47b69925ed42311095882f0706c7b8c87d59b710
+SHA512: e3ab2ece87f9bf331d8a0961161ab89a757dbe9a013ae1a718046ead8b47974737c90ce4dbd7aee42736f812aefef32df5b4876733fbbaed2292ef5d637b9efe
+Homepage: http://wayland.freedesktop.org
+Description: Collection of additional Wayland protocols - Development files
+ Wayland protocols that add functionality not available in the Wayland
+ core protocol. Such protocols either add completely new functionality, or
+ extend the functionality of some other protocol either in Wayland core,
+ or some other protocol in wayland-protocols.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+OE: wayland-protocols
+PackageArch: all
+
+Package: wayland-protocols
+Architecture: all
+Version: 1.47-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./wayland-protocols_1.47-r0_all.deb
+Size: 109776
+MD5sum: f7b21d321c23010f6b2cc92453fba4cb
+SHA1: 7f60ed1629725c22cf266e0b252d862201f9d0af
+SHA256: b2236a5f7b64271f98fe0fb5c1be3f8e83e295b1fb9e4a6fe28fca96c144567d
+SHA512: 2889ef1ec54bccc8ddd9fb6d706dd7b4fe216889398c5171a78379877a93d4235a95602bab9a30f9d56af61b707c7e991ae5b004c96a1d21b15b439935231104
+Homepage: http://wayland.freedesktop.org
+Description: Collection of additional Wayland protocols
+ Wayland protocols that add functionality not available in the Wayland
+ core protocol. Such protocols either add completely new functionality, or
+ extend the functionality of some other protocol either in Wayland core,
+ or some other protocol in wayland-protocols.
+OE: wayland-protocols
+PackageArch: all
+
+Package: wireless-regdb-static
+Architecture: all
+Version: 2026.02.04-r0
+Multi-Arch: foreign
+Priority: optional
+Section: net
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./wireless-regdb-static_2026.02.04-r0_all.deb
+Size: 4044
+MD5sum: 85e5294d63eeb71907a1e421463f193f
+SHA1: 7f04e55b3d94250b963677b47f41ce120dcfc53e
+SHA256: d1b290c2e165986ff1f8ac30f26b1bbc6421f7a13fa5afaca049e96eca4c40c6
+SHA512: 49b11b52ea303dfa5c6ee863193df229a7545305105b9c6cf2ae651047d7cfd38626c73778695a632135fc9dff01d18dbe27e6f5c13383372ef636df8bb4219b
+Homepage: https://wireless.wiki.kernel.org/en/developers/regulatory/crda
+Description: Wireless Central Regulatory Domain Database
+ Wireless Central Regulatory Domain Database.
+OE: wireless-regdb
+PackageArch: all
+
+Package: wireless-regdb
+Architecture: all
+Version: 2026.02.04-r0
+Multi-Arch: foreign
+Priority: optional
+Section: net
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Suggests: crda
+Conflicts: wireless-regdb-static
+Filename: ./wireless-regdb_2026.02.04-r0_all.deb
+Size: 4048
+MD5sum: 7923df70ea09a36782f178077531baf2
+SHA1: 8dc000929339270a82a85c05dff2ffd6452989f3
+SHA256: 0d749da0e0bb8a043107f5b7ba09ba443d4605edad2fd9639fa5b9dadd1b4346
+SHA512: 190e1f54c9fb14b5d0267a9f34dcd41d2c9cc58061564e0a279337d7517d148aad15f0ff08eebd94f7754318a1481236ad371f6d1948a2ba5b5c84eb4070d577
+Homepage: https://wireless.wiki.kernel.org/en/developers/regulatory/crda
+Description: Wireless Central Regulatory Domain Database
+ Wireless Central Regulatory Domain Database.
+OE: wireless-regdb
+PackageArch: all
+

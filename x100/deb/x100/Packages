@@ -1,0 +1,2311 @@
+Package: base-files-dbg
+Architecture: amd64
+Version: 3.0.14-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./base-files-dbg_3.0.14-r0_amd64.deb
+Size: 880
+MD5sum: d0fce114399c48e0a1795fb4b006800d
+SHA1: 47680270ce76321aa686ad3c5f7002248bea2493
+SHA256: 5b9301057ec6831d2df6506afd97bbe1158f69e2ac5ad4c4a9b11feee200491a
+SHA512: 728aaa94df23f29aefc85bd015af48712090a3d8dd41804facbaf0598ea30bed19f69ac6eaff691e62d1fac484e55d9c747a583afd699eb0c35c92357a769219
+Description: Miscellaneous files for the base system - Debugging files
+ The base-files package creates the basic system directory structure and
+ provides a small set of key configuration files for the system.  This
+ package contains ELF symbols and related sources for debugging purposes.
+OE: base-files
+PackageArch: x100
+
+Package: base-files-dev
+Architecture: amd64
+Version: 3.0.14-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: base-files (= 3.0.14-r0)
+Filename: ./base-files-dev_3.0.14-r0_amd64.deb
+Size: 912
+MD5sum: 2537204877dceaf7cbe4c3d5fdcc4c27
+SHA1: 8bebdd3bb3c5d97f6051d186633ebb533901bfc8
+SHA256: b8bb124229e1ec3a6d5e47a43f41d056b5fbe120c931e2d799803e43eac3938c
+SHA512: 7ddee5a92881babeae839cffb91945ef83cdd2c7ee170feadc6e1a9d0a3bf388aeaf5660dc1ea6bb9784fd0623ec0cf521592a7b786fc08f242239d7cad74aec
+Description: Miscellaneous files for the base system - Development files
+ The base-files package creates the basic system directory structure and
+ provides a small set of key configuration files for the system.  This
+ package contains symbolic links, header files, and related items
+ necessary for software development.
+OE: base-files
+PackageArch: x100
+
+Package: base-files
+Architecture: amd64
+Version: 3.0.14-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./base-files_3.0.14-r0_amd64.deb
+Size: 3592
+MD5sum: a687e65857e85e1ec66b22d8d5c2f9e9
+SHA1: bafc2edb0864d2f44ac4658ff1a3a9b4bbe2b1e7
+SHA256: a3b36275419686ab44c35f4da1d9f3fb6cbda9e691bf401fab7ebb52544ade95
+SHA512: 4e91a700bbee0c7775dee923648f63f11201da7ec4222001745905c484adfb6c6772c5a85c311f7df5df3d716b4f3cfbacacf4f856f0d7d768bd6fe2c13e6239
+Description: Miscellaneous files for the base system
+ The base-files package creates the basic system directory structure and
+ provides a small set of key configuration files for the system.
+OE: base-files
+PackageArch: x100
+
+Package: bpftool-bash-completion
+Architecture: amd64
+Version: 6.18.33-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: bash-completion
+Filename: ./bpftool-bash-completion_6.18.33-r0_amd64.deb
+Size: 6116
+MD5sum: 4c338fef0bb60b5ea32c887e6fec5e55
+SHA1: 5c3d475516327b343c98df382a36e92f245a430b
+SHA256: 80c9cf4dbc3705e818412b02b10a8873aef4b3495d036911cd16a7506d28c412
+SHA512: a3ff9769fb7740b0bbd60da8d1e21f764b13f8af4ce975bdb9836e1dd4b618ac72756afbbd73936690b918ac587188426449a0fa1ecac0251c3b2a1e971141b9
+Description: Inspect and manipulate eBPF programs and maps
+ bpftool is a kernel tool for inspection and simple manipulation of eBPF
+ programs and maps.
+OE: bpftool
+PackageArch: x100
+
+Package: bpftool-dbg
+Architecture: amd64
+Version: 6.18.33-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: glibc-dbg, libbfd-dbg, libcap-dbg, libcrypto-dbg, libelf-dbg, libopcodes-dbg, zlib-dbg
+Filename: ./bpftool-dbg_6.18.33-r0_amd64.deb
+Size: 798700
+MD5sum: 9594c25675f275d9bc6d5d05143fce76
+SHA1: ddfd59ee92c266dcb3bf053ccd6e73c6e3d1f23d
+SHA256: cef68ef96b4e2e309f2bae2fd876a20dc58f8eb3e7bceee762d3fc897de50fc6
+SHA512: d05cdf44928bd8243859dd93e1455a8ca502b9700bcc1fef2a4012c6e3c60f7d8adeff887b0d9c20a6c220ec08a8eeee33f85cd30c0a074e47f0635f8d21bdf3
+Description: Inspect and manipulate eBPF programs and maps - Debugging files
+ bpftool is a kernel tool for inspection and simple manipulation of eBPF
+ programs and maps.  This package contains ELF symbols and related sources
+ for debugging purposes.
+OE: bpftool
+PackageArch: x100
+
+Package: bpftool-dev
+Architecture: amd64
+Version: 6.18.33-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: bash-completion-dev, binutils-dev, bpftool (= 6.18.33-r0), elfutils-dev, glibc-dev, libbfd-dev, libcap-dev, libcrypto-dev, libelf-dev, libopcodes-dev, openssl-dev, zlib-dev
+Filename: ./bpftool-dev_6.18.33-r0_amd64.deb
+Size: 956
+MD5sum: 6736653499327070ec8821fd05d12d49
+SHA1: 92491dbf54ff2d8b8bf69d9484c7c33dbd5fb764
+SHA256: 8d729779f6556b2fe3ff90eb2fff8a35c2f11100a0d568689189893a48488f05
+SHA512: 22990b444185f2c4cc1e1149ddedcd990a33e491c72e254667bc2c0608ebfd50c1067b777232ae462f4b6c0fef4af967718ad0436aa8d0149740cfe810807b0a
+Description: Inspect and manipulate eBPF programs and maps - Development files
+ bpftool is a kernel tool for inspection and simple manipulation of eBPF
+ programs and maps.  This package contains symbolic links, header files,
+ and related items necessary for software development.
+OE: bpftool
+PackageArch: x100
+
+Package: bpftool
+Architecture: amd64
+Version: 6.18.33-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libbfd (>= 2.46), libc6 (>= 2.43+git0+ce1013a197), libcap (>= 2.77), libcrypto3 (>= 3.5.6), libelf1 (>= 0.194), libopcodes (>= 2.46), libz1 (>= 1.3.2)
+Filename: ./bpftool_6.18.33-r0_amd64.deb
+Size: 255240
+MD5sum: 2f53d1165b6e9853fb2b95f472b997c8
+SHA1: 9c5a80960d4e29a0577fcb69bd3499b9fee46741
+SHA256: 4fd586a27f6c8a0aa26494605516c4d4b2c6958d1eabd7551d36eeb25900bb73
+SHA512: e4a8d577736f35fdaec27665642697b204e51b2b499898b6d8d753dc849100927767b3db9e360268dd0b2e1c00e8659965c702cdcabe0fdb8f0c5c5064c7d5ae
+Description: Inspect and manipulate eBPF programs and maps
+ bpftool is a kernel tool for inspection and simple manipulation of eBPF
+ programs and maps.
+OE: bpftool
+PackageArch: x100
+
+Package: cpupower-dbg
+Architecture: amd64
+Version: 6.18.33-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: glibc-dbg, libpci-dbg
+Filename: ./cpupower-dbg_6.18.33-r0_amd64.deb
+Size: 105356
+MD5sum: 74c765e99ca4181a96531893838fd2e2
+SHA1: 364b35449c9cd66753852521aa7e329789d7bb57
+SHA256: c5c1bab39eb0d0c52ffb794aad45cced085d255ee224d0a31dc953d09622662d
+SHA512: 7b59d5ceb953f7f608e0772c7732fa5f70d20787d513f8cad0a671d994d6fe3c389d6fba3f29fd6f2cd6f4ad9e2dcf8be2f37c7e9ad7aa64cb17aa2283b50c04
+Description: CPU power management tool - Debugging files
+ cpupower is a tool to examine and tune CPU power saving related features
+ This package contains ELF symbols and related sources for debugging
+ purposes.
+OE: cpupower
+PackageArch: x100
+
+Package: cpupower-dev
+Architecture: amd64
+Version: 6.18.33-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: cpupower
+Recommends: bash-completion-dev, bash-dev, cpupower (= 6.18.33-r0), glibc-dev, libpci-dev, libtraceevent-dev, libtracefs-dev, pciutils-dev
+Filename: ./cpupower-dev_6.18.33-r0_amd64.deb
+Size: 3800
+MD5sum: 6356f646ed4d7e87c5a05428845ec935
+SHA1: 4a5baddcb54d4c62ea48b384b8ef6c0106d4782f
+SHA256: 5beb9dfc4799380b025b1b694720ce2cc77b24aea0da6f21794f4d539bddfb3d
+SHA512: a7dcbac2764a6c9edfab2d40c37823710cf7764fa9b6d0a257a4aacd01641c7a1297e8403eaa7b8024dc9306495e2701d33312ca5be2dc6ba862dbcf95990bbc
+Description: CPU power management tool - Development files
+ cpupower is a tool to examine and tune CPU power saving related features
+ This package contains symbolic links, header files, and related items
+ necessary for software development.
+OE: cpupower
+PackageArch: x100
+
+Package: cpupower
+Architecture: amd64
+Version: 6.18.33-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: bash, libc6 (>= 2.43+git0+ce1013a197), libpci3 (>= 3.14.0)
+Filename: ./cpupower_6.18.33-r0_amd64.deb
+Size: 38232
+MD5sum: 4fb8a83563b20fad5965a37fe675033c
+SHA1: fa448d26d7db62b17800a6a48b1bc6d55b05f921
+SHA256: e987d78c4acb3a009ad8a7c4a1f646ec039d4b24386e15cf4cc86e41a4244669
+SHA512: 81d930fbb5da1e33869d9eebb06ba0ded2f663f774500ee1d80aee69673378f5d4d36572921822ea2440cc9328aa15010cffbe80dd22c912a269fa58c860b70d
+Description: CPU power management tool
+ cpupower is a tool to examine and tune CPU power saving related features
+OE: cpupower
+PackageArch: x100
+
+Package: grub-bootconf-dbg
+Architecture: amd64
+Version: 1.00-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./grub-bootconf-dbg_1.00-r0_amd64.deb
+Size: 908
+MD5sum: acff84b68a6756a8332b91383b8b515a
+SHA1: e947652e5a2deddeadf4f330c47c884af5804f53
+SHA256: 373528438d670f3070f5325ef5651f6748c3d3fe156ee1fc041097a066614de3
+SHA512: 5fcbedcec08ca028513f26ed213bdc1ae316060c25af3afb8efc5dfd5b4d46fa70eddddc966b27595c64a0bd937986ee2bc1b0991d9cae71c7f61f841f049561
+Homepage: https://www.gnu.org/software/grub/manual/grub/grub.html#Configuration
+Description: Basic grub.cfg for use in EFI systems - Debugging files
+ Grub might require different configuration file for different machines.
+ This package contains ELF symbols and related sources for debugging
+ purposes.
+OE: grub-bootconf
+PackageArch: x100
+
+Package: grub-bootconf-dev
+Architecture: amd64
+Version: 1.00-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: grub-bootconf (= 1.00-r0)
+Filename: ./grub-bootconf-dev_1.00-r0_amd64.deb
+Size: 936
+MD5sum: f69681747499259f3ac15e88c55c5032
+SHA1: 1c8be6931bffd9e0201da3a43a2ed2ff590bbda8
+SHA256: eac4ae1a3fecf91f6436f980080ce0df53dcc68f3b438ebebcd2649c570684f3
+SHA512: 26b777941133213a4eda945f3c78eb97837cc4b3795b6ead1eba5d887d9280f286d1e6fdcf13d4c18dbfc706caac996180e7537d0f77c694700e73f09f7f9f0b
+Homepage: https://www.gnu.org/software/grub/manual/grub/grub.html#Configuration
+Description: Basic grub.cfg for use in EFI systems - Development files
+ Grub might require different configuration file for different machines.
+ This package contains symbolic links, header files, and related items
+ necessary for software development.
+OE: grub-bootconf
+PackageArch: x100
+
+Package: grub-bootconf
+Architecture: amd64
+Version: 1.00-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: virtual-grub-bootconf
+Filename: ./grub-bootconf_1.00-r0_amd64.deb
+Size: 1088
+MD5sum: 3fbe9f680b0606d99c0d0d750a3bf1a5
+SHA1: ed4969fcdb61847bed8c397078d45f50956e27be
+SHA256: 2814d294bd42ca81773577c8a06efa6cace7fa3416d43a262f0f8cab50590e8f
+SHA512: 8d1bdf7f631c23208713c55b6fa75d34c7d466db4ebeb5ba8b1dc3c23b49482e5a4cdfeadfdae29da83e409b2c3043c8d6eca73b84c588baa38a5744fee8f3d8
+Homepage: https://www.gnu.org/software/grub/manual/grub/grub.html#Configuration
+Description: Basic grub.cfg for use in EFI systems
+ Grub might require different configuration file for different machines.
+OE: grub-bootconf
+PackageArch: x100
+
+Package: kernel-6.18.33-amd-standard
+Architecture: amd64
+Version: 6.18.33-r1.0
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: kernel-6.18.33-amd-standard, kernel-base
+Recommends: kernel-image-6.18.33-amd-standard (= 6.18.33-r1.0)
+Filename: ./kernel-6.18.33-amd-standard_6.18.33-r1.0_amd64.deb
+Size: 960
+MD5sum: 3ed10a4a2067a5df2812f3a53817848e
+SHA1: 7bbd080b539e7c654678480e851d76e03b08704e
+SHA256: 82869e3554ffe4f9cdcfe8638d8eb8f770aaf60c6d6662075268600f2a7d7e1f
+SHA512: 90d67d7d15f749da9294eabe071a27bc73433e2fe5368d7b5e210c64343aa88882b3ea1f34852e051f30396ab508bebe41168c7b2138c4fb9684ade853661234
+Homepage: https://www.yoctoproject.org/
+Description: Linux kernel
+ AMD common kernel recipe for Linux 6.18.y
+OE: linux-amd
+PackageArch: x100
+
+Package: kernel-image-6.18.33-amd-standard
+Architecture: amd64
+Version: 6.18.33-r1.0
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: kernel-image
+Depends: kernel-image-bzimage-6.18.33-amd-standard (= 6.18.33-r1.0)
+Filename: ./kernel-image-6.18.33-amd-standard_6.18.33-r1.0_amd64.deb
+Size: 828
+MD5sum: 3d3467b3da8321f41aec699e50d6ba12
+SHA1: a946d0fb6878b575ff989cf4418fb24517e2d2a0
+SHA256: 295f0d6ef366ee88462f4ca5513f243200da2f7329cf62e942e4a95f5c71afcd
+SHA512: fa7f431a7ea1d62c2bd5ab8c485b75c8ca81ddfbe49c55e8ebadbf29c912100403a3c17880981ba970570530a52686d78ae29e8a29d303ef686ab578b905f9fe
+Homepage: https://www.yoctoproject.org/
+Description: Linux kernel
+ AMD common kernel recipe for Linux 6.18.y
+OE: linux-amd
+PackageArch: x100
+
+Package: kernel-image-bzimage-6.18.33-amd-standard
+Architecture: amd64
+Version: 6.18.33-r1.0
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: kernel-image-bzimage
+Filename: ./kernel-image-bzimage-6.18.33-amd-standard_6.18.33-r1.0_amd64.deb
+Size: 1092
+MD5sum: a614b0a15cb5dcef53c7d1fb90b274b5
+SHA1: 11be54e20feb4a92c85d5d9aa0bdb36f2466f49b
+SHA256: 9b2f4b4df3fd817bbe18c1009bef8fcefb233009776c5451053bcf087cad9d8d
+SHA512: 3d0fbb2e3ac9595eee1ccce8ca807df02925834dcf80a0a40997a2257d37200d88284d3e211922f84c5c819eff101667bed7f69dcfe79895ddf4b9af3e4e38b3
+Homepage: https://www.yoctoproject.org/
+Description: Linux kernel
+ AMD common kernel recipe for Linux 6.18.y
+OE: linux-amd
+PackageArch: x100
+
+Package: kernel-modules
+Architecture: amd64
+Version: 6.18.33-r1.0
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./kernel-modules_6.18.33-r1.0_amd64.deb
+Size: 65980596
+MD5sum: 386335e1c073593265f4eda9a3e966d9
+SHA1: 6c7f082b9b3587dd496a51b03e8abc102e29f71c
+SHA256: 4e20aa050a522f066fecc47cc17c201402f07acde12cfcd96b7886fe1e0cad0b
+SHA512: ca0272a1b7c8a987a04aceee31acd859da5b8b7f6937dc6c882a81086e7fa7f08fcedfe37a726f18fd0c503be535fbb2ad754d17497be6939c7ccfb078b5c5a5
+Homepage: https://www.yoctoproject.org/
+Description: Linux kernel
+ Kernel modules meta package
+OE: linux-amd
+PackageArch: x100
+
+Package: kernel
+Architecture: amd64
+Version: 6.18.33-r1.0
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: kernel-6.18.33-amd-standard (= 6.18.33-r1.0)
+Filename: ./kernel_6.18.33-r1.0_amd64.deb
+Size: 808
+MD5sum: 85b8d211b1704024c9f71fad457ab71a
+SHA1: 5e0fe0d14f1c02ab794cc19297137d5e0a0035e1
+SHA256: d864204af92fd863b6f1c02e4e5f23b107e67c5a06a2faf1f4c55fec39b66b93
+SHA512: 2ac3c97202533e866888f65ea1d89a0d506092ceaea1bd560994d436192db4845e92d2852063bce2fa1fbc387f2f03edce745b031a0c15a3520a9566f882155b
+Homepage: https://www.yoctoproject.org/
+Description: Linux kernel
+ AMD common kernel recipe for Linux 6.18.y
+OE: linux-amd
+PackageArch: x100
+
+Package: keymaps-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./keymaps-dbg_1.0-r0_amd64.deb
+Size: 852
+MD5sum: 7962f64d2c34d1ad77f7e493216647c6
+SHA1: 42a004aa83469a723ff4c4b92f91d89b86487a85
+SHA256: b60a79c400d12dbb9d5e49689379a52cf182373ff4556457d650fd018493c608
+SHA512: 10077fe5adecd4b812d29c9c08f6de9cb1d8f4f8f92b16d13ee584523e39763ce58e94ac560dbf890da4722a81afc4fc8f6c24635b80777dd7c9a7e42580b2ab
+Homepage: https://www.yoctoproject.org/
+Description: Keyboard maps - Debugging files
+ Keymaps and initscript to set the keymap on bootup.  This package
+ contains ELF symbols and related sources for debugging purposes.
+OE: keymaps
+PackageArch: x100
+
+Package: keymaps-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: kbd-dev, keymaps (= 1.0-r0)
+Filename: ./keymaps-dev_1.0-r0_amd64.deb
+Size: 888
+MD5sum: 426112f99ccae1c5ee763592599b9e10
+SHA1: 9154abb1677046d5e002e3462bb4260e3046b11b
+SHA256: b91ba142bd000cf022f1b8fe572d561f25c78b3bd5a7887f6b278940cd22850b
+SHA512: 93205496158320cb0acd882853666533f6ff31511c15ad03180660bc01df45ce1bd7c344f81ec429022b988f092af3de3dc898a1eada4b42696e49bedb94e971
+Homepage: https://www.yoctoproject.org/
+Description: Keyboard maps - Development files
+ Keymaps and initscript to set the keymap on bootup.  This package
+ contains symbolic links, header files, and related items necessary for
+ software development.
+OE: keymaps
+PackageArch: x100
+
+Package: keymaps
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: kbd
+Filename: ./keymaps_1.0-r0_amd64.deb
+Size: 908
+MD5sum: 9cbe0a00c51f95b740540badae7c6787
+SHA1: 9f2ce84ae8d1b92b80cf82fbc0e57b7348d6ff7d
+SHA256: e99d52639c6ebb7d513974e9ea60ceb3495effaa9d95e160d551d26728180322
+SHA512: a0ef13856a5cd75f5941617655e8758bfeb9a41c30b8f6884a5ede9b38373ca5075426218cb3ad97f3d565d1f6dcefe1e6e8cab8f937e817fa7c90f48bc8ae27
+Homepage: https://www.yoctoproject.org/
+Description: Keyboard maps
+ Keymaps and initscript to set the keymap on bootup.
+OE: keymaps
+PackageArch: x100
+
+Package: libbpf-dbg
+Architecture: amd64
+Version: 1.7.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: elfutils-dbg, glibc-dbg, libelf-dbg, zlib-dbg
+Filename: ./libbpf-dbg_1.7.0-r0_amd64.deb
+Size: 542388
+MD5sum: 26665a84feb47671c467a0afb59174e3
+SHA1: b27318546c653bd63b46e1d45c6e7861e288f74a
+SHA256: 782900dfd312ee818b296a0c157e149c1c76baee9ce4a295b33170d476f080b0
+SHA512: 306be58e9adf635ca1b0844b0e04c4bd299a62e6e3be020c689d98747f1fa7f91a40a65faa6f53487c38d7ec2660f3aaf9826707bb3f21558ec5dbbe2993640b
+Homepage: https://github.com/libbpf/libbpf
+Description: Library for BPF handling - Debugging files
+ Library for BPF handling  This package contains ELF symbols and related
+ sources for debugging purposes.
+OE: libbpf
+PackageArch: x100
+
+Package: libbpf-dev
+Architecture: amd64
+Version: 1.7.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: elfutils-dev, libbpf, zlib-dev
+Recommends: elfutils-dev, glibc-dev, libbpf1 (= 1.7.0-r0), libelf-dev, zlib-dev
+Filename: ./libbpf-dev_1.7.0-r0_amd64.deb
+Size: 83152
+MD5sum: 2c0c0673d8f9f19dcbb3280ad861d364
+SHA1: f329d9a86bdbb9bdbc102a9538275f4a519c66bf
+SHA256: 739637b4f75f7b0ce6dd553be3687a205aafdabd22876f2267ca32529dcc76f0
+SHA512: de1408a0e0b28626bc3232b2b321e14b67d5ca1a7cd6a7352031bf73eda7b693e3d9306268e5675fc004b047f8db264eef634f5104ccd4ce9f23f2e73ff89f45
+Homepage: https://github.com/libbpf/libbpf
+Description: Library for BPF handling - Development files
+ Library for BPF handling  This package contains symbolic links, header
+ files, and related items necessary for software development.
+OE: libbpf
+PackageArch: x100
+
+Package: libbpf1
+Architecture: amd64
+Version: 1.7.0-r0
+Priority: optional
+Section: libs
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: libbpf
+Depends: libc6 (>= 2.43+git0+ce1013a197), libelf1 (>= 0.194), libz1 (>= 1.3.2)
+Filename: ./libbpf1_1.7.0-r0_amd64.deb
+Size: 175844
+MD5sum: 837b3a9f5dfdf3c614ebc9e2e9412253
+SHA1: 9f431ce769ea4a4145274874d5e18457c474e706
+SHA256: adecd56e036c32f2be2946715033ea53897dd3998b8ac51a380e607fbfcdc04e
+SHA512: 0a773e7ec1e29cfab3914229118e30fdff0dc998d31e6374ca5c09adb0ba21df268a80cfe9ecfcdad80119033868964a1ab4e18e4711676338bf8780ecb14043
+Homepage: https://github.com/libbpf/libbpf
+Description: Library for BPF handling
+ Library for BPF handling
+OE: libbpf
+PackageArch: x100
+
+Package: make-mod-scripts-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./make-mod-scripts-dbg_1.0-r0_amd64.deb
+Size: 852
+MD5sum: c2e50927faed28edd1c758deba498237
+SHA1: 87e14761d01ebda6c3c93c26e54fe30b39a27be6
+SHA256: 097b4d202b64a3e53da3550f5bebc144aa8102a0aa8a16ec00beec4551f4b34d
+SHA512: 938b9dd2eca308699b6d446e08d04477d449437cd2790835800bc745aa476a03042970c6bf08ce8cb4529197ce1574ce6dab36ba08df2fba6ef498c57bfb445c
+Homepage: https://www.yoctoproject.org/
+Description: Build tools needed by external modules - Debugging files
+ Build tools needed by external modules.  This package contains ELF
+ symbols and related sources for debugging purposes.
+OE: make-mod-scripts
+PackageArch: x100
+
+Package: make-mod-scripts-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./make-mod-scripts-dev_1.0-r0_amd64.deb
+Size: 864
+MD5sum: 9c55f59095457efe0c66eab8032593be
+SHA1: 20e760215b1eb7b9bd8b29c6fad5e85737dd392a
+SHA256: 7bd79c7da19ee8ddafb1e77a89ddf9f21187f2fb15c288bacdb3b388f72d6580
+SHA512: 56e3f467d149f0cd732578b1c630e7bc9e835e9fade298a4051a1758a9373bbbfb9dadca578f6527f5deb6b58572bd9910dfea2fbfff015a48a4cd5cd0edaa10
+Homepage: https://www.yoctoproject.org/
+Description: Build tools needed by external modules - Development files
+ Build tools needed by external modules.  This package contains symbolic
+ links, header files, and related items necessary for software
+ development.
+OE: make-mod-scripts
+PackageArch: x100
+
+Package: opkg-arch-config-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./opkg-arch-config-dbg_1.0-r0_amd64.deb
+Size: 852
+MD5sum: 7bebec5afd4763570f9ded6bc4574242
+SHA1: e09af0e11b18f616b5768e5068dcb1d336654cb7
+SHA256: cc127bb72d6be3a235c8c2105521b7654a830a36565bf60653ead72d68060527
+SHA512: c5e7e8a6d07971ec7b74c0a4bf4fdff8b617adbe5c745d4e00416397fdb28f69baf132f4941535d4c22a6bd5ab94706b57a82579b5631b88962662b9b11f08c2
+Homepage: https://git.yoctoproject.org/opkg/
+Description: Architecture-dependent configuration for opkg - Debugging files
+ Architecture-dependent configuration for opkg.  This package contains ELF
+ symbols and related sources for debugging purposes.
+OE: opkg-arch-config
+PackageArch: x100
+
+Package: opkg-arch-config-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: opkg-arch-config (= 1.0-r0)
+Filename: ./opkg-arch-config-dev_1.0-r0_amd64.deb
+Size: 880
+MD5sum: c0979d6cc2de337a8828016daee37ee3
+SHA1: d1db9689763902298d47e61cb79bdec40f46927b
+SHA256: 6370b161b8535cd347c97bc11f4ef44cb35f31bd06cd7c01a8254e2c2e66e868
+SHA512: 8751ae675a0169aae8283cb1c02f04fbf6d5cdb04da5abc163c442d55e622bd0d2c460fbf2d3bd4ea67f675f43dd0a95295f137e78876122d0021c9d8368e28d
+Homepage: https://git.yoctoproject.org/opkg/
+Description: Architecture-dependent configuration for opkg - Development files
+ Architecture-dependent configuration for opkg.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+OE: opkg-arch-config
+PackageArch: x100
+
+Package: opkg-arch-config
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: opkg-config-base
+Conflicts: opkg-config-base
+Replaces: opkg-config-base
+Filename: ./opkg-arch-config_1.0-r0_amd64.deb
+Size: 944
+MD5sum: bb4fd2e05c401da77357fe221cdcb443
+SHA1: 4be67535f428f2ed9f3ea646bd2022f2a7f7a32e
+SHA256: 8abbdea383b4e5138ec5737fd51736b347988a6a9d039a140ac6f79fbd865317
+SHA512: 644a622ea362a00e4b31ea100a08b6e636dd8afd70207e3f7dde6256a625c69a45c2593fd5ae4fc9b5309c4496ff4a6352f4e008ac39d72428b1b897e7e8e0e0
+Homepage: https://git.yoctoproject.org/opkg/
+Description: Architecture-dependent configuration for opkg
+ Architecture-dependent configuration for opkg.
+OE: opkg-arch-config
+PackageArch: x100
+
+Package: packagegroup-amd-base-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: amdgpu-firmware-dbg, apt-dbg, blacklist-dbg, dosfstools-dbg, dpkg-dbg, e2fsprogs-dbg, e2fsprogs-resize2fs-dbg, ethtool-dbg, f2fs-tools-dbg, gptfdisk-dbg, iproute2-dbg, kernel-modules-dbg, lib64-setup-dbg, libxcrypt-compat-dbg, net-tools-dbg, nvme-cli-dbg, openssh-dbg, openssh-sftp-server-dbg, parted-dbg, setup-partitions-dbg, util-linux-dbg, utility-scripts-dbg
+Filename: ./packagegroup-amd-base-dbg_1.0-r0_amd64.deb
+Size: 1152
+MD5sum: 495d73aab65b4b7bfbc606e20ec620e4
+SHA1: e3499ce33ab8f428a57ebe00a891132ba426f901
+SHA256: 8501d100c0edb751db344cbf14f69c8d27756a3aace44e37c5a31a8ca69214ad
+SHA512: a28d7b351f662266e5e9e78f98c904ed71f13c93625ebb0fdb490373b9ebb71873e45ae57737bfdd19b83759730b54552d7fdfd70a91506026484dfc88e4dda4
+Description: Minimal runtime set required to boot an AMD board - Debugging files
+ Everything the base image needs to boot, mount its rootfs, bring up
+ networking and pull the remaining packagegroups from the apt feed.
+ Anything that is not needed to reach a login prompt belongs in
+ packagegroup-amd-graphics, packagegroup-amd-dev or packagegroup-amd-dbg
+ instead.  This package contains ELF symbols and related sources for
+ debugging purposes.
+OE: packagegroup-amd-base
+PackageArch: x100
+
+Package: packagegroup-amd-base-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: amdgpu-firmware-dev, apt-dev, blacklist-dev, dosfstools-dev, dpkg-dev, e2fsprogs-dev, e2fsprogs-resize2fs-dev, ethtool-dev, f2fs-tools-dev, gptfdisk-dev, iproute2-dev, kernel-modules-dev, lib64-setup-dev, libxcrypt-compat-dev, net-tools-dev, nvme-cli-dev, openssh-dev, openssh-sftp-server-dev, packagegroup-amd-base (= 1.0-r0), parted-dev, setup-partitions-dev, util-linux-dev, utility-scripts-dev
+Filename: ./packagegroup-amd-base-dev_1.0-r0_amd64.deb
+Size: 1176
+MD5sum: 77248b27d904a2532c390882b6fe971c
+SHA1: c97333203bf37260309170b56b3c687cf8cd585b
+SHA256: 77e941929e4ad6d03daa670f0f7beb4a249fd15cc1f9003e80ad4d195ea95c64
+SHA512: dd361a1e956820d4e954565c6c25aeb1a216d3b1ecd248299b2c7601c7ef3a310b0ea2df68d1c5ae328dc3c9d125834ec62792f79ad446b15404faf6a83de1d2
+Description: Minimal runtime set required to boot an AMD board - Development files
+ Everything the base image needs to boot, mount its rootfs, bring up
+ networking and pull the remaining packagegroups from the apt feed.
+ Anything that is not needed to reach a login prompt belongs in
+ packagegroup-amd-graphics, packagegroup-amd-dev or packagegroup-amd-dbg
+ instead.  This package contains symbolic links, header files, and related
+ items necessary for software development.
+OE: packagegroup-amd-base
+PackageArch: x100
+
+Package: packagegroup-amd-base
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: amdgpu-firmware, apt, blacklist, dosfstools, dpkg, e2fsprogs, e2fsprogs-resize2fs, ethtool, f2fs-tools, gptfdisk, iproute2, kernel-modules, lib64-setup, libxcrypt-compat, net-tools, nvme-cli, openssh, openssh-sftp-server, parted, setup-partitions, util-linux, utility-scripts
+Recommends: ca-certificates
+Filename: ./packagegroup-amd-base_1.0-r0_amd64.deb
+Size: 1100
+MD5sum: 66ce37c79e560ca230a347a3df4203b7
+SHA1: dc3491774e8750214d981d0e39c22065edb93517
+SHA256: 48ea24ef1a2d3c2fc791e767cbee031ad3db3e8e67e40799f2538a36a3fb0b21
+SHA512: ee73d2746798b89cb1a2c0d1290eb47742056475d01f3051d38a288b1d4cd4e3a0fa52be2accee52072e8ac92534673d79935c528529f872f24128822966c3e0
+Description: Minimal runtime set required to boot an AMD board
+ Everything the base image needs to boot, mount its rootfs, bring up
+ networking and pull the remaining packagegroups from the apt feed.
+ Anything that is not needed to reach a login prompt belongs in
+ packagegroup-amd-graphics, packagegroup-amd-dev or packagegroup-amd-dbg
+ instead.
+OE: packagegroup-amd-base
+PackageArch: x100
+
+Package: packagegroup-amd-graphics-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: acp-services-dbg, brotli-dbg, cpupower-dbg, cups-dbg, double-conversion-dbg, fontconfig-dbg, freetype-dbg, graphviz-dbg, harfbuzz-dbg, icu-dbg, libbpf-dbg, libbsd-dbg, libegl-mesa-dbg, liberation-fonts-dbg, libgbm-dbg, libgl-mesa-dbg, libgles1-mesa-dbg, libgles2-mesa-dbg, libkcapi-dbg, libpcre2-dbg, libsdl2-dbg, libv4l-dbg, libxcb-dbg, libxfont-dbg, libxinerama-dbg, lvm2-dbg, md4c-dbg, media-ctl-dbg, mesa-dbg, mesa-megadriver-dbg, mesa-tools-dbg, mesa-vulkan-drivers-dbg, multipath-tools-dbg, netplan-dbg, nlohmann-json-dbg, nspr-dbg, nss-dbg, opencv-dbg, python3-fcntl-dbg, python3-json-dbg, python3-pip-dbg, read-edid-dbg, seatd-dbg, syslog-ng-dbg, tbb-dbg, ttf-dejavu-common-dbg, ttf-dejavu-sans-dbg, ttf-dejavu-sans-mono-dbg, ttf-dejavu-serif-dbg, umr-dbg, wayland-dbg, wayland-utils-dbg, weston-dbg, weston-headlessboot-hotplug-dbg, xhost-dbg, xlsfonts-dbg, xwayland-dbg
+Filename: ./packagegroup-amd-graphics-dbg_1.0-r0_amd64.deb
+Size: 1316
+MD5sum: bde96813ab9ff9f6058cb7273d92093e
+SHA1: ab6e85891d25ffce1ba9314501f7b42415b910ce
+SHA256: 902b737d5275a168ad328c2b8e792976316b6246277ca2e7cedbae5a80283e9f
+SHA512: bb42912515f8c9b9d007f14aa3df0bf7d13454aadc2e2e70436cccaa61d12733ccc7ecbbca407b2f3a1a3ae3c16bedfa70aadbf2a4a0621d2e1ce5ae642fca83
+Description: AMD graphics, multimedia and board userspace - Debugging files
+ The graphics/multimedia stack and board-support userspace that used to be
+ appended to IMAGE_INSTALL from local.conf. Pulled in by core-image-
+ weston-amd; the base image does not install it, but it can be added at
+ runtime with 'apt install packagegroup-amd-graphics'.  This package
+ contains ELF symbols and related sources for debugging purposes.
+OE: packagegroup-amd-graphics
+PackageArch: x100
+
+Package: packagegroup-amd-graphics-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: acp-services-dev, brotli-dev, cpupower-dev, cups-dev, double-conversion-dev, fontconfig-dev, freetype-dev, graphviz-dev, harfbuzz-dev, icu-dev, libbpf-dev, libbsd-dev, libegl-mesa-dev, liberation-fonts-dev, libgbm-dev, libgl-mesa-dev, libgles1-mesa-dev, libgles2-mesa-dev, libkcapi-dev, libpcre2-dev, libsdl2-dev, libv4l-dev, libxcb-dev, libxfont-dev, libxinerama-dev, lvm2-dev, md4c-dev, media-ctl-dev, mesa-dev, mesa-megadriver-dev, mesa-tools-dev, mesa-vulkan-drivers-dev, multipath-tools-dev, netplan-dev, nlohmann-json-dev, nspr-dev, nss-dev, opencv-dev, packagegroup-amd-graphics (= 1.0-r0), python3-fcntl-dev, python3-json-dev, python3-pip-dev, read-edid-dev, seatd-dev, syslog-ng-dev, tbb-dev, ttf-dejavu-common-dev, ttf-dejavu-sans-dev, ttf-dejavu-sans-mono-dev, ttf-dejavu-serif-dev, umr-dev, wayland-dev, wayland-utils-dev, weston-dev, weston-headlessboot-hotplug-dev, xhost-dev, xlsfonts-dev, xwayland-dev
+Filename: ./packagegroup-amd-graphics-dev_1.0-r0_amd64.deb
+Size: 1344
+MD5sum: 8af1087cdbaf15f43d7db58a57479c18
+SHA1: c57f2bb84517f44be7c5e555aca50b7b13f1a456
+SHA256: d5049a7e05260deec770d1786681a6906749e963c3bd77441895b78be3a01d1d
+SHA512: 7949a45431eb80715eab6112acd46c8a20b3bff099f63f70f1d09e246752115edff29271d55b95af32991b722fd2771771039c7b64b58807881fa26c3609a6a7
+Description: AMD graphics, multimedia and board userspace - Development files
+ The graphics/multimedia stack and board-support userspace that used to be
+ appended to IMAGE_INSTALL from local.conf. Pulled in by core-image-
+ weston-amd; the base image does not install it, but it can be added at
+ runtime with 'apt install packagegroup-amd-graphics'.  This package
+ contains symbolic links, header files, and related items necessary for
+ software development.
+OE: packagegroup-amd-graphics
+PackageArch: x100
+
+Package: packagegroup-amd-graphics
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: acp-services, brotli, cpupower, cups, double-conversion, fontconfig, freetype, graphviz, harfbuzz, icu, libbpf, libbsd, libegl-mesa, liberation-fonts, libgbm, libgl-mesa, libgles1-mesa, libgles2-mesa, libkcapi, libpcre2, libsdl2, libv4l, libxcb, libxfont, libxinerama, lvm2, md4c, media-ctl, mesa, mesa-megadriver, mesa-tools, mesa-vulkan-drivers, multipath-tools, netplan, nlohmann-json, nspr, nss, opencv, python3-fcntl, python3-json, python3-pip, read-edid, seatd, syslog-ng, tbb, ttf-dejavu-common, ttf-dejavu-sans, ttf-dejavu-sans-mono, ttf-dejavu-serif, umr, wayland, wayland-utils, weston, weston-headlessboot-hotplug, xhost, xlsfonts, xwayland
+Filename: ./packagegroup-amd-graphics_1.0-r0_amd64.deb
+Size: 1244
+MD5sum: 019407f3a47e8abb4ef19af555e00e31
+SHA1: 2f9b79c7e750805168553d1ce52d6e2cea2c1a25
+SHA256: e146aa8aef69bf8c947d14523d23dd03dcac60b3940c70dbdf63f7de2a7e10e7
+SHA512: 9b514eea177d6d0c836976a5836c8356e6220f05791bfa057866d384ffd7267d32ddfac55394bc0c1d2a35aa62e9d34929360c54b3c6e63c6ae81f6b95471f9f
+Description: AMD graphics, multimedia and board userspace
+ The graphics/multimedia stack and board-support userspace that used to be
+ appended to IMAGE_INSTALL from local.conf. Pulled in by core-image-
+ weston-amd; the base image does not install it, but it can be added at
+ runtime with 'apt install packagegroup-amd-graphics'.
+OE: packagegroup-amd-graphics
+PackageArch: x100
+
+Package: packagegroup-amd-secure-vaapi-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: libcaca-dbg, libjpeg8-dbg, libsndio-dbg, libvdpau-dbg
+Filename: ./packagegroup-amd-secure-vaapi-dbg_1.0-r0_amd64.deb
+Size: 864
+MD5sum: 1d88bc61564e30378ca05e32f9ac68df
+SHA1: d39f0667a6ceeae8f95f87b1e8a86499a087531b
+SHA256: a3594f3d08d15e38a2d2fd6127fa6ccbe70e3df97dc9399b78c79b3f51777a77
+SHA512: 9ee77c917daa15e43bf780a146c7453747fab38a089a8cad6d9fccd697069a27346c7a942ca4c47819168b3decbaecae39ef7402122966576ba0fda418d50100
+Description: All dependency for mpv secure playback - Debugging files
+ All dependency for mpv secure playback.  This package contains ELF
+ symbols and related sources for debugging purposes.
+OE: packagegroup-amd-secure-vaapi
+PackageArch: x100
+
+Package: packagegroup-amd-secure-vaapi-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: libcaca-dev, libjpeg8-dev, libsndio-dev, libvdpau-dev, packagegroup-amd-secure-vaapi (= 1.0-r0)
+Filename: ./packagegroup-amd-secure-vaapi-dev_1.0-r0_amd64.deb
+Size: 888
+MD5sum: 979d61fb30fbfd3d73ae24b761bc604e
+SHA1: 9ca8367bea01d87057f24bbad7b01e8c84e3af35
+SHA256: 73ae78729ef930c41ab760b433549c70701f16c13ba075f19c6c383f90322c72
+SHA512: ed7f2fbd693ba364f55db8705c20cbe380fe5f1ed6ab668f2711fc12472c76bfda5022cba9591395af7e3a7dda5137b293b77c26a7fdde1793c04905a7b34bb9
+Description: All dependency for mpv secure playback - Development files
+ All dependency for mpv secure playback.  This package contains symbolic
+ links, header files, and related items necessary for software
+ development.
+OE: packagegroup-amd-secure-vaapi
+PackageArch: x100
+
+Package: packagegroup-amd-secure-vaapi
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libcaca, libjpeg8, libsndio, libvdpau
+Filename: ./packagegroup-amd-secure-vaapi_1.0-r0_amd64.deb
+Size: 792
+MD5sum: 5c618dab05adaf8c95b05cd1f5f1bdf9
+SHA1: 3bf43970dd9550c63d4dc5fdfaffde16c7a71898
+SHA256: ac93b08abd8ef559e4b7894d5afa1d25ed1ef17d429a8f898be4346ca5f61c6d
+SHA512: 8d1478364022efcc7698ba0160e6c1b97ee157d08e86bcede588610f1cd94a491f751ee5ffceb146c21c338d0e3def4cb92fe39dfacca54e66c84114d5272a10
+Description: All dependency for mpv secure playback
+ All dependency for mpv secure playback.
+OE: packagegroup-amd-secure-vaapi
+PackageArch: x100
+
+Package: packagegroup-base-3g-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: ofono-dbg
+Filename: ./packagegroup-base-3g-dbg_1.0-r0_amd64.deb
+Size: 792
+MD5sum: a31eeb1bffd82dfdc19636fb9b9b4e88
+SHA1: a4e74c32806338630a90a8d35ef3854ce5b3aca5
+SHA256: 0b2d83cd1eee488bb0c140da798978c9ef2cc412aae0dbe336d546e0a578f197
+SHA512: 3c49896177dd9589b48010ea3d0ae8fb16a5056fc0acddeee317ee2e780473fa8573d0807d5d0dba827fca61ed340d09d5fb3b06d5e4571c8a91b270fbab46ac
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-3g-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: ofono-dev
+Filename: ./packagegroup-base-3g-dev_1.0-r0_amd64.deb
+Size: 792
+MD5sum: 2ffe9246981823e20bdc9001a0290357
+SHA1: c3077f49776552b1ae27885bf0974dee659fe5c9
+SHA256: 6c16930e5f32c928b09963399a420ee530966bf191f7bf48bb1cbd31adb390f9
+SHA512: c54bb013c0c767dced911975435b5a5da1dfb9e7dea7e6721c38ab8e8b32f4ee5c23f5b6515e7d6aa6e059f6458ef3284def8c779464ae2d20b01d5b2eab5ca5
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-3g
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: ofono
+Recommends: kernel-module-cdc-acm, kernel-module-cdc-wdm
+Filename: ./packagegroup-base-3g_1.0-r0_amd64.deb
+Size: 828
+MD5sum: 1cb38be3c13f4f5f751809f2f3e8f441
+SHA1: d5579d4ffcc7652d08c78155ed5050a9e683dd8b
+SHA256: 8567937d0c9d78f1deeb605a721fab50e84cb21415669abc82a0ccfa55d96bc8
+SHA512: 9f3600b541be84408947c0e6bf227bfb562e4b91769061879dad452fa8cd25c335d77d307555c4dd29528d4af5c1e88d83ac4a3daac5cd321acd06d214722952
+Description: Cellular data support
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-acpi-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: acpid-dbg
+Filename: ./packagegroup-base-acpi-dbg_1.0-r0_amd64.deb
+Size: 792
+MD5sum: 6dcbf2e14b7658bd589346df4c61badf
+SHA1: 674147366e9162674c2242c7e21f6115f70da119
+SHA256: 3e62529e8e0483e71f36c39243ad94aea201257fccf81b780970c0077d6657e9
+SHA512: 834fe97d39df87065585529516cc7858ee68ec71915caee1d8549ab66c303debb482254b4fcdb47783c69865b32a0d4d1e3a1e4bd309fa19d9232bc77635f034
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-acpi-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: acpid-dev
+Filename: ./packagegroup-base-acpi-dev_1.0-r0_amd64.deb
+Size: 792
+MD5sum: 00f98cd0064043211434b47895b04695
+SHA1: 466f3ffa50aceb628f3b6922c2fa9001b77c313d
+SHA256: 2510222283ad507a7663d9ef808b06bf0ed5976a45a9e9c6e0e525a995a9b984
+SHA512: 67723ab2f12da47c83d38cb442121586059ce86a4f0d5794c68f3f5ba12219a769707c7f563b4e3870e33a5b85df5f9e357ab5ee148f015d164d84488850f0af
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-acpi
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: acpid
+Filename: ./packagegroup-base-acpi_1.0-r0_amd64.deb
+Size: 792
+MD5sum: 6695fe7fa6460ee393186981fa202195
+SHA1: 47c180a9adee0a831b379ed278448b499bca477e
+SHA256: 94f760b2e28b388010a50532a8a2f0200cf415050bd492eb8f53f2f2094dc161
+SHA512: 6e4a119629c491409034552ba803bb02dd328d0644b5322a48e277fe7de1ff81ded3e2fe4e7ddf59aaf376f5e28ed19674d6d33bc8757659626083b3793d50a9
+Description: ACPI support
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-alsa-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: alsa-state-dbg, alsa-utils-alsactl-dbg, alsa-utils-amixer-dbg
+Filename: ./packagegroup-base-alsa-dbg_1.0-r0_amd64.deb
+Size: 816
+MD5sum: 219ae1d4552965c0d099f2337e92f1d1
+SHA1: 95419df85cd21b8769a9c03014a46982573a7aaf
+SHA256: 7efad45b566d8ef3dcbdef160af067918860ca84b4caca41613092573fb5bfe2
+SHA512: b6863f40384071ef0e74354a91db5cda0a12a1ed1b7f054679d8b90c8a1429759929d587bdae10467eb8554a7a10ee682bc3badf9262872d24a38321bb8d5d8c
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-alsa-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: alsa-state-dev, alsa-utils-alsactl-dev, alsa-utils-amixer-dev
+Filename: ./packagegroup-base-alsa-dev_1.0-r0_amd64.deb
+Size: 816
+MD5sum: 2e325b1ed51ac4dd5cd0d89f2789786f
+SHA1: adc4d3807eb98dbc2904603d1b02a5130d429dda
+SHA256: 9cbf512a7545f81ca61f5f0fe19f6c9665124b9098d1f361f2f0fb1ad6a2cabe
+SHA512: ebc4ab0323bb1f8194a295e8f95fe7f199f8503c0c0fafc98c6229a7ea447e8cf5dc518aa2f0a19bca433be9369315b9f7c3a752fe34fe65b35273470f923c1f
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-alsa
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: alsa-state, alsa-utils-alsactl, alsa-utils-amixer
+Recommends: kernel-module-snd-mixer-oss, kernel-module-snd-pcm-oss
+Filename: ./packagegroup-base-alsa_1.0-r0_amd64.deb
+Size: 848
+MD5sum: 0ba926abdd65d3577ad2d4b4d016546d
+SHA1: 329d814435d2f41186a94bd8ceea8fa4f437e4ed
+SHA256: 0a54d625dcb8d325ebd6b26a15c061303e656f03ea40628731f5ade31b53f49d
+SHA512: d175451ee9cee0626ca92b0c096f1739741dbed455783db45304b99233df5d428e1445d03d289ca4479a63f32ae3ba36c00054324e619ed453fde6ade0042a8b
+Description: ALSA sound support
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-bluetooth-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: bluez5-dbg
+Filename: ./packagegroup-base-bluetooth-dbg_1.0-r0_amd64.deb
+Size: 796
+MD5sum: b1af90331307716dc6546c3384fdf352
+SHA1: af8fa175ead73573bf2177844b8d00f310fcbb49
+SHA256: 5601fd8cab83b50c757955bb9206286417c03507782d9e26713d784ff39e7321
+SHA512: 12c67f7477f007f5c1d314d54d37b19ce7788944b0801155d4bfd29d6d42464b74cdac09444919528b2c97e15f3b3ac8ecf03999e42f2bae56fd08bce54c86c7
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-bluetooth-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: bluez5-dev
+Filename: ./packagegroup-base-bluetooth-dev_1.0-r0_amd64.deb
+Size: 796
+MD5sum: ccf4e04dcb5a5faaa45eb1e2ca1b4f3f
+SHA1: 8366611a6162da81dded82e367ac1edf8125bd0b
+SHA256: f4a97e8bc0bac993ae0ee6b15b14b77bcac3023543d5fcc564fae65a7109efa5
+SHA512: fe71cd6d0c3d724203a07bbb70e69427a0b811f6c4c173eeb584f4cb41d6c3aaa7eac9db92d389e0e7c1f45051e68f6c456455b71f330d6e9e5109982e71d170
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-bluetooth
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: bluez5
+Recommends: kernel-module-bluetooth, kernel-module-bnep, kernel-module-hci-uart, kernel-module-hci-usb, kernel-module-hci-vhci, kernel-module-hidp, kernel-module-l2cap, kernel-module-rfcomm, kernel-module-sco
+Filename: ./packagegroup-base-bluetooth_1.0-r0_amd64.deb
+Size: 856
+MD5sum: d7edaba4f4ac5c16a558e41a225efc6a
+SHA1: 1a97c0691cfb629c2d74fc3772d2a5c381a82571
+SHA256: c1c8b5d380e21ff5c88e6f729c2a3f5ac075240c06dc4bdaa4001b56c5b3ea6e
+SHA512: 5ec054c4c9a916fcaa89ef89634ba3ae443e15a2a7a8d68247f440e4047bf1c7fcf7af0189a037b402d65e7959c42b9db5ad0d975507d07f3b49a96ddf507a58
+Description: Bluetooth support
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: module-init-tools-dbg, packagegroup-base-acpi-dbg, packagegroup-base-alsa-dbg, packagegroup-base-ext2-dbg, packagegroup-base-ipv6-dbg, packagegroup-base-keyboard-dbg, packagegroup-base-nfs-dbg, packagegroup-base-pci-dbg, packagegroup-base-usbgadget-dbg, packagegroup-base-usbhost-dbg, packagegroup-base-zeroconf-dbg, packagegroup-distro-base-dbg, packagegroup-machine-base-dbg
+Filename: ./packagegroup-base-dbg_1.0-r0_amd64.deb
+Size: 936
+MD5sum: bae36b23f47dbd2b9f5279fecfd7d396
+SHA1: 9b9edd13aded606be1c859aac9304e7d93d797dd
+SHA256: ae4d936cd5a89fefea1855df059e31443fcf6b6389cf62efd945384e78d3d89c
+SHA512: 6810d2b2bb57f431c6d2b44bca6b690f539e650d9229207be5cf4041f03ee8eb4fd9bce6de9765e788d11338b77af597e25dbb24c6a7c7e5ae0b11153998eb05
+Description: Merge machine and distro options to create a basic machine task/package - Debugging files
+ Merge machine and distro options to create a basic machine task/package.
+ This package contains ELF symbols and related sources for debugging
+ purposes.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: module-init-tools-dev, packagegroup-base (= 1.0-r0), packagegroup-base-acpi-dev, packagegroup-base-alsa-dev, packagegroup-base-ext2-dev, packagegroup-base-ipv6-dev, packagegroup-base-keyboard-dev, packagegroup-base-nfs-dev, packagegroup-base-pci-dev, packagegroup-base-usbgadget-dev, packagegroup-base-usbhost-dev, packagegroup-base-zeroconf-dev, packagegroup-distro-base-dev, packagegroup-machine-base-dev
+Filename: ./packagegroup-base-dev_1.0-r0_amd64.deb
+Size: 956
+MD5sum: cfc8c74c58956d84d2dbfb731a200ce3
+SHA1: f8c7ea1f6f6fad7c9402ba337f6b11a0c18adbe4
+SHA256: 4b1f08062f0ed37ec30bdcb95f1dba7b865682c582c7cd21c7887e9f1a43cc0c
+SHA512: be5c2340e9f9c239a3987c85ae617480c8b03c132b75eb4db0224181db44301eff59be257d23d1f9da861fd4ff789dff48bf2da814e61b1406a22a261a286484
+Description: Merge machine and distro options to create a basic machine task/package - Development files
+ Merge machine and distro options to create a basic machine task/package.
+ This package contains symbolic links, header files, and related items
+ necessary for software development.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-ext2-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: e2fsprogs-e2fsck-dbg, e2fsprogs-mke2fs-dbg
+Filename: ./packagegroup-base-ext2-dbg_1.0-r0_amd64.deb
+Size: 808
+MD5sum: 03ce3ea568a0169b6a92c184a55f5dd3
+SHA1: bfdd115439f866f29269cf05aafba689ae21276a
+SHA256: cdbfeaecf0eb63e809231c6b8dd3d1184bfae090bdea58e6ad84f6245d7033f8
+SHA512: 6ee06fecd0962887af9e4bb62acdd7586d0fef7013ea40cea824bed6d995418da9d4076984a22965e74c2017a872e1da0a187f95b95a749f8c61c08081744ee7
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-ext2-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: e2fsprogs-e2fsck-dev, e2fsprogs-mke2fs-dev
+Filename: ./packagegroup-base-ext2-dev_1.0-r0_amd64.deb
+Size: 808
+MD5sum: d03797c0fc9ad414380001e7b831567b
+SHA1: b745f775735da2c02b6e6e8e4ca75dc08ae0c4c5
+SHA256: 2037dfca9995f5051252b1b9a95ce2677e99ee3d545c2c19ab1c3d523745f385
+SHA512: 20b3e1fa994e52dc723e36fe5f480347e145ffebd4a51521b753b05e70c9a012a3fea706e4d74f0421d61d27edb4d6d5d2df36bb7fee12633066583a33f415ed
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-ext2
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: e2fsprogs-e2fsck, e2fsprogs-mke2fs
+Recommends: e2fsprogs, hdparm
+Filename: ./packagegroup-base-ext2_1.0-r0_amd64.deb
+Size: 828
+MD5sum: db7b7efb9234a80424200c5b4f190981
+SHA1: a502f881b930632712f019de3dc40695721fefe8
+SHA256: 7dc8ab209d502408ca1dc6a189e573d4656dc2c86d1d9b62688607f449218068
+SHA512: cf0cd9d66c7d4ba71877ec8ab0dc179909ba0622e1fdc396d9340bde6ba5c1844c001a2f3f03fd4794e43cf06b44513f82b6c9d79701cb1b3a6935e6de0a006f
+Description: ext2 filesystem support
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-extended-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: packagegroup-base-3g-dbg, packagegroup-base-bluetooth-dbg, packagegroup-base-dbg, packagegroup-base-nfc-dbg, packagegroup-base-wifi-dbg
+Filename: ./packagegroup-base-extended-dbg_1.0-r0_amd64.deb
+Size: 820
+MD5sum: 2287fdbd19cd2db227af88ad83ca51a5
+SHA1: bdc55a3552127940e0eb6ad4f54946357b9faf48
+SHA256: 7f8dffad65c48f3ccb11b3235fa00f63d3da950e1598b724f1782c98e3fec8af
+SHA512: 2669a35a1b52e86378f207a1b7b4db97b27bf31bc588ed00c2e48b170edc70c7283c7dce2feb1f1cd94e01621bc4bc861139c1177f43a3d9cd8af2e1b21b6e09
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-extended-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: packagegroup-base-3g-dev, packagegroup-base-bluetooth-dev, packagegroup-base-dev, packagegroup-base-nfc-dev, packagegroup-base-wifi-dev
+Filename: ./packagegroup-base-extended-dev_1.0-r0_amd64.deb
+Size: 820
+MD5sum: d125ddb7f290132af03bdf1583485ce1
+SHA1: 0768b08126e0994c3afbaa0b29511998cef93a05
+SHA256: 8f6333691d213ed910cf6d4957f472d6b91d942d16d16d4fd4a4642dcd218d8b
+SHA512: 8cd0f7d56c5af098c15717b2eb0356c2886f4eae186896660e2e9b4a0b543712bacd42e296202b2f7c9be9d6f94ee5d0ad1eedf477c6f452794dd861ceb829b0
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-extended
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: packagegroup-base, packagegroup-base-3g, packagegroup-base-bluetooth, packagegroup-base-nfc, packagegroup-base-wifi
+Filename: ./packagegroup-base-extended_1.0-r0_amd64.deb
+Size: 808
+MD5sum: 3c8d34b958d1f71e9bea86a94777dab9
+SHA1: 1adb9d5f2444e20a052369d4e3ee55b2e28e6960
+SHA256: 8816106ab65d9cad1bb3f561257fee67711541b403e783230eeeac827ddc3f9f
+SHA512: 7b4460627ca86ba2826aacfa33b48b60ef6ce265e79e9c8fd1318f5cb7aade65c8d15896b5b906799ecb67ed1983c8ae4fcae39b1e496722a634923307f550c5
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-ipv6-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./packagegroup-base-ipv6-dbg_1.0-r0_amd64.deb
+Size: 776
+MD5sum: 2bcd6335d6cc444e5b45d79e9f3b7d7a
+SHA1: d63568b8a4b237329d8f7a930c43a680d2db145d
+SHA256: 593350e0abc07dd16da91e9b55620bef7e1a4c9e13c822435e5f3593b9e6cd97
+SHA512: 14a8705495ed1703837f2c87638bfa52912a273eba99d6c725edd5239731f2d1e298d3e5b946547102e745f36a628c7932122dae946311d9a151ce949df79881
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-ipv6-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./packagegroup-base-ipv6-dev_1.0-r0_amd64.deb
+Size: 776
+MD5sum: f80120c7639b423cce94d615acf44f72
+SHA1: b652678ea65fc1d9e8a2db496db07eaac42e9788
+SHA256: 938f12f8ad032c2e5b7fd6208f1d5baa1943d884002e643829ac84fddb08b6c5
+SHA512: ee35ca7f728874c11aa0bc7d5da00c06d7d861b13cac3a83dc00e253db0730670930a845c7a7011afb118784ec848e9b5a244fce41689ac837ec42ac7f18625d
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-ipv6
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: kernel-module-ipv6
+Filename: ./packagegroup-base-ipv6_1.0-r0_amd64.deb
+Size: 800
+MD5sum: 7bbf7061a1385490789f5a9f022dc8da
+SHA1: 0b061db8b19e038980712eddf29650a062b1f512
+SHA256: 2bd72276220f7b2bff81d63085b1a21948da9e10142c7adebda46c222ef8662e
+SHA512: 86041e80369b3a0bb6244bd9357517a584bacb8072bf041de046c01929297ba3b7595b54ffd646ab4f0d6ae886c612c3d1b13ce5c20437bbc6374279d8dc80b6
+Description: IPv6 support
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-keyboard-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: keymaps-dbg
+Filename: ./packagegroup-base-keyboard-dbg_1.0-r0_amd64.deb
+Size: 796
+MD5sum: 038a4ee7941b4a4e086bedadff69db5c
+SHA1: 7f15615fe1e4c2699ace719fc51621d147d35e2d
+SHA256: ef60b362c5c8acb1fd70f6ec0e42ded3ddf6932b1eecdc19fcdd19774a3849e7
+SHA512: ddd2755e520da9d8fd19ad479f117d947ff7203fdda2979b1afe37a42e621a0a38196daf8b2fc50164abc8ef6454ff1af6aebbdade7391197bb4cc38c521d83f
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-keyboard-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: keymaps-dev
+Filename: ./packagegroup-base-keyboard-dev_1.0-r0_amd64.deb
+Size: 796
+MD5sum: 61e05f60f7fc67313100e791e2a6b8d6
+SHA1: 8c0e68549225b25875b39d9655b2745c77213239
+SHA256: c398463fb851b6391d9e7f4b197a23e74bc13f7ec8619ddbf6ec2f694e0b4c57
+SHA512: 6be6d8e5ee16e3ed3bb4e512173a32d667bc399275d54148d5cd0bbd86f5b040d85f355900114ac89ed22f83891ee2fb9156271fba8bbeb3c75439b92a580537
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-keyboard
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: keymaps
+Filename: ./packagegroup-base-keyboard_1.0-r0_amd64.deb
+Size: 796
+MD5sum: 920df45ebdb0bca7bdd19b070ebcbcf7
+SHA1: 06d63b8afb7d255074a986bd47edc04c2e4e83dd
+SHA256: 0ba5bf1ea4b6c9438427e404a11b17a5e5ca2869bd4558d6bd63a5a35b06207d
+SHA512: 077ec1ab7346185eef7bec4cc46887350b3ef91c6f8f29309eb5d12fafba4a6d504891526a3073415d67a998027fa14631527eac48441ca402bf30f18ece9e29
+Description: Keyboard support
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-nfc-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: neard-dbg
+Filename: ./packagegroup-base-nfc-dbg_1.0-r0_amd64.deb
+Size: 792
+MD5sum: bf200917c99c592e49a5583731ce7c9f
+SHA1: 5e14d67d3e8ed7dc2f979e410884b5d99de3f100
+SHA256: 93e4371e97b1095b1f9d5b19c3ae2ffd6fc2a948e26ba39090bec726e9333ff6
+SHA512: 433522784f906f50ded61a3fbde3eeb1d2341c08d85ccbb210531ef353df87bb2adef7ff039229faf4381cdcfe6b24bc1889265192c87e5a2a1597d0e1dc3351
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-nfc-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: neard-dev
+Filename: ./packagegroup-base-nfc-dev_1.0-r0_amd64.deb
+Size: 792
+MD5sum: c2681d8d81cdc91f18ac1663cba81849
+SHA1: 490fc6933649705fc4e4116d414bd2454ad57e58
+SHA256: d3fdf2ea1273de133accf6ac3df9c4b5431e64c39247adaf357969e050c94abb
+SHA512: 265f7ef8a973a86b9101dc47c893c55a9e01adc585b7b48f3adcd25fe0e4217771c74cf110543e2f697381d5052fd01105976714e020b66ac447a1c17fbc9341
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-nfc
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: neard
+Recommends: kernel-module-nfc
+Filename: ./packagegroup-base-nfc_1.0-r0_amd64.deb
+Size: 820
+MD5sum: 7dc86f9b0ad64a10acc957070cf6a4aa
+SHA1: 956260624b38b3a826dede78a2b9d634e61bfc65
+SHA256: a13f70ae5cf0e3da21361b91aac160090d868c189fb38239ffed8f867d9daf1b
+SHA512: 973043feca0218ea647a81811a8cb9c832f1786fd7a9f7af448a1fdfa978e85e7ef4c659ff55100cde72d893fec35377505139bdb81acc0cc9a7c48b67174478
+Description: Near Field Communication support
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-nfs-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: rpcbind-dbg
+Filename: ./packagegroup-base-nfs-dbg_1.0-r0_amd64.deb
+Size: 792
+MD5sum: d4e483cb86e95bd06bb813c01468c427
+SHA1: 375979880eb3726eed0425eb80ff233b66ebf41f
+SHA256: 7e821b8ce0dda40534273ee84a1808c98dd52f01e882e85e38572fc5a688b791
+SHA512: 4a6a8d32fd8c80fbbacbb744fa40181afc2f12734630d6405541fb91302e8525fef3e76bbd1676f6b3947910fbfea655cb5f89535dcfef47e6b71d811ad5207c
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-nfs-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: rpcbind-dev
+Filename: ./packagegroup-base-nfs-dev_1.0-r0_amd64.deb
+Size: 792
+MD5sum: b0176af1174c54f2085864183751aeea
+SHA1: ae2de22259fb90f63ad80f117b1f7eff902221b1
+SHA256: f4f22e703734c773d6b3e63a1acd576f915c4246aa39f88ae47844f75c5762af
+SHA512: 65a5efdd3b4fa8f8826c8cf536f6c6b80842e19d65fcd91e8c6c6796aa89ea9484506607abe2019f2a4b88b00b16b0073157fe22a53d975fae2375e3d00541b0
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-nfs
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: rpcbind
+Recommends: kernel-module-nfs
+Filename: ./packagegroup-base-nfs_1.0-r0_amd64.deb
+Size: 824
+MD5sum: fd19a75dfebf315be1ad0f7dcb037d65
+SHA1: 9d347026f0def1cfad36bdf7374f1767cb05b2e7
+SHA256: cd9a3069200a71b1acacf7c2b53676128aec7ff26d6e481fd816d3a84da5df47
+SHA512: dcd5ccff89b58d9201d3943331441b10e18ba474672783f5ef174995e77a69b3050bd7acfa759b5a6f1e06d4c006df33a46699493e019ae6ab4187ddabf6e76a
+Description: NFS network filesystem support
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-pci-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: pciutils-dbg
+Filename: ./packagegroup-base-pci-dbg_1.0-r0_amd64.deb
+Size: 792
+MD5sum: f01efc666b45c9d4c46defc019bbfb6e
+SHA1: 31bd6481a167ad5179a05efe14fd73d6fba5b11a
+SHA256: 2243b0f358be2271029aeaeccf482eeb0c74b6c99fc5d94012f396af9b7b6b78
+SHA512: f648fa5af0295504d4e70f2fc382a154f7b6e108b8cfd5a356855eeffb1d1219dd6b636e60e770573b79225cedcf3764a2ea4432213dc5a031c63f2dcc63f188
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-pci-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: pciutils-dev
+Filename: ./packagegroup-base-pci-dev_1.0-r0_amd64.deb
+Size: 792
+MD5sum: 23b79cd8bc5e722c05ca59d89a066c06
+SHA1: ac1ae62599178b44123b25422ba856446d342365
+SHA256: 9a98fbd17e5227a7311f6df94c229edf752b9c1d71e489c2aea74286c7245cb9
+SHA512: 0947579c56289e8217d9dc90f6860e8096936f5b5dcd451ec1274b670eabcda584134d155d4545bcb9b20b7a86a254ed2625b96c745cc70e9f34d8d83f9ff8b2
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-pci
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: pciutils
+Filename: ./packagegroup-base-pci_1.0-r0_amd64.deb
+Size: 796
+MD5sum: 0589885acfe531d273cf87aed0469b62
+SHA1: 4b6aa749cbd5d0fe3f1034259750ba9e111e211e
+SHA256: 9b56776715f500ee620f9ce4ad76ae1a57652fcb3e89d99d344c9cddb04fe573
+SHA512: 8ef024230328f71448c548db8d4327db2dfeb01fb06b4ba28c99ec14f4bc4c96366bf6c11f0119d8e0ab78ad76e20c86bd243471fd3682b702df43ea2034b23d
+Description: PCI bus support
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-serial-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: lrzsz-dbg, setserial-dbg
+Filename: ./packagegroup-base-serial-dbg_1.0-r0_amd64.deb
+Size: 800
+MD5sum: 13b73e55f8d20060e0b74c9122e80183
+SHA1: 22d2d3ca8513c7d9bd3e4f419b23c0b8c3109664
+SHA256: 99ceaf8d50bf12a9d388219eaaaf7c103e461e1ec11e47fdf2875cd1cc975994
+SHA512: 1899639b6a3b412bc6f487790220141a89c648bb4d00bf6cb9a5d1c5d0560bf2ba32d404099dfd2bf8ffb8c184635a8c2700111b662356e9b8793bc253960c5c
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-serial-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: lrzsz-dev, setserial-dev
+Filename: ./packagegroup-base-serial-dev_1.0-r0_amd64.deb
+Size: 800
+MD5sum: 53dc2c0cc9f7d71ff6962c3f2dd5db59
+SHA1: e64c3cccd1d6871aae163bd3b39c9879cf6a029c
+SHA256: 9a91cb7d5ce231dee3fe437097cc483e9f8c8f2556b43c5d8c07f292a5ba1bbb
+SHA512: 0e1f52e02d4fcd52aff8360a17ea7f2bb77ea6901575497dcc71ad033ddca205cd2f3439a2ec7f96272e5d8dc0c258e535fadc0709fd759c7dbe936282783b71
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-serial
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: lrzsz, setserial
+Filename: ./packagegroup-base-serial_1.0-r0_amd64.deb
+Size: 800
+MD5sum: 3f821a07d82ce62ae1d0f64630d8bfb8
+SHA1: fe0a3fdb479f1d09f9c02436805639e39ca449fd
+SHA256: 054c1ada06d09ff304cebbd5f1a507cdeb15128512482aada020edbce60dde61
+SHA512: 50290ed5885f1d35f16fb9097891e718e52e4adb3e4734c5b469abb0622785eed18ed6b5586860f40e3066f31c8f13117469d7bb4ce3d321ecd2682098650484
+Description: Serial port support
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-usbgadget-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./packagegroup-base-usbgadget-dbg_1.0-r0_amd64.deb
+Size: 780
+MD5sum: e2a5ac8b5130a8b803f26d6bf6667a65
+SHA1: ca85594cf868223c4ccd92514010c352c77f7c82
+SHA256: e091943384898b6e156fdfa977511ea509eccddaebcccd10d8a4177336f0e5f8
+SHA512: 698d8e8b836329dd9ef584ef524db51cb76d493fd5a23517ad50a14c5d65dce8061da2718845b8945654c9702a59705f88d44adbbd5c5d96f78970fbf95e622c
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-usbgadget-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./packagegroup-base-usbgadget-dev_1.0-r0_amd64.deb
+Size: 780
+MD5sum: 1e103e0fc0b67198f63f1a97fb70154a
+SHA1: 450a8b4c4ba6ad490c159f956c1c9e4078ab7575
+SHA256: 8cbed5f00a900b29e94fccb1ed81001c2763ab58aa944c306684a557bd986a9e
+SHA512: 67f63824ab614a625f5d1a96f079f942530acd9ab01ba28a6a413ee4c79c6cdfa5fe95561bc9fda3835f43288d05121f861c4610b533b00eb5523f5d278ebd32
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-usbgadget
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: kernel-module-g-ether, kernel-module-g-file-storage, kernel-module-g-serial, kernel-module-gadgetfs, kernel-module-pxa27x_udc
+Filename: ./packagegroup-base-usbgadget_1.0-r0_amd64.deb
+Size: 844
+MD5sum: 136315120b732c1951a290d438227afe
+SHA1: 23d13ebd967b9543942fce68baefb57b9e52e48e
+SHA256: c3696121650c3a71acd4f4866907a977004f36f9c4f75f11a7a40b667b083739
+SHA512: 8c91ecb6a607bb3ca49513abf27a7a310c6b504744a9973e63cf2b21ad7595ff7b8375eac795ae1023fc1e9b3d4c3538ff811e09ff5d968d7dea36d5df1aaf1d
+Description: USB gadget support
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-usbhost-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: usbutils-dbg
+Filename: ./packagegroup-base-usbhost-dbg_1.0-r0_amd64.deb
+Size: 796
+MD5sum: 52b27cbfe88a68890a824f6c690dd152
+SHA1: b0421f43bb90d8c21a9cf8a56ce164b9c456cc57
+SHA256: e62138b84e5d2be1eaa59ea1285ae5c23de0a9df6bc2b9d9d9ff0bfe1d7ceef4
+SHA512: b77ac14d47171ae0eeef23df76b6522d49f8098fab8ad2555c6f46a6082b10b547f320df885dbe948b74641104be37c146480494567e85a1821e03373fc5dec4
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-usbhost-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: usbutils-dev
+Filename: ./packagegroup-base-usbhost-dev_1.0-r0_amd64.deb
+Size: 796
+MD5sum: 49068771a014bb34b09be7ead3aae0c4
+SHA1: 4ad528ae2a43637be2dbec5d9eb2811c945948da
+SHA256: a32dc6c7d9e08036c968972eda88c26811c66442510b19f7d4645ce4596c015c
+SHA512: a76247dfd3a5fae81d71771d345b6af4f563e15524b1fd68ecabeb271489c34b49079475cdb4cd104f5317296b2b8ade1e8ef30b31413717000fddcd19775b3a
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-usbhost
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: usbutils
+Recommends: kernel-module-ehci-hcd, kernel-module-mousedev, kernel-module-ohci-hcd, kernel-module-scsi-mod, kernel-module-sd-mod, kernel-module-uhci-hcd, kernel-module-usb-storage, kernel-module-usbcore, kernel-module-usbhid, kernel-module-usbmouse, kernel-module-usbnet, kernel-module-usbserial
+Filename: ./packagegroup-base-usbhost_1.0-r0_amd64.deb
+Size: 884
+MD5sum: 5ec883f00debc92ca2671e83d2772768
+SHA1: 8d7ed4c7ab75f615f6382415af66bcd444f5ee1c
+SHA256: f1848ed57970f049f6e2631159c4ff6c8c9a527df8f165ccb6dc210e6cab8a43
+SHA512: 2044d29a187496807dedbde4574a1839945462f2feeccb462e8ada22481666e5d439698838f3bfdc550ed664ab27671753317a041cd40d8eb6767435fd663fcf
+Description: USB host support
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-wifi-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: iw-dbg, wireless-regdb-static-dbg, wpa-supplicant-dbg
+Filename: ./packagegroup-base-wifi-dbg_1.0-r0_amd64.deb
+Size: 820
+MD5sum: 7b2daa372a9f5cad00dbf2ae903837ef
+SHA1: ea5296a75b4e46d618448d3fff6c58049beba55a
+SHA256: 97b1da2b2d5940956f87154b06dd059668cacae2e710b671341429d1b52915a9
+SHA512: 40334b6a2503a8f63df3dd73d752a0f45079b73ff6f66bbf9027907d04cf8a3987e13f28033233c8e6226993551b4064a4d4601de09165e6c25e845923eae238
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-wifi-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: iw-dev, wireless-regdb-static-dev, wpa-supplicant-dev
+Filename: ./packagegroup-base-wifi-dev_1.0-r0_amd64.deb
+Size: 820
+MD5sum: abd5ea2e5c3070e627f766badd0d792c
+SHA1: 89d55180672a240e268d9f41c83e4a69f6c1df88
+SHA256: b423999a8ea7aa43e738dccdf5c16df1df3acb71f2c2b65b6fc489646a8f6687
+SHA512: 9d20ee2cf85aa9db31780cde5203665575a51cd58b88e1786f5aad1760289d47249e8943c8922b6c83d79772fae823ae06a8be46a42fc34654111a4e3ab08e33
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-wifi
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: iw, wireless-regdb-static, wpa-supplicant
+Recommends: kernel-module-aes, kernel-module-aes-generic, kernel-module-arc4, kernel-module-crypto_algapi, kernel-module-cryptomgr, kernel-module-ecb, kernel-module-ieee80211-crypt, kernel-module-ieee80211-crypt-ccmp, kernel-module-ieee80211-crypt-tkip, kernel-module-ieee80211-crypt-wep, kernel-module-michael-mic, kernel-module-zd1211rw
+Filename: ./packagegroup-base-wifi_1.0-r0_amd64.deb
+Size: 916
+MD5sum: 9850c5b47b4a65d2a773b834064e9f6a
+SHA1: 177a22fc9be2da0934c22141a8420a47b4dd0e30
+SHA256: 2c39226744c5b906bb20749c2b2b7b8959e6fa4786ca74f406df358dcb69b9b5
+SHA512: 87404c2805cfcd92d270951bdfded77739b8b3040baff967ee52a2fcfced43b78091332752831cf4f5b546250bc2619a18f30370636311c2be65348dd08a8cf5
+Description: WiFi support
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-zeroconf-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: avahi-daemon-dbg, libnss-mdns-dbg
+Filename: ./packagegroup-base-zeroconf-dbg_1.0-r0_amd64.deb
+Size: 812
+MD5sum: 0495392afa4dd120397f7bb28a76449e
+SHA1: aeeaabb5cfcdb3931661a42bd99c1c2bf9854c22
+SHA256: 002fb13b5f859e1c678f39235161abdf8bb296b67b44ac203c2a90b6d604335f
+SHA512: 52e171cda7da2f5a07427dfbad2d8f3f020760c9a613e23b33c26daf820b1e9de85a5a1c76d0608e3c0385a6fcc249f3632913fb51b5625c8ae0d8afb78463e7
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-zeroconf-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: avahi-daemon-dev, libnss-mdns-dev
+Filename: ./packagegroup-base-zeroconf-dev_1.0-r0_amd64.deb
+Size: 812
+MD5sum: 7c2809664d0d545a38c989346499644e
+SHA1: 7f90ebfc3764f7ee0afc2d75590380f5ce1cea5b
+SHA256: b695cab241fc3f8d0a9b0d8ac15a6e0cf57fc1f353dd0a1478aa7c4f6f4a0ed1
+SHA512: 9cea3cce9633dcab5e545eef5163110a4e8ae76136ac687a171f5668cb81469dc88ab7b94cd8fa47b1572690454bb447310db47dc22f78dc3b0259f0976a2929
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base-zeroconf
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: avahi-daemon, libnss-mdns
+Filename: ./packagegroup-base-zeroconf_1.0-r0_amd64.deb
+Size: 808
+MD5sum: ad981e4f585e866c1e248c1ee60ee019
+SHA1: 1f1bc4bf96a89ceeb64861a69f81c93c287db2c3
+SHA256: 92d8350d7c33a2001bf61927bdf944c1af965286cf554c82c79b8a091b8fa65e
+SHA512: b1bbbb278ea25a9b11b096e98e8030178ae9414d0a5dfbff980c13ea93f80e57f35d2f445eea467a76b7f7b7467c74148becec472bbb1ef4c39c442402ffd957
+Description: Zeroconf support
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-base
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: module-init-tools, packagegroup-base-acpi, packagegroup-base-alsa, packagegroup-base-ext2, packagegroup-base-ipv6, packagegroup-base-keyboard, packagegroup-base-nfs, packagegroup-base-pci, packagegroup-base-usbgadget, packagegroup-base-usbhost, packagegroup-base-zeroconf, packagegroup-distro-base, packagegroup-machine-base
+Recommends: kernel-module-input, kernel-module-nls-utf8, kernel-module-rtc-dev, kernel-module-rtc-proc, kernel-module-rtc-sysfs, kernel-module-uinput, kernel-module-unix
+Filename: ./packagegroup-base_1.0-r0_amd64.deb
+Size: 916
+MD5sum: 1b52b7eb5e4766672a7ded1d37a27e6e
+SHA1: 94b6868339ba0fa5ff9c9624a6a74b772969cad7
+SHA256: 000bd78c8d211ba2437202f3a9cbdff5a3a2b51ebbcf484b13e446fb97fb57b4
+SHA512: 70ff45dac25220e18e17047d4f65955c68b6561586a839d00976916fe3da413ad9df48d9e4d3d01fc33e93c45b9fba17224413a5e92e6260d2f896a7bbfc828b
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-core-boot-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: base-files-dbg, base-passwd-dbg, busybox-dbg, grub-efi-dbg, kernel-dbg, keymaps-dbg, netbase-dbg, shadow-base-dbg, systemd-dbg, update-alternatives-opkg-dbg
+Filename: ./packagegroup-core-boot-dbg_1.0-r0_amd64.deb
+Size: 924
+MD5sum: 1928d747a8f6d9ecf2ac9dcfb861e05b
+SHA1: 8bdc59161f47ceb4a8c5c69d21e75fb5d63500cb
+SHA256: ce253dad78768fbb41d945016919df8a052121ad4797fcad82a3b66918374c4d
+SHA512: 217e23853a6eaa1888df846e9dcd2145353bbf7cab464d2cea8521d87e9436f5594da34cc2f11bc5d4d2e7b116fc86df16c131fd8b3aa391c1830a386aa2b3e8
+Description: Minimal boot requirements - Debugging files
+ The minimal set of packages required to boot the system  This package
+ contains ELF symbols and related sources for debugging purposes.
+OE: packagegroup-core-boot
+PackageArch: x100
+
+Package: packagegroup-core-boot-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: base-files-dev, base-passwd-dev, busybox-dev, grub-efi-dev, kernel-dev, keymaps-dev, netbase-dev, packagegroup-core-boot (= 1.0-r0), shadow-base-dev, systemd-dev, update-alternatives-opkg-dev
+Filename: ./packagegroup-core-boot-dev_1.0-r0_amd64.deb
+Size: 956
+MD5sum: 026d40ae277bd65de6a4a8ac37f36b1d
+SHA1: b860f9889bbc3b5b7b1e8c3f7f40ae790ed9c484
+SHA256: e10eca3799659dcfb12191a5d5a6145f705872203f481c77aa543e51404e24de
+SHA512: 3174351ae7ec9a81363225dd2bed481a7cd431a2e0e676a426f9ce94032206c52e71d108a456b1f478e44ceb58b6c1c0b9d0b2cacf941a840c8297b6b3737b48
+Description: Minimal boot requirements - Development files
+ The minimal set of packages required to boot the system  This package
+ contains symbolic links, header files, and related items necessary for
+ software development.
+OE: packagegroup-core-boot
+PackageArch: x100
+
+Package: packagegroup-core-boot
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: base-files, base-passwd, busybox, grub-efi, kernel, keymaps, netbase, shadow-base, systemd, update-alternatives-opkg
+Recommends: busybox-syslog
+Filename: ./packagegroup-core-boot_1.0-r0_amd64.deb
+Size: 868
+MD5sum: 2044b182186565e121654c6f4ccf9233
+SHA1: 2fe2a21e30ef948c9423bbe4b6c8c8dd0ed7f36b
+SHA256: a09e78f4977275723502d2985873efd73045a2a17add5e0cb7f03869cc8000d1
+SHA512: 68bf03fb87ab303eb78078979141b9cb5b69e5c9be9471b3ea700690e8e817ac16c2a65a5332b46b37e4ba8f4304c87f7f925edb5d2da35cd17bb7453dfd9f0b
+Description: Minimal boot requirements
+ The minimal set of packages required to boot the system
+OE: packagegroup-core-boot
+PackageArch: x100
+
+Package: packagegroup-distro-base-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./packagegroup-distro-base-dbg_1.0-r0_amd64.deb
+Size: 776
+MD5sum: 5cccdf98681ff221982f76fdfe18cfdd
+SHA1: 70e30cc85ffc3b44d864a8a9fd498e7546121a17
+SHA256: 0a18280e7be49980c9c04087ef0f53b75a1c9844220d5d13c3b67f9faee1a145
+SHA512: f326f230668a86af679a6e78b3fc79db97d277992f7a0aed645f4473ff91f17246ab935d87315b250ef9b4c6a0741ad80a861c880a544ef84e4e1752dbf84d72
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-distro-base-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./packagegroup-distro-base-dev_1.0-r0_amd64.deb
+Size: 776
+MD5sum: c2255648cddf63648e5b427556795fdf
+SHA1: 8e49744be0e28032a6ee05fe0082a051d13fe308
+SHA256: 5206c4d8abeb47ddb80c4cd9810b35a81172a7db2f319f1e2a5af8baacbe99a0
+SHA512: f1e7d6ce0cdb6c81ea3df0ae0e6f58c43271ff616c03f6de1bf494c06c9442b284d036d51cf3b2e5142b0cca50445740a997349f1ebf33039cf7ce543c2c33b7
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-distro-base
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./packagegroup-distro-base_1.0-r0_amd64.deb
+Size: 776
+MD5sum: 1e514815ee7653c5368c12af3132f660
+SHA1: 7178aacdc9713bde4dd293a221a0fbfd41218c21
+SHA256: bb558849b3839241853b545ba41fe8f1271d7f31829be273418a3a7c324ea5f9
+SHA512: 21adcf4bd26e8b45960a48ce7e9e4fa29b31e8cd4b4508ba5d11b2ba4367721350fb8662fce21d718e68c17c71f4ce7130ce1e6afdeb893090346d137e600a9c
+Description: nodistro extras
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-machine-base-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./packagegroup-machine-base-dbg_1.0-r0_amd64.deb
+Size: 776
+MD5sum: 1e4c493f22cd61b773ee31ce604cc188
+SHA1: e2f48bdc25501634ba57eb85159aa874d92bdc64
+SHA256: 847ba06081fc0ed9aa579da51208dd07613b4995c49c55c139109940a0e7fa32
+SHA512: 72bd16aee4232a3013ed0d507e9cdda482c9165ac236ad2b107d068cf0f406e748efb63912593a68c827894424e32a3f49cab483ed9e4fc55f1fa03d64233918
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-machine-base-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./packagegroup-machine-base-dev_1.0-r0_amd64.deb
+Size: 776
+MD5sum: 63ac43a89b4f9ca81d8cb614416055d5
+SHA1: 162d4d74475745e92cc404b2e1064f45bddc3019
+SHA256: adc8d07a3648440d612bc87942dfff4c3b4963b6266e6c28d64f696199b32852
+SHA512: a6aec3e980a8c9f9c6d9cb3b0ecdc10195ade7353760903ae05c4973fb1d46d4776b767f69801f71a15735d28497e5f8947fcc38e6ad8bf82583a5869ecd22c2
+Description: Merge machine and distro options to create a basic machine task/package
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: packagegroup-machine-base
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: libegl-mesa, libgbm, libgl-mesa, libgles1-mesa, libgles2-mesa, libgles3-mesa, libglx-mesa, libosmesa, mesa, mesa-megadriver, mesa-tools, mesa-vdpau-drivers, mesa-vulkan-drivers
+Filename: ./packagegroup-machine-base_1.0-r0_amd64.deb
+Size: 876
+MD5sum: a20321ab5e8a0d90ef86f61409f9ba26
+SHA1: 0b6e5376e91ca3f456cd8f058558c407a7c99c64
+SHA256: ca6b75cdda5fdc8ea91d57880070696475784d9d3c8245665dee3e7d475fc3bc
+SHA512: 98768bd6f46b1f57948736c75cbab3ccabc9199a2b528274aee49e85b98b6147cc45e23993fc5f01ab693a213394691c81a15ba096057a293ff26539f282b71b
+Description: Extra packages required to fully support x100 hardware
+ Merge machine and distro options to create a basic machine task/package.
+OE: packagegroup-base
+PackageArch: x100
+
+Package: perf-dbg
+Architecture: amd64
+Version: 6.18.33-r2
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: glibc-dbg, libatomic-dbg, libdebuginfod-dbg, libdw-dbg, libelf-dbg, liblzma-dbg, libpython3-dbg, libstdc++-dbg, libtraceevent-dbg, libzstd-dbg, slang-dbg, zlib-dbg
+Filename: ./perf-dbg_6.18.33-r2_amd64.deb
+Size: 8743132
+MD5sum: 34f4d438fda0951332944dc9280444ee
+SHA1: 0aefe273ae7f2be488dbb2f9a19bc8f9fdf60ce4
+SHA256: b4d46f7c6f3c39282886ab9cd7e0c39fa8e9d03b55bad32689c829a4c467b40a
+SHA512: 34d6aaa356017e2704b963da5b2f137b97235f0ab996a6d74892c91a09f1c268272a9c18a40987f09c5330fb10955994f24972f6583ab32b664cfb19147eed14
+Homepage: https://perf.wiki.kernel.org/index.php/Main_Page
+Description: Performance analysis tools for Linux - Debugging files
+ Performance counters for Linux are a new kernel-based subsystem that
+ provide a framework for all things performance analysis. It covers
+ hardware level (CPU/PMU, Performance Monitoring Unit) features and
+ software features (software counters, tracepoints) as well.  This package
+ contains ELF symbols and related sources for debugging purposes.
+OE: perf
+PackageArch: x100
+
+Package: perf-dev
+Architecture: amd64
+Version: 6.18.33-r2
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: bash-dev, binutils-dev, elfutils-dev, glibc-dev, libatomic-dev, libdebuginfod-dev, libdw-dev, libelf-dev, liblzma-dev, libpython3-dev, libstdc++-dev, libtraceevent-dev, libunwind-dev, libzstd-dev, perf (= 6.18.33-r2), perl-dev, perl-modules-dev, python3-dev, python3-modules-dev, slang-dev, xz-dev, zlib-dev, zstd-dev
+Filename: ./perf-dev_6.18.33-r2_amd64.deb
+Size: 3208
+MD5sum: 63a297213beff3552e92a92010dc0d66
+SHA1: 88ccb20a9371b7c140d51e6444f11e79f754a6ca
+SHA256: cc4209358d82f3818e9c6e62537db35ed76663ef8b98de18ab55eda61c01fc27
+SHA512: 0a47536699ee036477166734b95b1f19fbc7767e33d6078ec5fe15b1e06a40e464214cd994266162182bac582c6cf9f6abeff2ea46714aa6289a94b2d4dc6f0f
+Homepage: https://perf.wiki.kernel.org/index.php/Main_Page
+Description: Performance analysis tools for Linux - Development files
+ Performance counters for Linux are a new kernel-based subsystem that
+ provide a framework for all things performance analysis. It covers
+ hardware level (CPU/PMU, Performance Monitoring Unit) features and
+ software features (software counters, tracepoints) as well.  This package
+ contains symbolic links, header files, and related items necessary for
+ software development.
+OE: perf
+PackageArch: x100
+
+Package: perf-python
+Architecture: amd64
+Version: 6.18.33-r2
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: bash, libatomic1 (>= 15.2.0), libc6 (>= 2.43+git0+ce1013a197), libdebuginfod1 (>= 0.194), libdw1 (>= 0.194), libelf1 (>= 0.194), liblzma5 (>= 5.8.2), libpython3.14-1.0 (>= 3.14.4), libstdc++6 (>= 15.2.0), libtraceevent1 (>= 1.9.0), libz1 (>= 1.3.2), libzstd1 (>= 1.5.7), python3, python3-modules, slang (>= 2.3.3)
+Filename: ./perf-python_6.18.33-r2_amd64.deb
+Size: 1080280
+MD5sum: d9513c170f51aab0f30db3da78c0b733
+SHA1: 80d076610beb0043ec56f8a2ee3b7db473c8b5e1
+SHA256: 4218f263aeece4fecb8fb0c998a0b3bc265a640ec1a220e7c828956955f274fd
+SHA512: 62e6a61fcb96c3a8db00e4adcdefaefa3b12b8f2ab5a336de83d15d4f1c2788ce77dcec7ac92916c5c2a96c0f675b8901421e9f46451c657f36b8b3709ff94e2
+Homepage: https://perf.wiki.kernel.org/index.php/Main_Page
+Description: Performance analysis tools for Linux
+ Performance counters for Linux are a new kernel-based subsystem that
+ provide a framework for all things performance analysis. It covers
+ hardware level (CPU/PMU, Performance Monitoring Unit) features and
+ software features (software counters, tracepoints) as well.
+OE: perf
+PackageArch: x100
+
+Package: perf-tests
+Architecture: amd64
+Version: 6.18.33-r2
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: bash, perl, python3
+Filename: ./perf-tests_6.18.33-r2_amd64.deb
+Size: 155368
+MD5sum: 3743c1daba6ab0c1e10d33117d970ee2
+SHA1: 98a79e0e690b952382443fd56ced99576f8ef055
+SHA256: dd9f301bc8b89d14c12125f2fd7d823cec334303c2436b87769b1036afe6d527
+SHA512: f7abc53f538e2e6553494f0f49f58b404cbcf7e43e1303feece2a4ea0cebd3046bd7b64777132b3d9814042567f517f3b912b2e80cf88e45d623ab738dbb6aa0
+Homepage: https://perf.wiki.kernel.org/index.php/Main_Page
+Description: Performance analysis tools for Linux
+ Performance counters for Linux are a new kernel-based subsystem that
+ provide a framework for all things performance analysis. It covers
+ hardware level (CPU/PMU, Performance Monitoring Unit) features and
+ software features (software counters, tracepoints) as well.
+OE: perf
+PackageArch: x100
+
+Package: perf
+Architecture: amd64
+Version: 6.18.33-r2
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: bash, elfutils, libatomic1 (>= 15.2.0), libc6 (>= 2.43+git0+ce1013a197), libdebuginfod1 (>= 0.194), libdw1 (>= 0.194), libelf1 (>= 0.194), liblzma5 (>= 5.8.2), libpython3.14-1.0 (>= 3.14.4), libstdc++6 (>= 15.2.0), libtraceevent1 (>= 1.9.0), libz1 (>= 1.3.2), libzstd1 (>= 1.5.7), slang (>= 2.3.3)
+Suggests: perf-archive, perf-python, perf-tests
+Filename: ./perf_6.18.33-r2_amd64.deb
+Size: 1391224
+MD5sum: d90d71c1032ec52461227ada0a19c3e3
+SHA1: 360ffd77d4313f0f06f365e5fc18a53ab82c040e
+SHA256: d871f2b25ee9c8b8050a353b48ecbc531c95b6686f2612966e744e8df011777b
+SHA512: a304ea1c1fbb053c8203bcc148ff783457f64e16d4278afb695ded46ddcf4663ec2cd6f58c0dc061a3a2cae76bbf5c30d61a53acb8507afb040818494bf6059e
+Homepage: https://perf.wiki.kernel.org/index.php/Main_Page
+Description: Performance analysis tools for Linux
+ Performance counters for Linux are a new kernel-based subsystem that
+ provide a framework for all things performance analysis. It covers
+ hardware level (CPU/PMU, Performance Monitoring Unit) features and
+ software features (software counters, tracepoints) as well.
+OE: perf
+PackageArch: x100
+
+Package: shadow-securetty-dbg
+Architecture: amd64
+Version: 4.6-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./shadow-securetty-dbg_4.6-r0_amd64.deb
+Size: 828
+MD5sum: 6788376a227186bdc8aea632767c0951
+SHA1: 860e9f83608d3159bd454b6ca0defb5588c956bb
+SHA256: c849f933d634dc2cb0e46a1eba0ae9ad939ff16ff92b496a1d27235748eac86e
+SHA512: 49e874af7c313eacfc33a13efda245ce967cd869de06e658ef62846731980d72402d8a842b315ef1903236a3383ba67fc609cfb5a5a355660bd96fccfcba322f
+Description: Provider of the machine specific securetty file - Debugging files
+ Provider of the machine specific securetty file.  This package contains
+ ELF symbols and related sources for debugging purposes.
+OE: shadow-securetty
+PackageArch: x100
+
+Package: shadow-securetty-dev
+Architecture: amd64
+Version: 4.6-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: shadow-securetty (= 4.6-r0)
+Filename: ./shadow-securetty-dev_4.6-r0_amd64.deb
+Size: 860
+MD5sum: 9b6f0185affba961611e138f5d346340
+SHA1: 6527475b1b8b7deccb7b4d7da61350e67921376d
+SHA256: 85355bb0955bf6f414f7e59fe6c73ed45e42ed771264827d1fc94607dc156991
+SHA512: 18ee0fed6673c7959fd5fa7d92d30fd91f79882de468375a72d3817fab4160e63bc2f955e8e84822b272ddb4995e2dc98bc488f15a91af7fe32950584706ba96
+Description: Provider of the machine specific securetty file - Development files
+ Provider of the machine specific securetty file.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+OE: shadow-securetty
+PackageArch: x100
+
+Package: shadow-securetty
+Architecture: amd64
+Version: 4.6-r0
+Priority: optional
+Section: base utils
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./shadow-securetty_4.6-r0_amd64.deb
+Size: 1468
+MD5sum: fc82cea9aff5f7f465d24a6fce3d16d5
+SHA1: 0eea188cdf50490f9d594074e9f4591362c87ae5
+SHA256: 237261de698390fa8cf72df9f83a264df9fe580740eafc5d6959e74c93f0acb5
+SHA512: 426509a4cee2a484b3b9d85a6b80a18ff5984f7c5663126465ac20590b8abde00e91412d507f4791a22719fe10e6a7d416dd5c6deed2855be053c2cc99ed9aa1
+Description: Provider of the machine specific securetty file
+ Provider of the machine specific securetty file.
+OE: shadow-securetty
+PackageArch: x100
+
+Package: spidev-test-dbg
+Architecture: amd64
+Version: 6.18.33-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: glibc-dbg
+Filename: ./spidev-test-dbg_6.18.33-r0_amd64.deb
+Size: 15784
+MD5sum: 34d409e06693643784746e7a6da1f0cc
+SHA1: 7fb74024da3ad20424417da34c4ae25e822a1521
+SHA256: 00bd7ff1ae2987f19911133506ebfafafea75b830b111d949ddcf5bad989a828
+SHA512: dbce28dda34c6c1f162d6f6eeffb08fe73b38271412c38a5271aa0774a49897fb28a5b06cb688888d36152cb58c9fd266e9f913093b9a190afb1ebbbb4b06063
+Description: Test SPI devices - Debugging files
+ SPI testing utility using the spidev driver  This package contains ELF
+ symbols and related sources for debugging purposes.
+OE: spidev-test
+PackageArch: x100
+
+Package: spidev-test-dev
+Architecture: amd64
+Version: 6.18.33-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: bash-completion-dev, glibc-dev, spidev-test (= 6.18.33-r0)
+Filename: ./spidev-test-dev_6.18.33-r0_amd64.deb
+Size: 884
+MD5sum: 14eaee4b5403f6e54790fb4252ef83fa
+SHA1: a103abe33bfe76bdf6762e4902f6569680f31b44
+SHA256: a7ec8ebb3684ffb885e4988ef7824662b619b2eb4a73d761864d10d3178809d7
+SHA512: 5924ccd431c99815ce3a68f62d97bc63ddffa4920d5f0c82679a86e350cdf78bd8e0d2e6344efc2d904b8af9d2db5be07e75a0563275d9005a80cf07e33f0088
+Description: Test SPI devices - Development files
+ SPI testing utility using the spidev driver  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+OE: spidev-test
+PackageArch: x100
+
+Package: spidev-test
+Architecture: amd64
+Version: 6.18.33-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libc6 (>= 2.43+git0+ce1013a197)
+Filename: ./spidev-test_6.18.33-r0_amd64.deb
+Size: 7776
+MD5sum: c50f583b99b5b0e8c03f6a40d7b0708f
+SHA1: a18940dd2f5f703ceab5b2d6aed96a511e536c81
+SHA256: 62a67ae209585578e26daca3cf923d23e13569ff012d9443991bcabbb2c8ed85
+SHA512: bfb04b8d088a3a6637f6c85e88682968253424655a1dab5f0b3e31e5e6d326b4b40ffe8af0c6ec7d2c47795fc1253f2d88b0230079e5806e8419e6326106e5e8
+Description: Test SPI devices
+ SPI testing utility using the spidev driver
+OE: spidev-test
+PackageArch: x100
+
+Package: systemd-bootconf-dbg
+Architecture: amd64
+Version: 1.00-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./systemd-bootconf-dbg_1.00-r0_amd64.deb
+Size: 816
+MD5sum: 03f7d7f6e00585c143707ec8606fd39c
+SHA1: f55f3727a2892399ac3c425fe8a6ae263743f54a
+SHA256: 237d21eac2a615f2498b7aa2c92969861bb0b58c09b029a579898291fbf8c317
+SHA512: 05b0108f3106ca7ad34b0a48c6a78e5b2ee8bb647a13ee8a767ea6ed2b14f6752249563482a283fa1d9522e760bfb2e5f07a16f17152eaeb5e87a243f33672a0
+Description: Basic systemd-boot configuration files - Debugging files
+ Basic systemd-boot configuration files.  This package contains ELF
+ symbols and related sources for debugging purposes.
+OE: systemd-bootconf
+PackageArch: x100
+
+Package: systemd-bootconf-dev
+Architecture: amd64
+Version: 1.00-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: systemd-bootconf (= 1.00-r0)
+Filename: ./systemd-bootconf-dev_1.00-r0_amd64.deb
+Size: 848
+MD5sum: 81d5437be425a49a68e2f5432d88c434
+SHA1: 0916ff665c674ef2e29926df88485bb0d3c56e62
+SHA256: 9109cbdda9fccdff9932ca54df7ae2a357ffeefae7aca8db2b04a8231e5d0d89
+SHA512: b904ee46a9256b64e7ffce26ca37a783ba57379c7abaa363d2178e5d0d774001e0cd6596741b560145b1ff552180124780e214344ae804dee7cfccb6a32ed3ea
+Description: Basic systemd-boot configuration files - Development files
+ Basic systemd-boot configuration files.  This package contains symbolic
+ links, header files, and related items necessary for software
+ development.
+OE: systemd-bootconf
+PackageArch: x100
+
+Package: systemd-bootconf
+Architecture: amd64
+Version: 1.00-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: virtual-systemd-bootconf
+Filename: ./systemd-bootconf_1.00-r0_amd64.deb
+Size: 980
+MD5sum: 5242d4b468c146238de6a0469d11138b
+SHA1: ae5229f518faa60ec4e53265d0f6ce6703251232
+SHA256: 7ea6d9b870818f2bb4773fbeaad2023c39bec21d7b72412c3241d39337797e4e
+SHA512: 0dc212057d21d380eab71cb40ede76e850a7e12e9507b33cbbcfab0449809ea28aa9de71c75aa22833b25321d92493946b3415270e7c86aa75084bdb543ef3be
+Description: Basic systemd-boot configuration files
+ Basic systemd-boot configuration files.
+OE: systemd-bootconf
+PackageArch: x100
+
+Package: systemd-conf-dbg
+Architecture: amd64
+Version: 1:1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./systemd-conf-dbg_1.0-r0_amd64.deb
+Size: 892
+MD5sum: 40744c180620aac4c18a3aea687af5a1
+SHA1: dc651a328d2358d29cb4b9bb32a89471d07f0487
+SHA256: afe9bae40649572797ba3fbc2b62b7e0a72169a16e3735f8e2a8a62dbd94f40f
+SHA512: 1fbd1890d880091945da8ccf2c686ecb7d06322a6a007456e20142215f29d4ebad450869c2bd48826222bbdd140e00e9840ceb5cf814f55887f80bcc1b2929e9
+Description: Systemd system configuration - Debugging files
+ Systemd may require slightly different configuration for different
+ machines.  For example, qemu machines require a longer
+ DefaultTimeoutStartSec setting.  This package contains ELF symbols and
+ related sources for debugging purposes.
+OE: systemd-conf
+PackageArch: x100
+
+Package: systemd-conf-dev
+Architecture: amd64
+Version: 1:1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: systemd-conf (= 1:1.0-r0)
+Filename: ./systemd-conf-dev_1.0-r0_amd64.deb
+Size: 924
+MD5sum: d8b48fa9272570d6d3b15b4a9eb2c00e
+SHA1: 39b7131913740be84fc42802adc3cfc183005479
+SHA256: e04e0abf1fb49d8d64b5aa07b467feba775a75769043dbebf3b21bdea2fab483
+SHA512: bacd7e4375dd20aa7fa62c9e8da3da8ab2898e625b9cc47657f16b738cf55adf35238621431cffb144288255719c3a102cc950f4513ab65646266ccc223af37e
+Description: Systemd system configuration - Development files
+ Systemd may require slightly different configuration for different
+ machines.  For example, qemu machines require a longer
+ DefaultTimeoutStartSec setting.  This package contains symbolic links,
+ header files, and related items necessary for software development.
+OE: systemd-conf
+PackageArch: x100
+
+Package: systemd-conf
+Architecture: amd64
+Version: 1:1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./systemd-conf_1.0-r0_amd64.deb
+Size: 1212
+MD5sum: 7af10a6103d14e6c6a7c83b98d67c4ea
+SHA1: 229dcedd2fd5344c2c9f2cb192a2171f60879a5e
+SHA256: f1f780fd6d4067adef435df94e57d0b8f469226dee892890a2574a337ab8534b
+SHA512: 75225bf975cf0fe94445f4276c0639970ec1ab7e54f774b19aab938bac2a696ab6ab08de6d3c322d0abdc676a3250d37b479b1a4975bd164dc474d3cc02b6698
+Description: Systemd system configuration
+ Systemd may require slightly different configuration for different
+ machines.  For example, qemu machines require a longer
+ DefaultTimeoutStartSec setting.
+OE: systemd-conf
+PackageArch: x100
+
+Package: systemd-serialgetty-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./systemd-serialgetty-dbg_1.0-r0_amd64.deb
+Size: 880
+MD5sum: 7619c08d0474a4fc0e817511413c6b5a
+SHA1: bbbf0ef35791065478973eb6544881f382d2859a
+SHA256: 89b86d83babcae1ac124340134bc74b1e6bb3e63e53580da70b6b35ed79a845e
+SHA512: eb8080c76554ba987a01b46377270d9d54686fe097c40907ae62533ed3eb173d62e7d6d25da42a03e89db252d43eeaafcbfe4c63f72f1d1c71db15a188e5e6bf
+Homepage: https://www.freedesktop.org/wiki/Software/systemd/
+Description: Serial terminal support for systemd (using SERIAL_CONSOLES) - Debugging files
+ Serial terminal support for systemd (using SERIAL_CONSOLES).  This
+ package contains ELF symbols and related sources for debugging purposes.
+OE: systemd-serialgetty
+PackageArch: x100
+
+Package: systemd-serialgetty-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: systemd-serialgetty (= 1.0-r0)
+Filename: ./systemd-serialgetty-dev_1.0-r0_amd64.deb
+Size: 908
+MD5sum: 95243d6cd8ee24cfa9e901bda9e138ae
+SHA1: b81068991b0d9435c992eef5b29e96b76f184cdc
+SHA256: 254d1851c8d53fef42d758d8c1ad3b145c538e1b8ddce3ac8864a507981a833e
+SHA512: c9a262955247682016b9b266461266f8985584b3b827ecffdb6c7112a97e5011c75593d29b752d4d441a51198fa2a495cb3f157b34f9436489788f10f9c02d4e
+Homepage: https://www.freedesktop.org/wiki/Software/systemd/
+Description: Serial terminal support for systemd (using SERIAL_CONSOLES) - Development files
+ Serial terminal support for systemd (using SERIAL_CONSOLES).  This
+ package contains symbolic links, header files, and related items
+ necessary for software development.
+OE: systemd-serialgetty
+PackageArch: x100
+
+Package: systemd-serialgetty
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./systemd-serialgetty_1.0-r0_amd64.deb
+Size: 928
+MD5sum: 1530f329b318c0d91b0cdfa3497f52c4
+SHA1: cb680d2522d5fdfa7524dafde1bc25a53166f38a
+SHA256: 49279fc373a7d630880938a8ca95b635e98da9ca5bce4be7a3579f1061b4da9d
+SHA512: b5935d66bd6176ec0b2ba050352912c8914d494a4c95f13b877e45d0a78f3ace68760d8a48558d242e2df4709179249309769107f059b46b105fa74a16662039
+Homepage: https://www.freedesktop.org/wiki/Software/systemd/
+Description: Serial terminal support for systemd (using SERIAL_CONSOLES)
+ Serial terminal support for systemd (using SERIAL_CONSOLES).
+OE: systemd-serialgetty
+PackageArch: x100
+
+Package: weston-init-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./weston-init-dbg_1.0-r0_amd64.deb
+Size: 864
+MD5sum: dfd46bb6604e64e795383baaf93055d0
+SHA1: 0f9c13841da88595bd3824f6acbb99a8972515a4
+SHA256: 246e9f3126a66d0dcbed0b43f76fd8f85b48ef52fd6838422ee15fc2e8f46842
+SHA512: 38758661b8c2bf1c89193ec6beadad4c800898a9fe8126624b98496315947f04e4a7a7f6eb1dde0de86ccec245703de1b4ca2cc36adfc03239ca14ec447340c7
+Homepage: https://www.yoctoproject.org/
+Description: Startup script and systemd unit file for the Weston Wayland compositor - Debugging files
+ Startup script and systemd unit file for the Weston Wayland compositor.
+ This package contains ELF symbols and related sources for debugging
+ purposes.
+OE: weston-init
+PackageArch: x100
+
+Package: weston-init-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: base-files-dev, base-passwd-dev, kbd-dev, shadow-dev, shadow-sysroot-dev, weston-dev, weston-init (= 1.0-r0), weston-xwayland-dev
+Filename: ./weston-init-dev_1.0-r0_amd64.deb
+Size: 940
+MD5sum: dad5648cedd48f1508081077d7476fdd
+SHA1: 15316e122b950e463689ea886e0cadd40ce79af5
+SHA256: 39fa8e89e0233b04e03ab34d718bd3f3fda80aab4e173b5429f7faeddb90a89b
+SHA512: cee83930f2763373f1c864a1591fa80b192a242d03ef79b9200ca7d52567c95d3f19c7d2a48f6756021463b1d4b762a0f7c45e8ba8c9ac11571227a50f3c3292
+Homepage: https://www.yoctoproject.org/
+Description: Startup script and systemd unit file for the Weston Wayland compositor - Development files
+ Startup script and systemd unit file for the Weston Wayland compositor.
+ This package contains symbolic links, header files, and related items
+ necessary for software development.
+OE: weston-init
+PackageArch: x100
+
+Package: weston-init
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: base-files, base-passwd, kbd, shadow, weston, weston-xwayland
+Filename: ./weston-init_1.0-r0_amd64.deb
+Size: 5124
+MD5sum: 73dc86684810693220a3c4fed1683236
+SHA1: 2d2a7d12b4d4b947f6ac6535d702e5c1b16108b2
+SHA256: c5f723627d75b3da42e8abf13fe4d4e7fd6c643402441a8af71cbef8f3d1cc4b
+SHA512: 82c550d06a0a2d9c9ae1f7db666083d1722a54a982eea26e0a187738624f1c96255bf1a19f32efd5628bd5fd7895c4757872fd410b42a8b3673e2a87a75dc045
+Homepage: https://www.yoctoproject.org/
+Description: Startup script and systemd unit file for the Weston Wayland compositor
+ Startup script and systemd unit file for the Weston Wayland compositor.
+OE: weston-init
+PackageArch: x100
+
