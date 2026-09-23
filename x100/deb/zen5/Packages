@@ -37003,6 +37003,63 @@ Description: initramfs-framework module for installation option - Development fi
 OE: initramfs-module-install
 PackageArch: zen5
 
+Package: initramfs-module-install-efi-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./initramfs-module-install-efi-dbg_1.0-r0_amd64.deb
+Size: 832
+MD5sum: af3f7e1575fb306d1acf7ec30a609eb6
+SHA1: d2077479d93fea4cd208d1f646cbb3b2a7973f79
+SHA256: 9630e04cacb03f9c0a2212e4f1cb801347deaf93f94e12168c1aae054b1e6330
+SHA512: 73e286c81d016e25c664ecf5910e3fcecb308b6dc13246233d5b88cede5514d95b6e65fff60cfd81a1cd0323499f15633ea829ab53b31dea1aa1e652606fdc6b
+Description: initramfs-framework module for EFI installation option - Debugging files
+ initramfs-framework module for EFI installation option.  This package
+ contains ELF symbols and related sources for debugging purposes.
+OE: initramfs-module-install-efi
+PackageArch: zen5
+
+Package: initramfs-module-install-efi-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: busybox-dev, dosfstools-dev, e2fsprogs-mke2fs-dev, initramfs-framework-base-dev, initramfs-module-install-efi (= 1.0-r0), parted-dev, util-linux-blkid-dev
+Filename: ./initramfs-module-install-efi-dev_1.0-r0_amd64.deb
+Size: 924
+MD5sum: 05f6b80197867aac56c86ffbc779fdf5
+SHA1: b987b87215b9feb56ab3dbbf50bf37839fcd0ad3
+SHA256: 8292399cd4b628895045ad4e532db2ffb33c1879613c886825d3e42d840b6841
+SHA512: 2c94875c512011e469e402600d542f7788e72fb7b1af17749b29c49dc902ec3bdd2f0ebabb644e146df508f0215c95b87375367fec6748eedf7a88840acf5334
+Description: initramfs-framework module for EFI installation option - Development files
+ initramfs-framework module for EFI installation option.  This package
+ contains symbolic links, header files, and related items necessary for
+ software development.
+OE: initramfs-module-install-efi
+PackageArch: zen5
+
+Package: initramfs-module-install-efi
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: busybox, dosfstools, e2fsprogs-mke2fs, initramfs-framework-base, parted, util-linux-blkid
+Recommends: busybox-syslog
+Filename: ./initramfs-module-install-efi_1.0-r0_amd64.deb
+Size: 4068
+MD5sum: 337c63fbb3ac8bdf2bcdda9fc6eca213
+SHA1: 14fb1e593c2f927186e81b55a1395b5d64ae1f68
+SHA256: 97a4b2e1fa97a47fea45456734bb843ffde0138202a6dc1fd5103b500d989b04
+SHA512: 09c266f1dd570744b3866817fc5b8521a7b0d0228f7f0bcdfd9bb5f7fe2d76fb348894a1ab7c94d3bd87f396755b67d9b0d250927caba89b1d62c881ec4954eb
+Description: initramfs-framework module for EFI installation option
+ initramfs-framework module for EFI installation option.
+OE: initramfs-module-install-efi
+PackageArch: zen5
+
 Package: initramfs-module-install
 Architecture: amd64
 Version: 1.0-r0
@@ -73087,13 +73144,13 @@ Priority: optional
 Section: base
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Depends: autoconf, automake, binutils, bison, cmake, cpp, cpp-symlinks, diffutils, flex, g++, g++-symlinks, gcc, gcc-symlinks, gfortran, gfortran-symlinks, git, glib-2.0-dev, glibc-dev, gstreamer1.0-dev, ldd, libdrm-dev, libegl-mesa-dev, libgbm-dev, libgcc-dev, libgfortran-dev, libgl-mesa-dev, libgles1-mesa-dev, libgles2-mesa-dev, libgpiod-dev, libinput-dev, libstdc++-dev, libtool, libxkbcommon-dev, m4, make, mesa-dev, ncurses-dev, ninja, openssl-dev, packagegroup-core-buildessential, patch, perl-dev, pkgconf, python3-dev, vulkan-loader-dev, wayland-dev, zlib-dev
-Recommends: libclc-dev, libosmesa-dev, llvm-dev, opencv-dev, spirv-tools-dev
+Recommends: libclc-dev, libosmesa-dev, llvm-dev, spirv-tools-dev
 Filename: ./packagegroup-amd-dev_1.0-r0_amd64.deb
-Size: 1184
-MD5sum: 026b0cb3d199a8392c654e03263231b2
-SHA1: 7bb9077690938311cf406c853c30b4b075cdfc44
-SHA256: ed2d6e7d8b4a5f04d01b27d79ceae916ee175d0e9e170c8d448adf43349829c4
-SHA512: ef7c8a2e0283784b7fc4075c024675f85006bef45a7bc049ad4182253d4fcc2cb12fb4cea8edd4622d4300bf7e726c92a8e848872e5e4d091908970978c5499d
+Size: 1180
+MD5sum: 1b12996e5f37374ee5fb8654ce075415
+SHA1: af6bcdef847482cff1915d335e6ffdbecc9371ec
+SHA256: 27a92a0759bf1dd746fe135e90fc6f999c976549b29ffef231f0b14b13bd301a
+SHA512: 9f0a2af1e1eb028e928e46d952bcc088a8ccce8f10d8138b7a29795fc022b367b5af3b9f2d86e664fbd06a02fd02be7ce7e4a06ef6beca5f28ff354b04fe99f9
 Description: Native toolchain and development headers, installed from the apt feed
  Deliberately kept out of the images. Install on a running target with
  'apt update && apt install packagegroup-amd-dev' to get a native
