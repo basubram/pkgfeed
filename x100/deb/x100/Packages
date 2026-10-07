@@ -1,3 +1,68 @@
+Package: amd-hello-mod-dbg
+Architecture: amd64
+Version: 0.1-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./amd-hello-mod-dbg_0.1-r0_amd64.deb
+Size: 972
+MD5sum: b460dbd9f7651ba0c6759f6e31faecce
+SHA1: a3501debf62b48a86a4b58e3e93c470be7cd640c
+SHA256: 5c56b97cddd5adfe3bbc811d156a206fe2702330588ebdbf821d1a4e56f473ab
+SHA512: b1a3c46a77b49484ec7207d94b61269c8a4dbfecfc8b0e5b69998c5ba8ce3250eb3f77b241308e4897274e4536ae8151b7d4ad5d88b1240ae41dbd5887085c1a
+Description: AMD sample out-of-tree kernel module (build-time .ko reference) - Debugging files
+ Minimal out-of-tree kernel module cross-compiled by the Yocto server
+ through module.bbclass and shipped as a prebuilt kernel-module-* package.
+ Reference for out-of-tree driver integration; the DKMS variant builds the
+ same source on the target instead.  This package contains ELF symbols and
+ related sources for debugging purposes.
+OE: amd-hello-mod
+PackageArch: x100
+
+Package: amd-hello-mod-dev
+Architecture: amd64
+Version: 0.1-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: amd-hello-mod (= 0.1-r0), kernel-6.18.33-amd-standard-dev, kernel-module-amd-hello-6.18.33-amd-standard-dev
+Filename: ./amd-hello-mod-dev_0.1-r0_amd64.deb
+Size: 1112
+MD5sum: c3be7a13199561b6081d72e07394e712
+SHA1: c1efea760e5bab79fbd7f56c996bb93b48e8cb0f
+SHA256: e9f95dd11e8510ac48a9ad44a78e89189688408c26368edfc5427f3de463c44d
+SHA512: 8d237702eac5ba872e7c3b170bfc78117dc67ef979a45e9b1daeb3a47e47c72f2ed6b6857c5d62ae88c95cf2886d3d83e22b6f0162d36d392322c0be457b8261
+Description: AMD sample out-of-tree kernel module (build-time .ko reference) - Development files
+ Minimal out-of-tree kernel module cross-compiled by the Yocto server
+ through module.bbclass and shipped as a prebuilt kernel-module-* package.
+ Reference for out-of-tree driver integration; the DKMS variant builds the
+ same source on the target instead.  This package contains symbolic links,
+ header files, and related items necessary for software development.
+OE: amd-hello-mod
+PackageArch: x100
+
+Package: amd-hello-mod
+Architecture: amd64
+Version: 0.1-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: kernel-module-amd-hello
+Depends: kernel-module-amd-hello-6.18.33-amd-standard
+Filename: ./amd-hello-mod_0.1-r0_amd64.deb
+Size: 944
+MD5sum: ffecb758a2e4d1ce67792b7d17f1bb8d
+SHA1: 485faa57c7fb4889c8847c2c14ebe81b41491636
+SHA256: 7ee8755a6601eca16201c5d0cfebe80b4c4d4620f9348549327217fa7819a87e
+SHA512: 72ae21b1c7fcff007728e184102b331826c5589416cdc5413147f4eeec362469e2121a935125fb065f097ebe817c269c9b1d4a8b7107c26e810ecf6823e987db
+Description: AMD sample out-of-tree kernel module (build-time .ko reference)
+ Minimal out-of-tree kernel module cross-compiled by the Yocto server
+ through module.bbclass and shipped as a prebuilt kernel-module-* package.
+ Reference for out-of-tree driver integration; the DKMS variant builds the
+ same source on the target instead.
+OE: amd-hello-mod
+PackageArch: x100
+
 Package: base-files-dbg
 Architecture: amd64
 Version: 3.0.14-r0
@@ -242,11 +307,11 @@ Section: base
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Provides: virtual-grub-bootconf
 Filename: ./grub-bootconf_1.00-r0_amd64.deb
-Size: 1088
-MD5sum: 3fbe9f680b0606d99c0d0d750a3bf1a5
-SHA1: ed4969fcdb61847bed8c397078d45f50956e27be
-SHA256: 2814d294bd42ca81773577c8a06efa6cace7fa3416d43a262f0f8cab50590e8f
-SHA512: 8d1bdf7f631c23208713c55b6fa75d34c7d466db4ebeb5ba8b1dc3c23b49482e5a4cdfeadfdae29da83e409b2c3043c8d6eca73b84c588baa38a5744fee8f3d8
+Size: 1128
+MD5sum: 7c3ea1cc9b43f08c6c41b3fbfe82f92f
+SHA1: 318573fd9731f94ca3b0be2f4f34ccc69de3da5d
+SHA256: ec05c964ed4fff198b69864a23df3618f2c71a30e4654733fa758da967d2b56c
+SHA512: 4c0fdcb6ebce986fbdbdcba2069430d4b1d5a484739ee020c0ee5649b684b68009dba7c8e096a4bcbf38bd8072edff3686ac4615b93f664e7152ba0a60df7ff3
 Homepage: https://www.gnu.org/software/grub/manual/grub/grub.html#Configuration
 Description: Basic grub.cfg for use in EFI systems
  Grub might require different configuration file for different machines.
@@ -271,6 +336,68 @@ Homepage: https://www.yoctoproject.org/
 Description: Linux kernel
  AMD common kernel recipe for Linux 6.18.y
 OE: linux-amd
+PackageArch: x100
+
+Package: kernel-devsrc-dbg
+Architecture: amd64
+Version: 6.18.33-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./kernel-devsrc-dbg_6.18.33-r0_amd64.deb
+Size: 908
+MD5sum: a1d567f1d903f3b680c433450a600093
+SHA1: 12a21dfacd9eb21d998e12f464b9d828ff577086
+SHA256: 76f56d7e15906c65335ea68e4be1cc08272e4115c57c617d5a2280ad3128108a
+SHA512: d86969c3da3f98dce07dd37d65b10933c389ee6bf10d6d83fc069d7ea49a5e91fc08cdaffe316f9234e7dbe6331115416e5c7e0b01b6a65574fc8cf2fa6962a0
+Description: Linux kernel Development Source - Debugging files
+ Development source linux kernel. When built, this recipe packages the
+ source of the preferred virtual/kernel provider and makes it available
+ for full kernel development or external module builds  This package
+ contains ELF symbols and related sources for debugging purposes.
+OE: kernel-devsrc
+PackageArch: x100
+
+Package: kernel-devsrc-dev
+Architecture: amd64
+Version: 6.18.33-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: bc-dev, bison-dev, elfutils-dev, flex-dev, gawk-dev, gcc-plugins-dev, glibc-utils-dev, kernel-devsrc (= 6.18.33-r0), libmpc-dev, openssl-dev, python3-core-dev, util-linux-dev
+Filename: ./kernel-devsrc-dev_6.18.33-r0_amd64.deb
+Size: 1008
+MD5sum: 91a6cfb343f26adbc275a497405d137b
+SHA1: 1656334bef80389a63bbb33759ab7a91214479cd
+SHA256: e6db103ef6b653500dafce56a78278a44008b8bac6c0e0871f09dec59a792177
+SHA512: 46b33d6991033bdb746b606d6e304112e54082a2ecd9af4958065ad23f4b0cc30da0434fd575dea1daab59eef7531735720d07ae2f4b8f54ff9ec3175af1bd89
+Description: Linux kernel Development Source - Development files
+ Development source linux kernel. When built, this recipe packages the
+ source of the preferred virtual/kernel provider and makes it available
+ for full kernel development or external module builds  This package
+ contains symbolic links, header files, and related items necessary for
+ software development.
+OE: kernel-devsrc
+PackageArch: x100
+
+Package: kernel-devsrc
+Architecture: amd64
+Version: 6.18.33-r0
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: bc, bison, elfutils-dev, flex, gawk, gcc-plugins, glibc-utils, libmpc-dev, openssl-dev, python3-core, util-linux
+Filename: ./kernel-devsrc_6.18.33-r0_amd64.deb
+Size: 13228804
+MD5sum: ec5258019505bf89c0e2d7d6f9531858
+SHA1: 3118c851932f3217da966161a2f0623fc3c2bed7
+SHA256: d90b4638a19b107ed37ae22a23ae0509ea663891827529405f7c73a28a12a98f
+SHA512: 85342a2997f5f822326cce0ff59893e61de170b1ec5c114e9cc15e34b4db3db5c831f2379d932c50f1f0cd628790a7d212455160b1aa65007886b45ffd1fa0a2
+Description: Linux kernel Development Source
+ Development source linux kernel. When built, this recipe packages the
+ source of the preferred virtual/kernel provider and makes it available
+ for full kernel development or external module builds
+OE: kernel-devsrc
 PackageArch: x100
 
 Package: kernel-image-6.18.33-amd-standard
@@ -312,6 +439,25 @@ Description: Linux kernel
 OE: linux-amd
 PackageArch: x100
 
+Package: kernel-module-amd-hello-6.18.33-amd-standard
+Architecture: amd64
+Version: 0.1-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: kernel-module-amd-hello
+Depends: kernel-6.18.33-amd-standard
+Filename: ./kernel-module-amd-hello-6.18.33-amd-standard_0.1-r0_amd64.deb
+Size: 3040
+MD5sum: 5db2f08bd7275f9b0e03e4b507b194b5
+SHA1: 27d86108057d9fe8431fa004ce720aedc0e5c2a8
+SHA256: 1b9dd1056394f037687cd66a3bf6e60fc03c696eac29c24bce77f9612add319b
+SHA512: 983014cd330433c9b179f04521a9fa1b5fb821cc507cedfab0fbae15e1c06de21be42e622bfdd42b781a7002f092d9bab6c1758dfa840da278bbef0e324f8f48
+Description: amd-hello kernel module
+ amd-hello kernel module; AMD sample out-of-tree kernel module
+OE: amd-hello-mod
+PackageArch: x100
+
 Package: kernel-modules
 Architecture: amd64
 Version: 6.18.33-r1.0
@@ -319,11 +465,11 @@ Priority: optional
 Section: kernel
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Filename: ./kernel-modules_6.18.33-r1.0_amd64.deb
-Size: 65980596
-MD5sum: 386335e1c073593265f4eda9a3e966d9
-SHA1: 6c7f082b9b3587dd496a51b03e8abc102e29f71c
-SHA256: 4e20aa050a522f066fecc47cc17c201402f07acde12cfcd96b7886fe1e0cad0b
-SHA512: ca0272a1b7c8a987a04aceee31acd859da5b8b7f6937dc6c882a81086e7fa7f08fcedfe37a726f18fd0c503be535fbb2ad754d17497be6939c7ccfb078b5c5a5
+Size: 65955844
+MD5sum: 6460d995f5be1cf5580dd104f099be35
+SHA1: b7f40280c18981c4bf6b3bf8ea035d1058fac2da
+SHA256: b881424e7246552550bb8d561302b5e9ae9ee107bf898c6e6447a464f6160f1f
+SHA512: 7def5fa7bc91b162a324726296dde1f35572e655eae1e790924bbb039a3100ee31d5c36c7fea22296d1d4902785764385e40dab61bdd4047c25d705eb43a8e4a
 Homepage: https://www.yoctoproject.org/
 Description: Linux kernel
  Kernel modules meta package
@@ -704,6 +850,78 @@ Description: AMD graphics, multimedia and board userspace
 OE: packagegroup-amd-graphics
 PackageArch: x100
 
+Package: packagegroup-amd-kernel-dev-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: bc-dbg, bison-dbg, dkms-dbg, elfutils-dbg, flex-dbg, gzip-dbg, kernel-devsrc-dbg, kmod-dbg, make-dbg, openssl-dbg, packagegroup-core-buildessential-dbg
+Filename: ./packagegroup-amd-kernel-dev-dbg_1.0-r0_amd64.deb
+Size: 1140
+MD5sum: a0c81ac88faffe4591bfc86733ae2d5e
+SHA1: 303c16f89dc1e08d7307d8ef8e2cf635373d6516
+SHA256: c92f166e6be62234a922498d204455a90f04ddc4da0a191fa383c5e7bec44f37
+SHA512: d81c553c7ef13b9529bc8aad0f93341c78663acfe8e7b21fec50556375efca64e05188eaea1ff22bed5a6a9c2bf2575e21a38a6b671e8f3378a0d554d04450d3
+Description: On-target kernel-module build environment, installed from the apt feed - Debugging files
+ Everything needed to compile out-of-tree kernel modules ON a running
+ target: the configured kernel source (kernel-devsrc), the native build-
+ essential toolchain and the module tools (kmod). Deliberately kept out of
+ the images; install on a booted board with 'apt update && apt install
+ packagegroup-amd-kernel-dev', then build a module with 'make -C
+ /usr/src/kernel M=<dir>' and load it with insmod/modprobe.  This package
+ contains ELF symbols and related sources for debugging purposes.
+OE: packagegroup-amd-kernel-dev
+PackageArch: x100
+
+Package: packagegroup-amd-kernel-dev-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: bc-dev, bison-dev, dkms-dev, elfutils-dev, flex-dev, gzip-dev, kernel-devsrc-dev, kmod-dev, make-dev, openssl-dev, packagegroup-amd-kernel-dev (= 1.0-r0), packagegroup-core-buildessential-dev
+Filename: ./packagegroup-amd-kernel-dev-dev_1.0-r0_amd64.deb
+Size: 1164
+MD5sum: f8aecabcd496bb19877bf80afbcf0eab
+SHA1: 8a3fafe722cac4b09cd26583a8366d67b663446e
+SHA256: ffa82e5c235ca606a5d6fc5973271a39db91af76c2ce0d2659fdb4eae5dbf484
+SHA512: e1dc0c8ecaba9b7c9c61c5dd3f72be97a645fef0fe940465bb2dd6559d8beb5658dbf2fce2b51afc33caccf74779ea6a1dab18e942dcd632680028bcf3ec9d5e
+Description: On-target kernel-module build environment, installed from the apt feed - Development files
+ Everything needed to compile out-of-tree kernel modules ON a running
+ target: the configured kernel source (kernel-devsrc), the native build-
+ essential toolchain and the module tools (kmod). Deliberately kept out of
+ the images; install on a booted board with 'apt update && apt install
+ packagegroup-amd-kernel-dev', then build a module with 'make -C
+ /usr/src/kernel M=<dir>' and load it with insmod/modprobe.  This package
+ contains symbolic links, header files, and related items necessary for
+ software development.
+OE: packagegroup-amd-kernel-dev
+PackageArch: x100
+
+Package: packagegroup-amd-kernel-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: bc, bison, dkms, elfutils, flex, gzip, kernel-devsrc, kmod, make, openssl-dev, packagegroup-core-buildessential
+Filename: ./packagegroup-amd-kernel-dev_1.0-r0_amd64.deb
+Size: 1292
+MD5sum: 4de8fd744ca5258cc35cd358ce636633
+SHA1: 686ed0e7c95d13fe44d6d8cee8fca47285253404
+SHA256: a87033853bffc96f4d90b2930096e6219937510fad047e5d5c995379f4be9661
+SHA512: 25525afc58e677cb03a28f5e327bb7c65c863477d3ed6f3727e24736a63cdc66b109225b73ebe14e38f37062a027a0e61446689864e2bbcb84b3ab9fe2a67e7d
+Description: On-target kernel-module build environment, installed from the apt feed
+ Everything needed to compile out-of-tree kernel modules ON a running
+ target: the configured kernel source (kernel-devsrc), the native build-
+ essential toolchain and the module tools (kmod). Deliberately kept out of
+ the images; install on a booted board with 'apt update && apt install
+ packagegroup-amd-kernel-dev', then build a module with 'make -C
+ /usr/src/kernel M=<dir>' and load it with insmod/modprobe.
+OE: packagegroup-amd-kernel-dev
+PackageArch: x100
+
 Package: packagegroup-amd-secure-vaapi-dbg
 Architecture: amd64
 Version: 1.0-r0
@@ -759,6 +977,75 @@ SHA512: 8d1478364022efcc7698ba0160e6c1b97ee157d08e86bcede588610f1cd94a491f751ee5
 Description: All dependency for mpv secure playback
  All dependency for mpv secure playback.
 OE: packagegroup-amd-secure-vaapi
+PackageArch: x100
+
+Package: packagegroup-amd-weston-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: glmark2-dbg, gtk+3-demo-dbg, matchbox-terminal-dbg, packagegroup-amd-gpu-hang-dbg, packagegroup-amd-graphics-dbg, packagegroup-amd-gstreamer-dbg, packagegroup-amd-secure-vaapi-dbg, packagegroup-amd-uprof-dbg, packagegroup-amd-utils-dbg, packagegroup-core-weston-dbg, weston-xwayland-dbg
+Filename: ./packagegroup-amd-weston-dbg_1.0-r0_amd64.deb
+Size: 1104
+MD5sum: c5339127b86a949497eda313665742ab
+SHA1: f31535c4e1f3cee9aec7edf020369432b4b29389
+SHA256: ddbeaeee8c3bd14ebda76a88f5224109f023224f03cacf31d2afaf304c54eb17
+SHA512: 440e605ba8970e432b719126e3004255df6fdd437ad2c2478fe7ff27f53a0740dbe05fa414065b9745f8de98a542d2a6300dd8cc500baf8cf982c943d9def66c
+Description: Upgrade a minimal image to the AMD Wayland/Weston image - Debugging files
+ Runtime upgrade path from core-image-minimal to the full AMD Weston
+ image. Installs the same graphics, multimedia and board userspace that
+ core-image-weston-amd ships, plus the Weston compositor autostart, so a
+ booted minimal board can be turned into a Weston image from the apt feed
+ with 'apt install packagegroup-amd-weston'.  This package contains ELF
+ symbols and related sources for debugging purposes.
+OE: packagegroup-amd-weston
+PackageArch: x100
+
+Package: packagegroup-amd-weston-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: glmark2-dev, gtk+3-demo-dev, matchbox-terminal-dev, packagegroup-amd-gpu-hang-dev, packagegroup-amd-graphics-dev, packagegroup-amd-gstreamer-dev, packagegroup-amd-secure-vaapi-dev, packagegroup-amd-uprof-dev, packagegroup-amd-utils-dev, packagegroup-amd-weston (= 1.0-r0), packagegroup-core-weston-dev, weston-xwayland-dev
+Filename: ./packagegroup-amd-weston-dev_1.0-r0_amd64.deb
+Size: 1128
+MD5sum: 459124e19abfb2589a90a22df51ad6cf
+SHA1: c82425ef6b9f6be3d481d38e4d57351094a274ca
+SHA256: 6c3e562e86edfb9762066c5a9eeb758765784f1a4a845acd2d32a4e59984cdd4
+SHA512: 975e53c5ee8e03473e58157696fb3c97bff7f0e856abb29e581b77cae442d7aa4c56d823c01ca071bc6d57eca89a681997b5f597c028edfb3e5c12a2b78ffb5b
+Description: Upgrade a minimal image to the AMD Wayland/Weston image - Development files
+ Runtime upgrade path from core-image-minimal to the full AMD Weston
+ image. Installs the same graphics, multimedia and board userspace that
+ core-image-weston-amd ships, plus the Weston compositor autostart, so a
+ booted minimal board can be turned into a Weston image from the apt feed
+ with 'apt install packagegroup-amd-weston'.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+OE: packagegroup-amd-weston
+PackageArch: x100
+
+Package: packagegroup-amd-weston
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: glmark2, gtk+3-demo, matchbox-terminal, packagegroup-amd-gpu-hang, packagegroup-amd-graphics, packagegroup-amd-gstreamer, packagegroup-amd-secure-vaapi, packagegroup-amd-uprof, packagegroup-amd-utils, packagegroup-core-weston, weston-xwayland
+Filename: ./packagegroup-amd-weston_1.0-r0_amd64.deb
+Size: 1036
+MD5sum: 499917bd8477af7203074b4fb67a3079
+SHA1: 286758fc5eaee1fb713cbc151ab2cf13fc3d7c46
+SHA256: fac0fbe0f28396dca46d6eed792875ca0ca4b220d2d8bcf30f8c5d4a2a6b92aa
+SHA512: 4b1b724b73e936b3d2037ed542c81046fef598a715d4ca5a6fb79206754d7d5d473acc3e84ed1a9495830e277ee30fdb6b7decafc90eeab9a0980a54c6681ef6
+Description: Upgrade a minimal image to the AMD Wayland/Weston image
+ Runtime upgrade path from core-image-minimal to the full AMD Weston
+ image. Installs the same graphics, multimedia and board userspace that
+ core-image-weston-amd ships, plus the Weston compositor autostart, so a
+ booted minimal board can be turned into a Weston image from the apt feed
+ with 'apt install packagegroup-amd-weston'.
+OE: packagegroup-amd-weston
 PackageArch: x100
 
 Package: packagegroup-base-3g-dbg

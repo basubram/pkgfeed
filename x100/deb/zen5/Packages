@@ -857,6 +857,73 @@ Description: ALSA sound utilities
 OE: alsa-utils
 PackageArch: zen5
 
+Package: amd-hello-dkms-dbg
+Architecture: amd64
+Version: 0.1-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./amd-hello-dkms-dbg_0.1-r0_amd64.deb
+Size: 1012
+MD5sum: 6fd1b9269dbaa424998fff323f31a080
+SHA1: 581ce3c30e35f815a80aac1bebb4f4c3b40e6fe3
+SHA256: b80280afebb521ff6e2fd2ab0c6d73837d5541018fe6b8611990bce08129a01b
+SHA512: c83cf800f28b99981b2df21310b8080f2fce1d9ec656410dcc4bdba0d7c7b0c1d8ea4698e2e2698d38368a1b5e3174461394c739e156f7354d2121ccaefcb196
+Description: AMD sample out-of-tree driver, DKMS-packaged (compiled on the target) - Debugging files
+ Same amd_hello source as amd-hello-mod, but shipped as source plus a
+ dkms.conf. On install, dkms compiles it against the running kernel and
+ rebuilds it automatically on kernel updates. Pulls packagegroup-amd-
+ kernel-dev so a single 'apt install amd-hello-dkms' brings the dkms tool,
+ kernel source and toolchain too.  This package contains ELF symbols and
+ related sources for debugging purposes.
+OE: amd-hello-dkms
+PackageArch: zen5
+
+Package: amd-hello-dkms-dev
+Architecture: amd64
+Version: 0.1-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: amd-hello-dkms (= 0.1-r0), packagegroup-amd-kernel-dev
+Filename: ./amd-hello-dkms-dev_0.1-r0_amd64.deb
+Size: 1048
+MD5sum: 26e5268ae3dcdf2da021421341f5a355
+SHA1: da3fb2b14d9770854a93be928c90aa64443f5403
+SHA256: 0ca3cb0cda27cd749f532ec8cec7f6895fc9bf70055ac5cb8a36d000aaa57042
+SHA512: 3c93502e838ae6fb1a94013aa6a88ef54463a91c95155ea858d0bb36451af177283077396a9580a8de8a62a72fb661fcab26667692b62d472c0c1447844a10b8
+Description: AMD sample out-of-tree driver, DKMS-packaged (compiled on the target) - Development files
+ Same amd_hello source as amd-hello-mod, but shipped as source plus a
+ dkms.conf. On install, dkms compiles it against the running kernel and
+ rebuilds it automatically on kernel updates. Pulls packagegroup-amd-
+ kernel-dev so a single 'apt install amd-hello-dkms' brings the dkms tool,
+ kernel source and toolchain too.  This package contains symbolic links,
+ header files, and related items necessary for software development.
+OE: amd-hello-dkms
+PackageArch: zen5
+
+Package: amd-hello-dkms
+Architecture: amd64
+Version: 0.1-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: packagegroup-amd-kernel-dev
+Filename: ./amd-hello-dkms_0.1-r0_amd64.deb
+Size: 1872
+MD5sum: 493a7074c2ffb6202e5499bd017d0985
+SHA1: 350f5de96608336de942c3d58c0856e2b2c77223
+SHA256: 0701e401309a614d1c04244a384ab086fea37cc8d4bf950327b96066ec636387
+SHA512: 17c4b1404c38a3eee21eb4dc1ea416c8f3506bfe2c6720b12b7ed5ab9775fa846a9c362a07d723ee718353e9d1fb346399d6bb78f8d8b8570fdb779cdd785a9a
+Description: AMD sample out-of-tree driver, DKMS-packaged (compiled on the target)
+ Same amd_hello source as amd-hello-mod, but shipped as source plus a
+ dkms.conf. On install, dkms compiles it against the running kernel and
+ rebuilds it automatically on kernel updates. Pulls packagegroup-amd-
+ kernel-dev so a single 'apt install amd-hello-dkms' brings the dkms tool,
+ kernel source and toolchain too.
+OE: amd-hello-dkms
+PackageArch: zen5
+
 Package: apt-bash-completion
 Architecture: amd64
 Version: 3.0.3-r0
@@ -3666,6 +3733,73 @@ Description: Diffutils contains tools used for finding differences between files
  Diffutils contains the GNU diff, diff3, sdiff, and cmp utilities. These
  programs are usually used for creating patch files.
 OE: diffutils
+PackageArch: zen5
+
+Package: dkms-dbg
+Architecture: amd64
+Version: 3.4.3-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./dkms-dbg_3.4.3-r0_amd64.deb
+Size: 980
+MD5sum: fa83885160c678f5b5b1289e68c0d2f5
+SHA1: 32023b659f7015331fb4d257abd5cb9812825dfd
+SHA256: 034c311c7495280ef7ec0cda60a41cfed4abdee80a1d33b4b2286e219d44da21
+SHA512: ad271eada54b11e595512f51a04cd35c1394d2e81b2e1a416b8f02f64e770359196ec181a2cd27bef44105d9c5c35495ac62bdc31b868b539e591fbe00f13cdd
+Homepage: https://github.com/dell/dkms
+Description: Dynamic Kernel Module Support (DKMS) - Debugging files
+ Framework that builds out-of-tree kernel modules from source on a running
+ target and rebuilds them automatically when the kernel is updated. Folded
+ into packagegroup-amd-kernel-dev so the target gains DKMS with one apt
+ install.  This package contains ELF symbols and related sources for
+ debugging purposes.
+OE: dkms
+PackageArch: zen5
+
+Package: dkms-dev
+Architecture: amd64
+Version: 3.4.3-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: bash-dev, coreutils-dev, dkms (= 3.4.3-r0), findutils-dev, gawk-dev, gzip-dev, kmod-dev, make-dev, util-linux-dev
+Filename: ./dkms-dev_3.4.3-r0_amd64.deb
+Size: 1060
+MD5sum: 64a1d913a4cc9ebd48b22dfeb2ed3905
+SHA1: 23462b4fa026d4434a847ca552d959e72257dff2
+SHA256: 93b004a0c8924f3790b89e34b9a3641fbc05c256bd03dfaab1a8a9ae286633f8
+SHA512: 884cfdd148a98194ddc10f6018154b5d0b0ffb4e98a529b883efe8f126f8f190c130652b424ef30aaee3d7768dedee123359e3b42f2b22dba0e1c132bb4dc5d8
+Homepage: https://github.com/dell/dkms
+Description: Dynamic Kernel Module Support (DKMS) - Development files
+ Framework that builds out-of-tree kernel modules from source on a running
+ target and rebuilds them automatically when the kernel is updated. Folded
+ into packagegroup-amd-kernel-dev so the target gains DKMS with one apt
+ install.  This package contains symbolic links, header files, and related
+ items necessary for software development.
+OE: dkms
+PackageArch: zen5
+
+Package: dkms
+Architecture: amd64
+Version: 3.4.3-r0
+Priority: optional
+Section: kernel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: bash, coreutils, findutils, gawk, gzip, kmod, make, util-linux
+Filename: ./dkms_3.4.3-r0_amd64.deb
+Size: 36672
+MD5sum: 69e569a4787fb0b961970ca9957c59e2
+SHA1: 94193493418916762d9897e62e4839feb4abfb1b
+SHA256: 1b3933c2905069323b201335258c832df56dbca9d5de7186f97486f1540e3631
+SHA512: 2c25396e8f16a20721e6b45a58f6db082fea30848e70f219f65d014c588887158149c7ef309cb7e073b0636b35ddeeb6514448483882637f2679859b8e36aaee
+Homepage: https://github.com/dell/dkms
+Description: Dynamic Kernel Module Support (DKMS)
+ Framework that builds out-of-tree kernel modules from source on a running
+ target and rebuilds them automatically when the kernel is updated. Folded
+ into packagegroup-amd-kernel-dev so the target gains DKMS with one apt
+ install.
+OE: dkms
 PackageArch: zen5
 
 Package: dmidecode-dbg
@@ -36464,6 +36598,71 @@ Description: Multi-platform toolkit for creating GUIs - Development files
 OE: gtk4
 PackageArch: zen5
 
+Package: gzip-dbg
+Architecture: amd64
+Version: 1.14-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: glibc-dbg
+Filename: ./gzip-dbg_1.14-r0_amd64.deb
+Size: 138852
+MD5sum: 90f704826fb78c55005df8ed9809089e
+SHA1: 3a6adf0030a2b3fd8b438761b94598220af97d83
+SHA256: 66c4b4b450632c7898f6f8c162457066103d4efe34dc22fbd70b57f41469c1d7
+SHA512: 1a0329beb6ab0b221a9605add1a71ecc1637a9fd61becc913cb535bdef0c5eeb0eea0b0e895bbd23163d3e1dcac506caae244ac1ddef5fd3080893bc9b0fe6c0
+Homepage: http://www.gnu.org/software/gzip/
+Description: Standard GNU compressor - Debugging files
+ GNU Gzip is a popular data compression program originally written by
+ Jean-loup Gailly for the GNU project. Mark Adler wrote the decompression
+ part  This package contains ELF symbols and related sources for debugging
+ purposes.
+OE: gzip
+PackageArch: zen5
+
+Package: gzip-dev
+Architecture: amd64
+Version: 1.14-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: coreutils-dev, diffutils-dev, glibc-dev, grep-dev, gzip (= 1.14-r0), make-dev, perl-dev, update-alternatives-opkg-dev
+Filename: ./gzip-dev_1.14-r0_amd64.deb
+Size: 1004
+MD5sum: 5a7f62a3c4feaa47ea5c6128acc056a6
+SHA1: 8207a90ae4c5412c247845551be1fa852cf6c360
+SHA256: f78c788aa5f0564150111dad6a1b2a5d6ce61618b2aec2e7d7c63ea0b05e8cca
+SHA512: 1149051611a0d79d4ea4dbe37aba746533f61b887e0eeccf4f62f94fe86e32c04c5031dddaf903f7e00dc148f969fed2ac0e61febfe70a29ba45df6fedcd7ddd
+Homepage: http://www.gnu.org/software/gzip/
+Description: Standard GNU compressor - Development files
+ GNU Gzip is a popular data compression program originally written by
+ Jean-loup Gailly for the GNU project. Mark Adler wrote the decompression
+ part  This package contains symbolic links, header files, and related
+ items necessary for software development.
+OE: gzip
+PackageArch: zen5
+
+Package: gzip
+Architecture: amd64
+Version: 1.14-r0
+Priority: optional
+Section: console/utils
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libc6 (>= 2.43+git0+ce1013a197), update-alternatives-opkg
+Filename: ./gzip_1.14-r0_amd64.deb
+Size: 68624
+MD5sum: a54df40a81feda68616b9e6ce3cbffcd
+SHA1: 1adcc0be2fa3bdc2793e3ec8226c2e2c75a43dc4
+SHA256: e2cd72e4cac6d45922c89246f60595a79765096d3fcafe18a0267d5a7498f97a
+SHA512: 48e249ec53252cb39afb4508822b71ce0ef7fd26fa1adaf9d3b24e6079ab78ea5a2fe3fbfea4948f3a82abd1108d5df60aedc4c2805cdaadd99df93b1ce3b62c
+Homepage: http://www.gnu.org/software/gzip/
+Description: Standard GNU compressor
+ GNU Gzip is a popular data compression program originally written by
+ Jean-loup Gailly for the GNU project. Mark Adler wrote the decompression
+ part
+OE: gzip
+PackageArch: zen5
+
 Package: hdparm-dbg
 Architecture: amd64
 Version: 9.65-r0
@@ -40756,11 +40955,11 @@ Section: devel
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Recommends: fontconfig-dbg, freetype-dbg, fribidi-dbg, glibc-dbg, harfbuzz-dbg
 Filename: ./libass-dbg_0.17.4-r0_amd64.deb
-Size: 297916
-MD5sum: a62f6a81fa786f1ffc7bcbb0dd5c81d8
-SHA1: b41d9773303e24e7add347acd1c74472b570e9da
-SHA256: d2e95ef055ab777f491d6ed672d4b1d3db8456027cec96d99d449dd594b3331b
-SHA512: 34a0127444a0a82b74b231570556cee2f8d2d4aaeb9cd29b9677852807b0a047a876e54deb176f9ef4e31f265b90b208877c895d9edbcd33a937f9b40fe889b1
+Size: 298080
+MD5sum: 5f297f03058b632e5dd242dc9d37e3e2
+SHA1: 31b054a1cafa2b6ce69ce4690794f7765a9ed2fd
+SHA256: d1c4f27b0636da04a8dd6f6519772873a473178084a9ae0b9c453963feacd418
+SHA512: 56259a95e0843d5e6184ec72a99f91467de4c4095b76a4443b91b7c42bf5bd52c999498e1bae283cb6e07edd26ccdb59271dca722a99e801ca369f074c931257
 Homepage: https://github.com/libass/libass
 Description: libass version 0.17.4-r0 - Debugging files
  libass is a portable subtitle renderer for the ASS/SSA (Advanced
@@ -40802,11 +41001,11 @@ Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Provides: libass
 Depends: libc6 (>= 2.43+git0+ce1013a197), libfontconfig1 (>= 2.17.1), libfreetype6 (>= 2.14.3), libfribidi0 (>= 1.0.16), libharfbuzz0 (>= 12.3.2)
 Filename: ./libass9_0.17.4-r0_amd64.deb
-Size: 102400
-MD5sum: d793cf66fb18a3b05ce661cabd52097d
-SHA1: 7fb6a8e6f53fd2a30e3e05ed3567758f5454c318
-SHA256: 906d1bcb7ab9348bd75d6691487a46faa71a166ec7e067e5ea50211f2c895a03
-SHA512: 4483d1b3c31e97f46828017cdd7a814a50087be752962f555515b165eedd4332c6710c082c7ffeb9bbc291da1c8f060213d3072df5eee86f4d37f5eafadf43d1
+Size: 102496
+MD5sum: cca974bd5889cdd7bcb96ef07e246ecb
+SHA1: 4ca13fd6e6a2bcc68e366fa07c20b799e59618b9
+SHA256: 91fcea7b374243fa0809408e3fd023fb4b05395027bb03b96b97bccf8729519c
+SHA512: 6449964a1c73a5763d673d7a9b4dd70eec36ab5feca2ac61cfa7b66193d95567e39ffe0d9d8ef81f233118bcf91dbf0eac34a5636ac432572822b7841c7ccb8b
 Homepage: https://github.com/libass/libass
 Description: libass version 0.17.4-r0
  libass is a portable subtitle renderer for the ASS/SSA (Advanced
@@ -49311,11 +49510,11 @@ Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Provides: libopencv-core
 Depends: libc6 (>= 2.43+git0+ce1013a197), libgcc1 (>= 15.2.0), libstdc++6 (>= 15.2.0), libz1 (>= 1.3.2), tbb (>= 2022.3.0)
 Filename: ./libopencv-core413_4.13.0-r0_amd64.deb
-Size: 1147344
-MD5sum: 47a14999a2661ef572587b34afb51713
-SHA1: 4f8bc67243430e10ab2aa1cca1a9cf3694152514
-SHA256: 833b1622eb046b4c70a8a835fa15c72646d53051b6ca49beebe6b1ae479a9a6e
-SHA512: 9a7139dce8dfb0784cccd72bf718f921f9989260f4b6675a08d3c2bb10adf555b5d063581ee1c334ec2bd3a4e20409a003cba844eb83e452a3ec2647016daa41
+Size: 1147824
+MD5sum: 172e1fd5216479751c1da87cef240866
+SHA1: 643472827fa556d8c0cb508d0d20879febb5f1e9
+SHA256: 0e88ffbe3a5982060814e33727f01d3b5487dd9e398e575c92d11b00ec5fd280
+SHA512: 0817819f334623fa0325d47541fc1aab055f41cc70323e36944c274cc674c6d7d68e66cb4ec9f8f6075f5a2adb3980a2fad3cbf9c7bd599156b1a291a29d75b7
 Homepage: http://opencv.org/
 Description: OpenCV opencv-core library
  OpenCV opencv-core library
@@ -69482,10 +69681,10 @@ Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Depends: libc6 (>= 2.43+git0+ce1013a197), libgcc1 (>= 15.2.0), libstdc++6 (>= 15.2.0), libz1 (>= 1.3.2)
 Filename: ./lshw_02.20+git0+4c6497c8b0-r0_amd64.deb
 Size: 2342220
-MD5sum: 7fa2af4f72c1fe7fb6c954397c61a64f
-SHA1: 13afb091cd766dc898538612f18b4d32ed4a5f51
-SHA256: 4290c5bc5cc9fca3c13578364463dd9532066fb2b784050d7d3c2af6c2d23738
-SHA512: 0da298b4da656eeb5bcde7344969734fb7f84c6e5f9b22b5c34e5c9ae25636905898ae7a2921ee8f9998311f8a749fa3c7676e92294cddcfde03b00ddfe69c28
+MD5sum: 0dc13a945f4489cb5e5bf67ab050b892
+SHA1: 63e4aa9b95cd066218ca2c51664d52bc32e184a6
+SHA256: c72b90f69373724aeec3535fc5df64ee3ddd05390822133533475ab08e7129db
+SHA512: f20f15352450350e19e36538cba3837142e8bd615fe46d3e9655c65684a913517195e7714fa972757d5bf9f6e59c69f984ddd051676ba0671d0778eb933cd88c
 Homepage: http://ezix.org/project/wiki/HardwareLiSter
 Description: Hardware lister
  A small tool to provide detailed information on the hardware
@@ -91742,11 +91941,11 @@ Section: devel/python
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Depends: libc6 (>= 2.43+git0+ce1013a197), python3-audio, python3-codecs, python3-core, python3-email, python3-numbers, python3-pickle, python3-pydoc
 Filename: ./python3-misc_3.14.4-r0_amd64.deb
-Size: 1026088
-MD5sum: 160bb0dcf1c3a7a7c89f3f13d181c348
-SHA1: 6358d20b21765cee328c80a6bd2b6d16c983fe12
-SHA256: e1af2c6f408eb466ee46865d3c5491b54f9cfde11fc159f920c8695c0e6de1ee
-SHA512: bdf9e21108930ad83965bf54868d8fe7dabc3ef846ea4d916fde56de81a7873fca7eb161d786ad8eca1b5baefde25c73f4cabeb26fce6b25355a4f94c463e3e6
+Size: 1026936
+MD5sum: 7405fe740b77ee9f5be7cffc1c388a63
+SHA1: 55309be7c1f284a4a1cf8b2903558cac48d1e4d5
+SHA256: 422938dd5f050e0094aa70dfd72554184859ae66873ac74e0481957c229b1eeb
+SHA512: d7ec6d9ff47796791027332c235f7787d1a5aa8ebcaed8ba7fa72b46f2688e4c78bfa270ffae7d1af6eb041c80c145cbcf61a217b4f90f8880cde777b4c9ccd6
 Homepage: http://www.python.org
 Description: The Python Programming Language
  Python is a programming language that lets you work more quickly and
@@ -96986,11 +97185,11 @@ Section: devel
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Recommends: glibc-dbg, libdrm-dbg, libegl-mesa-dbg, libgbm-dbg, libgcc-dbg, libgl-mesa-dbg, libpciaccess-dbg, libsdl2-dbg, libstdc++-dbg, llvm-dbg, nanomsg-dbg, ncurses-libncurses-dbg, ncurses-libtinfo-dbg
 Filename: ./umr-dbg_1.0.10-r0_amd64.deb
-Size: 2553296
-MD5sum: 1b29a5201f0d33db4a6447cf452a7472
-SHA1: ce8160ddab2dd4e36c82122e204dcbb70ed83b05
-SHA256: 0d02e0747e3a6b12b818da029d204fc63d5fb803e8087be537b3bfdf97f13e8f
-SHA512: 232cb71af091e1b9415694c485fbea7f493bc24ce8dd510b54146f55468b036c2640e498644e61a3468dab630ad59ac98fc2df839841807d2329c39a2f103493
+Size: 2546272
+MD5sum: f851839bf033548b73fe4f63ea0a994d
+SHA1: f1a496ee5fd75435764651170d121e00bdb65d74
+SHA256: 5405fa68201330471631551bb1cfe09eb2c2574c957f530f8d1963fd9f4f68be
+SHA512: dd53eacd1167579cb0d14a881fdecf4c7b85ba3beec599d94f3a170194e054d138f82abf162ae697081aae313a71f8ecd420a1e2bf224d6bafc986e3f073b9ec
 Description: AMD UMR (Unified Memory Reader) tool - Debugging files
  Tool for reading AMD GPU memory  This package contains ELF symbols and
  related sources for debugging purposes.
@@ -97024,11 +97223,11 @@ Section: base
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.131), libegl-mesa (>= 26.1.4), libgbm1 (>= 26.1.4), libgcc1 (>= 15.2.0), libgl-mesa (>= 26.1.4), libnanomsg6 (>= 1.2.2), libncurses5 (>= 6.6), libpciaccess0 (>= 0.18.1), libsdl2-2.0-0 (>= 2.32.10), libstdc++6 (>= 15.2.0), libtinfo5 (>= 6.6), llvm (>= 22.1.3)
 Filename: ./umr_1.0.10-r0_amd64.deb
-Size: 2481368
-MD5sum: 101dc6704788bc76e82086df345a7ec6
-SHA1: 870910321273cadb9227e7b02ca006ea202c264c
-SHA256: 9c1fce4e8729f4f68589f39b03f4cd1f106ee781e84f26f5341db83fde5833f3
-SHA512: 01a0317d2725186b220b5262173ce25f59110371c838d831ff56e7b05c91bf50c51018f29b4863ba2c5cd295bb8ffe07741ff3c9663f6a12d21e940a3a383f06
+Size: 2479720
+MD5sum: 3e494b5bc3186c354148f5952d9fa26f
+SHA1: a96e1272299ddf663c099b70c3747a3112baf0f9
+SHA256: a80f8e66b69e89c4c2f72835083bbfb9322117ebf5fc3e016a06d49f1a6e2c73
+SHA512: c789b8d182678bf97fb151740ecd98d659b6ff5b3fddda3c4cb65c1b27f05d55197bdfaace5ed93f95f6f88d48bb57da07df62136d3ac8a1b74e47d629e7cdab
 Description: AMD UMR (Unified Memory Reader) tool
  Tool for reading AMD GPU memory
 OE: umr
