@@ -448,13 +448,14 @@ Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Provides: kernel-module-amd-hello
 Depends: kernel-6.18.33-amd-standard
 Filename: ./kernel-module-amd-hello-6.18.33-amd-standard_0.1-r0_amd64.deb
-Size: 3040
-MD5sum: 5db2f08bd7275f9b0e03e4b507b194b5
-SHA1: 27d86108057d9fe8431fa004ce720aedc0e5c2a8
-SHA256: 1b9dd1056394f037687cd66a3bf6e60fc03c696eac29c24bce77f9612add319b
-SHA512: 983014cd330433c9b179f04521a9fa1b5fb821cc507cedfab0fbae15e1c06de21be42e622bfdd42b781a7002f092d9bab6c1758dfa840da278bbef0e324f8f48
+Size: 4332
+MD5sum: b95d03ffbac6d6585a2972ab272f087f
+SHA1: 8f612476d8e2e70129ab02ad5c74362878569e91
+SHA256: e62b7859a108bb8e31528b6be95325a174e631ddfe63d8ecc4830decb33306e4
+SHA512: 60d4d773ef130bd786b959e93219e7afc460ccbd6eb69777564b0044ba9ce41012536324bf4679865f242346cfe04c3031f2432a3f73b5e401f2249b95e7adc8
 Description: amd-hello kernel module
- amd-hello kernel module; AMD sample out-of-tree kernel module
+ amd-hello kernel module; AMD OOT DKMS sample: procfs + params + timer +
+ atomics
 OE: amd-hello-mod
 PackageArch: x100
 

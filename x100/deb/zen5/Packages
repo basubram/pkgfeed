@@ -910,11 +910,11 @@ Section: base
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Depends: packagegroup-amd-kernel-dev
 Filename: ./amd-hello-dkms_0.1-r0_amd64.deb
-Size: 1872
-MD5sum: 493a7074c2ffb6202e5499bd017d0985
-SHA1: 350f5de96608336de942c3d58c0856e2b2c77223
-SHA256: 0701e401309a614d1c04244a384ab086fea37cc8d4bf950327b96066ec636387
-SHA512: 17c4b1404c38a3eee21eb4dc1ea416c8f3506bfe2c6720b12b7ed5ab9775fa846a9c362a07d723ee718353e9d1fb346399d6bb78f8d8b8570fdb779cdd785a9a
+Size: 2796
+MD5sum: 9fb5fc522dd3099b43ccac31fb5682ae
+SHA1: ba3f927d098132d638477208d33bc871536a7426
+SHA256: 85232804fa2c3a51f5558936b9394b2029f6f2ffbb530006fbc7753fcf848025
+SHA512: f2edebed4b879bbe30832f559e95ffae65618c6e33655a29546f7efac988e3a89b0f7a66b41388a4ced7359a03068a9e88b3d56c57c1fc45611f09e010cc9d7b
 Description: AMD sample out-of-tree driver, DKMS-packaged (compiled on the target)
  Same amd_hello source as amd-hello-mod, but shipped as source plus a
  dkms.conf. On install, dkms compiles it against the running kernel and
@@ -95875,11 +95875,11 @@ Depends: gawk, libc6 (>= 2.43+git0+ce1013a197), libcrypto3 (>= 3.5.6), libglib-2
 Conflicts: busybox-syslog, rsyslog, sysklogd, syslog-ng-systemd
 Replaces: syslog-ng-systemd
 Filename: ./syslog-ng_4.11.0-r0_amd64.deb
-Size: 196156
-MD5sum: 922c373332538b4c0a7a5f374086b6c0
-SHA1: 4e7f13197f4af7378726019cc006334d6e1f2479
-SHA256: 3bbcb7810ecc2225a7adbbae7f03f81b54b205a0cc9991c46daa51fa9577f764
-SHA512: 43cc573100611ab6ea644e4cfbda0003a7231b999fbb0ef78af51e12d6c638f72386fab428c1933ef250e83a651e02f0912ff257d73d33c1712302126ee344bf
+Size: 196140
+MD5sum: 553fc8916a33f591fd835f9648acd48f
+SHA1: 9ca834c794affe25f2324ecc07c9616fc7ff3f7b
+SHA256: 14cf1c323621225316c7cea4ccf17a5e9ce9d7abc2d0e89e007a18cd9888cfec
+SHA512: 1005afabac1987856794bb262b8efd04796f89ec7930d14e7fc830d430a731567ac63d3f601d10c84468a3262a50a51cecf3372ddbf097adcbbcc6443a8e9f42
 Homepage: http://www.balabit.com/network-security/syslog-ng/opensource-logging-system
 Description: Alternative system logger daemon
  syslog-ng, as the name shows, is a syslogd replacement, but with new

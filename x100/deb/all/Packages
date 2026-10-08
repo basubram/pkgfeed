@@ -151,6 +151,75 @@ Description: ALSA Use Case Manager configuration
 OE: alsa-ucm-conf
 PackageArch: all
 
+Package: amd-version-demo-dbg
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./amd-version-demo-dbg_1.0-r0_all.deb
+Size: 992
+MD5sum: 34fc6e4d346f8c9c15bda5ae2346d1d6
+SHA1: 9579f781bec982eeb659d14ca144de18a8f00138
+SHA256: 682a9912103d14d27cfe06816ec4b5723c852902279cc25c34a2318ae64aa68d
+SHA512: e8072cfc67570a42deaff19b2ceae0374afe578045895bb94f0376bc42e2abfe5851559bf0b74aedd2d7e4783d0dd0317ef3491558e37aee66168f44d3341a63
+Description: AMD apt-feed versioning demo package - Debugging files
+ Trivial package used to demonstrate multi-version publishing in the AMD
+ apt feed. Each build stamps its own version into /usr/bin/amd-version-
+ demo; bump the version (copy the recipe to a new PV), rebuild, and the
+ new version appears in the feed next to the older ones so any version can
+ be installed.  This package contains ELF symbols and related sources for
+ debugging purposes.
+OE: amd-version-demo
+PackageArch: all
+
+Package: amd-version-demo-dev
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: amd-version-demo (= 1.0-r0)
+Filename: ./amd-version-demo-dev_1.0-r0_all.deb
+Size: 1020
+MD5sum: 09b2dc0a0d4d731f26318792f4745b65
+SHA1: c9a4343c2d869c42e2c93134e2df367e67f158da
+SHA256: 705dcfe98f6443ba23f3600576dcfdd455f641b7efbad7c8db44444f6eebba51
+SHA512: 5abf35185cee89ca3db28f290e90aa5c7c9c60e6b3f86ca19e8fb5b0213a6645f503a4d3610a8ffebcb2bba2ea0c534bc0bda1bd4c8d4d1c0767c183a39cf2ed
+Description: AMD apt-feed versioning demo package - Development files
+ Trivial package used to demonstrate multi-version publishing in the AMD
+ apt feed. Each build stamps its own version into /usr/bin/amd-version-
+ demo; bump the version (copy the recipe to a new PV), rebuild, and the
+ new version appears in the feed next to the older ones so any version can
+ be installed.  This package contains symbolic links, header files, and
+ related items necessary for software development.
+OE: amd-version-demo
+PackageArch: all
+
+Package: amd-version-demo
+Architecture: all
+Version: 1.0-r0
+Multi-Arch: foreign
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./amd-version-demo_1.0-r0_all.deb
+Size: 1048
+MD5sum: c8597d5c921136bceec5649ab0e2b3c1
+SHA1: 68cc4e1348e5ac6080bd55e74353c5924fdb2ba5
+SHA256: 0018ff1b0ecedda96a6588e591c4aed5eb95dc2728c840fcccc487edfdd0483e
+SHA512: bd7e498c55083fc80ffc78347a47cea96e74fb15f497d3e92af74fac7fa2f27773f7f1c3542049fa9dcf489da220631b8599f54a2ef8c5044188cf5c308b26a6
+Description: AMD apt-feed versioning demo package
+ Trivial package used to demonstrate multi-version publishing in the AMD
+ apt feed. Each build stamps its own version into /usr/bin/amd-version-
+ demo; bump the version (copy the recipe to a new PV), rebuild, and the
+ new version appears in the feed next to the older ones so any version can
+ be installed.
+OE: amd-version-demo
+PackageArch: all
+
 Package: amdgpu-firmware-dbg
 Architecture: all
 Version: 1.0-r0
