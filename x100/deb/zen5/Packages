@@ -53874,6 +53874,33 @@ Description: Alternative system logger daemon
 OE: syslog-ng
 PackageArch: zen5
 
+Package: libsyslog-ng-4.11-0
+Architecture: amd64
+Version: 4.11.0-r1
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: syslog-ng-libs
+Depends: libc6 (>= 2.43+git0+ce1013a197), libcrypto3 (>= 3.5.6), libglib-2.0-0 (>= 2.88.0), libjson-c5 (>= 0.18), libpcre2 (>= 10.47), libssl3 (>= 3.5.6), libsystemd0 (>= 259.5), syslog-ng (>= 4.11.0)
+Conflicts: busybox-syslog, rsyslog, sysklogd
+Filename: ./libsyslog-ng-4.11-0_4.11.0-r1_amd64.deb
+Size: 683640
+MD5sum: 64ab4d39341f762267e55273508af225
+SHA1: 1c20134917ecbcd24d306ff6beadfbf710773edb
+SHA256: 1fe833daa706a17a6bc454957ab5de3a6666102547b682448da0a0d5a5346f7d
+SHA512: c1932b96ebc78683bf1356907257265253d730776981544be730baf4598bd0983dc7ff94e3140021f4c71f95b9bcb1bb5467c7dddfd9ea8e7c602a4d353cd50d
+Homepage: http://www.balabit.com/network-security/syslog-ng/opensource-logging-system
+Description: Alternative system logger daemon
+ syslog-ng, as the name shows, is a syslogd replacement, but with new
+ functionality for the new generation. The original syslogd allows
+ messages only to be sorted based on priority/facility pairs; syslog-ng
+ adds the possibility to filter based on message contents using regular
+ expressions. The new configuration scheme is intuitive and powerful.
+ Forwarding logs over TCP and remembering all forwarding hops makes it
+ ideal for firewalled environments.
+OE: syslog-ng
+PackageArch: zen5
+
 Package: libsystemd-shared
 Architecture: amd64
 Version: 1:259.5-r0
@@ -95812,6 +95839,33 @@ Description: Alternative system logger daemon - Debugging files
 OE: syslog-ng
 PackageArch: zen5
 
+Package: syslog-ng-dbg
+Architecture: amd64
+Version: 4.11.0-r1
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: syslog-ng-libs-dbg
+Recommends: glib-2.0-dbg, glibc-dbg, json-c-dbg, libcrypto-dbg, libpcre2-dbg, libssl-dbg, libsystemd-dbg, syslog-ng-libs-dbg
+Filename: ./syslog-ng-dbg_4.11.0-r1_amd64.deb
+Size: 3064940
+MD5sum: a714dd271acfae94d382f8aa2cebfd4e
+SHA1: d6ad13e0a5f8d937f6d56d83d3dedc3a8c50c7a3
+SHA256: b057dc1e39c2ad90acb987632458de469427a459c0b5a673de8772a5bbeb1963
+SHA512: aec9b747cdc97f8473ca263e0ebc7a6f6a7c03f54ed944b48c5c95d158ccf4d13233cc5e96306ec44e3b313509e6c887a7ee0f67c9f49d6ee307ff2e4706754d
+Homepage: http://www.balabit.com/network-security/syslog-ng/opensource-logging-system
+Description: Alternative system logger daemon - Debugging files
+ syslog-ng, as the name shows, is a syslogd replacement, but with new
+ functionality for the new generation. The original syslogd allows
+ messages only to be sorted based on priority/facility pairs; syslog-ng
+ adds the possibility to filter based on message contents using regular
+ expressions. The new configuration scheme is intuitive and powerful.
+ Forwarding logs over TCP and remembering all forwarding hops makes it
+ ideal for firewalled environments.   This package contains ELF symbols
+ and related sources for debugging purposes.
+OE: syslog-ng
+PackageArch: zen5
+
 Package: syslog-ng-dev
 Architecture: amd64
 Version: 4.11.0-r0
@@ -95826,6 +95880,34 @@ MD5sum: 3e92207d584a1c1df052aa35696edafe
 SHA1: 41804d654d5ad7b3445878bb95225877ed0fb95b
 SHA256: 9f074a291daebf4976516c2cbc45d9da4824383d2c4a8cfaff165a5852a79584
 SHA512: 297559259913297f00a25d888360c3654ed100eddde7796201aa23cf88781860ae1cad06f452d32e98ecf33409161ec81678eb2829e2970e36414318e5cf6901
+Homepage: http://www.balabit.com/network-security/syslog-ng/opensource-logging-system
+Description: Alternative system logger daemon - Development files
+ syslog-ng, as the name shows, is a syslogd replacement, but with new
+ functionality for the new generation. The original syslogd allows
+ messages only to be sorted based on priority/facility pairs; syslog-ng
+ adds the possibility to filter based on message contents using regular
+ expressions. The new configuration scheme is intuitive and powerful.
+ Forwarding logs over TCP and remembering all forwarding hops makes it
+ ideal for firewalled environments.   This package contains symbolic
+ links, header files, and related items necessary for software
+ development.
+OE: syslog-ng
+PackageArch: zen5
+
+Package: syslog-ng-dev
+Architecture: amd64
+Version: 4.11.0-r1
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: glib-2.0-dev, syslog-ng, syslog-ng-libs
+Recommends: curl-dev, flex-dev, gawk-dev, glib-2.0-dev, glibc-dev, json-c-dev, libcrypto-dev, libpcre2-dev, libssl-dev, openssl-dev, syslog-ng (= 4.11.0-r1), syslog-ng-libs-dev, systemd-dev, util-linux-dev
+Filename: ./syslog-ng-dev_4.11.0-r1_amd64.deb
+Size: 107168
+MD5sum: a9817deb720f674b6ed44b140c942cd2
+SHA1: 74ace9049a526df4f2e006b412ca2f288b1452b2
+SHA256: 201a5f1c57a0450a95f50c6c2fad9ffc83354a2d4e3b57e2ea5a4adbe1bb1d06
+SHA512: a01f8ad1d54b24accc3340dc8f7b90129e1774cccc6c9877b76cd6efb891a62b66980e2484a806ea2822e013120d1bf0e23b592618b7f4c1d0590b5722707322
 Homepage: http://www.balabit.com/network-security/syslog-ng/opensource-logging-system
 Description: Alternative system logger daemon - Development files
  syslog-ng, as the name shows, is a syslogd replacement, but with new
@@ -95864,6 +95946,30 @@ Description: Alternative system logger daemon
 OE: syslog-ng
 PackageArch: zen5
 
+Package: syslog-ng-jconf
+Architecture: amd64
+Version: 4.11.0-r1
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./syslog-ng-jconf_4.11.0-r1_amd64.deb
+Size: 4720
+MD5sum: 143a3fe73a21fb7f277fb5d6de806f02
+SHA1: 40b2cc001815c319dd7df09e912f210a1254f23f
+SHA256: 721aa127483ba10d3cc1571f3533a5fe4d8057c66dd2c40e72aec5d6fe19262c
+SHA512: 91f943039a0149ee9de508992c9fb8441d36a96280c2afa0b25ba7f3d8d72960887a237512372fcd0d7c01fb2a469eaeba527f3fb5b7426e05e50569e4cf0e4e
+Homepage: http://www.balabit.com/network-security/syslog-ng/opensource-logging-system
+Description: Alternative system logger daemon
+ syslog-ng, as the name shows, is a syslogd replacement, but with new
+ functionality for the new generation. The original syslogd allows
+ messages only to be sorted based on priority/facility pairs; syslog-ng
+ adds the possibility to filter based on message contents using regular
+ expressions. The new configuration scheme is intuitive and powerful.
+ Forwarding logs over TCP and remembering all forwarding hops makes it
+ ideal for firewalled environments.
+OE: syslog-ng
+PackageArch: zen5
+
 Package: syslog-ng
 Architecture: amd64
 Version: 4.11.0-r0
@@ -95880,6 +95986,34 @@ MD5sum: 553fc8916a33f591fd835f9648acd48f
 SHA1: 9ca834c794affe25f2324ecc07c9616fc7ff3f7b
 SHA256: 14cf1c323621225316c7cea4ccf17a5e9ce9d7abc2d0e89e007a18cd9888cfec
 SHA512: 1005afabac1987856794bb262b8efd04796f89ec7930d14e7fc830d430a731567ac63d3f601d10c84468a3262a50a51cecf3372ddbf097adcbbcc6443a8e9f42
+Homepage: http://www.balabit.com/network-security/syslog-ng/opensource-logging-system
+Description: Alternative system logger daemon
+ syslog-ng, as the name shows, is a syslogd replacement, but with new
+ functionality for the new generation. The original syslogd allows
+ messages only to be sorted based on priority/facility pairs; syslog-ng
+ adds the possibility to filter based on message contents using regular
+ expressions. The new configuration scheme is intuitive and powerful.
+ Forwarding logs over TCP and remembering all forwarding hops makes it
+ ideal for firewalled environments.
+OE: syslog-ng
+PackageArch: zen5
+
+Package: syslog-ng
+Architecture: amd64
+Version: 4.11.0-r1
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: syslog-ng-systemd
+Depends: gawk, libc6 (>= 2.43+git0+ce1013a197), libcrypto3 (>= 3.5.6), libglib-2.0-0 (>= 2.88.0), libpcre2 (>= 10.47), libssl3 (>= 3.5.6), libsyslog-ng-4.11-0 (>= 4.11.0)
+Conflicts: busybox-syslog, rsyslog, sysklogd, syslog-ng-systemd
+Replaces: syslog-ng-systemd
+Filename: ./syslog-ng_4.11.0-r1_amd64.deb
+Size: 196140
+MD5sum: 2c13e65f89a88b99002121aad3135949
+SHA1: be6f4aec6858ebfc4d53771c4420f0de3cf087fa
+SHA256: 811c63a6b74317ce75bcccd0521ce5488e208e50854be32da5167017961d812a
+SHA512: 5e2a0f73ec37e627c2a5534fad6a11f0fee1e33d032efb2921d55c2e2021b366cf479813e8f9b57a74e32680105f22bf3bc05af953541ee170da548eb4eab4c2
 Homepage: http://www.balabit.com/network-security/syslog-ng/opensource-logging-system
 Description: Alternative system logger daemon
  syslog-ng, as the name shows, is a syslogd replacement, but with new
