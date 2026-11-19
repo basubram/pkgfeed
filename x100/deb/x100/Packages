@@ -906,11 +906,11 @@ Priority: optional
 Section: kernel
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Filename: ./kernel-rt-modules_6.18.46-r0_amd64.deb
-Size: 64672088
-MD5sum: ee26336f4e7c8b1b76bfd509c739f6ec
-SHA1: bc68040b238137f35e8087c4e1a794330574e230
-SHA256: c38d6fe7e50df755b026a24c3c4cbd875791a5aada3394b2287497225d2664a9
-SHA512: 98495db9e5e71f9ac3273ac3c0768add3c64c500889d3523acb077aa7810ac85848b8c6f165d02997312a09f25566ee37b2fbfd32872316851b00249ab6cd311
+Size: 79612068
+MD5sum: d4bedeab02a437a06ebc239352540ac5
+SHA1: a5fbd3ac91ba911b06747f9406d0fbdd67d883c0
+SHA256: 97712d930395ba7847c317cdcf3fc41c50aeb8fb03a125855b8cd94a1337a969
+SHA512: d372da7bff5e5fd59999b16a77b536d1ee7d591c7354c772a74b766d7c0f4396749aa1dfcf8167382852bb1a46321c4cc9a5f40a416b2ed92a89ab603b4068c8
 Homepage: https://www.yoctoproject.org/
 Description: Linux kernel
  Kernel modules meta package
@@ -1410,13 +1410,13 @@ Version: 1.0-r0
 Priority: optional
 Section: devel
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-Recommends: amd-rt-esp-sync-dbg, cpupower-dbg, kernel-rt-image-dbg, kernel-rt-modules-dbg, rtla-dbg, stress-ng-dbg
+Recommends: cpupower-dbg, kernel-rt-modules-dbg, rtla-dbg, stress-ng-dbg
 Filename: ./packagegroup-amd-rt-dbg_1.0-r0_amd64.deb
-Size: 1064
-MD5sum: e70ebc2cd341f36b7d5ed894b67e3652
-SHA1: 603f46128e324c5900a8b922230ccf92b5f0bef8
-SHA256: cd7fd2c75402ba75f565d605bcd8eb0057d07b462b8316c5ae8581b623e1548b
-SHA512: b189c81e415ddc6da449e10815a043fdd7f7bb12b901286296b5c70c568dff936ea8129b11082138b56123aa43be73378e8ab265f29566c2c61d0617a5a52b64
+Size: 1048
+MD5sum: f905cdee51411b3e555227e6d6fe7b7b
+SHA1: 4ab3b636ca7810a6696e6e217043ecab6d94d368
+SHA256: 97926212dc9556c30d1e11834b1d29ac4421b00f928e353fa97cbc324428436c
+SHA512: 8eb23a0610d3da9ca1b886507ab0d0d955ca1907684540d4e31d1b772c69a96e5f93cb99fccabbf9a8fbcb29edb6a89f72864887c52e43c337b9b7f691a986a6
 Description: Real-time (PREEMPT_RT) kernel and tooling, installed from the apt feed - Debugging files
  Runtime upgrade path to the AMD real-time kernel. Installs the co-
  installable kernel-rt packages (standard linux-amd stays installed) plus
@@ -1433,13 +1433,13 @@ Version: 1.0-r0
 Priority: optional
 Section: devel
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-Recommends: amd-rt-esp-sync-dev, cpupower-dev, kernel-rt-image-dev, kernel-rt-modules-dev, packagegroup-amd-rt (= 1.0-r0), rtla-dev, stress-ng-dev
+Recommends: cpupower-dev, kernel-rt-modules-dev, packagegroup-amd-rt (= 1.0-r0), rtla-dev, stress-ng-dev
 Filename: ./packagegroup-amd-rt-dev_1.0-r0_amd64.deb
-Size: 1088
-MD5sum: ae8712d9d32ff83566e700b0a41dda24
-SHA1: 1a00da2896d0a1acfac4728f9fcafccf3474c29a
-SHA256: 131785d457939e10ba2eff3c8440eb54ae5143275d2da670e36312cce1d4fc54
-SHA512: 5deb81d7063ee1217bb37fd0b436fcc24fe50b7280fa8bcca67f30bad4e41e3c6e11ee11b749fdf24899076e796ca21721e621b9ecdab37d54b3089461c5d34e
+Size: 1072
+MD5sum: 3db6b5ec37d14eca1b826acf7fa2e304
+SHA1: c83740add4bb88c4d1fbd2e8cd03981fe86e3135
+SHA256: daa5ccd01467e741ba6d95fcfd73c5bdbb7621c4e69066ec131a0b081a4a58eb
+SHA512: 258b80e699e6960cbee94bee5fbdb204eb8835358464bd0d8d917ef6268f1fa6ba3224c982e37f3ff6ad89e96fca582c30708dad85d178989c15c7d36365acdf
 Description: Real-time (PREEMPT_RT) kernel and tooling, installed from the apt feed - Development files
  Runtime upgrade path to the AMD real-time kernel. Installs the co-
  installable kernel-rt packages (standard linux-amd stays installed) plus
@@ -1456,14 +1456,14 @@ Version: 1.0-r0
 Priority: optional
 Section: base
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-Depends: amd-rt-esp-sync, cpupower, kernel-rt-image, kernel-rt-modules, rtla, stress-ng
+Depends: cpupower, kernel-rt-modules, rtla, stress-ng
 Recommends: rt-tests
 Filename: ./packagegroup-amd-rt_1.0-r0_amd64.deb
-Size: 1008
-MD5sum: 90563cf55f3449ad76b0ee53bde5e234
-SHA1: 85f63f192a4ca3a3a063974157270cb990ee057d
-SHA256: ae9914d937f3e1ba60a59fb0221b4d7775f738f74cd9ea69ed4f35ab9171e0f9
-SHA512: 177fabffa215c05c94d7d9c38e821e5d5aa532d592f6c2a02cd2befa5ad4ecc2da5ea42791e2057540dbed2f39abf2ae6ef5d28db25286be3fa94f19ad7968f6
+Size: 992
+MD5sum: a4544a733ee60cd925a4cb1cb41d1cd8
+SHA1: 4bbf4fd627625d88a24eca78228c085bcad71a8b
+SHA256: 52bb3b05f0ff7821ce31d41dae2c1fe66d8dbe8ff500c34b1c124dd66666c1c1
+SHA512: 966992842b9a9da606c02ee7d103da276b167e2278a6b27251fa48b86b94b2f7a0412cae67e836a0a5677a7e9e8d06ccfc936ddc217b3bc4912282d5d2ddb4ea
 Description: Real-time (PREEMPT_RT) kernel and tooling, installed from the apt feed
  Runtime upgrade path to the AMD real-time kernel. Installs the co-
  installable kernel-rt packages (standard linux-amd stays installed) plus
