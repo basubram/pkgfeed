@@ -419,10 +419,10 @@ Depends: alsa-utils-alsactl
 Recommends: alsa-states
 Filename: ./alsa-state_0.2.0-r0_amd64.deb
 Size: 1552
-MD5sum: 9821daf74a449996f1340e5c721dfb8f
-SHA1: 303c5f16f9f122a5e8df130d1a5482f01d2b4713
-SHA256: 34c0791ca86853436699160f4666a9d4b4b36d73a84d02c1ea6a39a63dc9fc95
-SHA512: 7b5e19668edc8bf5fca26043811c94a8aa7de3f39178356687cf42ceca3f24a013660156aad26fd42cfed04e4ea271b71f101486f2d11344a10f0caf9f4e428b
+MD5sum: f051a648d57bc74b4f0a2603947cfc5f
+SHA1: 4dd5cd28b7f482545d441f7fc93fc9a863c652fa
+SHA256: 683a18c07fa01e6cae21613752cbaef98e4b45947c61fe16563b53092442422b
+SHA512: 1c55fc90e18f682073be22865eff4619437043d0cdceba722fcfeb30e6954177a0721f5c5dd642c811a0c0f44ff5ce9161e6322160d702bd6bf83bd19830be15
 Homepage: http://www.alsa-project.org/
 Description: Alsa scenario files to enable alsa state restoration
  Alsa Scenario Files - an init script and state files to restore sound
@@ -922,6 +922,71 @@ Description: AMD sample out-of-tree driver, DKMS-packaged (compiled on the targe
  kernel-dev so a single 'apt install amd-hello-dkms' brings the dkms tool,
  kernel source and toolchain too.
 OE: amd-hello-dkms
+PackageArch: zen5
+
+Package: amd-rt-esp-sync-dbg
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./amd-rt-esp-sync-dbg_1.0-r0_amd64.deb
+Size: 980
+MD5sum: 00d4bbc3cb054c54bc9b62eb870de3ab
+SHA1: 2c064d795840f7e98b62d1901eb4143e401850e8
+SHA256: fa45577379056e5eb29c9d9244a331e620bd86812777cb38468935a946147fc6
+SHA512: 37d10a30e0ac187278553e5bc0aeefeb75aab037a4937e3fb0c4ec064b05797ecc3c698990cc581c24c6fcafe5986c034abbb58c4d349569a17294537d3cc081
+Description: Sync the feed-installed real-time kernel to the ESP for GRUB - Debugging files
+ After 'apt install packagegroup-amd-rt' installs the kernel-rt packages,
+ this oneshot service copies the -amd-rt kernel onto the EFI System
+ Partition as bzImage-rt so the GRUB 'real-time' entry can boot it. Safe
+ no-op when no RT kernel or ESP is present.  This package contains ELF
+ symbols and related sources for debugging purposes.
+OE: amd-rt-esp-sync
+PackageArch: zen5
+
+Package: amd-rt-esp-sync-dev
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: amd-rt-esp-sync (= 1.0-r0), util-linux-findmnt-dev
+Filename: ./amd-rt-esp-sync-dev_1.0-r0_amd64.deb
+Size: 1024
+MD5sum: 79659352e76ecbf80331cc051d6e007c
+SHA1: 2c5014d1671c5ab770df3ec223e7892d1d8cc49f
+SHA256: f99944dad832186c6b4dadee7206d35dd0095c03cfb77ca899ef355d87a6f1a1
+SHA512: cd0f1a494a896659ad5fd727e67d040fcfb95a1e697ce99d34d8e9f91efb6e90c1a9f881472ec17445d9117ffdc3c6a76a738b60b7c43fc4efc1326c7bdb3bc7
+Description: Sync the feed-installed real-time kernel to the ESP for GRUB - Development files
+ After 'apt install packagegroup-amd-rt' installs the kernel-rt packages,
+ this oneshot service copies the -amd-rt kernel onto the EFI System
+ Partition as bzImage-rt so the GRUB 'real-time' entry can boot it. Safe
+ no-op when no RT kernel or ESP is present.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+OE: amd-rt-esp-sync
+PackageArch: zen5
+
+Package: amd-rt-esp-sync
+Architecture: amd64
+Version: 1.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: util-linux-findmnt
+Filename: ./amd-rt-esp-sync_1.0-r0_amd64.deb
+Size: 2228
+MD5sum: 91094ad7dc871e8d89c6c65b067ea332
+SHA1: 7b83823f55415ec304ef33a0020c8ee8b0eed92f
+SHA256: 20f35c32662538697c307f13b3c759a59272f29653f34b2131522c97bb6c7b95
+SHA512: 6c4372f8ad2f7bfc23dcbc0f2ae6506218c55a52a571f100958a2582aaa3fb28d4d69fcaf4043fe61f46479f8aaf253ac3971c268ae0d1cdb06a65a12288c492
+Description: Sync the feed-installed real-time kernel to the ESP for GRUB
+ After 'apt install packagegroup-amd-rt' installs the kernel-rt packages,
+ this oneshot service copies the -amd-rt kernel onto the EFI System
+ Partition as bzImage-rt so the GRUB 'real-time' entry can boot it. Safe
+ no-op when no RT kernel or ESP is present.
+OE: amd-rt-esp-sync
 PackageArch: zen5
 
 Package: apt-bash-completion
@@ -31412,13 +31477,13 @@ Version: 2023.01-r0
 Priority: optional
 Section: base
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.131), libgbm1 (>= 26.1.4), libgcc1 (>= 15.2.0), libjpeg62 (>= 3.1.3), libpng16-16 (>= 1.6.56), libstdc++6 (>= 15.2.0), libudev1 (>= 259.5), libx11-6 (>= 1.8.9), wayland (>= 1.24.0)
+Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.133), libgbm1 (>= 26.2.1), libgcc1 (>= 15.2.0), libjpeg62 (>= 3.1.3), libpng16-16 (>= 1.6.56), libstdc++6 (>= 15.2.0), libudev1 (>= 259.5), libx11-6 (>= 1.8.9), wayland (>= 1.24.0)
 Filename: ./glmark2_2023.01-r0_amd64.deb
 Size: 7035468
-MD5sum: 52629465789dd439f440f07da106b949
-SHA1: fe7f6dbdd605267242baa427b7ca05dc7c6a27bc
-SHA256: 47ce7bee817b7953797773b315754c3b0d9724d5e65406c6be0f243eec51eb5e
-SHA512: bb65b1b37adf915196d5e32797c56d1e650932197005086182339d1e5dc150d04c76c7e1c54e3f67fc041faa766be5040ff5d58db2b0c12642761bda3af5f846
+MD5sum: 74e2ff85efad602c275d36fab08533ca
+SHA1: e585ebd8e960d4a5ea7bb168c1bfb5a63fcd8dc3
+SHA256: bd37d2254bb5554399622c1dbf8c260d28d88a174ade8d588b133a6a67857de4
+SHA512: 5feac9857270b63fc4bc04d8ef665851fe1f6ec7b48040f47d7bd3ff8d62ee193d33327cab49d593474a7efdb4e860f65986232357ded53691f9739209297945
 Homepage: https://github.com/glmark2/glmark2
 Description: OpenGL (ES) 2.0 benchmark
  glmark2 is a benchmark for OpenGL (ES) 2.0. It uses only the subset of
@@ -31967,11 +32032,11 @@ Section: bootloaders
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Depends: efibootmgr
 Filename: ./grub-efi_2.14-r0_amd64.deb
-Size: 929524
-MD5sum: 25216d866df9df7ea7772f265d4de5c8
-SHA1: f1fe6e769f72ee8cf786b7a6657b28f5199b4dbe
-SHA256: c8f3d9b20673d5817bfc2345a1305b62dfe22ff568225eda8e8cd73f01d461b1
-SHA512: 624690af9b8748c6a22a38a3cda939d2437db190e4c8ba36b9fe0d279f81b8b35c204458cf17e057be3c30c9aed3ba2f4a82e895fb156f79142b22573a6a11a1
+Size: 928464
+MD5sum: bb40b5165c06a4ad13b79b7dca32dcac
+SHA1: 4348abb63a60aac9b262f23354e9f9e04729044c
+SHA256: 044c17117b8fe04ebf0568004cb97f778b95059e5ad0658349961a6da087b28b
+SHA512: c40bec15d398047da09b4024b7a0fb64afd2647231c76c7fd23dc7b9fb3ce88d5609187baaeb6986ca713a9dbfaee06254380540d0919d20ad24c1dcdc853ee5
 Homepage: http://www.gnu.org/software/grub/
 Description: GRUB2 is the next-generation GRand Unified Bootloader
  GRUB2 is the next generaion of a GPLed bootloader intended to unify
@@ -36183,13 +36248,13 @@ Version: 1.26.2-r0
 Priority: optional
 Section: base
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-Depends: gstreamer1.0 (>= 1.26.2), libc6 (>= 2.43+git0+ce1013a197), libgl-mesa (>= 26.1.4), libgles2-mesa (>= 26.1.4), libglib-2.0-0 (>= 2.88.0), libgstallocators-1.0-0 (>= 1.26.2), libgstcodecparsers-1.0-0 (>= 1.26.2), libgstgl-1.0-0 (>= 1.26.2), libgstvideo-1.0-0 (>= 1.26.2), libudev1 (>= 259.5), libva (>= 2.23.0), libva-wayland2 (>= 2.23.0), libva-x11-2 (>= 2.23.0), libx11-6 (>= 1.8.9), libxrandr2 (>= 1.5.4), wayland (>= 1.24.0)
+Depends: gstreamer1.0 (>= 1.26.2), libc6 (>= 2.43+git0+ce1013a197), libgl-mesa (>= 26.2.1), libgles2-mesa (>= 26.2.1), libglib-2.0-0 (>= 2.88.0), libgstallocators-1.0-0 (>= 1.26.2), libgstcodecparsers-1.0-0 (>= 1.26.2), libgstgl-1.0-0 (>= 1.26.2), libgstvideo-1.0-0 (>= 1.26.2), libudev1 (>= 259.5), libva (>= 2.23.0), libva-wayland2 (>= 2.23.0), libva-x11-2 (>= 2.23.0), libx11-6 (>= 1.8.9), libxrandr2 (>= 1.5.4), wayland (>= 1.24.0)
 Filename: ./gstreamer1.0-vaapi_1.26.2-r0_amd64.deb
 Size: 302392
-MD5sum: c50013a9006037a57a9b555f898c20fc
-SHA1: 74e840f7a92cea2edda7d1deab927fbb882a6837
-SHA256: 9c0fa6283887f352b4b058e66c76e29a10260242b2b746173c8f20e9c68dddb9
-SHA512: 4eed0cb3150d8501860c4df2e83aae85a76acf044c745f232a5bf0027c50b9652b35834982f77eb3fe01cb86b13c63f3c9c0b30fbfb9bb1ca323501d267e2905
+MD5sum: 47a668d1d976c331399a9c89686755d5
+SHA1: b64eb4446bdf17dc85054d84db32f16494c5d6a5
+SHA256: 1f8f66374201bd717352d715b53f632a6052879e0af2ed02daf6ca1b7627215a
+SHA512: 8943d0b580ca885e768f5b4e7ed4ee522583213d498f9edc283d267edaa16223067f5239fff11f0bda7f8c43fc6c4d5b466b4e4343f5b38c0918b93d0ff4cc6f
 Homepage: https://gstreamer.freedesktop.org/
 Description: VA-API support to GStreamer
  gstreamer-vaapi consists of a collection of VA-API based plugins for
@@ -37249,11 +37314,11 @@ Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Depends: busybox, dosfstools, e2fsprogs-mke2fs, initramfs-framework-base, parted, util-linux-blkid
 Recommends: busybox-syslog
 Filename: ./initramfs-module-install-efi_1.0-r0_amd64.deb
-Size: 4068
-MD5sum: 337c63fbb3ac8bdf2bcdda9fc6eca213
-SHA1: 14fb1e593c2f927186e81b55a1395b5d64ae1f68
-SHA256: 97a4b2e1fa97a47fea45456734bb843ffde0138202a6dc1fd5103b500d989b04
-SHA512: 09c266f1dd570744b3866817fc5b8521a7b0d0228f7f0bcdfd9bb5f7fe2d76fb348894a1ab7c94d3bd87f396755b67d9b0d250927caba89b1d62c881ec4954eb
+Size: 3896
+MD5sum: b0e4265f420197870fa9b4cd01e1ad96
+SHA1: 79e86097d2ea9a3b5c68e21bbaa8620e103e8074
+SHA256: a1d7f70f3665d7858512b85603e833a7cf95caa48c5ab29c3fa7de00594d8dee
+SHA512: d1fbd3e1f659059279e2bd8f8f51eea7ad7f6c181f95cc060bbba8e3e85cc4abe48c67c72a38b3125621571f83befa27350b0fa33ba8b26762b05d346c44fbb4
 Description: initramfs-framework module for EFI installation option
  initramfs-framework module for EFI installation option.
 OE: initramfs-module-install-efi
@@ -40955,11 +41020,11 @@ Section: devel
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Recommends: fontconfig-dbg, freetype-dbg, fribidi-dbg, glibc-dbg, harfbuzz-dbg
 Filename: ./libass-dbg_0.17.4-r0_amd64.deb
-Size: 298080
-MD5sum: 5f297f03058b632e5dd242dc9d37e3e2
-SHA1: 31b054a1cafa2b6ce69ce4690794f7765a9ed2fd
-SHA256: d1c4f27b0636da04a8dd6f6519772873a473178084a9ae0b9c453963feacd418
-SHA512: 56259a95e0843d5e6184ec72a99f91467de4c4095b76a4443b91b7c42bf5bd52c999498e1bae283cb6e07edd26ccdb59271dca722a99e801ca369f074c931257
+Size: 297916
+MD5sum: a62f6a81fa786f1ffc7bcbb0dd5c81d8
+SHA1: b41d9773303e24e7add347acd1c74472b570e9da
+SHA256: d2e95ef055ab777f491d6ed672d4b1d3db8456027cec96d99d449dd594b3331b
+SHA512: 34a0127444a0a82b74b231570556cee2f8d2d4aaeb9cd29b9677852807b0a047a876e54deb176f9ef4e31f265b90b208877c895d9edbcd33a937f9b40fe889b1
 Homepage: https://github.com/libass/libass
 Description: libass version 0.17.4-r0 - Debugging files
  libass is a portable subtitle renderer for the ASS/SSA (Advanced
@@ -41001,11 +41066,11 @@ Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Provides: libass
 Depends: libc6 (>= 2.43+git0+ce1013a197), libfontconfig1 (>= 2.17.1), libfreetype6 (>= 2.14.3), libfribidi0 (>= 1.0.16), libharfbuzz0 (>= 12.3.2)
 Filename: ./libass9_0.17.4-r0_amd64.deb
-Size: 102496
-MD5sum: cca974bd5889cdd7bcb96ef07e246ecb
-SHA1: 4ca13fd6e6a2bcc68e366fa07c20b799e59618b9
-SHA256: 91fcea7b374243fa0809408e3fd023fb4b05395027bb03b96b97bccf8729519c
-SHA512: 6449964a1c73a5763d673d7a9b4dd70eec36ab5feca2ac61cfa7b66193d95567e39ffe0d9d8ef81f233118bcf91dbf0eac34a5636ac432572822b7841c7ccb8b
+Size: 102400
+MD5sum: d793cf66fb18a3b05ce661cabd52097d
+SHA1: 7fb6a8e6f53fd2a30e3e05ed3567758f5454c318
+SHA256: 906d1bcb7ab9348bd75d6691487a46faa71a166ec7e067e5ea50211f2c895a03
+SHA512: 4483d1b3c31e97f46828017cdd7a814a50087be752962f555515b165eedd4332c6710c082c7ffeb9bbc291da1c8f060213d3072df5eee86f4d37f5eafadf43d1
 Homepage: https://github.com/libass/libass
 Description: libass version 0.17.4-r0
  libass is a portable subtitle renderer for the ASS/SSA (Advanced
@@ -41319,13 +41384,13 @@ Priority: optional
 Section: libs
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Provides: libavdevice
-Depends: libasound2 (>= 1.2.15.3), libavcodec62 (>= 8.0.1), libavfilter11 (>= 8.0.1), libavformat62 (>= 8.0.1), libavutil60 (>= 8.0.1), libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.131), libx11-6 (>= 1.8.9), libxcb-shape0 (>= 1.17.0), libxcb-shm0 (>= 1.17.0), libxcb-xfixes0 (>= 1.17.0), libxcb1 (>= 1.17.0), libxext6 (>= 1.3.6), libxv1 (>= 1.0.12)
+Depends: libasound2 (>= 1.2.15.3), libavcodec62 (>= 8.0.1), libavfilter11 (>= 8.0.1), libavformat62 (>= 8.0.1), libavutil60 (>= 8.0.1), libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.133), libx11-6 (>= 1.8.9), libxcb-shape0 (>= 1.17.0), libxcb-shm0 (>= 1.17.0), libxcb-xfixes0 (>= 1.17.0), libxcb1 (>= 1.17.0), libxext6 (>= 1.3.6), libxv1 (>= 1.0.12)
 Filename: ./libavdevice62_8.0.1-r0_amd64.deb
 Size: 39136
-MD5sum: dce60a7c89c2e3012d4f701172b738a3
-SHA1: 111b7f3f24f1532217e2c64bad00a5291ac0572c
-SHA256: e2e10d039da6a9fd9173ca1c223cebcd31a8afd5db82093ffa7da24439c7f2c0
-SHA512: 9bae3249685caedbb74602f8654ce0a13e353666da21e02c8168f9e305d1bd0d6b3d993e23c696ac795d91ae8ef7254033a9b7770ba45a66fbc6ec5676f3bc52
+MD5sum: dd3e9592afb2b1faf6edd8118e5ede36
+SHA1: 8c4f8a54bb8a87772206ee50d354796d41d94acb
+SHA256: 7072698f35f8c692ccc397275274f9eec2f6013e50d61b32624bd30253cd97b4
+SHA512: 9d8ed1edf623f068eddda71d5f8b7e3daa45841d96285dbaf9f257b60bf2defb38acc650508e6edd8a822b502f1af744ba08d59fed3f7ebef14378d0ee84ab2e
 Homepage: https://www.ffmpeg.org/
 Description: A complete, cross-platform solution to record, convert and stream audio and video.
  FFmpeg is the leading multimedia framework, able to decode, encode,
@@ -41388,13 +41453,13 @@ Priority: optional
 Section: libs
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Provides: libavutil
-Depends: libc6 (>= 2.43+git0+ce1013a197), libcrypto3 (>= 3.5.6), libdrm2 (>= 2.4.131), libva (>= 2.23.0), libva-x11-2 (>= 2.23.0), libx11-6 (>= 1.8.9)
+Depends: libc6 (>= 2.43+git0+ce1013a197), libcrypto3 (>= 3.5.6), libdrm2 (>= 2.4.133), libva (>= 2.23.0), libva-x11-2 (>= 2.23.0), libx11-6 (>= 1.8.9)
 Filename: ./libavutil60_8.0.1-r0_amd64.deb
 Size: 433248
-MD5sum: 53b3009a551fd2a19c49f82998aee5b1
-SHA1: 3d3de2d549b97009d563291092f9cfa89fd878ae
-SHA256: e8c376b74b55636435ac7e192b95bd6cbcf89353089132f2df53ae7130b049a3
-SHA512: aec9a9ea82e01d33b7b02cdee312a7de88bc233d8cd9b6bdae034ea9f7a0d248f8cb689ed464774911688ad524bbd708ef0905c12bc5bef764a481a3b09d018b
+MD5sum: 2620f9ce15c3728eecdfc2bbf24e7fe4
+SHA1: d0eec34468afef678d3684f623d346a6657f2e43
+SHA256: 81004d2cd46de6039606e2993f87ff5bfdc4c65bb5d122d7ddcdc4e81f71d85e
+SHA512: e2652c0cf4396075a5fb419da8c42e43cf1d4bfb74e6d86f2fb0f896138eaa44b24ca5d7fbcb2283d3ecbc620b7e821221ba96b0481ee0bd86cf31947327b095
 Homepage: https://www.ffmpeg.org/
 Description: A complete, cross-platform solution to record, convert and stream audio and video.
  FFmpeg is the leading multimedia framework, able to decode, encode,
@@ -42715,6 +42780,29 @@ Description: Userspace interface to the kernel DRM services
 OE: libdrm
 PackageArch: zen5
 
+Package: libdrm-amdgpu1
+Architecture: amd64
+Version: 2.4.133-r0
+Priority: optional
+Section: x11/base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: libdrm-amdgpu
+Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.133)
+Filename: ./libdrm-amdgpu1_2.4.133-r0_amd64.deb
+Size: 21428
+MD5sum: a9e10fb3b60058f69474cbc70c78e566
+SHA1: 51cf504539f5f8e9ad21eca8a38170ecd3d9a090
+SHA256: ccdf0fc3c3bbb19ee23056438e79fe624a1f3f833561785e88c5b892ee072799
+SHA512: a3e162ed5a07be26cb9b836124cc72a481c97d8e684053767899dfae745b2813f01044dd67dd556c4673abe64a77afeb5457e9a350d5659fb6c2a349869ea63c
+Homepage: http://dri.freedesktop.org
+Description: Userspace interface to the kernel DRM services
+ The runtime library for accessing the kernel DRM services.  DRM stands
+ for \"Direct Rendering Manager\", which is the kernel portion of the
+ \"Direct Rendering Infrastructure\" (DRI).  DRI is required for many
+ hardware accelerated OpenGL drivers.
+OE: libdrm
+PackageArch: zen5
+
 Package: libdrm-dbg
 Architecture: amd64
 Version: 2.4.131-r0
@@ -42728,6 +42816,29 @@ MD5sum: 4605f4ae5df0ba2a54b86e083ddf6a61
 SHA1: 2eee61c1fe4de1771edb7f08eb796eb3b56218f8
 SHA256: 6e2e9d96b84a8052c2d779e3dd0cb48f132d2d95da3da7b93a6437caae677546
 SHA512: 65b7e9161ac8a1bbe827de65429b63adfd186413ef4162764e1268e408414481a3a270115fd91029b269a0b3106eb71e87723eecb6062455513c18e891035c8e
+Homepage: http://dri.freedesktop.org
+Description: Userspace interface to the kernel DRM services - Debugging files
+ The runtime library for accessing the kernel DRM services.  DRM stands
+ for \"Direct Rendering Manager\", which is the kernel portion of the
+ \"Direct Rendering Infrastructure\" (DRI).  DRI is required for many
+ hardware accelerated OpenGL drivers.  This package contains ELF symbols
+ and related sources for debugging purposes.
+OE: libdrm
+PackageArch: zen5
+
+Package: libdrm-dbg
+Architecture: amd64
+Version: 2.4.133-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: glibc-dbg, libdrm-amdgpu-dbg, libdrm-etnaviv-dbg, libpciaccess-dbg
+Filename: ./libdrm-dbg_2.4.133-r0_amd64.deb
+Size: 528196
+MD5sum: 9e7f682757f37f2eb8a06313e01c46d6
+SHA1: e828e0d5c7e3a03df9d862e42483c52aa30c5a75
+SHA256: c3130c0f7579a98a9f4f07a898317172f1705e5ed9489f92f86c715dab8cf146
+SHA512: 219f2598eca2db850eaae81ee44a56fa2d978b86127964e3452b1b858266650a3ad924ceb42e08a6876056966b88738539f11ea7b1474a66fe7ba558015ef612
 Homepage: http://dri.freedesktop.org
 Description: Userspace interface to the kernel DRM services - Debugging files
  The runtime library for accessing the kernel DRM services.  DRM stands
@@ -42763,6 +42874,31 @@ Description: Userspace interface to the kernel DRM services - Development files
 OE: libdrm
 PackageArch: zen5
 
+Package: libdrm-dev
+Architecture: amd64
+Version: 2.4.133-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libdrm, libdrm-amdgpu, libdrm-etnaviv, libdrm-freedreno, libdrm-intel, libdrm-nouveau, libdrm-omap, libdrm-radeon, libpciaccess-dev
+Recommends: glibc-dev, libdrm-amdgpu-dev, libdrm-etnaviv-dev, libdrm-freedreno-dev, libdrm-intel-dev, libdrm-nouveau-dev, libdrm-omap-dev, libdrm-radeon-dev, libdrm2 (= 2.4.133-r0), libpciaccess-dev, libpthread-stubs-dev
+Filename: ./libdrm-dev_2.4.133-r0_amd64.deb
+Size: 154220
+MD5sum: b34dedbe94991c1292da03f1692ad6e0
+SHA1: cbca3c833f9b5a200028363da04cf6605f5ddc72
+SHA256: 55ca963e3078c93cb4df9a0de0b89b22d40633d200e8e9695769977c6862c526
+SHA512: 63b0f282aa4804826dce4706a4bb14cc4ce887c26c08bf4b4a353ff4130a540120140247fcf82b82320a8f7b0f1ccd8a5f05809a58ecdfb762910fa77bf03140
+Homepage: http://dri.freedesktop.org
+Description: Userspace interface to the kernel DRM services - Development files
+ The runtime library for accessing the kernel DRM services.  DRM stands
+ for \"Direct Rendering Manager\", which is the kernel portion of the
+ \"Direct Rendering Infrastructure\" (DRI).  DRI is required for many
+ hardware accelerated OpenGL drivers.  This package contains symbolic
+ links, header files, and related items necessary for software
+ development.
+OE: libdrm
+PackageArch: zen5
+
 Package: libdrm-drivers
 Architecture: amd64
 Version: 2.4.131-r0
@@ -42776,6 +42912,28 @@ MD5sum: 27f629be792f72ce76ea926002775e9a
 SHA1: 6cae038668fb605415dd63f571a3d894fed96e2b
 SHA256: ade1876793da23f95b2499e4b4bc9788a7f8a98f555826fed398807b8b754ff4
 SHA512: 3c43808ad35dd5ae2937c8612ed8e14d273b05bb7c42958cbf2da03892ba95b5ca0bfe7570f2dd2ee83d0fa4e155d16ab045e922f8a71a9909df661f102fa7bf
+Homepage: http://dri.freedesktop.org
+Description: Userspace interface to the kernel DRM services
+ The runtime library for accessing the kernel DRM services.  DRM stands
+ for \"Direct Rendering Manager\", which is the kernel portion of the
+ \"Direct Rendering Infrastructure\" (DRI).  DRI is required for many
+ hardware accelerated OpenGL drivers.
+OE: libdrm
+PackageArch: zen5
+
+Package: libdrm-drivers
+Architecture: amd64
+Version: 2.4.133-r0
+Priority: optional
+Section: x11/base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: libdrm-amdgpu, libdrm-etnaviv, libdrm-exynos, libdrm-freedreno, libdrm-intel, libdrm-nouveau, libdrm-omap, libdrm-radeon
+Filename: ./libdrm-drivers_2.4.133-r0_amd64.deb
+Size: 984
+MD5sum: 50e53ea061139ed396ae32f6aedd69ec
+SHA1: e4e3bfa6cd3fd4f75e62192bb06c2da4835e0cef
+SHA256: 85cb84ce142c5613b036943b3d82f7cea16813a2e0d1ee51d1cb4fe4ea99c33a
+SHA512: 1950296c43b3acec903860c864f7ffe8399b295f6a5e0fa1497f88fa554fd23fa8b081df7a46486e089392e8934b42b346fd6377e07d7a561edb9aace13d04ef
 Homepage: http://dri.freedesktop.org
 Description: Userspace interface to the kernel DRM services
  The runtime library for accessing the kernel DRM services.  DRM stands
@@ -42808,6 +42966,29 @@ Description: Userspace interface to the kernel DRM services
 OE: libdrm
 PackageArch: zen5
 
+Package: libdrm-etnaviv1
+Architecture: amd64
+Version: 2.4.133-r0
+Priority: optional
+Section: x11/base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: libdrm-etnaviv
+Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.133)
+Filename: ./libdrm-etnaviv1_2.4.133-r0_amd64.deb
+Size: 9484
+MD5sum: aa77b2f8622f157c35134e040db9e103
+SHA1: 298aa4ed73ed3e67fd996023b61d19d159249105
+SHA256: ac1c2ca801f9c4ce7c918481a3e45b51e6d442cf2c6c2be5d398117d09560f0f
+SHA512: 45d615800552d86f98487776517d47f53cbbcfacd2adb37bd49c41b49f0f65d0a6d8b044eafc0740cfa259ae9b78912f0bed0b2e952a62ba68d08775950f88f3
+Homepage: http://dri.freedesktop.org
+Description: Userspace interface to the kernel DRM services
+ The runtime library for accessing the kernel DRM services.  DRM stands
+ for \"Direct Rendering Manager\", which is the kernel portion of the
+ \"Direct Rendering Infrastructure\" (DRI).  DRI is required for many
+ hardware accelerated OpenGL drivers.
+OE: libdrm
+PackageArch: zen5
+
 Package: libdrm-freedreno1
 Architecture: amd64
 Version: 2.4.131-r0
@@ -42822,6 +43003,29 @@ MD5sum: 97130c82e453dc92c4c55de80067764d
 SHA1: de919c37757ae28737e6410913c737845811938e
 SHA256: 5d105e44cfe0466543915c1b2751cdd24fc4b72cf60acd8c6dcbc4705405922f
 SHA512: 3869ce9a28c5da3aed78e24b6395fdea52f1c8a09a3674d99d1875b48c746ebfc222da842657b924ef7281ce02394d53e7f696a5d1cea9cf02cb248e1aa1ba5e
+Homepage: http://dri.freedesktop.org
+Description: Userspace interface to the kernel DRM services
+ The runtime library for accessing the kernel DRM services.  DRM stands
+ for \"Direct Rendering Manager\", which is the kernel portion of the
+ \"Direct Rendering Infrastructure\" (DRI).  DRI is required for many
+ hardware accelerated OpenGL drivers.
+OE: libdrm
+PackageArch: zen5
+
+Package: libdrm-freedreno1
+Architecture: amd64
+Version: 2.4.133-r0
+Priority: optional
+Section: x11/base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: libdrm-freedreno
+Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.133)
+Filename: ./libdrm-freedreno1_2.4.133-r0_amd64.deb
+Size: 13236
+MD5sum: 11bb45e50abd4600e8a640bb033195b5
+SHA1: 117c68758d14a5246223dd8fe09bdf3e382def7f
+SHA256: ac9952222af2e313362318722fc8831e5dbbd8935fe4e0ccd2c7693872ca0a55
+SHA512: 07e3e2067551efe0f26bb976fef9b6e7bc2d6d80c21ca70887e4b534e34909e29ae4d61e71c2434ec98a540f02bd89e56adc12e3cf70493399045b59ab329e4d
 Homepage: http://dri.freedesktop.org
 Description: Userspace interface to the kernel DRM services
  The runtime library for accessing the kernel DRM services.  DRM stands
@@ -42854,6 +43058,29 @@ Description: Userspace interface to the kernel DRM services
 OE: libdrm
 PackageArch: zen5
 
+Package: libdrm-intel1
+Architecture: amd64
+Version: 2.4.133-r0
+Priority: optional
+Section: x11/base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: libdrm-intel
+Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.133), libpciaccess0 (>= 0.18.1)
+Filename: ./libdrm-intel1_2.4.133-r0_amd64.deb
+Size: 60056
+MD5sum: 1064330bc7ffcc52518f4d7c60eefbcf
+SHA1: 669e1c69985ffdc2e7c77dbef4e1903a1b670697
+SHA256: 96c5efba2d923fe6bc87b18267837a84611886ee11e8116ca679bd5eda53f67b
+SHA512: 1bbce6bc554b4f3e6eccf7bc2391750abbe696ad4f870aa3ed40da1b4b55f7d595f3f197cd1e1b3891fa00ef2d715466625df5a16f57d6d9375da7bd15d61f0b
+Homepage: http://dri.freedesktop.org
+Description: Userspace interface to the kernel DRM services
+ The runtime library for accessing the kernel DRM services.  DRM stands
+ for \"Direct Rendering Manager\", which is the kernel portion of the
+ \"Direct Rendering Infrastructure\" (DRI).  DRI is required for many
+ hardware accelerated OpenGL drivers.
+OE: libdrm
+PackageArch: zen5
+
 Package: libdrm-nouveau2
 Architecture: amd64
 Version: 2.4.131-r0
@@ -42868,6 +43095,29 @@ MD5sum: f706b670d57f897c128aa1b03e5f6e4a
 SHA1: bd0c1c8c4c1ed9f8c2c8d78eaae3b5c719cd6045
 SHA256: a5d66396250f54c482110da37f86b48168a17acc3c1cb10626f6f1408f05e6a2
 SHA512: 4a3a932feda47af5565c8709bde9fb3cd9d79587a16c4fc4e259d425fa9a1e4b7512478f4951a6f9cbfce7d414012e4a7bb90b04991ffcb5fb728b4c64f0469a
+Homepage: http://dri.freedesktop.org
+Description: Userspace interface to the kernel DRM services
+ The runtime library for accessing the kernel DRM services.  DRM stands
+ for \"Direct Rendering Manager\", which is the kernel portion of the
+ \"Direct Rendering Infrastructure\" (DRI).  DRI is required for many
+ hardware accelerated OpenGL drivers.
+OE: libdrm
+PackageArch: zen5
+
+Package: libdrm-nouveau2
+Architecture: amd64
+Version: 2.4.133-r0
+Priority: optional
+Section: x11/base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: libdrm-nouveau
+Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.133)
+Filename: ./libdrm-nouveau2_2.4.133-r0_amd64.deb
+Size: 15144
+MD5sum: a369ecff503a02caa423519d6fc4cd8c
+SHA1: 53f044ee99affd915e6fe662cb719f699edfc998
+SHA256: 741c8bb25baa4e302a7b4dc4f5128b773a5507f9e9f47e129c3fa12a013c69bd
+SHA512: 8362e6f0d573133ea3089dc93c1b53b57d753322d99dfea6ac117e2b525dc362f7c16968128ad407a72d3c34329e9e8cddac1c5456fbf3bd4aaaf7f7d5bcb078
 Homepage: http://dri.freedesktop.org
 Description: Userspace interface to the kernel DRM services
  The runtime library for accessing the kernel DRM services.  DRM stands
@@ -42900,6 +43150,29 @@ Description: Userspace interface to the kernel DRM services
 OE: libdrm
 PackageArch: zen5
 
+Package: libdrm-omap1
+Architecture: amd64
+Version: 2.4.133-r0
+Priority: optional
+Section: x11/base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: libdrm-omap
+Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.133)
+Filename: ./libdrm-omap1_2.4.133-r0_amd64.deb
+Size: 4696
+MD5sum: 932f416f76dff0ba6a055403fa6f8b00
+SHA1: 8dd84eaa8c5db131a2268fde5e6c0c0c956f48bc
+SHA256: e7952f7a43003d66e3785f2fbbf56da45818afc6bcbf6ede65bd90c6e53e3bbe
+SHA512: bc9ed104c1e11c84163b2190456b16d0ada83383284aa9fe122573a4901569c6acb943a078d0d5c162cdbc62d25e1e3bdbc4678db6ee71557f98b2a481177f57
+Homepage: http://dri.freedesktop.org
+Description: Userspace interface to the kernel DRM services
+ The runtime library for accessing the kernel DRM services.  DRM stands
+ for \"Direct Rendering Manager\", which is the kernel portion of the
+ \"Direct Rendering Infrastructure\" (DRI).  DRI is required for many
+ hardware accelerated OpenGL drivers.
+OE: libdrm
+PackageArch: zen5
+
 Package: libdrm-radeon1
 Architecture: amd64
 Version: 2.4.131-r0
@@ -42914,6 +43187,29 @@ MD5sum: dd814dd7747b7f46c9fae465dc7384f2
 SHA1: 51c3843e2b14c5b548b0f04023ddfbc7d1b8387d
 SHA256: 2974e7ee70634e87825656f57f3b56e09c69e86ac7eb006f6844150513c30885
 SHA512: 6f4a4200f0a0b678120833fc0935053f3885d8aea2fc766347cd21ad35045dd6b95fdcff44a4fbc42e8e46ca82f6851822d9a0b1353868300ac74c6eee030390
+Homepage: http://dri.freedesktop.org
+Description: Userspace interface to the kernel DRM services
+ The runtime library for accessing the kernel DRM services.  DRM stands
+ for \"Direct Rendering Manager\", which is the kernel portion of the
+ \"Direct Rendering Infrastructure\" (DRI).  DRI is required for many
+ hardware accelerated OpenGL drivers.
+OE: libdrm
+PackageArch: zen5
+
+Package: libdrm-radeon1
+Architecture: amd64
+Version: 2.4.133-r0
+Priority: optional
+Section: x11/base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: libdrm-radeon
+Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.133)
+Filename: ./libdrm-radeon1_2.4.133-r0_amd64.deb
+Size: 17192
+MD5sum: 30e4c6db4959994196a3844c40caac17
+SHA1: bf2f5ce5f05d0b2c35c144db951159745460da97
+SHA256: 4535a0b53080c0f65add79285cc18ef6363213e6fdf69a355547a65663ce98aa
+SHA512: d5f5ce97b49fa34caf5d808555706b8f976e18b09be642d293c34d17061d750a075fa74f157ca445dface699869bb18b5e84185aa0aee62c3d762aa71e2bc7a2
 Homepage: http://dri.freedesktop.org
 Description: Userspace interface to the kernel DRM services
  The runtime library for accessing the kernel DRM services.  DRM stands
@@ -42945,6 +43241,28 @@ Description: Userspace interface to the kernel DRM services
 OE: libdrm
 PackageArch: zen5
 
+Package: libdrm-tests
+Architecture: amd64
+Version: 2.4.133-r0
+Priority: optional
+Section: x11/base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm-amdgpu1 (>= 2.4.133), libdrm-etnaviv1 (>= 2.4.133), libdrm2 (>= 2.4.133)
+Filename: ./libdrm-tests_2.4.133-r0_amd64.deb
+Size: 56968
+MD5sum: 0f6cdb9c18603b3966bb5cb3a1cf4553
+SHA1: 97690205dcb63f8b13115be056f23ddf7a5e5d69
+SHA256: 9fd494c2111731896b5e64777e5f588d3d10a5086794b2758b12eceda3775f54
+SHA512: 2a1de37fa77bb40017b4274fe263ceb4f16931998e2c436a78c657cb918ba2c9bf3ac8bbd8253a957c974721b43283aa9b6418a3eb67aa460da12569740cee8a
+Homepage: http://dri.freedesktop.org
+Description: Userspace interface to the kernel DRM services
+ The runtime library for accessing the kernel DRM services.  DRM stands
+ for \"Direct Rendering Manager\", which is the kernel portion of the
+ \"Direct Rendering Infrastructure\" (DRI).  DRI is required for many
+ hardware accelerated OpenGL drivers.
+OE: libdrm
+PackageArch: zen5
+
 Package: libdrm2
 Architecture: amd64
 Version: 2.4.131-r0
@@ -42959,6 +43277,29 @@ MD5sum: 36f5a72a0686929c06c9f148f00331dc
 SHA1: d541f851982aa54fe7b0eafa9a0f4ab1b958e566
 SHA256: 8324aac3978b9804452a800896c0e7453115a0ad6e0a86a2f1c86d4f95a340ac
 SHA512: 01fa563ef9d03bb4c91168be841cefafef74b1229e58611d603199684ca7563458c143703d587676acfff92d6f2e6ca5f999d6cbaf0b02a70cb4a695428e01b5
+Homepage: http://dri.freedesktop.org
+Description: Userspace interface to the kernel DRM services
+ The runtime library for accessing the kernel DRM services.  DRM stands
+ for \"Direct Rendering Manager\", which is the kernel portion of the
+ \"Direct Rendering Infrastructure\" (DRI).  DRI is required for many
+ hardware accelerated OpenGL drivers.
+OE: libdrm
+PackageArch: zen5
+
+Package: libdrm2
+Architecture: amd64
+Version: 2.4.133-r0
+Priority: optional
+Section: x11/base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: libdrm
+Depends: libc6 (>= 2.43+git0+ce1013a197)
+Filename: ./libdrm2_2.4.133-r0_amd64.deb
+Size: 33684
+MD5sum: 7b28d62432bd5d2be34362ecd9218da1
+SHA1: 9efedc2245dde1950db56dbcd7307255000e437f
+SHA256: 29acc298899cdf0419d3f448aae732621de805e9b413109c26363e4affe03d73
+SHA512: 99fb18acd206e142c81a17584d368de8d9f10060a44e5dadf6a410793af8a60cd3c27d132f7f3916f5925927173a5a23fc72f6da3292405d7796a43843da69e4
 Homepage: http://dri.freedesktop.org
 Description: Userspace interface to the kernel DRM services
  The runtime library for accessing the kernel DRM services.  DRM stands
@@ -43104,6 +43445,34 @@ Description: A free implementation of the OpenGL API
 OE: mesa
 PackageArch: zen5
 
+Package: libegl-mesa-dev
+Architecture: amd64
+Version: 2:26.2.1-r0
+Priority: optional
+Section: x11
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: libegl-dev
+Depends: libdrm-dev, libegl-mesa, libx11-dev, libxcb-dev, libxext-dev, libxfixes-dev, libxxf86vm-dev
+Recommends: elfutils-dev, expat-dev, glibc-dev, libdrm-dev, libgallium-dev, libgbm-dev, libva-initial-dev, libx11-dev, libx11-xcb-dev, libxcb-dev, libxcb-dri3-dev, libxcb-present-dev, libxcb-randr-dev, libxcb-shm-dev, libxcb-xfixes-dev, libxdamage-dev, libxext-dev, libxfixes-dev, libxshmfence-dev, libxxf86vm-dev, llvm-dev, vulkan-headers-dev, vulkan-loader-dev, wayland-dev, wayland-protocols-dev, xorgproto-dev, xrandr-dev, zlib-dev
+Conflicts: libegl-dev
+Replaces: libegl-dev
+Filename: ./libegl-mesa-dev_26.2.1-r0_amd64.deb
+Size: 21756
+MD5sum: 3867a3cdd5487d4baee859f96d253cd3
+SHA1: 40316ba3cd274992a3fe78ff5c2ce3db35619daf
+SHA256: ce226f3461ebf8b1780a269857376a1545cbe180d94438fc3fd497bf71ddb122
+SHA512: 542118da2d00cf58e74fbb8b6a98f645114c61b1a80f2c65e637ce97c608d9544afdf5db355e32043df84579cc4821d9b40d72478abfc7fa3177154d20068e32
+Homepage: http://mesa3d.org
+Description: A free implementation of the OpenGL API
+ Mesa is an open-source implementation of the OpenGL specification - a
+ system for rendering interactive 3D graphics.  A variety of device
+ drivers allows Mesa to be used in many different environments ranging
+ from software emulation to complete hardware acceleration for modern
+ GPUs. Mesa is used as part of the overall Direct Rendering Infrastructure
+ and X.org environment.
+OE: mesa
+PackageArch: zen5
+
 Package: libegl-mesa
 Architecture: amd64
 Version: 2:26.1.4-r0
@@ -43121,6 +43490,34 @@ MD5sum: 5cd998f3c6b7942ed71c1114b346890f
 SHA1: 7b6097df2a699487bea27234e52509c3f7440f67
 SHA256: 3af5c87d4aca258381897244c8fd1ebce94a84fdcabc1ec8e03b589eab6872a6
 SHA512: 2c4d8843dfda8fb2f4efaa2c56b13244add327cb25825e076155152fd991d39a3789290f88256449fdace4d178d9fd222f2d8c476953366fc36f870b9536016c
+Homepage: http://mesa3d.org
+Description: A free implementation of the OpenGL API
+ Mesa is an open-source implementation of the OpenGL specification - a
+ system for rendering interactive 3D graphics.  A variety of device
+ drivers allows Mesa to be used in many different environments ranging
+ from software emulation to complete hardware acceleration for modern
+ GPUs. Mesa is used as part of the overall Direct Rendering Infrastructure
+ and X.org environment.
+OE: mesa
+PackageArch: zen5
+
+Package: libegl-mesa
+Architecture: amd64
+Version: 2:26.2.1-r0
+Priority: optional
+Section: x11
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: libegl, libegl1
+Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.133), libexpat1 (>= 2.7.5), libgallium (>= 26.2.1), libgbm1 (>= 26.2.1), libx11-6 (>= 1.8.9), libx11-xcb1 (>= 1.8.9), libxcb-dri3-0 (>= 1.17.0), libxcb-present0 (>= 1.17.0), libxcb-randr0 (>= 1.17.0), libxcb-shm0 (>= 1.17.0), libxcb-xfixes0 (>= 1.17.0), libxcb1 (>= 1.17.0), wayland (>= 1.24.0)
+Recommends: mesa-megadriver
+Conflicts: libegl, libegl1
+Replaces: libegl, libegl1
+Filename: ./libegl-mesa_26.2.1-r0_amd64.deb
+Size: 119164
+MD5sum: 8f086d998f2660a389da916ee41866ba
+SHA1: a66297aac9258fe04459be9f0bb53dd930303e20
+SHA256: af63778f0d602212d8437186c57c567aee46d2d260fe6884ae0b300d6bbcfb4d
+SHA512: ed4d16c8c5b6bbeb57c8258d97f4fc4a714eb88e9b2205cfc3c47b7af4d31f91e4614fbd988445aa62f43079168010c0f68f75dd667f7cbf918ce4c97a704ae8
 Homepage: http://mesa3d.org
 Description: A free implementation of the OpenGL API
  Mesa is an open-source implementation of the OpenGL specification - a
@@ -44209,6 +44606,30 @@ Description: A free implementation of the OpenGL API
 OE: mesa
 PackageArch: zen5
 
+Package: libgallium
+Architecture: amd64
+Version: 2:26.2.1-r0
+Priority: optional
+Section: x11
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm-amdgpu1 (>= 2.4.133), libdrm2 (>= 2.4.133), libelf1 (>= 0.194), libexpat1 (>= 2.7.5), libgcc1 (>= 15.2.0), libstdc++6 (>= 15.2.0), libx11-xcb1 (>= 1.8.9), libxcb-dri3-0 (>= 1.17.0), libxcb-present0 (>= 1.17.0), libxcb-randr0 (>= 1.17.0), libxcb-sync1 (>= 1.17.0), libxcb-xfixes0 (>= 1.17.0), libxcb1 (>= 1.17.0), libxshmfence1 (>= 1.3.2), libz1 (>= 1.3.2), libzstd1 (>= 1.5.7), llvm (>= 22.1.3)
+Filename: ./libgallium_26.2.1-r0_amd64.deb
+Size: 7119904
+MD5sum: 2955a19f8327642feb89a8ef86b3aea9
+SHA1: be33eef8def492eb563f313cd53203ce910b2d6b
+SHA256: 11c53bb8abf62e5a014fdd7c2a2d4500432bde19a23166a859e5bcac1303ff59
+SHA512: a07783ebb3c89b40539328ff1b24dbfbf019a974d111ec0e81e24a3cce292e2e6a2184102cf9fa6d25f9df79559e3d22516ad23778bb2657388e76e8697c1d84
+Homepage: http://mesa3d.org
+Description: A free implementation of the OpenGL API
+ Mesa is an open-source implementation of the OpenGL specification - a
+ system for rendering interactive 3D graphics.  A variety of device
+ drivers allows Mesa to be used in many different environments ranging
+ from software emulation to complete hardware acceleration for modern
+ GPUs. Mesa is used as part of the overall Direct Rendering Infrastructure
+ and X.org environment.
+OE: mesa
+PackageArch: zen5
+
 Package: libgbm-dev
 Architecture: amd64
 Version: 2:26.1.4-r0
@@ -44234,6 +44655,31 @@ Description: A free implementation of the OpenGL API
 OE: mesa
 PackageArch: zen5
 
+Package: libgbm-dev
+Architecture: amd64
+Version: 2:26.2.1-r0
+Priority: optional
+Section: x11
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libgbm
+Recommends: elfutils-dev, expat-dev, glibc-dev, libdrm-dev, libgallium-dev, libva-initial-dev, libxdamage-dev, libxext-dev, libxfixes-dev, libxshmfence-dev, libxxf86vm-dev, llvm-dev, vulkan-headers-dev, vulkan-loader-dev, wayland-dev, wayland-protocols-dev, xorgproto-dev, xrandr-dev, zlib-dev
+Filename: ./libgbm-dev_26.2.1-r0_amd64.deb
+Size: 7468
+MD5sum: 85c06ecb4d369383d43bcd9ca5aa3f2b
+SHA1: f3d4c416ef4f205140f5a98c98505002590c6aa3
+SHA256: f0727542323439d9f2e95913a66d04f9522c0178d4bc08c529f68184b3bcceac
+SHA512: 36cfc7a45314afb03474bb6ea4b1a4b7f5eafd20da4f763d52aa243841791f41ed3499d03bab35ebfb0ae1ded001798cf987627b04305840b3e4c544a60f07f4
+Homepage: http://mesa3d.org
+Description: A free implementation of the OpenGL API
+ Mesa is an open-source implementation of the OpenGL specification - a
+ system for rendering interactive 3D graphics.  A variety of device
+ drivers allows Mesa to be used in many different environments ranging
+ from software emulation to complete hardware acceleration for modern
+ GPUs. Mesa is used as part of the overall Direct Rendering Infrastructure
+ and X.org environment.
+OE: mesa
+PackageArch: zen5
+
 Package: libgbm1
 Architecture: amd64
 Version: 2:26.1.4-r0
@@ -44248,6 +44694,31 @@ MD5sum: deb589201ff3bb0729c70fdb401a79ee
 SHA1: da43571ef733df4d5e56bc7d903acdbab25dc828
 SHA256: d1655f37e3231ff0ae2fd7079300da47a94a873a7f151f58378cf645cacbc5ef
 SHA512: bb997f0b3229812c3097faa6cdd16b14ee49b3a28d06a0ac85ba55b318ad9f342c5ed5cccf292128d940ec87e9b9114244c15759054b4dd314e346a06bfe46b0
+Homepage: http://mesa3d.org
+Description: A free implementation of the OpenGL API
+ Mesa is an open-source implementation of the OpenGL specification - a
+ system for rendering interactive 3D graphics.  A variety of device
+ drivers allows Mesa to be used in many different environments ranging
+ from software emulation to complete hardware acceleration for modern
+ GPUs. Mesa is used as part of the overall Direct Rendering Infrastructure
+ and X.org environment.
+OE: mesa
+PackageArch: zen5
+
+Package: libgbm1
+Architecture: amd64
+Version: 2:26.2.1-r0
+Priority: optional
+Section: x11
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: libgbm
+Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.133), libexpat1 (>= 2.7.5), libgallium (>= 26.2.1)
+Filename: ./libgbm1_26.2.1-r0_amd64.deb
+Size: 39716
+MD5sum: cbeda6c5ae39e235b48b717fcd673bf9
+SHA1: dbc651af75a0e8e398873625b94ba9fed1cc27cb
+SHA256: ea75539c16ba90da42d40deaac0877920394c9ff9ac3afa02ec8b42d6e5f05e8
+SHA512: 7e7d4f5b5373aeb9baa98740a7d6c8f72831edd7b92de7cb39d1b50c38dd0e70fb4d691126716d949d2408308a7757622d537b3d574f9c2d99e5d0d998165dcf
 Homepage: http://mesa3d.org
 Description: A free implementation of the OpenGL API
  Mesa is an open-source implementation of the OpenGL specification - a
@@ -45046,6 +45517,34 @@ Description: A free implementation of the OpenGL API
 OE: mesa
 PackageArch: zen5
 
+Package: libgl-mesa-dev
+Architecture: amd64
+Version: 2:26.2.1-r0
+Priority: optional
+Section: x11
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: libgl-dev
+Depends: libdrm-dev, libgl-mesa, libx11-dev, libxcb-dev, libxext-dev, libxfixes-dev, libxxf86vm-dev
+Recommends: elfutils-dev, expat-dev, glibc-dev, libdrm-dev, libgallium-dev, libva-initial-dev, libx11-dev, libx11-xcb-dev, libxcb-dev, libxcb-dri3-dev, libxcb-glx-dev, libxcb-present-dev, libxcb-shm-dev, libxcb-xfixes-dev, libxdamage-dev, libxext-dev, libxfixes-dev, libxshmfence-dev, libxxf86vm-dev, llvm-dev, vulkan-headers-dev, vulkan-loader-dev, wayland-dev, wayland-protocols-dev, xorgproto-dev, xrandr-dev, zlib-dev
+Conflicts: libgl-dev
+Replaces: libgl-dev
+Filename: ./libgl-mesa-dev_26.2.1-r0_amd64.deb
+Size: 103352
+MD5sum: 93716d15f92fb5d81274797ae7176eab
+SHA1: 60d1e5e602669cef15c6de17950289c863d1efa6
+SHA256: 66d58755bab38c2cd37200f6f9e16eae52907135c39fc96e547e62789f3f4356
+SHA512: cee3ecdc2a9c0cc3a8680977d9fcc1357ae8831360cd7d0368b02bcb67f6a2297f1301b0c6b7d0ad546341329a406050be81fe418649402984488f9c65ea0f7e
+Homepage: http://mesa3d.org
+Description: A free implementation of the OpenGL API
+ Mesa is an open-source implementation of the OpenGL specification - a
+ system for rendering interactive 3D graphics.  A variety of device
+ drivers allows Mesa to be used in many different environments ranging
+ from software emulation to complete hardware acceleration for modern
+ GPUs. Mesa is used as part of the overall Direct Rendering Infrastructure
+ and X.org environment.
+OE: mesa
+PackageArch: zen5
+
 Package: libgl-mesa
 Architecture: amd64
 Version: 2:26.1.4-r0
@@ -45063,6 +45562,34 @@ MD5sum: a00174923e09d721075172d7c73856e5
 SHA1: 10dc3325a8f39b5a9fd4b6b3b9a616d63d4846be
 SHA256: adca59bbd955a1160ca4942c76ec77e1b89216b326b8bbc6c10084cd89c31849
 SHA512: 55a3c2b22fd8ee494085621fb2a53fe9f4cf20bf6183e369a41cf8e467a2df16524529a0745f44c7f89f7fe9bd743844696fe710fafc12279b15925e6e26694c
+Homepage: http://mesa3d.org
+Description: A free implementation of the OpenGL API
+ Mesa is an open-source implementation of the OpenGL specification - a
+ system for rendering interactive 3D graphics.  A variety of device
+ drivers allows Mesa to be used in many different environments ranging
+ from software emulation to complete hardware acceleration for modern
+ GPUs. Mesa is used as part of the overall Direct Rendering Infrastructure
+ and X.org environment.
+OE: mesa
+PackageArch: zen5
+
+Package: libgl-mesa
+Architecture: amd64
+Version: 2:26.2.1-r0
+Priority: optional
+Section: x11
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: libgl, libgl1
+Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.133), libexpat1 (>= 2.7.5), libgallium (>= 26.2.1), libx11-6 (>= 1.8.9), libx11-xcb1 (>= 1.8.9), libxcb-dri3-0 (>= 1.17.0), libxcb-glx0 (>= 1.17.0), libxcb-present0 (>= 1.17.0), libxcb-shm0 (>= 1.17.0), libxcb-xfixes0 (>= 1.17.0), libxcb1 (>= 1.17.0), libxext6 (>= 1.3.6), libxxf86vm1 (>= 1.1.5)
+Recommends: mesa-megadriver
+Conflicts: libgl, libgl1
+Replaces: libgl, libgl1
+Filename: ./libgl-mesa_26.2.1-r0_amd64.deb
+Size: 126872
+MD5sum: 7b01cb170031cb3905fc79c5ce2d1c57
+SHA1: d9b7758bdd05357bd06f464b35b82b9062ba86df
+SHA256: bb3212508ed0c136263f53e0b6fcb7d2867321a8dd8993ff7140a73d03d8e2bb
+SHA512: d3de5d8a0a26b8503d444cbc86da9e45a852a838a6838d146a22f0aca9a68ae135429a9277233b52838876b5468eb6ee2f1edac52a7a3f5c61e9a7129ea83f1d
 Homepage: http://mesa3d.org
 Description: A free implementation of the OpenGL API
  Mesa is an open-source implementation of the OpenGL specification - a
@@ -45102,6 +45629,34 @@ Description: A free implementation of the OpenGL API
 OE: mesa
 PackageArch: zen5
 
+Package: libgles1-mesa-dev
+Architecture: amd64
+Version: 2:26.2.1-r0
+Priority: optional
+Section: x11
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: libgles1-dev
+Depends: libgles1-mesa
+Recommends: elfutils-dev, expat-dev, libdrm-dev, libgallium-dev, libva-initial-dev, libxdamage-dev, libxext-dev, libxfixes-dev, libxshmfence-dev, libxxf86vm-dev, llvm-dev, vulkan-headers-dev, vulkan-loader-dev, wayland-dev, wayland-protocols-dev, xorgproto-dev, xrandr-dev, zlib-dev
+Conflicts: libgles1-dev
+Replaces: libgles1-dev
+Filename: ./libgles1-mesa-dev_26.2.1-r0_amd64.deb
+Size: 13220
+MD5sum: b23f7af7eb206d47916a7378a0287d48
+SHA1: 019b807d500a1f1b78170aa8690dc5cdd4ec9fb3
+SHA256: d903c320db3766e003f12901d3ded8e291835082279aa3d63598627e6646c920
+SHA512: e4781a5ffb362014e5b2baebb31a762486435aec6a7c957650d6f3b2ddc194f07008e046da6e68471e8f2c3c18daecb15dfbb1331e7d4e9f5721ad1b40dcbb4a
+Homepage: http://mesa3d.org
+Description: A free implementation of the OpenGL API
+ Mesa is an open-source implementation of the OpenGL specification - a
+ system for rendering interactive 3D graphics.  A variety of device
+ drivers allows Mesa to be used in many different environments ranging
+ from software emulation to complete hardware acceleration for modern
+ GPUs. Mesa is used as part of the overall Direct Rendering Infrastructure
+ and X.org environment.
+OE: mesa
+PackageArch: zen5
+
 Package: libgles1-mesa
 Architecture: amd64
 Version: 2:26.1.4-r0
@@ -45119,6 +45674,34 @@ MD5sum: 8e26232f4c85e3cf850fbc18e9189a02
 SHA1: 95e56eaa59c6ddac6bac493e98b463a5092a4d23
 SHA256: d19c2e40e157d207574130df568ab00fff148c6053554db988159c4056f0886b
 SHA512: 524a8e1be7a08fd53c68cb813f2855ab0b51b0f60e818ee48e95418443b2cae11e3d00a6a22767360e9b855a9694c50a3cfb2183f393efc9ec35d20e85ca9290
+Homepage: http://mesa3d.org
+Description: A free implementation of the OpenGL API
+ Mesa is an open-source implementation of the OpenGL specification - a
+ system for rendering interactive 3D graphics.  A variety of device
+ drivers allows Mesa to be used in many different environments ranging
+ from software emulation to complete hardware acceleration for modern
+ GPUs. Mesa is used as part of the overall Direct Rendering Infrastructure
+ and X.org environment.
+OE: mesa
+PackageArch: zen5
+
+Package: libgles1-mesa
+Architecture: amd64
+Version: 2:26.2.1-r0
+Priority: optional
+Section: x11
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: libgles1, libglesv1-cm1
+Depends: libgallium (>= 26.2.1)
+Recommends: mesa-megadriver
+Conflicts: libgles1, libglesv1-cm1
+Replaces: libgles1, libglesv1-cm1
+Filename: ./libgles1-mesa_26.2.1-r0_amd64.deb
+Size: 4964
+MD5sum: cafb85a9627055ee58c11f340bbac2a7
+SHA1: b70e8c6aa74f96fdcabda8fd8faf68af305d2fb6
+SHA256: 44f90690d67a909344242de4374033a4cb29ce7f575b1cdd869013a7e56c5ac4
+SHA512: 68b3ae3336df29d00f84b7dd36cf7ae5910c04e1a5aa6d6525e894f184ad58d57a21e1ff753c6fc22f1a20994559d08d5a3214c7547b931ecdd75fb825f2a14d
 Homepage: http://mesa3d.org
 Description: A free implementation of the OpenGL API
  Mesa is an open-source implementation of the OpenGL specification - a
@@ -45158,6 +45741,34 @@ Description: A free implementation of the OpenGL API
 OE: mesa
 PackageArch: zen5
 
+Package: libgles2-mesa-dev
+Architecture: amd64
+Version: 2:26.2.1-r0
+Priority: optional
+Section: x11
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: libgles2-dev, libgles3-mesa-dev
+Depends: libgles2-mesa
+Recommends: elfutils-dev, expat-dev, libdrm-dev, libgallium-dev, libva-initial-dev, libxdamage-dev, libxext-dev, libxfixes-dev, libxshmfence-dev, libxxf86vm-dev, llvm-dev, vulkan-headers-dev, vulkan-loader-dev, wayland-dev, wayland-protocols-dev, xorgproto-dev, xrandr-dev, zlib-dev
+Conflicts: libgles2-dev
+Replaces: libgles2-dev
+Filename: ./libgles2-mesa-dev_26.2.1-r0_amd64.deb
+Size: 42020
+MD5sum: 370430c505dce8d084c575806f000d82
+SHA1: b185f834a64be8d1b3a322c6ce60fc92ca3864c2
+SHA256: bae7b12aefa90c07c2981e70e467929820cefdc4929f142cc42c82c5509fff21
+SHA512: 19bbe08ed2f088a62b9362ca8a4ee61f27631834544e9c014e29f5f6f08c78fc66f6a288f444db8936d7ef6a768cd1575730b26a232c79363be7662504d068f2
+Homepage: http://mesa3d.org
+Description: A free implementation of the OpenGL API
+ Mesa is an open-source implementation of the OpenGL specification - a
+ system for rendering interactive 3D graphics.  A variety of device
+ drivers allows Mesa to be used in many different environments ranging
+ from software emulation to complete hardware acceleration for modern
+ GPUs. Mesa is used as part of the overall Direct Rendering Infrastructure
+ and X.org environment.
+OE: mesa
+PackageArch: zen5
+
 Package: libgles2-mesa
 Architecture: amd64
 Version: 2:26.1.4-r0
@@ -45175,6 +45786,34 @@ MD5sum: 1a618ef3336a88b3c6861fad508d7cfb
 SHA1: 7ff2174d7a265a5c554681e53a5ea93c45dbba33
 SHA256: 527af968f03a60d1f8ac41547764b3629642e6a49c42b9f45dda9d481e4c6a35
 SHA512: 351c8d36e22573613e7c0a2872b6679adac0e6f675d021639aa7f5e88d8892a8e8246183e626acead0d2cd93a78c0a2fc3a4583ff6e822ec0fc302655a28ca18
+Homepage: http://mesa3d.org
+Description: A free implementation of the OpenGL API
+ Mesa is an open-source implementation of the OpenGL specification - a
+ system for rendering interactive 3D graphics.  A variety of device
+ drivers allows Mesa to be used in many different environments ranging
+ from software emulation to complete hardware acceleration for modern
+ GPUs. Mesa is used as part of the overall Direct Rendering Infrastructure
+ and X.org environment.
+OE: mesa
+PackageArch: zen5
+
+Package: libgles2-mesa
+Architecture: amd64
+Version: 2:26.2.1-r0
+Priority: optional
+Section: x11
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: libgles2, libgles3, libgles3-mesa, libglesv2-2
+Depends: libgallium (>= 26.2.1)
+Recommends: mesa-megadriver
+Conflicts: libgles2, libgles3, libglesv2-2
+Replaces: libgles2, libgles3, libglesv2-2
+Filename: ./libgles2-mesa_26.2.1-r0_amd64.deb
+Size: 8556
+MD5sum: ca306dfe75e7b921761bea8543404ca0
+SHA1: 9609eba64427b7b10f5242dbba888137d262349f
+SHA256: cee3fca291f7b3f2a0d59b131d427edfaa71b35615c64784fd2dac724da7346a
+SHA512: 7ae777f9c3fdc421fe2913903ffb4a914cf1262e2c65021b122edf9bc8d488b8d973126d1a6942bc8bf6c82bac3b7a1a624d8a32479b1b3e45ac2c402212006a
 Homepage: http://mesa3d.org
 Description: A free implementation of the OpenGL API
  Mesa is an open-source implementation of the OpenGL specification - a
@@ -45512,13 +46151,13 @@ Priority: optional
 Section: x11
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Provides: libglu
-Depends: libc6 (>= 2.43+git0+ce1013a197), libgcc1 (>= 15.2.0), libgl-mesa (>= 26.1.4), libstdc++6 (>= 15.2.0)
+Depends: libc6 (>= 2.43+git0+ce1013a197), libgcc1 (>= 15.2.0), libgl-mesa (>= 26.2.1), libstdc++6 (>= 15.2.0)
 Filename: ./libglu1_9.0.3-r0_amd64.deb
 Size: 186764
-MD5sum: 5a01c3370b82b2019d22d02c21cdf5f7
-SHA1: fd96fd2488503689e2a9ed3d6e03f27f0ea50cf5
-SHA256: 1469a0cb05b1dca8dc91f7fdc0eb998aaeabd06a66952b0c6a37348fc23baa4a
-SHA512: a61389161a3713e2720a80e4d87a61c79b2528fa1a370c39466ddf9e48ea9fe60b1db5138bb22b9d0374d05331db7b625bb231320c914c820b564960eb149dc8
+MD5sum: 60bb932f68f1c9b2aa8ec5ba62f5b357
+SHA1: ba48379545254ed69ec4624a05ab026dafc8d478
+SHA256: d1bfb6f43d30435a195b4f1ec2783f39274590d1128898c502399c1187d67de7
+SHA512: 145861e05a8759683538e6998818cbb68f69842884a4909a96791179e20874b8bb1de35a20ab989fb59fd43b4c81ff43718f971792430a0851973abdef32276f
 Homepage: http://mesa3d.org
 Description: The OpenGL utility toolkit
  GLU is a utility toolkit used with OpenGL implementations
@@ -46256,13 +46895,13 @@ Priority: optional
 Section: multimedia
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Provides: libgstallocators-1.0
-Depends: gstreamer1.0 (>= 1.26.2), libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.131), libglib-2.0-0 (>= 2.88.0)
+Depends: gstreamer1.0 (>= 1.26.2), libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.133), libglib-2.0-0 (>= 2.88.0)
 Filename: ./libgstallocators-1.0-0_1.26.2-r0_amd64.deb
 Size: 11100
-MD5sum: 2dba1cc24ea325686427bf2ae0c60f55
-SHA1: f89ce606ae36c053d9017fe92b7282cf854b0ada
-SHA256: 9943f86893afe598a13f3d478ac04d43a2d458cdc65ca74de9f811016657b490
-SHA512: b8dc49b0976da85a4fe67d47ee45ac5edc943bb0fc61245823c331395dd4bed82ad27bdd569717a6756bb53ec5b2fd7c97ced1e5284a1b83ee78456f44889d59
+MD5sum: 478fe0ad71fccd5f3cbbb73db854d5ab
+SHA1: 0c7e33398ea530d49c73a95bccbcbed4595f6177
+SHA256: 64de581c832ee75a635a377e94f7b4b6a6a53461a72aff360a40e71a3f37152e
+SHA512: 4228e06b715b8970787819aef4c1e763d27ce1b51430044ebc5beac318721d6730fcbc6dbf6456e55c723996d8878187e38dea0a691ac8b6e74a52e48b0db49b
 Homepage: https://gstreamer.freedesktop.org/
 Description: GStreamer 1.0 gstallocators-1.0 library
  GStreamer 1.0 gstallocators-1.0 library
@@ -46456,13 +47095,13 @@ Priority: optional
 Section: multimedia
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Provides: libgstgl-1.0
-Depends: gstreamer1.0 (>= 1.26.2), libc6 (>= 2.43+git0+ce1013a197), libegl-mesa (>= 26.1.4), libgl-mesa (>= 26.1.4), libglib-2.0-0 (>= 2.88.0), libgstallocators-1.0-0 (>= 1.26.2), libgstvideo-1.0-0 (>= 1.26.2), libx11-6 (>= 1.8.9), libx11-xcb1 (>= 1.8.9), libxcb1 (>= 1.17.0), wayland (>= 1.24.0)
+Depends: gstreamer1.0 (>= 1.26.2), libc6 (>= 2.43+git0+ce1013a197), libegl-mesa (>= 26.2.1), libgl-mesa (>= 26.2.1), libglib-2.0-0 (>= 2.88.0), libgstallocators-1.0-0 (>= 1.26.2), libgstvideo-1.0-0 (>= 1.26.2), libx11-6 (>= 1.8.9), libx11-xcb1 (>= 1.8.9), libxcb1 (>= 1.17.0), wayland (>= 1.24.0)
 Filename: ./libgstgl-1.0-0_1.26.2-r0_amd64.deb
 Size: 195072
-MD5sum: 4f66c64a082d130e7afa3c24339331f9
-SHA1: 91f1f7438b44bfe1def4fedd85f8bcb1c074c349
-SHA256: e4f73d47118943a5f634ef50d0a4d15eb3f4048f7fa08fcf81f2ae09c26ba2da
-SHA512: 911b4036afc37a59683daa3383a10026da6c5921da99f4ecf0d2f867fbd51ebf648fadc78880e76abd5117d9876824aaba7cfbee9d7b8f9ce022908c03910345
+MD5sum: 6345225ded6e6b575bf018075d49a41f
+SHA1: 4940981fe5ea3cb61c627a27428f2bf6fd08a7c4
+SHA256: 2967229a7a2b4f7ab1cf7c52cbb9943ee3f8bfcf8d34ca2b72d1762020fb27cd
+SHA512: 3e7a59a707b9b02a450ac7694b76e45fa5b1193180b0cd9f2b9f689e7bdf6a60e5e4a9f95383e9445620799cf371da1e4b3080142629b71dddf441d1329ac166
 Homepage: https://gstreamer.freedesktop.org/
 Description: GStreamer 1.0 gstgl-1.0 library
  GStreamer 1.0 gstgl-1.0 library
@@ -46796,13 +47435,13 @@ Priority: optional
 Section: multimedia
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Provides: libgstva-1.0
-Depends: gstreamer1.0 (>= 1.26.2), libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.131), libglib-2.0-0 (>= 2.88.0), libgstallocators-1.0-0 (>= 1.26.2), libgstvideo-1.0-0 (>= 1.26.2), libva (>= 2.23.0)
+Depends: gstreamer1.0 (>= 1.26.2), libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.133), libglib-2.0-0 (>= 2.88.0), libgstallocators-1.0-0 (>= 1.26.2), libgstvideo-1.0-0 (>= 1.26.2), libva (>= 2.23.0)
 Filename: ./libgstva-1.0-0_1.26.2-r0_amd64.deb
 Size: 30368
-MD5sum: 397cf18cc8bc7b1eb18ea5c62e13decb
-SHA1: 1a749d1c284efc96286dbce8786e3e85ae9d4c96
-SHA256: a541ef3c4b8424a3f9d31742282d8cf66d3ac03303a1aca24e15abc93914ffd6
-SHA512: 761116215e6d2f4b60dcbfd71761f91da28243dc3055f2200d3fbb82db599aa1c977e32f73ee6faede243fa7ba4d73350acdc126d512a20010fe41252b7978d4
+MD5sum: a3b530ee1832489ba2a1fd902557f886
+SHA1: 05df4e2d6724b55153c11fc56545203da5bf4cc0
+SHA256: a85da4f1efd53079cd602532eee30cdf530ae45af8929600cbb533ec6f418ba3
+SHA512: 832e05fee9045c6bf39eb00bed13cb23b93e87b6496286de9cddfce5b8d57bc4217926f6634d01c685e2223b1163677b5e847f24a4226657dc727a53a738bbc1
 Homepage: https://gstreamer.freedesktop.org/
 Description: GStreamer 1.0 gstva-1.0 library
  GStreamer 1.0 gstva-1.0 library
@@ -48087,6 +48726,73 @@ Description: Utilities for managing LZMA compressed files
  work on some not-so-POSIX systems. XZ Utils are the successor to LZMA
  Utils.
 OE: xz
+PackageArch: zen5
+
+Package: liblzo2-2
+Architecture: amd64
+Version: 2.10-r0
+Priority: optional
+Section: libs
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: lzo
+Depends: libc6 (>= 2.43+git0+ce1013a197)
+Filename: ./liblzo2-2_2.10-r0_amd64.deb
+Size: 43972
+MD5sum: e5b95f3cb09f570ef01ae76774a22c66
+SHA1: 8e80bf35cb11ce7944a2a4c65290b16104c5ce6f
+SHA256: 09044543175d9fe682f65cc205b5835265109ffec1f37551873f845fed1b00cc
+SHA512: 0032bcd21fb192f62a785857dcc2097e4d2cc3debd28393bada2dc794f120df48374953a2808640fa344f4ed1e8f2cdb5b731a5fe1e3e42565678f27361c1f49
+Homepage: http://www.oberhumer.com/opensource/lzo/
+Description: Lossless data compression library
+ A portable lossless data compression library written in ANSI C that
+ offers pretty fast compression and *extremely* fast decompression.
+OE: lzo
+PackageArch: zen5
+
+Package: liblzo2-dbg
+Architecture: amd64
+Version: 2.10-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: lzo-dbg
+Recommends: glibc-dbg
+Filename: ./liblzo2-dbg_2.10-r0_amd64.deb
+Size: 171844
+MD5sum: d30a7ef6228b0ae7c17e5f63e260a6bd
+SHA1: c1b58428bee9e305f2dc0fc272c3c189980f85d1
+SHA256: 6f3f33a417a52184f173f46d35643c2579c9dba8bf76da3cab9cc3404a39e19c
+SHA512: 40617af74b2d4e47aa3e49747d9e771c0737cee6f54c9b6f271173bcf6adaf185e91183a346f9c3c6feaa71b66b6adde6962fc83cfcc6facdf20a8c3fc6937c8
+Homepage: http://www.oberhumer.com/opensource/lzo/
+Description: Lossless data compression library - Debugging files
+ A portable lossless data compression library written in ANSI C that
+ offers pretty fast compression and *extremely* fast decompression.   This
+ package contains ELF symbols and related sources for debugging purposes.
+OE: lzo
+PackageArch: zen5
+
+Package: liblzo2-dev
+Architecture: amd64
+Version: 2.10-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: lzo-dev
+Depends: lzo
+Recommends: glibc-dev, liblzo2-2 (= 2.10-r0)
+Filename: ./liblzo2-dev_2.10-r0_amd64.deb
+Size: 21296
+MD5sum: a6b35264a51e79643dcda4f48e8dda08
+SHA1: 080b67ebd2bb94ae8cea84c7a40bca17b4cf3b70
+SHA256: f7316befbcee07a628dd6c148a103f30e611e1b3e84992c72b5213e189a9189e
+SHA512: 9d99918042764b0e1a5cc3d1042c2ed3ea4d163e91ed69f4c2ad27bf780d2686214dd6092b144b0172b9ed74c205d5695664f8ebce5322f0d8a2f5de2c8c2d46
+Homepage: http://www.oberhumer.com/opensource/lzo/
+Description: Lossless data compression library - Development files
+ A portable lossless data compression library written in ANSI C that
+ offers pretty fast compression and *extremely* fast decompression.   This
+ package contains symbolic links, header files, and related items
+ necessary for software development.
+OE: lzo
 PackageArch: zen5
 
 Package: libmd-dbg
@@ -49510,11 +50216,11 @@ Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Provides: libopencv-core
 Depends: libc6 (>= 2.43+git0+ce1013a197), libgcc1 (>= 15.2.0), libstdc++6 (>= 15.2.0), libz1 (>= 1.3.2), tbb (>= 2022.3.0)
 Filename: ./libopencv-core413_4.13.0-r0_amd64.deb
-Size: 1147824
-MD5sum: 172e1fd5216479751c1da87cef240866
-SHA1: 643472827fa556d8c0cb508d0d20879febb5f1e9
-SHA256: 0e88ffbe3a5982060814e33727f01d3b5487dd9e398e575c92d11b00ec5fd280
-SHA512: 0817819f334623fa0325d47541fc1aab055f41cc70323e36944c274cc674c6d7d68e66cb4ec9f8f6075f5a2adb3980a2fad3cbf9c7bd599156b1a291a29d75b7
+Size: 1147436
+MD5sum: 2dc31f5050745db720c89992912b0b34
+SHA1: d0a9919ee903bd60ef88d0f4f241b02bb0a99c15
+SHA256: 55608f80cb3a6ed0004def282d96e447ad60682fe6628b9229f0a4e44f7fbcb6
+SHA512: c0ad5bfcb237566bf3027e2df06c642dfb07bac22cd1fdb1d71ca0840226dd5d2b4fc1e345ddad9bb14b34e1a1bb16632213f17dc6bd00048ad0d681380a2ed0
 Homepage: http://opencv.org/
 Description: OpenCV opencv-core library
  OpenCV opencv-core library
@@ -51274,6 +51980,30 @@ MD5sum: 86096ca3c9f009dbd4ac2adb3d6007e1
 SHA1: ffaacb377d876fb1417edcbfb606a3e919919904
 SHA256: b09f2f22d230ee30d76a144f57988fd86e395ec56989e9d89b02132f880c0e4a
 SHA512: d1bd4e8ce238daee353cc29bc6dbbd5d59ca552163865077bb42659af8ca337e3bb9a9d06503eb3e04f03b93ce6b784d086cb1d321b710d95830022f048afc3a
+Homepage: http://mesa3d.org
+Description: A free implementation of the OpenGL API
+ Mesa is an open-source implementation of the OpenGL specification - a
+ system for rendering interactive 3D graphics.  A variety of device
+ drivers allows Mesa to be used in many different environments ranging
+ from software emulation to complete hardware acceleration for modern
+ GPUs. Mesa is used as part of the overall Direct Rendering Infrastructure
+ and X.org environment.
+OE: mesa
+PackageArch: zen5
+
+Package: libosmesa-dev
+Architecture: amd64
+Version: 2:26.2.1-r0
+Priority: optional
+Section: x11
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: elfutils-dev, expat-dev, libdrm-dev, libva-initial-dev, libxdamage-dev, libxext-dev, libxfixes-dev, libxshmfence-dev, libxxf86vm-dev, llvm-dev, vulkan-headers-dev, vulkan-loader-dev, wayland-dev, wayland-protocols-dev, xorgproto-dev, xrandr-dev, zlib-dev
+Filename: ./libosmesa-dev_26.2.1-r0_amd64.deb
+Size: 1116
+MD5sum: e97bc13934cab195b64095e5c7315dee
+SHA1: 2770b2f49003dbbd04795ff26e3f9183a67733d7
+SHA256: 3cd43f4bbd94e798ef1b8788d3304089791b494e0abfd5664fcb7d506032fdfd
+SHA512: 919d02735aa8778c7eeb8f51de7fc5e5f94b6b04bf44ef9edd221c3fb7c8a55e4b8107ee8cfd2d3007bf319d2cb618ac06f12f8c5623be5db0f4af9bb600da5d
 Homepage: http://mesa3d.org
 Description: A free implementation of the OpenGL API
  Mesa is an open-source implementation of the OpenGL specification - a
@@ -53910,11 +54640,11 @@ Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Depends: libc6 (>= 2.43+git0+ce1013a197), libcrypt2 (>= 4.5.2)
 Recommends: libacl1 (>= 2.3.2), libblkid1 (>= 2.41.3), libkmod2 (>= 34.2), libmount1 (>= 2.41.3), libpam (>= 1.7.2), libseccomp (>= 2.6.0), libzstd1 (>= 1.5.7)
 Filename: ./libsystemd-shared_259.5-r0_amd64.deb
-Size: 1463480
-MD5sum: f238a4da39de7329073ab81abc90b893
-SHA1: 52693c72c7992bb77a4c6f45752be1279bbdbdc2
-SHA256: 538ced2d7d904e4df9c797109ba8dbc91fe1698dab984f07a39b8feb22aa4d42
-SHA512: 9b7fca8eec2f40ececcdee0bda78599d7a8b5230a2cca5799cf5971dfd44a1d66b52cdbf6c9ef76518b879ab78404ee991651a038b467f234e49856123ca3d9c
+Size: 1472520
+MD5sum: b5ce01ff52089301b2952bb2781b6dfc
+SHA1: 1f7e1ba5a911a76bd2d14ef0ec15878670f27bc6
+SHA256: 0f0beda00e6332dfbe416dbbf67b9df7f9ec6c5cc2456d7f8bb8df6be7c8479e
+SHA512: 6df0b11ead15129920f441699bef71a140695143b5128093a4f5a26a5bb28eb4325204ea2b8991fdee6b07aba4daa86e55942d9af12ec15a06f8be89320929e5
 Homepage: http://www.freedesktop.org/wiki/Software/systemd
 Description: Systemd shared library
  systemd is a system and service manager for Linux, compatible with SysV
@@ -55249,13 +55979,13 @@ Priority: optional
 Section: base
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Depends: libjpeg-turbo-dev, libv4l, systemd-dev
-Recommends: alsa-lib-dev, glibc-dev, jpeg-dev, libjpeg-turbo-dev, libudev-dev, media-ctl-dev, systemd-dev, udev-dev
+Recommends: alsa-lib-dev, glibc-dev, jpeg-dev, libjpeg-turbo-dev, libudev-dev, media-ctl-dev, qtbase-dev, systemd-dev, udev-dev
 Filename: ./libv4l-dev_1.32.0-r0_amd64.deb
-Size: 64180
-MD5sum: fc43fb79d6c4bf613bff2f42848c12a1
-SHA1: 3f0d97ea0191cd448c3b050f996a2d035da1fa9e
-SHA256: 705365f0aece48838cddcb7b7e8b25a0750792107a2e049b2057e8b6ac526c01
-SHA512: 3994f8c31219527ed71504caca987ab265150ff566c3623fbda599078cf84f39c746044a41cf94680bd2768f4eb4e5559af5f92f313a4a737dbd1dd3c20e58d8
+Size: 64184
+MD5sum: 2635ffedbac7f3abab0d006e211a00b5
+SHA1: 122166b13b5d17f0fd9e2569cd47d4372abe3c96
+SHA256: f87b3ed1db9ea55415e88dcd19785e0e4ea5a7e6a0b665f370bc3037a23cb59d
+SHA512: 56b6ef0dc4d4bddad30e351e68f319fbe40d405ac62f5b1a38f57f63f379a764b224aa87f4008e6172227a45db1f620b93d5da84948337374087d53a30e50d5c
 Homepage: https://git.linuxtv.org/v4l-utils.git
 Description: v4l2 and IR applications
  v4l2 and IR applications.
@@ -55346,13 +56076,13 @@ Priority: optional
 Section: x11
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Provides: libva-glx
-Depends: libc6 (>= 2.43+git0+ce1013a197), libgl-mesa (>= 26.1.4), libva (>= 2.23.0), libva-x11-2 (>= 2.23.0), libx11-6 (>= 1.8.9)
+Depends: libc6 (>= 2.43+git0+ce1013a197), libgl-mesa (>= 26.2.1), libva (>= 2.23.0), libva-x11-2 (>= 2.23.0), libx11-6 (>= 1.8.9)
 Filename: ./libva-glx2_2.23.0-r0_amd64.deb
 Size: 8324
-MD5sum: 869c64d953a3f5f36b37aa42aa91c6cd
-SHA1: e0558bafee303de64272c128b9af582be8197f14
-SHA256: 0072b44e526a72cec955878acea968e84f4f2b2630c88bb1f22ab0c211a39a94
-SHA512: b64442781768d2c1ebc994ac6c7728d75930a19f557f72069e06303486ed923dec764f29536756d798323085367b4b6814d6fd40efbeabecfc2b13c59ae3304b
+MD5sum: d47b13e2db95ecd4fab3fb80a402c8ba
+SHA1: 3ddaac86a2d5565c12f73f38499e7fbaf6d9985e
+SHA256: 0c09443debd3d1dfe8539e429174beeb0e72ab469f6d56789690f3688a4c4697
+SHA512: 385446a6e1958d9b42cf84a9d5a8741304efaad9ec18c48e72946d2bbf8006ff4aa1f390169aaba5ca9ad0cff4dab053d656d311e348eac907833006ae201b8b
 Homepage: https://01.org/linuxmedia/vaapi
 Description: Video Acceleration (VA) API for Linux
  Video Acceleration API (VA API) is a library (libVA) and API
@@ -55479,13 +56209,13 @@ Version: 2.23.0-r0
 Priority: optional
 Section: x11
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.131), libgcc1 (>= 15.2.0), libstdc++6 (>= 15.2.0), libva (>= 2.23.0), libva-wayland2 (>= 2.23.0), libva-x11-2 (>= 2.23.0), libx11-6 (>= 1.8.9), wayland (>= 1.24.0)
+Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.133), libgcc1 (>= 15.2.0), libstdc++6 (>= 15.2.0), libva (>= 2.23.0), libva-wayland2 (>= 2.23.0), libva-x11-2 (>= 2.23.0), libx11-6 (>= 1.8.9), wayland (>= 1.24.0)
 Filename: ./libva-utils_2.23.0-r0_amd64.deb
 Size: 496300
-MD5sum: f856f1e435dea48d7f6c427c07fd70f9
-SHA1: f8947841381b3a575a7a4100b3b567196060baaf
-SHA256: 24418311ef626cad97df574fa85b2a0f5485f712a30bb77c5d21ee8ae9dcd684
-SHA512: ad34b391fd8199828aea239589902bd90cdbd675f2c1b5948d983d3dd1327fdd05284d3e5162cc6fdb88befa4283a6c2d945ff04958c52669ba0c7570dcb2262
+MD5sum: 45ee2136248f68f8a32f873ec0d722f8
+SHA1: 1e10b8c93e43d7fff04cf34c891188404432dcab
+SHA256: 4dcf4061045495a217b2f8118c5cbc62d83e623c9fe61cf420e8171aaaaee4e4
+SHA512: eddcd89d69deedc1740e04c0fd95bd2958241a39b606941a835f84769ef2335ef59584423f63d0667efa83ec0e405bf2de48f9a007489074c80ed5228fee74b9
 Homepage: https://01.org/linuxmedia/vaapi
 Description: libva-utils is a collection of utilities from libva project
  libva-utils is a collection of utilities and examples to exercise VA-API
@@ -55504,13 +56234,13 @@ Priority: optional
 Section: x11
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Provides: libva-wayland
-Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.131), libva (>= 2.23.0), wayland (>= 1.24.0)
+Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.133), libva (>= 2.23.0), wayland (>= 1.24.0)
 Filename: ./libva-wayland2_2.23.0-r0_amd64.deb
 Size: 7744
-MD5sum: 1ac7f83079a441fae77b8beb021a1c0a
-SHA1: 40d326201f8a67034141fa88db68166a432adb6d
-SHA256: 94139c2535319d403a809e89810259744f83d6d0e9200f776ec6de7768fafba2
-SHA512: 19f2c1756115fb460653aca1fc777271606dcf0ec663f086b658323c0ae32ed2f9db3b159c677c97ffc8140446f0bc6de2f17b8ed0e2447a75e95cc6db871156
+MD5sum: 32b1589abaae9f73e8def6b0ec976909
+SHA1: 608d825580d7b4d0983fe9dd6c340da86c967b1e
+SHA256: fd84f93254653cb642e76b95f314c37a2edc2b40ee1a1be488445b29474b9ba6
+SHA512: 5e8207a950c8ceb9884a23cffb5c681e407b2b5524473288d24ae8aafe086e61a826e9507d8249f820c4d6fb4d65668e11db096859004c8168ac385daf3af814
 Homepage: https://01.org/linuxmedia/vaapi
 Description: Video Acceleration (VA) API for Linux
  Video Acceleration API (VA API) is a library (libVA) and API
@@ -55532,13 +56262,13 @@ Priority: optional
 Section: x11
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Provides: libva-x11
-Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.131), libva (>= 2.23.0), libx11-6 (>= 1.8.9), libx11-xcb1 (>= 1.8.9), libxcb-dri3-0 (>= 1.17.0), libxcb1 (>= 1.17.0), libxext6 (>= 1.3.6), libxfixes3 (>= 6.0.1)
+Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.133), libva (>= 2.23.0), libx11-6 (>= 1.8.9), libx11-xcb1 (>= 1.8.9), libxcb-dri3-0 (>= 1.17.0), libxcb1 (>= 1.17.0), libxext6 (>= 1.3.6), libxfixes3 (>= 6.0.1)
 Filename: ./libva-x11-2_2.23.0-r0_amd64.deb
 Size: 9048
-MD5sum: c40af0f5cc710020a1befc895cf9cfd4
-SHA1: 57ac0547e4efd90bd06498aefd5a7821e22cd9f2
-SHA256: cf67d8765c7c234dfbc2759b2e20eccf19ccceaf5dbdee1cdec3809f191c7f4a
-SHA512: eb5072674929f75e670c67a4fe7377b2a6a02d28bf7bb1f2bb49a97458a24aef072a62266680fc8c4fd748cd6e1ab19fb3c8cdcb5725dbdf9965b3b062e38d95
+MD5sum: e70947ae0bdda66eeed7de9387c88453
+SHA1: b4c924bb38630bbedc5188585194e26198a39a16
+SHA256: f8a8d9d04b47a588c8d70eca3ef802c8a18b178864f21049c68970219649083a
+SHA512: 937d7272b97fa0c3cb11af9d2c8b5ff46228676d692111c6a68f938e48cee3c51b3ef170cd0215f7978c811ccb66ce0b091e6b9d27f7af57877754433b258ce8
 Homepage: https://01.org/linuxmedia/vaapi
 Description: Video Acceleration (VA) API for Linux
  Video Acceleration API (VA API) is a library (libVA) and API
@@ -55559,13 +56289,13 @@ Version: 2.23.0-r0
 Priority: optional
 Section: x11
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.131)
+Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.133)
 Filename: ./libva_2.23.0-r0_amd64.deb
 Size: 68680
-MD5sum: 1c5edec05e684b02f90eaa86ebc8f078
-SHA1: fd97e49385636140f31c5ad73c4169ff44e84ff5
-SHA256: 1eed6890db23a9109b75178073db07f6f01c4250e7c995a3040a79dec15e91a3
-SHA512: 60c5c88d05de7db049417e1cac236f37ecba2f96797600eebb02e23a94da8c12b181ef95a46878b8d9fe3e7c3501f43746b0fbe6fbba7cece196d752403b587a
+MD5sum: 5c84286549937d332cad1a9cff514b76
+SHA1: 6aca95f6a2ff8565e3cd048deded821644656da4
+SHA256: 9b67b433a3e34d5eeef3e4c7fcd675dd83235678810b25568c7eeb4363fb2c62
+SHA512: 47683a6aa4cdac6efb8a3ebfff33febc4f7a911abd538d39b05b3b8ccd93fc0af160e47ab18a1492290a51d95d476261b916bc9429fb352c34b9f86df12115ab
 Homepage: https://01.org/linuxmedia/vaapi
 Description: Video Acceleration (VA) API for Linux
  Video Acceleration API (VA API) is a library (libVA) and API
@@ -55943,6 +56673,26 @@ Description: Helper library for implementing 'wayland window managers'.
 OE: weston
 PackageArch: zen5
 
+Package: libweston-16-0
+Architecture: amd64
+Version: 16.0.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: libweston-16
+Depends: libc6 (>= 2.43+git0+ce1013a197), libcairo2 (>= 1.18.4), libdisplay-info3 (>= 0.3.0), libdrm2 (>= 2.4.133), libegl-mesa (>= 26.2.1), libfontconfig1 (>= 2.17.1), libgbm1 (>= 26.2.1), libgles2-mesa (>= 26.2.1), libglib-2.0-0 (>= 2.88.0), libinput10 (>= 1.30.1), libjpeg62 (>= 3.1.3), libpixman-1-0 (>= 0.42.2), libpng16-16 (>= 1.6.56), libudev1 (>= 259.5), libx11-6 (>= 1.8.9), libx11-xcb1 (>= 1.8.9), libxcb-shm0 (>= 1.17.0), libxcb-xkb1 (>= 1.17.0), libxcb1 (>= 1.17.0), libxkbcommon0 (>= 1.7.0), pango (>= 1.57.0), seatd (>= 0.9.3), wayland (>= 1.24.0)
+Filename: ./libweston-16-0_16.0.0-r0_amd64.deb
+Size: 345508
+MD5sum: d9f3d67434d884db3b5a3dd7dd462f20
+SHA1: ccac713adb8263c1c87fc041c300e148c62a926d
+SHA256: ca126e401b18817c58ffd5af88774ab6ff1682217682892ad192b79ba17e7970
+SHA512: cfdb687b615359f6ece936dab7234998985d8f8e07f7f3f1a7aae50908c86869e3b8abe3a0bdd31263e4bdfb37d632b59358dc06d1e2d46510a24a21898ed18d
+Homepage: http://wayland.freedesktop.org
+Description: Helper library for implementing 'wayland window managers'.
+ Weston is the reference implementation of a Wayland compositor
+OE: weston
+PackageArch: zen5
+
 Package: libx11-6
 Architecture: amd64
 Version: 1:1.8.9-r0
@@ -56304,6 +57054,164 @@ Description: XCB library module for glx
 OE: libxcb
 PackageArch: zen5
 
+Package: libxcb-image-dbg
+Architecture: amd64
+Version: 0.4.1-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: xcb-util-image-dbg
+Recommends: glibc-dbg, libxcb-dbg, libxcb-shm-dbg, xcb-util-dbg
+Filename: ./libxcb-image-dbg_0.4.1-r0_amd64.deb
+Size: 17544
+MD5sum: ed6170b1751814e36b8aea0ac22b7f9d
+SHA1: 13f9bf5750430e17030cad69015bbdd69ca66345
+SHA256: ac88df550e7d254b9ffdd431ff8d981e7a1a4ffed57b8983b2d92f25ac19d5f2
+SHA512: 0deb8d9959043175aa4d6f0f610762b1236232a8e9e292ad0827aed98c27e3a1c3fbc7ae8c9f90bb623910ddcf19b34a2a911ea94e008a0308f432527f8bc8ba
+Homepage: http://xcb.freedesktop.org/XcbUtil/
+Description: XCB: The X protocol C binding utilities - Debugging files
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension libraries.
+ These experimental libraries provide convenience functions and interfaces
+ which make the raw X protocol more usable. Some of the libraries also
+ provide client-side code which is not strictly part of the X protocol but
+ which have traditionally been provided by Xlib.  This package contains
+ ELF symbols and related sources for debugging purposes.
+OE: xcb-util-image
+PackageArch: zen5
+
+Package: libxcb-image-dev
+Architecture: amd64
+Version: 0.4.1-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: xcb-util-image-dev
+Depends: libxcb-dev, xcb-util-image
+Recommends: glibc-dev, libxcb-dev, libxcb-image0 (= 0.4.1-r0), libxcb-shm-dev, xcb-util-dev
+Filename: ./libxcb-image-dev_0.4.1-r0_amd64.deb
+Size: 9244
+MD5sum: 1b89b011ddf01fa03cec0fdc79a51431
+SHA1: 0e2f9ea794726f1e1803cfaf8990c46962477dfe
+SHA256: 1ded74bc5bbbdf266deb366479f9256eed8c7da83a62561e9841081ae1614a08
+SHA512: 3b788a3a417778d91e1817e7990c5642351b2ed3abb73c66fc3dbf7f26dafceaf02de540aa69dd54b5c55751d801dc0e0cdf40446a09b2494fe4c0df38e7b96a
+Homepage: http://xcb.freedesktop.org/XcbUtil/
+Description: XCB: The X protocol C binding utilities - Development files
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension libraries.
+ These experimental libraries provide convenience functions and interfaces
+ which make the raw X protocol more usable. Some of the libraries also
+ provide client-side code which is not strictly part of the X protocol but
+ which have traditionally been provided by Xlib.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+OE: xcb-util-image
+PackageArch: zen5
+
+Package: libxcb-image0
+Architecture: amd64
+Version: 0.4.1-r0
+Priority: optional
+Section: x11/libs
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: xcb-util-image
+Depends: libc6 (>= 2.43+git0+ce1013a197), libxcb-shm0 (>= 1.17.0), libxcb-util1 (>= 0.4.1), libxcb1 (>= 1.17.0)
+Filename: ./libxcb-image0_0.4.1-r0_amd64.deb
+Size: 7764
+MD5sum: d2b2ab69184c6cc5dca47e8c224aedee
+SHA1: 03980f5726fe41042f099ccbfc1f8b04d59e5de8
+SHA256: 4e5d71191f9bc2138c78f5ffe12f50b40ae0d55aa7fca2476ba66c84bf82c069
+SHA512: 9ae708ad91a0f56b08cc0dfccb57728c08ae98c0e4bcd0bbf5233605346b84889b511334f1ecffead04cd5bda4153e92de6f9fc69ef5118c010ef63599b4983b
+Homepage: http://xcb.freedesktop.org/XcbUtil/
+Description: XCB: The X protocol C binding utilities
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension libraries.
+ These experimental libraries provide convenience functions and interfaces
+ which make the raw X protocol more usable. Some of the libraries also
+ provide client-side code which is not strictly part of the X protocol but
+ which have traditionally been provided by Xlib.
+OE: xcb-util-image
+PackageArch: zen5
+
+Package: libxcb-keysyms-dbg
+Architecture: amd64
+Version: 0.4.1-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: xcb-util-keysyms-dbg
+Recommends: glibc-dbg, libxcb-dbg
+Filename: ./libxcb-keysyms-dbg_0.4.1-r0_amd64.deb
+Size: 7820
+MD5sum: c750bc1e363516f6323fc99144c99365
+SHA1: fc46006b7e3099af83c50d3cf1c86a2529929b48
+SHA256: f86e8a3ecf4b5b911972f2b3fa49793ebba0083465c5b1656cf231e5b508af0e
+SHA512: 4e7e2cf6620b1696fddb06bd01727e448a9a8bb6d4d6930776b7c043be098292535824e84e0aa7a051d9f3a673286059882f8f1dbfa188a4200ee9cfb94438f7
+Homepage: http://xcb.freedesktop.org/XcbUtil/
+Description: XCB: The X protocol C binding utilities - Debugging files
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension libraries.
+ These experimental libraries provide convenience functions and interfaces
+ which make the raw X protocol more usable. Some of the libraries also
+ provide client-side code which is not strictly part of the X protocol but
+ which have traditionally been provided by Xlib.  This package contains
+ ELF symbols and related sources for debugging purposes.
+OE: xcb-util-keysyms
+PackageArch: zen5
+
+Package: libxcb-keysyms-dev
+Architecture: amd64
+Version: 0.4.1-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: xcb-util-keysyms-dev
+Depends: libxcb-dev, xcb-util-keysyms
+Recommends: glibc-dev, libxcb-dev, libxcb-keysyms1 (= 0.4.1-r0)
+Filename: ./libxcb-keysyms-dev_0.4.1-r0_amd64.deb
+Size: 2108
+MD5sum: 8163b6150b1c5fcc9c8c9500a3609d3c
+SHA1: dc8c7252c14b1200e155639f7f9676547df0737f
+SHA256: c9699669b7b435e177dc3d49a17ed793e08f4b5240f383939321c66ea9af8639
+SHA512: 843e51cad86a29af35d46ec801dee93f03f5a7097e5f981bfcd0b19a3900f8112b613b16a1fca72ea9a2c87085cc67c125b9d44f01f311c8f0fac17112902b64
+Homepage: http://xcb.freedesktop.org/XcbUtil/
+Description: XCB: The X protocol C binding utilities - Development files
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension libraries.
+ These experimental libraries provide convenience functions and interfaces
+ which make the raw X protocol more usable. Some of the libraries also
+ provide client-side code which is not strictly part of the X protocol but
+ which have traditionally been provided by Xlib.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+OE: xcb-util-keysyms
+PackageArch: zen5
+
+Package: libxcb-keysyms1
+Architecture: amd64
+Version: 0.4.1-r0
+Priority: optional
+Section: x11/libs
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: xcb-util-keysyms
+Depends: libc6 (>= 2.43+git0+ce1013a197), libxcb1 (>= 1.17.0)
+Filename: ./libxcb-keysyms1_0.4.1-r0_amd64.deb
+Size: 4368
+MD5sum: 25c1bf9b20ee801359d5197ea3f1fe07
+SHA1: 61a277daf18fab4de97baf520c7279a111b0a2c1
+SHA256: 7cdc891a68f9971032a2f95656a9a03049bdf874e94dc74f5e10e5b4d085cf43
+SHA512: 971a32180e177c3a64148b48073014c10ecc19329644050f137ece8f97128bf283ef5233fd7c5dac017961977592756e806b5baed0301e80f3c26cff8febef36
+Homepage: http://xcb.freedesktop.org/XcbUtil/
+Description: XCB: The X protocol C binding utilities
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension libraries.
+ These experimental libraries provide convenience functions and interfaces
+ which make the raw X protocol more usable. Some of the libraries also
+ provide client-side code which is not strictly part of the X protocol but
+ which have traditionally been provided by Xlib.
+OE: xcb-util-keysyms
+PackageArch: zen5
+
 Package: libxcb-present0
 Architecture: amd64
 Version: 1.17.0-r0
@@ -56362,6 +57270,85 @@ Homepage: http://xcb.freedesktop.org
 Description: XCB library module for record
  XCB library module for record
 OE: libxcb
+PackageArch: zen5
+
+Package: libxcb-render-util-dbg
+Architecture: amd64
+Version: 0.3.10-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: xcb-util-renderutil-dbg
+Recommends: glibc-dbg, libxcb-dbg, libxcb-render-dbg
+Filename: ./libxcb-render-util-dbg_0.3.10-r0_amd64.deb
+Size: 12300
+MD5sum: 1561e23dd6ef9e85f6a89bf281cfef03
+SHA1: ffaec714208d7ccb98c5e83868f3c57c0d7ac56e
+SHA256: d14a2cf87918095a9286b3ca316159140feec72db37268026414b9468223b8e2
+SHA512: 1122e965f1cea617f71b379f7f588342cec14fdeba72c1f63ec1f0696944bb68765b7801cbb97ab639252eaf5fb18790f0c70335db38f6937169c469f3f9d50b
+Homepage: http://xcb.freedesktop.org/XcbUtil/
+Description: XCB: The X protocol C binding utilities - Debugging files
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension libraries.
+ These experimental libraries provide convenience functions and interfaces
+ which make the raw X protocol more usable. Some of the libraries also
+ provide client-side code which is not strictly part of the X protocol but
+ which have traditionally been provided by Xlib.  This package contains
+ ELF symbols and related sources for debugging purposes.
+OE: xcb-util-renderutil
+PackageArch: zen5
+
+Package: libxcb-render-util-dev
+Architecture: amd64
+Version: 0.3.10-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: xcb-util-renderutil-dev
+Depends: libxcb-dev, xcb-util-renderutil
+Recommends: glibc-dev, libxcb-dev, libxcb-render-dev, libxcb-render-util0 (= 0.3.10-r0)
+Filename: ./libxcb-render-util-dev_0.3.10-r0_amd64.deb
+Size: 2924
+MD5sum: cca44012293292ae14e9fd39c19edd2a
+SHA1: 3542dd57dc98da0f68502eba4b6c943e4cfb1aa1
+SHA256: de4f627659ad73f5b14c4d7f3106da92df0ed5b589b5c9885ffc76bde27c6949
+SHA512: c02a582cf3b46eb27bd70858df8d36c743052a6bb4e4e3cd88b89735b75a86a2456f118628a74b1e7d8bdbeb226df6658b5ec929b48fb224e094f7c7bce9a3d6
+Homepage: http://xcb.freedesktop.org/XcbUtil/
+Description: XCB: The X protocol C binding utilities - Development files
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension libraries.
+ These experimental libraries provide convenience functions and interfaces
+ which make the raw X protocol more usable. Some of the libraries also
+ provide client-side code which is not strictly part of the X protocol but
+ which have traditionally been provided by Xlib.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+OE: xcb-util-renderutil
+PackageArch: zen5
+
+Package: libxcb-render-util0
+Architecture: amd64
+Version: 0.3.10-r0
+Priority: optional
+Section: x11/libs
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: xcb-util-renderutil
+Depends: libc6 (>= 2.43+git0+ce1013a197), libxcb-render0 (>= 1.17.0), libxcb1 (>= 1.17.0)
+Filename: ./libxcb-render-util0_0.3.10-r0_amd64.deb
+Size: 5656
+MD5sum: bf99dc41ccd241cde74802e774b4253c
+SHA1: 6efadb4f11d99ad9a8a93f71114ccad4bfdbac12
+SHA256: c6e16b8e02a0484622e149066624f211ea93a77c13f018ea13ff453a3554843a
+SHA512: 82fd911ff8c97f05915f335a20ea4dc7f52f3ad6c75c2e6ce5d0e428b9a4794ceee80f6344ee6205eccc2b63fb819cd2a2b5623de1ee38d2a4659390df73c8af
+Homepage: http://xcb.freedesktop.org/XcbUtil/
+Description: XCB: The X protocol C binding utilities
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension libraries.
+ These experimental libraries provide convenience functions and interfaces
+ which make the raw X protocol more usable. Some of the libraries also
+ provide client-side code which is not strictly part of the X protocol but
+ which have traditionally been provided by Xlib.
+OE: xcb-util-renderutil
 PackageArch: zen5
 
 Package: libxcb-render0
@@ -56482,6 +57469,85 @@ Homepage: http://xcb.freedesktop.org
 Description: XCB library module for sync
  XCB library module for sync
 OE: libxcb
+PackageArch: zen5
+
+Package: libxcb-util-dbg
+Architecture: amd64
+Version: 0.4.1-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: xcb-util-dbg
+Recommends: glibc-dbg, libxcb-dbg
+Filename: ./libxcb-util-dbg_0.4.1-r0_amd64.deb
+Size: 12088
+MD5sum: 9fc1297ae5a7a0b02aabd62d323c30da
+SHA1: 7e42ef062b7458291e42645f1ac54058acf7874c
+SHA256: 8964ba34a3d90152f09cc708d4ae77e18da312f3ed2ac664339a5a6a1df958a1
+SHA512: 89b72378f58e46fcfa3a88961d85648f4730c759bd4fa5862e18d9dc87b63df87c08104fbffc2f4e2824e635710e1d564bd4d231c9eeb204144f967c17361859
+Homepage: http://xcb.freedesktop.org/XcbUtil/
+Description: XCB: The X protocol C binding utilities - Debugging files
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension libraries.
+ These experimental libraries provide convenience functions and interfaces
+ which make the raw X protocol more usable. Some of the libraries also
+ provide client-side code which is not strictly part of the X protocol but
+ which have traditionally been provided by Xlib.  This package contains
+ ELF symbols and related sources for debugging purposes.
+OE: xcb-util
+PackageArch: zen5
+
+Package: libxcb-util-dev
+Architecture: amd64
+Version: 0.4.1-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: xcb-util-dev
+Depends: libxcb-dev, xcb-util
+Recommends: glibc-dev, libxcb-dev, libxcb-util1 (= 0.4.1-r0)
+Filename: ./libxcb-util-dev_0.4.1-r0_amd64.deb
+Size: 4276
+MD5sum: 87cdf7066126a33dbdbae9fe4e0217e3
+SHA1: d54b65a93d364f25ad3396e98ed63c0227fbebdd
+SHA256: c68e0bf4871d8c4117708518afa2c76abc6f736a8d8e3921dc2210ccc9f4f4c6
+SHA512: 88efee94aee4678407048c57e772548397b7d10522c7ed8b76c2dd04a3ba3731450f3510f84c0d3bc25d1466ddbfbd1e0bebf2d28d22744f8e772388431a6755
+Homepage: http://xcb.freedesktop.org/XcbUtil/
+Description: XCB: The X protocol C binding utilities - Development files
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension libraries.
+ These experimental libraries provide convenience functions and interfaces
+ which make the raw X protocol more usable. Some of the libraries also
+ provide client-side code which is not strictly part of the X protocol but
+ which have traditionally been provided by Xlib.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+OE: xcb-util
+PackageArch: zen5
+
+Package: libxcb-util1
+Architecture: amd64
+Version: 0.4.1-r0
+Priority: optional
+Section: x11/libs
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: xcb-util
+Depends: libc6 (>= 2.43+git0+ce1013a197), libxcb1 (>= 1.17.0)
+Filename: ./libxcb-util1_0.4.1-r0_amd64.deb
+Size: 6972
+MD5sum: 92c2ff329c75973088acd901caf7cae2
+SHA1: da3a041836f278fdd3b4486850ee365c1bee668f
+SHA256: 908b72258ac0965b26b34cb9332d1998a2a3fa1bb0dd920fcb6d0df4856a4f79
+SHA512: 75dab164c70d374a11d5bb92edf286e169b949a0096fbf65480849a0c7de2983ae5760c75e04dfa15ebd57ce62129a227e76b08327b4ecf31ec11f18c84dd859
+Homepage: http://xcb.freedesktop.org/XcbUtil/
+Description: XCB: The X protocol C binding utilities
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension libraries.
+ These experimental libraries provide convenience functions and interfaces
+ which make the raw X protocol more usable. Some of the libraries also
+ provide client-side code which is not strictly part of the X protocol but
+ which have traditionally been provided by Xlib.
+OE: xcb-util
 PackageArch: zen5
 
 Package: libxcb-xf86dri0
@@ -69708,10 +70774,10 @@ Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Depends: libc6 (>= 2.43+git0+ce1013a197), libgcc1 (>= 15.2.0), libstdc++6 (>= 15.2.0), libz1 (>= 1.3.2)
 Filename: ./lshw_02.20+git0+4c6497c8b0-r0_amd64.deb
 Size: 2342220
-MD5sum: 0dc13a945f4489cb5e5bf67ab050b892
-SHA1: 63e4aa9b95cd066218ca2c51664d52bc32e184a6
-SHA256: c72b90f69373724aeec3535fc5df64ee3ddd05390822133533475ab08e7129db
-SHA512: f20f15352450350e19e36538cba3837142e8bd615fe46d3e9655c65684a913517195e7714fa972757d5bf9f6e59c69f984ddd051676ba0671d0778eb933cd88c
+MD5sum: 081d4b37620fae23660f7dd12990acba
+SHA1: 913860eadfaa7459daf01a45d80343c97cf99d12
+SHA256: 5e6c321b51fd2335db83242a19bd2836515ec6620a9b398b8fc2342b3395ad9f
+SHA512: 81152193152e3b1a0c0ebae88ba94b06d36839c7119e19cedb8b6be7252f44c0d2be96cc324e19d3b9c4e6e6055d84de93d025d4ed4e45cc3131d4d4c5b40175
 Homepage: http://ezix.org/project/wiki/HardwareLiSter
 Description: Hardware lister
  A small tool to provide detailed information on the hardware
@@ -70610,6 +71676,34 @@ Description: A free implementation of the OpenGL API - Debugging files
 OE: mesa
 PackageArch: zen5
 
+Package: mesa-dbg
+Architecture: amd64
+Version: 2:26.2.1-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: mesa-dri-dbg
+Recommends: expat-dbg, glibc-dbg, libdrm-amdgpu-dbg, libdrm-dbg, libelf-dbg, libgallium-dbg, libgbm-dbg, libgcc-dbg, libstdc++-dbg, libx11-dbg, libx11-xcb-dbg, libxcb-dbg, libxcb-dri3-dbg, libxcb-glx-dbg, libxcb-present-dbg, libxcb-randr-dbg, libxcb-shm-dbg, libxcb-sync-dbg, libxcb-xfixes-dbg, libxext-dbg, libxfixes-dbg, libxshmfence-dbg, libxxf86vm-dbg, libzstd-dbg, llvm-dbg, wayland-dbg, zlib-dbg
+Conflicts: mesa-dri-dbg
+Replaces: mesa-dri-dbg
+Filename: ./mesa-dbg_26.2.1-r0_amd64.deb
+Size: 1255060
+MD5sum: d826379bb2b2b31ab980f6995efb82dc
+SHA1: 84ea3d4f18c8befb8ba25b6f482fa59b7c3dd92c
+SHA256: 39aa7e79fe2f7d2534e4aef9e25de64c5470437f8661d60295076b885661a062
+SHA512: a2a2a7bb50bb57de37bcb3c3a9cd9f7a0b622ea6e4898769f2148f1558cb8cbf5ae9c3bd9410bd5ab62956bbd73dd7ee16edbb98241e829b9ca6a391e8aa5a6e
+Homepage: http://mesa3d.org
+Description: A free implementation of the OpenGL API - Debugging files
+ Mesa is an open-source implementation of the OpenGL specification - a
+ system for rendering interactive 3D graphics.  A variety of device
+ drivers allows Mesa to be used in many different environments ranging
+ from software emulation to complete hardware acceleration for modern
+ GPUs. Mesa is used as part of the overall Direct Rendering Infrastructure
+ and X.org environment.  This package contains ELF symbols and related
+ sources for debugging purposes.
+OE: mesa
+PackageArch: zen5
+
 Package: mesa-demos-dbg
 Architecture: amd64
 Version: 9.0.0-r0
@@ -70660,13 +71754,13 @@ Version: 9.0.0-r0
 Priority: optional
 Section: x11
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-Depends: libc6 (>= 2.43+git0+ce1013a197), libegl-mesa (>= 26.1.4), libgl-mesa (>= 26.1.4), libgles2-mesa (>= 26.1.4), libx11-6 (>= 1.8.9)
+Depends: libc6 (>= 2.43+git0+ce1013a197), libegl-mesa (>= 26.2.1), libgl-mesa (>= 26.2.1), libgles2-mesa (>= 26.2.1), libx11-6 (>= 1.8.9)
 Filename: ./mesa-demos-info_9.0.0-r0_amd64.deb
 Size: 98356
-MD5sum: 4eed88dffc3d5c8ccabba2e2907f1182
-SHA1: 28697e72ddd2311cb1891f4df1c1eb81866f60a4
-SHA256: 236ccc71a70839012f10b159a209da0cb614c8be84c99434a2516935180b3235
-SHA512: 98461171831554d9728c027cb2d3123996c9521448b5248ff50e7666c6cc2198437a8e8262fe7678d60b34ebd217251c20f2ce3b882a110be2ea890733ee4f8e
+MD5sum: e8c3554cc0fad1293e9d2bece55b5d03
+SHA1: 1688aa2f41e6aa34f09e5e851dce4f6645322298
+SHA256: 1fe87cdad6810258dd7e7724ff0f16ffaa7f29ae7e7c92e1adc0f945de44db4c
+SHA512: 9b8fd1ee104f3313dcdfa8a53e1ab67ac5ec2f66a75e764426b85322918e82fa16852d3bae6e51bbbc938be274bda96f65854d3108bf9f4180421a715d7e825c
 Homepage: http://mesa3d.org
 Description: Mesa demo applications
  This package includes the demonstration application, such as glxgears.
@@ -70680,13 +71774,13 @@ Version: 9.0.0-r0
 Priority: optional
 Section: x11
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.131), libegl-mesa (>= 26.1.4), libgbm1 (>= 26.1.4), libgl-mesa (>= 26.1.4), libgles2-mesa (>= 26.1.4), libvulkan1 (>= 1.4.341.0), libx11-6 (>= 1.8.9), libxcb1 (>= 1.17.0), libxext6 (>= 1.3.6), libxkbcommon-x11-0 (>= 1.7.0), libxkbcommon0 (>= 1.7.0), mesa-demos-info
+Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.133), libegl-mesa (>= 26.2.1), libgbm1 (>= 26.2.1), libgl-mesa (>= 26.2.1), libgles2-mesa (>= 26.2.1), libvulkan1 (>= 1.4.341.0), libx11-6 (>= 1.8.9), libxcb1 (>= 1.17.0), libxext6 (>= 1.3.6), libxkbcommon-x11-0 (>= 1.7.0), libxkbcommon0 (>= 1.7.0), mesa-demos-info
 Filename: ./mesa-demos_9.0.0-r0_amd64.deb
 Size: 1049828
-MD5sum: 4053e7604623be9b9323823da34fe342
-SHA1: a7a80787452db813c812f06368a45f25e0a0f9b4
-SHA256: b71956eb64f522a29a8ad8f17f4f31b293d59701b432f74dd983e1198218377d
-SHA512: f3fcb3d8f0ba79697263293abbd5ba0459fe26c47ead848d222e67ddb9c7fc2a559dd67778641f6ed91113b2d0bed2336e3aa2faa464ad77b3a99d0a9c363e6f
+MD5sum: 799a13fd4a3dc5e3c01def5c720b9276
+SHA1: aa12ae3938780abe78ca7afb59914096992c32cc
+SHA256: 9b04fc866efce6e43edb7dc76f7ba0135613b8732f9fa338b938175ed43ebc13
+SHA512: 0b31e0bc89b6f4a5198161944a50183c401ccd831796c1e12ae52f31d7ccd54cbc0a1f44478327438e6aba36be614d8d1b52b7898c18218d2687d5fd2982d68c
 Homepage: http://mesa3d.org
 Description: Mesa demo applications
  This package includes the demonstration application, such as glxgears.
@@ -70711,6 +71805,35 @@ MD5sum: 160c85e570cb1d5efd122b4d858fa936
 SHA1: 8791167f9bde49c24431afb895b1c828dec2a8cf
 SHA256: f5b5c7b06b37ba834eb18f7226c82bf486c3136c5ab1df82d69f08ecfcfc573b
 SHA512: b5c4d57e1ab3c2b9abd12c2d4d324e1d8887385a6967104ff6f54437f26c35aea6ea59a720e7fe51d9b9004ec440d3a7da95ada9b7ad8206e4c1d12ac0b20e70
+Homepage: http://mesa3d.org
+Description: A free implementation of the OpenGL API - Development files
+ Mesa is an open-source implementation of the OpenGL specification - a
+ system for rendering interactive 3D graphics.  A variety of device
+ drivers allows Mesa to be used in many different environments ranging
+ from software emulation to complete hardware acceleration for modern
+ GPUs. Mesa is used as part of the overall Direct Rendering Infrastructure
+ and X.org environment.  This package contains symbolic links, header
+ files, and related items necessary for software development.
+OE: mesa
+PackageArch: zen5
+
+Package: mesa-dev
+Architecture: amd64
+Version: 2:26.2.1-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: mesa-dri-dev
+Depends: libdrm-dev
+Recommends: elfutils-dev, expat-dev, libdrm-dev, libva-initial-dev, libxdamage-dev, libxext-dev, libxfixes-dev, libxshmfence-dev, libxxf86vm-dev, llvm-dev, vulkan-headers-dev, vulkan-loader-dev, wayland-dev, wayland-protocols-dev, xorgproto-dev, xrandr-dev, zlib-dev
+Conflicts: mesa-dri-dev
+Replaces: mesa-dri-dev
+Filename: ./mesa-dev_26.2.1-r0_amd64.deb
+Size: 19460
+MD5sum: 16ff108df30a9ee9c7f4593ff38dec0c
+SHA1: def512990a3f4cfb3f61026ed5a755018a366e51
+SHA256: 0272ab3a960eb636e5a208031941b52c43e9babc1f025e589dbb356c31bc413c
+SHA512: ddec319f7e5a284e08177379cb6a43bddd833ae9d2726f001e9dee51fbd35b29b62813e7d534d1fcacbce168cd94b0f40d93eb821bde7f69f0233228fff9559f
 Homepage: http://mesa3d.org
 Description: A free implementation of the OpenGL API - Development files
  Mesa is an open-source implementation of the OpenGL specification - a
@@ -70750,6 +71873,33 @@ Description: A free implementation of the OpenGL API
 OE: mesa
 PackageArch: zen5
 
+Package: mesa-megadriver
+Architecture: amd64
+Version: 2:26.2.1-r0
+Priority: optional
+Section: x11
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: mesa, mesa-driver-libdril, mesa-driver-nouveau, mesa-driver-r300, mesa-driver-r600, mesa-driver-radeonsi, mesa-driver-virtio-gpu, mesa-driver-vmwgfx
+Depends: libc6 (>= 2.43+git0+ce1013a197), libgallium, libgbm1 (>= 26.2.1)
+Conflicts: mesa, mesa-driver-libdril, mesa-driver-nouveau, mesa-driver-r300, mesa-driver-r600, mesa-driver-radeonsi, mesa-driver-virtio-gpu, mesa-driver-vmwgfx
+Replaces: mesa, mesa-driver-libdril, mesa-driver-nouveau, mesa-driver-r300, mesa-driver-r600, mesa-driver-radeonsi, mesa-driver-virtio-gpu, mesa-driver-vmwgfx
+Filename: ./mesa-megadriver_26.2.1-r0_amd64.deb
+Size: 27948
+MD5sum: a35bb096d185d7a884a6e91eaba961d3
+SHA1: a6d51d457c728f3b3a0ed41efb621506d4f8ccc7
+SHA256: 1e8e641e9e2f78fb71242ca919ed76ae9a56f96d3b991d80a27f37f23a383217
+SHA512: 4c46ccda0a79b330b15bb56240d58f117e58f4f99bc0cae8bf945bcb4f15fefb0b32cee24824a43e7c177cec3d5d1a4a380fd832f4407cf374b1c8fca386ce22
+Homepage: http://mesa3d.org
+Description: A free implementation of the OpenGL API
+ Mesa is an open-source implementation of the OpenGL specification - a
+ system for rendering interactive 3D graphics.  A variety of device
+ drivers allows Mesa to be used in many different environments ranging
+ from software emulation to complete hardware acceleration for modern
+ GPUs. Mesa is used as part of the overall Direct Rendering Infrastructure
+ and X.org environment.
+OE: mesa
+PackageArch: zen5
+
 Package: mesa-tools
 Architecture: amd64
 Version: 2:26.1.4-r0
@@ -70762,6 +71912,29 @@ MD5sum: b4fffef52fa921a439656f6a44858255
 SHA1: 177a7c68bb27cc9d8f13aad800e617748d8804e8
 SHA256: 23ed13d68feac278305b89213c476ede676f5d0e80b9525fac7ec0afb958e510
 SHA512: 815cf23f98124a4f45e69c183a203194ab38027b9201948a6655591eeea9ec266b3b0d630e5117ccaa40cc3f6e341ca022b790f8e48e3ce5873c90224067bf1b
+Homepage: http://mesa3d.org
+Description: A free implementation of the OpenGL API
+ Mesa is an open-source implementation of the OpenGL specification - a
+ system for rendering interactive 3D graphics.  A variety of device
+ drivers allows Mesa to be used in many different environments ranging
+ from software emulation to complete hardware acceleration for modern
+ GPUs. Mesa is used as part of the overall Direct Rendering Infrastructure
+ and X.org environment.
+OE: mesa
+PackageArch: zen5
+
+Package: mesa-tools
+Architecture: amd64
+Version: 2:26.2.1-r0
+Priority: optional
+Section: x11
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./mesa-tools_26.2.1-r0_amd64.deb
+Size: 996
+MD5sum: 150af7b68d559278e3f1039884c7340c
+SHA1: e2b64508032839ffb384f82a9bf2089cff39c36d
+SHA256: a5f1e3c5ec103bd15abfd39a0b6b0c4e0122a80918aac8ed0264a54f8e4b06b5
+SHA512: 36cfe91c02d8e08799749352b550843e374edc7c7fee1890fe20f0f8783d90a10e48a0094902b5487b7bff99cc32cd9ea2a39be4ec979b88bc4958a3944c6cd7
 Homepage: http://mesa3d.org
 Description: A free implementation of the OpenGL API
  Mesa is an open-source implementation of the OpenGL specification - a
@@ -70787,6 +71960,31 @@ MD5sum: 2f8d2d4b5791be34b28d911c44f3bccd
 SHA1: ebdc02030811172ae0a0bed18ba78be78171dd76
 SHA256: 337e88c7488c58c6f01ee6f42bd424bc524509d7e805d9af705e0611b8b6eed9
 SHA512: 4cd479b299918cb7f5be81ffec4764e10b41b73201bcd37013f0d6f80c4ca5044564877090a8e8a5a8ee4a6cfbd8512c3f79bf6e5160db03e8abb386db04cd1c
+Homepage: http://mesa3d.org
+Description: A free implementation of the OpenGL API
+ Mesa is an open-source implementation of the OpenGL specification - a
+ system for rendering interactive 3D graphics.  A variety of device
+ drivers allows Mesa to be used in many different environments ranging
+ from software emulation to complete hardware acceleration for modern
+ GPUs. Mesa is used as part of the overall Direct Rendering Infrastructure
+ and X.org environment.
+OE: mesa
+PackageArch: zen5
+
+Package: mesa-vulkan-drivers
+Architecture: amd64
+Version: 2:26.2.1-r0
+Priority: optional
+Section: x11
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Provides: virtual-vulkan-icd
+Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm-amdgpu1 (>= 2.4.133), libdrm2 (>= 2.4.133), libelf1 (>= 0.194), libexpat1 (>= 2.7.5), libgcc1 (>= 15.2.0), libstdc++6 (>= 15.2.0), libx11-xcb1 (>= 1.8.9), libxcb-dri3-0 (>= 1.17.0), libxcb-present0 (>= 1.17.0), libxcb-randr0 (>= 1.17.0), libxcb-shm0 (>= 1.17.0), libxcb-sync1 (>= 1.17.0), libxcb-xfixes0 (>= 1.17.0), libxcb1 (>= 1.17.0), libxshmfence1 (>= 1.3.2), libz1 (>= 1.3.2), libzstd1 (>= 1.5.7), llvm (>= 22.1.3), wayland (>= 1.24.0)
+Filename: ./mesa-vulkan-drivers_26.2.1-r0_amd64.deb
+Size: 12996820
+MD5sum: 53f1bfeb81b46e38c5c0e0930f854aa4
+SHA1: f6fcf925b04f9efaa75d1fae3757f648d1e5cf0c
+SHA256: 4b0b43e6ae79c0bc303bd55a88e0853ae861d5d040437dafadf0432b3f75e76c
+SHA512: 17d50c5410372ced59f30e1d3ff004c1141e514bed7db6dec4ba60eb7587a9d63b9691ccfc6c8504f287bc7800c7e2f51231453ed46db81871198a063d735651
 Homepage: http://mesa3d.org
 Description: A free implementation of the OpenGL API
  Mesa is an open-source implementation of the OpenGL specification - a
@@ -71176,18 +72374,160 @@ Version: 0.41.0-r0
 Priority: optional
 Section: multimedia
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-Depends: desktop-file-utils, libasound2 (>= 1.2.15.3), libass9 (>= 0.17.4), libavcodec62 (>= 8.0.1), libavdevice62 (>= 8.0.1), libavfilter11 (>= 8.0.1), libavformat62 (>= 8.0.1), libavutil60 (>= 8.0.1), libc6 (>= 2.43+git0+ce1013a197), libdisplay-info3 (>= 0.3.0), libdrm2 (>= 2.4.131), libegl-mesa (>= 26.1.4), libgbm1 (>= 26.1.4), libgl-mesa (>= 26.1.4), libjpeg62 (>= 3.1.3), libplacebo351 (>= 7.351.0), libpulse0 (>= 17.0), libswresample6 (>= 8.0.1), libswscale9 (>= 8.0.1), libva (>= 2.23.0), libva-wayland2 (>= 2.23.0), libva-x11-2 (>= 2.23.0), libvulkan1 (>= 1.4.341.0), libx11-6 (>= 1.8.9), libxext6 (>= 1.3.6), libxfixes3 (>= 6.0.1), libxkbcommon0 (>= 1.7.0), libxpresent1 (>= 1.0.2), libxrandr2 (>= 1.5.4), libxss1 (>= 1.2.4), libz1 (>= 1.3.2), luajit (>= 2.1), wayland (>= 1.24.0)
+Depends: desktop-file-utils, libasound2 (>= 1.2.15.3), libass9 (>= 0.17.4), libavcodec62 (>= 8.0.1), libavdevice62 (>= 8.0.1), libavfilter11 (>= 8.0.1), libavformat62 (>= 8.0.1), libavutil60 (>= 8.0.1), libc6 (>= 2.43+git0+ce1013a197), libdisplay-info3 (>= 0.3.0), libdrm2 (>= 2.4.133), libegl-mesa (>= 26.2.1), libgbm1 (>= 26.2.1), libgl-mesa (>= 26.2.1), libjpeg62 (>= 3.1.3), libplacebo351 (>= 7.351.0), libpulse0 (>= 17.0), libswresample6 (>= 8.0.1), libswscale9 (>= 8.0.1), libva (>= 2.23.0), libva-wayland2 (>= 2.23.0), libva-x11-2 (>= 2.23.0), libvulkan1 (>= 1.4.341.0), libx11-6 (>= 1.8.9), libxext6 (>= 1.3.6), libxfixes3 (>= 6.0.1), libxkbcommon0 (>= 1.7.0), libxpresent1 (>= 1.0.2), libxrandr2 (>= 1.5.4), libxss1 (>= 1.2.4), libz1 (>= 1.3.2), luajit (>= 2.1), wayland (>= 1.24.0)
 Filename: ./mpv_0.41.0-r0_amd64.deb
 Size: 1074136
-MD5sum: 13a16dc158df48c40a98dbdc8ccaee68
-SHA1: e05b6ade77631f6c8eade657e1c83b0533b0e44b
-SHA256: 465fe263709be100336c328647dfd0802b25a981db4f43a08103b600cb4a132f
-SHA512: 1e694792dd3be6a8328341327a3a9d0f2c507c9457e4eb8c4ba3cb6bba72b904e073b385d677d38c6dad70959d24277f85d069266ed27ca84783fb93faffc711
+MD5sum: 8d68037578cfadd46191aa1780aa08d2
+SHA1: 99a6029f9400ebea64efc885ddd0769bf5bf5f5b
+SHA256: 167f4bf1aaa691fcccc640108780e1a02370c0186d02f8d952f36bf2a2198821
+SHA512: ca810c701a23958e1669e049a2acfa2ae1b7e9015ee897fa930a1186a33046f0acd800e47bdb4b0fe42bf19a8176ee6723b6b0ed05cb70b4d967060fe484f9ab
 Homepage: http://www.mpv.io/
 Description: Open Source multimedia player
  mpv is a fork of mplayer2 and MPlayer. It shares some features with the
  former projects while introducing many more.
 OE: mpv
+PackageArch: zen5
+
+Package: mtd-utils-dbg
+Architecture: amd64
+Version: 2.3.1-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: glibc-dbg, lzo-dbg, util-linux-libuuid-dbg, zlib-dbg
+Filename: ./mtd-utils-dbg_2.3.1-r0_amd64.deb
+Size: 1784568
+MD5sum: 17e6d3d00251891756df52a19adb74f0
+SHA1: 3b0810f150c6d99e0a52ddd5288ffc9d2882d31b
+SHA256: 6a1cc5af342748b2b9577b602aae1ca1fbe93c839e5b7e512b515822ebc8699e
+SHA512: 9f0d3a428be4c562c7d3918c11e99cef928ff48d2817913466e66c99b3caa184f12043aa7152c26d7b028e13dcbb374a4ad611bb5c3d3758a3d44c726fe339a8
+Homepage: http://www.linux-mtd.infradead.org/
+Description: Tools for managing memory technology devices - Debugging files
+ mtd-utils tool is a generic Linux subsystem for memory devices,
+ especially Flash devices.  This package contains ELF symbols and related
+ sources for debugging purposes.
+OE: mtd-utils
+PackageArch: zen5
+
+Package: mtd-utils-dev
+Architecture: amd64
+Version: 2.3.1-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: acl-dev, bash-dev, e2fsprogs-dev, glibc-dev, lzo-dev, mtd-utils (= 2.3.1-r0), update-alternatives-opkg-dev, util-linux-dev, util-linux-libuuid-dev, zlib-dev
+Filename: ./mtd-utils-dev_2.3.1-r0_amd64.deb
+Size: 8668
+MD5sum: 76c9246036285ffafa97a4209e4e013d
+SHA1: 4cd25367d22bf037ce745d3147b7ba8355bbbeec
+SHA256: 2e536f6fc205094bcd693e04ea198c36349dd182640881d08ac0f5f2c341f7ab
+SHA512: 95f764eaac5b94b966b94907df0c684d4e7433d7cce87e3b9d0332eaf23371a7765099435672ad969cd6d50a58a5e8843694701000f4f92435b5d32fadb4c683
+Homepage: http://www.linux-mtd.infradead.org/
+Description: Tools for managing memory technology devices - Development files
+ mtd-utils tool is a generic Linux subsystem for memory devices,
+ especially Flash devices.  This package contains symbolic links, header
+ files, and related items necessary for software development.
+OE: mtd-utils
+PackageArch: zen5
+
+Package: mtd-utils-jffs2
+Architecture: amd64
+Version: 2.3.1-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libc6 (>= 2.43+git0+ce1013a197), liblzo2-2 (>= 2.10), libz1 (>= 1.3.2)
+Filename: ./mtd-utils-jffs2_2.3.1-r0_amd64.deb
+Size: 37548
+MD5sum: 66820c7e1339d0bc5d96b3449cc1a579
+SHA1: bcf97c738e94bee0b2ed5d92b6f41dd463b32a12
+SHA256: f1d05c41b235bbe099e1c39f7f3717db1765af01022165afaaacb3a77048f85b
+SHA512: e0f8e3481e664feb2c3e1b5f66a1a9cfb6f43ca461f458f8b39c3765c08eb24588f17fe200f64802c61502c66a235fc5318ea50a980bf7182b56d883a54144f9
+Homepage: http://www.linux-mtd.infradead.org/
+Description: Tools for managing memory technology devices
+ mtd-utils tool is a generic Linux subsystem for memory devices,
+ especially Flash devices.
+OE: mtd-utils
+PackageArch: zen5
+
+Package: mtd-utils-misc
+Architecture: amd64
+Version: 2.3.1-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libc6 (>= 2.43+git0+ce1013a197)
+Filename: ./mtd-utils-misc_2.3.1-r0_amd64.deb
+Size: 31868
+MD5sum: 01e5670aaa0d378e3696d2135641067a
+SHA1: 4b035b754fd0e956f906c7b82093d59ba5641c8e
+SHA256: 14bbce5657eab719e6c54a8dc57186cf41b82ff5e1453448bffc1709f2786102
+SHA512: 14608cd5d192af2ffd9c377a86c7507155e06a068a91498fcf4a9906ce9210e311f4bbb0966138b9f03010cc381f9d39afb6d5c8a62555e7ed197e0d912669cf
+Homepage: http://www.linux-mtd.infradead.org/
+Description: Tools for managing memory technology devices
+ mtd-utils tool is a generic Linux subsystem for memory devices,
+ especially Flash devices.
+OE: mtd-utils
+PackageArch: zen5
+
+Package: mtd-utils-tests
+Architecture: amd64
+Version: 2.3.1-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: bash, libc6 (>= 2.43+git0+ce1013a197)
+Filename: ./mtd-utils-tests_2.3.1-r0_amd64.deb
+Size: 392540
+MD5sum: 852eee17409c078959f2e0955397274e
+SHA1: 582bb6df555e55af3b7c1e7ccfc52ac21bb31af2
+SHA256: 40034703ac3636355f17b63db5201bfbabf36d26feedad2fdf0ef860387ee023
+SHA512: 23813da557f8cbc41774f6ff643134fff35944d954272b4c5e1d7fbfa0e90125b93217af1814b89d9e9e1ed9ba438e9e417af0671add0b0ba1e408927570877c
+Homepage: http://www.linux-mtd.infradead.org/
+Description: Tools for managing memory technology devices
+ mtd-utils tool is a generic Linux subsystem for memory devices,
+ especially Flash devices.
+OE: mtd-utils
+PackageArch: zen5
+
+Package: mtd-utils-ubifs
+Architecture: amd64
+Version: 2.3.1-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libc6 (>= 2.43+git0+ce1013a197), liblzo2-2 (>= 2.10), libuuid1 (>= 2.41.3), libz1 (>= 1.3.2), update-alternatives-opkg
+Filename: ./mtd-utils-ubifs_2.3.1-r0_amd64.deb
+Size: 303968
+MD5sum: c9a207a0538e21ce2a4ed66933ad016f
+SHA1: e0c25b86130ff82a19c2167c5b771aaa75cc0dad
+SHA256: 4dd5b71e06111c5fc2459a8000d5b1d9763117d481847be8cea5f1f28f1e3ca9
+SHA512: 0e09602a6c94fcf4313d649d9efab360e06684775fdda4df55db3cf1a64c9caab8c3522867c480dfc9d79072baa59b8762ef158e0195029494ea7b699f8078c3
+Homepage: http://www.linux-mtd.infradead.org/
+Description: Tools for managing memory technology devices
+ mtd-utils tool is a generic Linux subsystem for memory devices,
+ especially Flash devices.
+OE: mtd-utils
+PackageArch: zen5
+
+Package: mtd-utils
+Architecture: amd64
+Version: 2.3.1-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libc6 (>= 2.43+git0+ce1013a197), update-alternatives-opkg
+Filename: ./mtd-utils_2.3.1-r0_amd64.deb
+Size: 98148
+MD5sum: dad549f42dd66f29ad09b408d01b75ad
+SHA1: 05eaafb6311a9ef058018a701aa388eb53199c0d
+SHA256: a609c6c5def41bc63c9da7c5b673e1d12dddd8f6fc1b8d102f2f599a6037ba6c
+SHA512: 59f96cc3f0b9dcdcc15a06b7e8dec31ece1af072d43efa0de73d2bfe72620d1c9b3cedd65a5438aa0235b8355913421b42813a215a2dc853dc0c056e0141be3f
+Homepage: http://www.linux-mtd.infradead.org/
+Description: Tools for managing memory technology devices
+ mtd-utils tool is a generic Linux subsystem for memory devices,
+ especially Flash devices.
+OE: mtd-utils
 PackageArch: zen5
 
 Package: mtdev-dbg
@@ -73561,13 +74901,13 @@ Version: 1.0-r0
 Priority: optional
 Section: devel
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-Recommends: alsa-utils-dbg, bridge-utils-dbg, dmidecode-dbg, dosfstools-dbg, e2fsprogs-dbg, e2fsprogs-resize2fs-dbg, ethtool-dbg, f2fs-tools-dbg, ffmpeg-dbg, glmark2-dbg, gptfdisk-dbg, htop-dbg, hwloc-dbg, i2c-tools-dbg, ifupdown-dbg, iperf3-dbg, libgpiod-dbg, libgpiod-tools-dbg, libkcapi-dbg, libva-utils-dbg, lshw-dbg, mesa-demos-dbg, mokutil-dbg, mpv-dbg, netplan-dbg, numactl-dbg, nvme-cli-dbg, opkg-dbg, p7zip-dbg, parted-dbg, rpm-dbg, spidev-test-dbg, spitools-dbg, stress-ng-dbg, tar-dbg, umr-dbg, util-linux-dbg, vim-dbg, vulkan-tools-dbg
+Recommends: alsa-utils-dbg, bridge-utils-dbg, dmidecode-dbg, dosfstools-dbg, e2fsprogs-dbg, e2fsprogs-resize2fs-dbg, ethtool-dbg, f2fs-tools-dbg, ffmpeg-dbg, gcc-dbg, glmark2-dbg, gptfdisk-dbg, htop-dbg, hwloc-dbg, i2c-tools-dbg, ifupdown-dbg, iperf3-dbg, ldd-dbg, libgpiod-dbg, libgpiod-tools-dbg, libkcapi-dbg, libtool-dbg, libva-utils-dbg, lshw-dbg, make-dbg, mesa-demos-dbg, mokutil-dbg, mpv-dbg, netplan-dbg, numactl-dbg, nvme-cli-dbg, opkg-dbg, p7zip-dbg, parted-dbg, rpm-dbg, spidev-test-dbg, spitools-dbg, stress-ng-dbg, tar-dbg, umr-dbg, util-linux-dbg, vim-dbg, vulkan-tools-dbg
 Filename: ./packagegroup-amd-utils-dbg_1.0-r0_amd64.deb
-Size: 1044
-MD5sum: 2e4e81dfb0247bdc9398837e7845c202
-SHA1: af0deee8ac0fb992fd9e95a027b0183becbbbbf4
-SHA256: ef03871a8b4d5893312a2e9b2d728db10af37046ce330ff336bf22141bad4350
-SHA512: b5cf6380e0aae32a74e2f13fb8eb74172f7d059093dde829d2dc0ef0f06a4a1e5c08bca4b402ee9c1a50d71e601563bb612e63497409961f1bb0b2d63f95706e
+Size: 1052
+MD5sum: 66274944f845208ea84e5d71d5e57b6c
+SHA1: fb2397a3798e0955f5154bb98682010d7cdab3e2
+SHA256: 6efa3fdc0b455acbdf0ae589978f51e1056fb22d40b7436798c0b2bc6f3d03cb
+SHA512: 980aa3437bb959cfa802ba809c9415f52bfb4a77f68ea04566060e70fd5de8a1a870deaede2ea36c0b727420381ea01d753fddf4713ee91acc9f42b3035658b3
 Description: All basic tool packages - Debugging files
  All basic tool packages.  This package contains ELF symbols and related
  sources for debugging purposes.
@@ -73580,13 +74920,13 @@ Version: 1.0-r0
 Priority: optional
 Section: devel
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-Recommends: alsa-utils-dev, bridge-utils-dev, dmidecode-dev, dosfstools-dev, e2fsprogs-dev, e2fsprogs-resize2fs-dev, ethtool-dev, f2fs-tools-dev, ffmpeg-dev, glmark2-dev, gptfdisk-dev, htop-dev, hwloc-dev, i2c-tools-dev, ifupdown-dev, iperf3-dev, libgpiod-dev, libgpiod-tools-dev, libkcapi-dev, libva-utils-dev, lshw-dev, mesa-demos-dev, mokutil-dev, mpv-dev, netplan-dev, numactl-dev, nvme-cli-dev, opkg-dev, p7zip-dev, packagegroup-amd-utils (= 1.0-r0), parted-dev, rpm-dev, spidev-test-dev, spitools-dev, stress-ng-dev, tar-dev, umr-dev, util-linux-dev, vim-dev, vulkan-tools-dev
+Recommends: alsa-utils-dev, bridge-utils-dev, dmidecode-dev, dosfstools-dev, e2fsprogs-dev, e2fsprogs-resize2fs-dev, ethtool-dev, f2fs-tools-dev, ffmpeg-dev, gcc-dev, glmark2-dev, gptfdisk-dev, htop-dev, hwloc-dev, i2c-tools-dev, ifupdown-dev, iperf3-dev, ldd-dev, libgpiod-dev, libgpiod-tools-dev, libkcapi-dev, libtool-dev, libva-utils-dev, lshw-dev, make-dev, mesa-demos-dev, mokutil-dev, mpv-dev, netplan-dev, numactl-dev, nvme-cli-dev, opkg-dev, p7zip-dev, packagegroup-amd-utils (= 1.0-r0), parted-dev, rpm-dev, spidev-test-dev, spitools-dev, stress-ng-dev, tar-dev, umr-dev, util-linux-dev, vim-dev, vulkan-tools-dev
 Filename: ./packagegroup-amd-utils-dev_1.0-r0_amd64.deb
-Size: 1064
-MD5sum: adbd97cf38ed7ca53acf18cb9919aaff
-SHA1: 6b556ffa8650d29f3ac4547861a17f1d40088298
-SHA256: 59d5c470fa3fa378eb0f2718091b9e13a629c32b70da509353478bdb83e03099
-SHA512: c6acccf1df8ff13e277f13fb6d0ec526143759020b235a71c8f2a6c7dc55c261aa69b904edee5ae5a74da1d978f0aff01d40b66afd24ebece1e71a5ac108b740
+Size: 1072
+MD5sum: c56c0dc2b120ab0328c00ff1cb143e7a
+SHA1: f869fcf6a9041764ccced75f03db661d312bfef9
+SHA256: bcf6612c210368eed8b32167ae05f1fd2561c5ad6c32cc7fb9b8a2faf104dff8
+SHA512: 4f27bf65c5a84e38f4741d8e9f86c8ed8fcb57c1b0eb16d27cfe2a82d0248adc94e3e8dc23b85020d0982fa492e6b63be055bca91deb4a79ccc9cbd78a9aaa44
 Description: All basic tool packages - Development files
  All basic tool packages.  This package contains symbolic links, header
  files, and related items necessary for software development.
@@ -73599,13 +74939,13 @@ Version: 1.0-r0
 Priority: optional
 Section: base
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-Depends: alsa-utils, bridge-utils, dmidecode, dosfstools, e2fsprogs, e2fsprogs-resize2fs, ethtool, f2fs-tools, ffmpeg, glmark2, gptfdisk, htop, hwloc, i2c-tools, ifupdown, iperf3, libgpiod, libgpiod-tools, libkcapi, libva-utils, lshw, mesa-demos, mokutil, mpv, netplan, numactl, nvme-cli, opkg, p7zip, parted, rpm, spidev-test, spitools, stress-ng, tar, umr, util-linux, vim, vulkan-tools
+Depends: alsa-utils, bridge-utils, dmidecode, dosfstools, e2fsprogs, e2fsprogs-resize2fs, ethtool, f2fs-tools, ffmpeg, gcc, glmark2, gptfdisk, htop, hwloc, i2c-tools, ifupdown, iperf3, ldd, libgpiod, libgpiod-tools, libkcapi, libtool, libva-utils, lshw, make, mesa-demos, mokutil, mpv, netplan, numactl, nvme-cli, opkg, p7zip, parted, rpm, spidev-test, spitools, stress-ng, tar, umr, util-linux, vim, vulkan-tools
 Filename: ./packagegroup-amd-utils_1.0-r0_amd64.deb
-Size: 968
-MD5sum: a0352099e2a2626003daa2a757515fe7
-SHA1: 3545b75c1e933f789b7575d99f1b39b807092d3b
-SHA256: e6f6207b51569eac39964a6eb8728bcf72bf3747a6a7d4711f4bb88d7f833957
-SHA512: a7ca4870eef439a44564e48148265496f5a6a9090178919bc13708df708761536da7cb3980a979ba054db01e85414813aa0344dcfaf457a228ac2f3c209a4ad2
+Size: 980
+MD5sum: f912e9a3412fcd4bf5b0c88879c7430b
+SHA1: f087d5ffad1dba7a2ddabdd4ad442fa839f50256
+SHA256: b4657da1aadb86479229586620b7df1d19b614fe2f81b5d1517eb8666bda83e5
+SHA512: 2a9f2775619343d0916a58ce612bc62b2e90952b75cd0e439b1cb1a9005aca0bdbec6c50cddbe74a8ccc0a6e6431658fd7b907b3979a40eeb0cc99fc0728b399
 Description: All basic tool packages
  All basic tool packages.
 OE: packagegroup-amd-utils
@@ -94087,6 +95427,362 @@ Description: qhull version 2020.2-r0
 OE: qhull
 PackageArch: zen5
 
+Package: qtbase-dev
+Architecture: amd64
+Version: 5.15.16+git0+8ad94db938-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: qtbase
+Recommends: dbus-dev, dbus-lib-dev, fontconfig-dev, freetype-dev, glib-2.0-dev, glibc-dev, jpeg-dev, libegl-mesa-dev, libgcc-dev, libgl-mesa-dev, libjpeg-turbo-dev, libpcre2-16-dev, libpng-dev, libssl-dev, libstdc++-dev, libudev-dev, libx11-dev, libx11-xcb-dev, libxcb-dev, libxcb-glx-dev, libxcb-randr-dev, libxcb-render-dev, libxcb-shape-dev, libxcb-shm-dev, libxcb-sync-dev, libxcb-xfixes-dev, libxcb-xinerama-dev, libxcb-xinput-dev, libxcb-xkb-dev, libxext-dev, libxkbcommon-dev, libxkbcommon-x11-dev, libzstd-dev, openssl-dev, pcre2-dev, perl-dev, qtbase, qtbase-mkspecs, qtbase-qmldesigner, udev-dev, vulkan-headers-dev, xcb-util-image-dev, xcb-util-keysyms-dev, xcb-util-renderutil-dev, xcb-util-wm-dev, xkeyboard-config-dev, zlib-dev, zstd-dev
+Filename: ./qtbase-dev_5.15.16+git0+8ad94db938-r0_amd64.deb
+Size: 1589836
+MD5sum: 75b7dd02e97a19d9ee4fe0313963e45a
+SHA1: 7d25623a606b4935713ad5f51557e18bb8597b9a
+SHA256: 0055c9f14e38afe64ecf6d396d53096274160a937c99692dbe2ecef6555f281a
+SHA512: f7860d1f8b3a82d470ae97914be5f9a36a9cf053f83acef1f2568aa29e3b5efce938b8e914f2b94de727277393c9b871310c8bc79e69a912223d3add81c1ea52
+Description: qtbase version 5.15.16+git-r0 - Development files
+ qtbase version 5.15.16+git-r0.  This package contains symbolic links,
+ header files, and related items necessary for software development.
+OE: qtbase
+PackageArch: zen5
+
+Package: qtbase-mkspecs
+Architecture: amd64
+Version: 5.15.16+git0+8ad94db938-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./qtbase-mkspecs_5.15.16+git0+8ad94db938-r0_amd64.deb
+Size: 185304
+MD5sum: 65ecb41b2c229d23a5a77a5952f80cd5
+SHA1: 430b3ff5f834f98af734917b854720432b97176b
+SHA256: b489eecc9036da72fec4cc736d2a2ab2951689c14563f1fd00aa4e87399d0599
+SHA512: 6de2a3b7887bdbc9b420701898ec731485dd1d05943045f6928186f07606d3411a567ade900a16f78590a3541d9fde4c2eea005d96b280f20f4b890f1d58de0d
+Description: qtbase version 5.15.16+git-r0
+ qtbase version 5.15.16+git-r0.
+OE: qtbase
+PackageArch: zen5
+
+Package: qtbase-plugins
+Architecture: amd64
+Version: 5.15.16+git0+8ad94db938-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libc6 (>= 2.43+git0+ce1013a197), libegl-mesa (>= 26.2.1), libfontconfig1 (>= 2.17.1), libfreetype6 (>= 2.14.3), libgl-mesa (>= 26.2.1), libglib-2.0-0 (>= 2.88.0), libjpeg62 (>= 3.1.3), libstdc++6 (>= 15.2.0), libudev1 (>= 259.5), libx11-6 (>= 1.8.9), libxcb-glx0 (>= 1.17.0), libxcb1 (>= 1.17.0), libxkbcommon0 (>= 1.7.0), qtbase (>= 5.15.16+git0+8ad94db938)
+Recommends: libx11-locale
+Filename: ./qtbase-plugins_5.15.16+git0+8ad94db938-r0_amd64.deb
+Size: 400736
+MD5sum: f23ff3c0210b136061daee1670cb35d7
+SHA1: af3c59c40e84839db584efc75803c64c767e177e
+SHA256: 44270fae6bff35c411107b26e9c112e8cf3c131e1cabeb1b4d67cc868bba9a09
+SHA512: ca8ab7a3da7fe21115d970fdf8bab4bcdba5952a9db2a1acc1d31814a5ccba63ae2e56856459093097e2038a34ebd13726c583a2af4a083451a0391510a26d9a
+Description: qtbase version 5.15.16+git-r0
+ qtbase version 5.15.16+git-r0.
+OE: qtbase
+PackageArch: zen5
+
+Package: qtbase-qmlplugins
+Architecture: amd64
+Version: 5.15.16+git0+8ad94db938-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./qtbase-qmlplugins_5.15.16+git0+8ad94db938-r0_amd64.deb
+Size: 748
+MD5sum: 357f98dfb530291333872774f42f1b85
+SHA1: 9d768523b065cd1525466d14a41130d917aa877f
+SHA256: 25ac5951cefc76d1cfacc5074552a91a971a885d325d47a65dad2061936c9280
+SHA512: 9ac92e62d624aab84f842b463473e159d42c5ecfd1ca612cbfe89f73566409a202e75e240699fa12441986f195e5f92049c0ba09a2d77d66babce6c6c88fcfa6
+Description: qtbase version 5.15.16+git-r0
+ qtbase version 5.15.16+git-r0.
+OE: qtbase
+PackageArch: zen5
+
+Package: qtbase-tools
+Architecture: amd64
+Version: 5.15.16+git0+8ad94db938-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libc6 (>= 2.43+git0+ce1013a197), libgcc1 (>= 15.2.0), libstdc++6 (>= 15.2.0), perl
+Filename: ./qtbase-tools_5.15.16+git0+8ad94db938-r0_amd64.deb
+Size: 1880584
+MD5sum: d5087e147d46d3ac97d95fd819cd6fcb
+SHA1: fb2c75c27e239eb8e31664a7f8a67f6a65d1a3d1
+SHA256: 7340213b757bdf5688b54fb0812dd40809878b4a2302f7a22fbb3b72cf484fe4
+SHA512: 39096ee0c1f24b2f410a0c0846652b2c7475f072e9ed16e90dad272a41d013c8f73d856cb771aaa44c9028393ae2c27ff000f50259b00569952c506c1534dc85
+Description: qtbase version 5.15.16+git-r0
+ qtbase version 5.15.16+git-r0.
+OE: qtbase
+PackageArch: zen5
+
+Package: qtbase
+Architecture: amd64
+Version: 5.15.16+git0+8ad94db938-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libc6 (>= 2.43+git0+ce1013a197), libdbus-1-3 (>= 1.16.2), libfontconfig1 (>= 2.17.1), libfreetype6 (>= 2.14.3), libgcc1 (>= 15.2.0), libgl-mesa (>= 26.2.1), libglib-2.0-0 (>= 2.88.0), libpcre2-16-0 (>= 10.47), libpng16-16 (>= 1.6.56), libssl, libstdc++6 (>= 15.2.0), libx11-6 (>= 1.8.9), libx11-xcb1 (>= 1.8.9), libxcb-image0 (>= 0.4.1), libxcb-keysyms1 (>= 0.4.1), libxcb-randr0 (>= 1.17.0), libxcb-render-util0 (>= 0.3.10), libxcb-render0 (>= 1.17.0), libxcb-shape0 (>= 1.17.0), libxcb-shm0 (>= 1.17.0), libxcb-sync1 (>= 1.17.0), libxcb-xfixes0 (>= 1.17.0), libxcb-xinerama0 (>= 1.17.0), libxcb-xinput0 (>= 1.17.0), libxcb-xkb1 (>= 1.17.0), libxcb1 (>= 1.17.0), libxkbcommon-x11-0 (>= 1.7.0), libxkbcommon0 (>= 1.7.0), libz1 (>= 1.3.2), libzstd1 (>= 1.5.7), xcb-util-wm (>= 0.4.2), xkeyboard-config
+Recommends: qtbase-plugins, qtbase-qmlplugins
+Filename: ./qtbase_5.15.16+git0+8ad94db938-r0_amd64.deb
+Size: 9172248
+MD5sum: ff6e833f9ffcaca1432210def7fc6ab7
+SHA1: 4770d0c6fe2f104ea7a761472a0e788f54c3e760
+SHA256: 8383c5030a68a409a4a8ed12832786aa2da65416a8a41a73e0abb23a703f2148
+SHA512: 1f65bf03e77bbd9393406000e5f787595fa9a31f7fa39a205de8c44ebe468032beae77d23bff66faac27f642495e8642d657f22620b2e066627d6fd18a2db60d
+Description: qtbase version 5.15.16+git-r0
+ qtbase version 5.15.16+git-r0.
+OE: qtbase
+PackageArch: zen5
+
+Package: qtdeclarative-dev
+Architecture: amd64
+Version: 5.15.16+git0+abe4729ea8-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: qtbase-dev, qtdeclarative
+Recommends: glibc-dev, libgcc-dev, libgl-mesa-dev, libstdc++-dev, qtbase-dev, qtdeclarative, qtdeclarative-mkspecs, qtdeclarative-qmldesigner
+Filename: ./qtdeclarative-dev_5.15.16+git0+abe4729ea8-r0_amd64.deb
+Size: 414364
+MD5sum: 08ff88fe83220999600e03f09c69a65b
+SHA1: 859008c293cdf4969dc6ce9f137be6af62a2d682
+SHA256: b0320ffec3709a1f4798df7043a133f801c1d6ad66a19edf334b5b9886102588
+SHA512: 93df5b639ca61fe8c42ec84b4c0ca5261ddccc870e063c0f33a390b3e261dac91778e8bdce8379618435923e7a75e8649ce1c9ac1d3e0bd8698f52342129bd33
+Homepage: http://www.qt.io
+Description: qtdeclarative version 5.15.16+git-r0 - Development files
+ qtdeclarative version 5.15.16+git-r0.  This package contains symbolic
+ links, header files, and related items necessary for software
+ development.
+OE: qtdeclarative
+PackageArch: zen5
+
+Package: qtdeclarative-mkspecs
+Architecture: amd64
+Version: 5.15.16+git0+abe4729ea8-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./qtdeclarative-mkspecs_5.15.16+git0+abe4729ea8-r0_amd64.deb
+Size: 5432
+MD5sum: f79f4dc137ae025d3c1d1782696cc759
+SHA1: 5fc4078f9fe3067e355da50eded9e8b87b9b46b7
+SHA256: af3c517c6aa23e462daec2735ae1f7b7da633adefb4779e7d557dbac1b68991d
+SHA512: 78460273a63bbc9319f4d32a0796dd842a621fab984edee406822268fe670aa8a1ae43c132b0c913e136fab5cb09142ee79d0e789fe0dc9313b49f07b26ea315
+Homepage: http://www.qt.io
+Description: qtdeclarative version 5.15.16+git-r0
+ qtdeclarative version 5.15.16+git-r0.
+OE: qtdeclarative
+PackageArch: zen5
+
+Package: qtdeclarative-plugins
+Architecture: amd64
+Version: 5.15.16+git0+abe4729ea8-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libc6 (>= 2.43+git0+ce1013a197), libstdc++6 (>= 15.2.0), qtbase (>= 5.15.16+git0+8ad94db938), qtdeclarative (>= 5.15.16+git0+abe4729ea8)
+Filename: ./qtdeclarative-plugins_5.15.16+git0+abe4729ea8-r0_amd64.deb
+Size: 166040
+MD5sum: af7be4addbbac7925a6c40b70ce4bbb5
+SHA1: afa9d0b274401b83c31ef503c9f45b1b870b8efb
+SHA256: 05ddcbc93cbab9fa5047ed3677b92874cd794a6ec03f88a692efa497d245107c
+SHA512: 34d5273c86ac8daf174870a6959f7106b6f425a2b7661860452f6907b7b23b0fc75a067d990eb4e1bcb1c4b882d98b9eb65fcd0b52c3b104902fe9ae122b6cca
+Homepage: http://www.qt.io
+Description: qtdeclarative version 5.15.16+git-r0
+ qtdeclarative version 5.15.16+git-r0.
+OE: qtdeclarative
+PackageArch: zen5
+
+Package: qtdeclarative-qmlplugins
+Architecture: amd64
+Version: 5.15.16+git0+abe4729ea8-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libc6 (>= 2.43+git0+ce1013a197), libstdc++6 (>= 15.2.0), qtbase (>= 5.15.16+git0+8ad94db938), qtdeclarative (>= 5.15.16+git0+abe4729ea8)
+Filename: ./qtdeclarative-qmlplugins_5.15.16+git0+abe4729ea8-r0_amd64.deb
+Size: 234212
+MD5sum: e302b1505b7aa223f8a4863888c1f734
+SHA1: 8ac047392122ccc5af399e26e5c65bfb4ffa305a
+SHA256: ce7cd74c6bf60a2d8fe7feffa037a0e46bf0d99d73faa7aed1734093b0291572
+SHA512: 9d1af14b56d02bd1ce99440177bf47591fe1189bf4f1bacf2b7ddbef909c0d6ae1583fae53899edae5e99f62191a328b6496aa2054b15aeeb65e6ec92a0f71d9
+Homepage: http://www.qt.io
+Description: qtdeclarative version 5.15.16+git-r0
+ qtdeclarative version 5.15.16+git-r0.
+OE: qtdeclarative
+PackageArch: zen5
+
+Package: qtdeclarative-tools
+Architecture: amd64
+Version: 5.15.16+git0+abe4729ea8-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libc6 (>= 2.43+git0+ce1013a197), libstdc++6 (>= 15.2.0), qtbase (>= 5.15.16+git0+8ad94db938), qtdeclarative (>= 5.15.16+git0+abe4729ea8)
+Filename: ./qtdeclarative-tools_5.15.16+git0+abe4729ea8-r0_amd64.deb
+Size: 1092192
+MD5sum: 86d9acca7afb866f2d6f1a36aafd9a57
+SHA1: 2f06d158bd82dad469e1965b86e00421573c4a98
+SHA256: 118c9c6dcc7b9f713adc3fd20ce2950995eae6944df901b0300e1c34471759ce
+SHA512: 17fe15679535dc025b428a83cabb1473d55a24d6da94f2298991a7eab2b2933849f238fd7f25252082f60220c06c4d74790e5637ca51a135c1793402a9032573
+Homepage: http://www.qt.io
+Description: qtdeclarative version 5.15.16+git-r0
+ qtdeclarative version 5.15.16+git-r0.
+OE: qtdeclarative
+PackageArch: zen5
+
+Package: qtdeclarative
+Architecture: amd64
+Version: 5.15.16+git0+abe4729ea8-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libc6 (>= 2.43+git0+ce1013a197), libgl-mesa (>= 26.2.1), libstdc++6 (>= 15.2.0), qtbase (>= 5.15.16+git0+8ad94db938)
+Recommends: qtdeclarative-plugins, qtdeclarative-qmlplugins
+Filename: ./qtdeclarative_5.15.16+git0+abe4729ea8-r0_amd64.deb
+Size: 3375112
+MD5sum: 289f83a8811f2af38d9a99e14f1cbf35
+SHA1: f85f9ed4839237a2cd835add53cf6b98969095e9
+SHA256: 60515c36890adca855f1da49d627906730c66146a8bf9a6ce16317a5208724bb
+SHA512: 2cb4daaf3c9c93d63ad26b0e00ab31ab8e377e9c170052fd6de15dc37be7ddc41b5e26207789b1130ff76bfed91e01a3ccce805d91e556bb3b0af769b91e43db
+Homepage: http://www.qt.io
+Description: qtdeclarative version 5.15.16+git-r0
+ qtdeclarative version 5.15.16+git-r0.
+OE: qtdeclarative
+PackageArch: zen5
+
+Package: qtwayland-dbg
+Architecture: amd64
+Version: 5.15.16+git0+7558876d0f-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: fontconfig-dbg, freetype-dbg, glib-2.0-dbg, glibc-dbg, libegl-mesa-dbg, libgl-mesa-dbg, libstdc++-dbg, libx11-dbg, libxcomposite-dbg, libxkbcommon-dbg, qtbase-dbg, qtdeclarative-dbg, wayland-dbg
+Filename: ./qtwayland-dbg_5.15.16+git0+7558876d0f-r0_amd64.deb
+Size: 27623048
+MD5sum: b5740bdb98517907d8e24c8ea0bd17d5
+SHA1: 04d93ddd81418b6c2310d5616f09915d4f194484
+SHA256: e2c68779adc6b8b12e9ff39b88ab1b4d4d4d84bd65beb6619a9a269123249ea6
+SHA512: efaf544dcf4e947132f4fc117c4527f9765c6622068a601816c83e661c006a873a1b271eb859d465f072ffa812c126e234ff8594f60ca291efeebcc645ca2627
+Description: qtwayland version 5.15.16+git-r0 - Debugging files
+ qtwayland version 5.15.16+git-r0.  This package contains ELF symbols and
+ related sources for debugging purposes.
+OE: qtwayland
+PackageArch: zen5
+
+Package: qtwayland-dev
+Architecture: amd64
+Version: 5.15.16+git0+7558876d0f-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: qtbase-dev, qtdeclarative-dev, qtwayland
+Recommends: fontconfig-dev, freetype-dev, glib-2.0-dev, glibc-dev, libegl-mesa-dev, libgl-mesa-dev, libstdc++-dev, libx11-dev, libxcomposite-dev, libxkbcommon-dev, qtbase-dev, qtdeclarative-dev, qtwayland, qtwayland-mkspecs, qtwayland-qmldesigner, vulkan-headers-dev, wayland-dev
+Filename: ./qtwayland-dev_5.15.16+git0+7558876d0f-r0_amd64.deb
+Size: 158620
+MD5sum: d40f57f9a76e88a9e6540a6f0d18c83b
+SHA1: 72657528a8ef64e3b5ca62438cde9543bec7a82d
+SHA256: 76cdf946e2d5571ed4f2dcfa46f2a185149319d5c5f7c362bf8a24ce542db2de
+SHA512: f2a365c06fd673dfc300b7c9699ab31728351ea92b1b7d1c444f6556c26a74c559cc28170d8eb5da528b386d416a13b21a5cb3cea50d3bf6a3ebfbe6c1d43bfe
+Description: qtwayland version 5.15.16+git-r0 - Development files
+ qtwayland version 5.15.16+git-r0.  This package contains symbolic links,
+ header files, and related items necessary for software development.
+OE: qtwayland
+PackageArch: zen5
+
+Package: qtwayland-mkspecs
+Architecture: amd64
+Version: 5.15.16+git0+7558876d0f-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./qtwayland-mkspecs_5.15.16+git0+7558876d0f-r0_amd64.deb
+Size: 1844
+MD5sum: c9d40b635f8c5eb951d29eeda608f431
+SHA1: c31f4c1b60354395f104346a6752a2f94bd0878d
+SHA256: bff16b5fed727a9e81468fa8ba38425f81cf5c95f61dd5ba197a7d6a6a1b4378
+SHA512: e933ea0a98d3f23646931a1edede88ae78ce8bdcb8aca94399af4e98c151115225da4c3f2d82b74fe05474db68aae591c5ca29dcf0f1d00ccb4f0709947c7d1a
+Description: qtwayland version 5.15.16+git-r0
+ qtwayland version 5.15.16+git-r0.
+OE: qtwayland
+PackageArch: zen5
+
+Package: qtwayland-plugins
+Architecture: amd64
+Version: 5.15.16+git0+7558876d0f-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libc6 (>= 2.43+git0+ce1013a197), libegl-mesa (>= 26.2.1), libgl-mesa (>= 26.2.1), libstdc++6 (>= 15.2.0), libx11-6 (>= 1.8.9), libxcomposite1 (>= 0.4.6), qtbase (>= 5.15.16+git0+8ad94db938), qtwayland (>= 5.15.16+git0+7558876d0f), wayland (>= 1.24.0)
+Filename: ./qtwayland-plugins_5.15.16+git0+7558876d0f-r0_amd64.deb
+Size: 216328
+MD5sum: bd74e8c1662c38b4c4a4bc3c3de1d43a
+SHA1: e4df7758c6f39743d43f310e6423c6b87f03fe23
+SHA256: 33960c912d8b6c59f54f752a586f3b33ebe93a48cf62c3944a3e3c373b9b759e
+SHA512: 5c5ed1fa36a42da8ee63321b6d7375f5df7c0ec99e198df5fa587d717f7e75686e5594d33afbd166958f04ae7fe041cc21efd3fecd3ea22e841ad48c3f34f1af
+Description: qtwayland version 5.15.16+git-r0
+ qtwayland version 5.15.16+git-r0.
+OE: qtwayland
+PackageArch: zen5
+
+Package: qtwayland-qmlplugins
+Architecture: amd64
+Version: 5.15.16+git0+7558876d0f-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libc6 (>= 2.43+git0+ce1013a197), libstdc++6 (>= 15.2.0), qtbase (>= 5.15.16+git0+8ad94db938), qtdeclarative (>= 5.15.16+git0+abe4729ea8), qtwayland (>= 5.15.16+git0+7558876d0f), wayland (>= 1.24.0)
+Filename: ./qtwayland-qmlplugins_5.15.16+git0+7558876d0f-r0_amd64.deb
+Size: 57672
+MD5sum: 319715cf7f2bf8aa7449334a1fc28903
+SHA1: e266646a0baf604f1dc7e93a73f71d06224710ae
+SHA256: d7d22d8095a47737b3905c9d44e6b25cc3126a6757144369c61640e0d944d815
+SHA512: 1845943f44bf2cf909b9921ea77604b1d85cacf869c29649ccf857884fd214486d1f0552c14d620b53773cd478e0418c0b1dfbbd3404e11b2fc88cd8396dfba8
+Description: qtwayland version 5.15.16+git-r0
+ qtwayland version 5.15.16+git-r0.
+OE: qtwayland
+PackageArch: zen5
+
+Package: qtwayland-tools
+Architecture: amd64
+Version: 5.15.16+git0+7558876d0f-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libc6 (>= 2.43+git0+ce1013a197), libstdc++6 (>= 15.2.0)
+Filename: ./qtwayland-tools_5.15.16+git0+7558876d0f-r0_amd64.deb
+Size: 205028
+MD5sum: 3d4bad9e1fdf21c7995136093ebca12e
+SHA1: 2f3792f979243e782d0b7652ffc4158088e6f375
+SHA256: 7c7d1ccde6c8a7d76a1c962cd29572b400dca8e5a1560831ef4ed496fd66d4d2
+SHA512: f733e174a626a3482ba309b1d922908a1afc22ac0d4e39fc3f81b3cb2adb32023f2814f7a320371ee9fb0e468e0791c236ac7f4554c6e4523999de4530e0fa3d
+Description: qtwayland version 5.15.16+git-r0
+ qtwayland version 5.15.16+git-r0.
+OE: qtwayland
+PackageArch: zen5
+
+Package: qtwayland
+Architecture: amd64
+Version: 5.15.16+git0+7558876d0f-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libc6 (>= 2.43+git0+ce1013a197), libfontconfig1 (>= 2.17.1), libfreetype6 (>= 2.14.3), libgl-mesa (>= 26.2.1), libglib-2.0-0 (>= 2.88.0), libstdc++6 (>= 15.2.0), libxkbcommon0 (>= 1.7.0), qtbase (>= 5.15.16+git0+8ad94db938), qtdeclarative (>= 5.15.16+git0+abe4729ea8), wayland (>= 1.24.0)
+Recommends: qtwayland-plugins, qtwayland-qmlplugins
+Filename: ./qtwayland_5.15.16+git0+7558876d0f-r0_amd64.deb
+Size: 607124
+MD5sum: 1bda9abe506fb122d3ece184137851ce
+SHA1: fe3024aa2271160fcac94ce9b859e2550bfff741
+SHA256: 923ef5276861e7f2abaa4b72abc35aeac75836308e78a4159a43c759f5ee370a
+SHA512: 3ba5e596d8453ff5d59b0b30115b2d77a2a7495f83818d7330403f8058a4591c016b40e41af5a95c706e1ea7fea94a2ceff5e7ffe477636d4f6813f94cc5649c
+Description: qtwayland version 5.15.16+git-r0
+ qtwayland version 5.15.16+git-r0.
+OE: qtwayland
+PackageArch: zen5
+
 Package: quota-dbg
 Architecture: amd64
 Version: 4.11-r0
@@ -94147,6 +95843,25 @@ Description: Tools for monitoring & limiting user disk usage per filesystem
  Tools and patches for the Linux Diskquota system as part of the Linux
  kernel
 OE: quota
+PackageArch: zen5
+
+Package: qv4l2
+Architecture: amd64
+Version: 1.32.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libasound2 (>= 1.2.15.3), libc6 (>= 2.43+git0+ce1013a197), libgcc1 (>= 15.2.0), libgl-mesa (>= 26.2.1), libstdc++6 (>= 15.2.0), libv4l (>= 1.32.0), qtbase (>= 5.15.16+git0+8ad94db938)
+Filename: ./qv4l2_1.32.0-r0_amd64.deb
+Size: 207868
+MD5sum: b04f6b15dce1e9d57affc4274760f966
+SHA1: e50d6ff501488636d89af5f2ec1251b3fa455442
+SHA256: 8d48936b019b4ca9e84746b0fd44dec42edc85a8dafb5ec06b26246451ab41cd
+SHA512: c889d73bd356aedafa3fafe3b05e40cc84b38cd43557ac7aefc0b5b4e891d2e489ed29ba70cd97d90573a142207be145f65f0d44101b22f5681684429bd24ae3
+Homepage: https://git.linuxtv.org/v4l-utils.git
+Description: v4l2 and IR applications
+ v4l2 and IR applications.
+OE: v4l-utils
 PackageArch: zen5
 
 Package: rc-keymaps
@@ -94459,6 +96174,72 @@ Description: Library for rendering SVG files
  2D, antialiased drawing library that GNOME uses to draw things to the
  screen or to generate output for printing.
 OE: librsvg
+PackageArch: zen5
+
+Package: rt-tests-dbg
+Architecture: amd64
+Version: 1:2.10-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: glibc-dbg, numactl-dbg
+Filename: ./rt-tests-dbg_2.10-r0_amd64.deb
+Size: 280524
+MD5sum: 9f9eca8c9c96efddf38a332f8ddf06b9
+SHA1: 7ce8e1a7fe728b2d1df5266778ebb61da31c7f4c
+SHA256: a8bd591b8a890b018987724b29e68a214d2d599e1a1d501ce8efdb35385ab0e8
+SHA512: e77890fe49c4a57c082d0930ff59bb37be7e5c71be0015293301c6db628f861dbf2390bf9e6b1a30a802b71aeaf3820d6f5a7d49b5feeabe456d58030836141b
+Homepage: https://wiki.linuxfoundation.org/realtime/documentation/start
+Description: Real-Time preemption testcases - Debugging files
+ The main aim of the PREEMPT_RT patch is to minimize the amount of kernel
+ code that is non-preemptible Therefore several substitution mechanisms
+ and new mechanisms are implemented.  This package contains ELF symbols
+ and related sources for debugging purposes.
+OE: rt-tests
+PackageArch: zen5
+
+Package: rt-tests-dev
+Architecture: amd64
+Version: 1:2.10-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: bash-dev, glibc-dev, linux-libc-headers-dev, numactl-dev, python3-datetime-dev, python3-dev, python3-misc-dev, python3-multiprocessing-dev, rt-tests (= 1:2.10-r0), stress-ng-dev
+Filename: ./rt-tests-dev_2.10-r0_amd64.deb
+Size: 1076
+MD5sum: a005bfd27a275ae95ebf639470aa961c
+SHA1: b6fef61d12e3889e806ad1798b38983e31bfd648
+SHA256: 8c7a90f58627c971f02a61f8ca86c9113f885ad144948ac8fa6fea5ec54cf6af
+SHA512: 01b148b94c804b48a75d1e184577921a37f1ee0feacefff79a99a06276c81d45a728ec5bb3e952c4de248e7a96bc54c87cf36b0f7fdc660099e844ef64f1f263
+Homepage: https://wiki.linuxfoundation.org/realtime/documentation/start
+Description: Real-Time preemption testcases - Development files
+ The main aim of the PREEMPT_RT patch is to minimize the amount of kernel
+ code that is non-preemptible Therefore several substitution mechanisms
+ and new mechanisms are implemented.  This package contains symbolic
+ links, header files, and related items necessary for software
+ development.
+OE: rt-tests
+PackageArch: zen5
+
+Package: rt-tests
+Architecture: amd64
+Version: 1:2.10-r0
+Priority: optional
+Section: tests
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: bash, libc6 (>= 2.43+git0+ce1013a197), numactl (>= 2.0.19)
+Filename: ./rt-tests_2.10-r0_amd64.deb
+Size: 108800
+MD5sum: 42f3093bdf90408f90e210f657c5276a
+SHA1: eddd77876e46bcac99ce6e6c5071ba6fb1a3c290
+SHA256: 41ac39df7ee9d7b639da4ac679c22bc9bb0bf6a671194d22390f9778ef69e196
+SHA512: 54370815836190c690a2fbab318094dfd41e67597283d712c10a276354678324ae93cc1c9774bdb9eb77de7ffb1acdbb4b51eba7f796e57b9e4f7b0eebd86953
+Homepage: https://wiki.linuxfoundation.org/realtime/documentation/start
+Description: Real-Time preemption testcases
+ The main aim of the PREEMPT_RT patch is to minimize the amount of kernel
+ code that is non-preemptible Therefore several substitution mechanisms
+ and new mechanisms are implemented.
+OE: rt-tests
 PackageArch: zen5
 
 Package: seatd-dbg
@@ -96096,11 +97877,11 @@ Section: base/shell
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Depends: libc6 (>= 2.43+git0+ce1013a197), libsystemd-shared (>= 259.5), systemd (>= 259.5)
 Filename: ./systemd-analyze_259.5-r0_amd64.deb
-Size: 74844
-MD5sum: 93871a16bc81c036a30f6909a777de4c
-SHA1: cb5bccd697edbeccb7ee099530d30f10e3a45bc0
-SHA256: d2a658b6e3fe85154e67ffcc493adcc87e8b5ace7c3f4dc3ab795d621fe38f62
-SHA512: 622fdc7d75a2702d0c0d12ce235fc4c9e42f3cc12b6f751cad92a5988fd34a8e40f6ac25b1ea6659da82e100f12e0482db46ed116e37050284347595e928bc2d
+Size: 74892
+MD5sum: f4a8135751684120fbe7a79f22668b63
+SHA1: 5213465e6e5f8be7a6600a535c6a0f4aa8081fe1
+SHA256: 5b4dc30d1981836d7c55a72c4902dd9fe4089decfa095227d13e6297f908c4aa
+SHA512: 55d0fc979271bb1c42c62c4b8e48e32ba2fa267e2a8e96612d1618c08327980ad12c1c290b605dc900dfde28b06b031dd9f90e2a002408faa046e2f11fd1da6a
 Homepage: http://www.freedesktop.org/wiki/Software/systemd
 Description: A System and service manager
  systemd is a system and service manager for Linux, compatible with SysV
@@ -96255,11 +98036,11 @@ Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Depends: libc6 (>= 2.43+git0+ce1013a197), libnss-mymachines, libsystemd-shared (>= 259.5)
 Recommends: kernel-module-dm-mod, kernel-module-loop, kernel-module-tun, systemd-journal-gatewayd, systemd-journal-remote, systemd-journal-upload, tar
 Filename: ./systemd-container_259.5-r0_amd64.deb
-Size: 215364
-MD5sum: 5cf4b410f95e8a359d9fc242554c505a
-SHA1: 990065e5bf81520fd0b06c79067d52026e78aa58
-SHA256: 6129656561ce690c806340cbaf9cabe9cd4e9ee08f27b6915bb63078e38a7a3c
-SHA512: acdeb83c4d93b6a7ad5488e7ef34528f350e8fbbac860a367425b1090b79d4b768f45b77b6eeb97209913e017739a81f22172d1db38e52c158a9ce5cba2d12ab
+Size: 215560
+MD5sum: 1e291b413d4c50e96c55988454f82272
+SHA1: a9144c2fb69bf9389c01aa80cf5b30031446e3fe
+SHA256: 4a7647ab2e50aacdce30942e460642bd2191f0558c34cd2bdcd0b133aba9571b
+SHA512: d9629007f3bb37b7ccbe7cc54efd5784784c08485a5a0f312764594c6a591ec45ef78e6a49709bfae315a653d1fd0f79245863429e91db12bdcf0f7a1cc75039
 Homepage: http://www.freedesktop.org/wiki/Software/systemd
 Description: Tools for containers and VMs
  Systemd tools to spawn and manage containers and virtual machines.
@@ -96274,11 +98055,11 @@ Section: devel
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Recommends: glibc-dbg, libpam-dbg, libsystemd-shared-dbg, libxcrypt-dbg
 Filename: ./systemd-dbg_259.5-r0_amd64.deb
-Size: 23550960
-MD5sum: ee324eb8b90d2ebdb83aed34f9e72987
-SHA1: 4d64a2d1cced6b0f06ae7ed07cd28a208232c783
-SHA256: 4b2dd256a2e196aca677d9a3ab8d36e9097234175f7565761b66701a86d5a901
-SHA512: 832790ebd43ab08ce455c6a634abaf5657fa40f4e2710668339e70c674e9446555cdb5f23d40dc1c1319d7771489886c10ccc7824f9e585e8253d12dfef83743
+Size: 23632840
+MD5sum: 38b216cef309b17b119856e0ed7ce330
+SHA1: 179890f840e5be46ca0c61ba558411bc82907d6d
+SHA256: 637485df74f830a0affb3ac0cd6a79699c51269986bef4459ac043185f717307
+SHA512: dabc73619349c515a78bc54bdbe53728b1c007f65cf9b8dcf941b8e86ed3c4cfd7edbbbd5df954c8c5341a5e06d4bb72ceeca763479a7ed917aa31fc115cc51f
 Homepage: http://www.freedesktop.org/wiki/Software/systemd
 Description: A System and service manager - Debugging files
  systemd is a system and service manager for Linux, compatible with SysV
@@ -96329,11 +98110,11 @@ Section: base/shell
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Depends: libc6 (>= 2.43+git0+ce1013a197), libsystemd-shared (>= 259.5)
 Filename: ./systemd-extra-utils_259.5-r0_amd64.deb
-Size: 124764
-MD5sum: 70fa4304c90806e3796caa296cfe9f21
-SHA1: d8d22a3818fd5a450c80fa875f19dd7a51934104
-SHA256: 0f3d3e7273c5e9eeab46f5c35abf69bf06feb37ac8111ace42474281f0106a46
-SHA512: 8421b5b9afa91d002a1e314aa75fd1c66af9a5f9754c074b0bb6ea8ba1813c254b8608c349bca7c22e24a3c1793565c52532b2f63c419b875845bccb1bd05ca6
+Size: 127944
+MD5sum: 6e3f3104de8bc6d1ba69abb5ee7192b0
+SHA1: f419336d2b0ea65c26078194abdcc666902ffac6
+SHA256: b102b5aafe57fbfc98468abc935f1f9575057107aa08e899b8cf7d4317e619ce
+SHA512: a9959bac0fb6780aaebe0fb80558f0800c66758333c0d9468e65c7036b4ef90ddc324f9c9fafa6c69020dc049735d2c6664a16206ad8c298de02002a34214b86
 Homepage: http://www.freedesktop.org/wiki/Software/systemd
 Description: A System and service manager
  systemd is a system and service manager for Linux, compatible with SysV
@@ -96604,11 +98385,11 @@ Depends: base-files, base-passwd, dbus, kmod, ldconfig, libc6 (>= 2.43+git0+ce10
 Recommends: e2fsprogs-e2fsck, kernel-module-autofs4, kernel-module-ipv6, kernel-module-sch-fq-codel, kernel-module-unix, libblkid1 (>= 2.41.3), libmount1 (>= 2.41.3), libpam (>= 1.7.2), libpam (>= 1.7.2), os-release, pam-plugin-umask, systemd-conf, systemd-crypt, systemd-extra-utils, systemd-mime, systemd-networkd, udev-hwdb
 Conflicts: resolvconf, tiny-init
 Filename: ./systemd_259.5-r0_amd64.deb
-Size: 2589308
-MD5sum: fceec5c194a6aa689ffe603ca65a7f90
-SHA1: c5c372142aa8f7e84b188a8de9cb02408919e776
-SHA256: 5499e1673a46cb7b7c341e4f6beef1f611e04b436f2ff3a56f0443acd55a7614
-SHA512: 51bc0c4827f9106852a68f7a676e1c74f611eeb31695df68357349922d0178e44edd05f3e3c60a0c5c6681cfce3b2e51e010b16a27053bc6028ead4fe3f9dc89
+Size: 2680816
+MD5sum: 20266736b2418509d76ed3672d390b92
+SHA1: ce530bb546fbb965c8ecb854102a5ea05da440d2
+SHA256: a5cf674ba5cdd3537a3054be1ce5e41d4ef62ee16ca62275a2f4f69006b21072
+SHA512: f29ec662329a8f02f7faf1b9db51c04c8cdbcf2bf88430eab63665e0d64aa148f6becb1def6db379ddcdf970cd45624f59d76095c77e2c3cf9a3a3ae2e92043f
 Homepage: http://www.freedesktop.org/wiki/Software/systemd
 Description: A System and service manager
  systemd is a system and service manager for Linux, compatible with SysV
@@ -97293,11 +99074,11 @@ Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Provides: hotplug
 Depends: base-files, base-passwd, libc6 (>= 2.43+git0+ce1013a197), libsystemd-shared (>= 259.5), shadow
 Filename: ./udev_259.5-r0_amd64.deb
-Size: 269872
-MD5sum: f6204f0cd38f566b44bd9372171bd14e
-SHA1: 64be5ab23716d843e0f443c17058c60acdf62573
-SHA256: bf6ba409412133a47b39059a6823ea764aa3523bd6e64aef30c2a131c6006b22
-SHA512: 1df57f1038dfcf2dddb089d92e878d7f204016324797321d515bcd8bee11961ace31dd7e2b981849466a63020f6b071debd97f120b6704195b671ed3ab2a1de6
+Size: 272016
+MD5sum: 8b95c2d8ef9287e4c84a592d8777cb77
+SHA1: e16d835b41f22dd4e701976130196afe21a7d110
+SHA256: b71b30fc3cd30432f8ce9b76a035b0e9f483b9668668a79723424cb9d5571a45
+SHA512: 55e02453ee13bc70fee1aa37b5f06f1616a04d084cd74c869233435bb8c47a749ffb0b862695f100c802e1781b28dc6b565bb311af452c8c901390757e8310c8
 Homepage: http://www.freedesktop.org/wiki/Software/systemd
 Description: A System and service manager
  systemd is a system and service manager for Linux, compatible with SysV
@@ -97319,11 +99100,11 @@ Section: devel
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Recommends: glibc-dbg, libdrm-dbg, libegl-mesa-dbg, libgbm-dbg, libgcc-dbg, libgl-mesa-dbg, libpciaccess-dbg, libsdl2-dbg, libstdc++-dbg, llvm-dbg, nanomsg-dbg, ncurses-libncurses-dbg, ncurses-libtinfo-dbg
 Filename: ./umr-dbg_1.0.10-r0_amd64.deb
-Size: 2546272
-MD5sum: f851839bf033548b73fe4f63ea0a994d
-SHA1: f1a496ee5fd75435764651170d121e00bdb65d74
-SHA256: 5405fa68201330471631551bb1cfe09eb2c2574c957f530f8d1963fd9f4f68be
-SHA512: dd53eacd1167579cb0d14a881fdecf4c7b85ba3beec599d94f3a170194e054d138f82abf162ae697081aae313a71f8ecd420a1e2bf224d6bafc986e3f073b9ec
+Size: 2545340
+MD5sum: 083555c0e375e2e856a34a9f396f4e31
+SHA1: 2754d0101e05d71914fc43da08c1d814573965a2
+SHA256: 7bad18310f222a3346e948110b077a7b23f484c96acb43ff29705cbba3d3a9f6
+SHA512: 380eea29f9ca32548030f7cde39c5591493c356799d824037f6714aa67f11795346c060d67bf0bb42bc9eabf280828720de0bc40cd6d544481c49d4cc285dd9f
 Description: AMD UMR (Unified Memory Reader) tool - Debugging files
  Tool for reading AMD GPU memory  This package contains ELF symbols and
  related sources for debugging purposes.
@@ -97355,13 +99136,13 @@ Version: 1.0.10-r0
 Priority: optional
 Section: base
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.131), libegl-mesa (>= 26.1.4), libgbm1 (>= 26.1.4), libgcc1 (>= 15.2.0), libgl-mesa (>= 26.1.4), libnanomsg6 (>= 1.2.2), libncurses5 (>= 6.6), libpciaccess0 (>= 0.18.1), libsdl2-2.0-0 (>= 2.32.10), libstdc++6 (>= 15.2.0), libtinfo5 (>= 6.6), llvm (>= 22.1.3)
+Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.133), libegl-mesa (>= 26.2.1), libgbm1 (>= 26.2.1), libgcc1 (>= 15.2.0), libgl-mesa (>= 26.2.1), libnanomsg6 (>= 1.2.2), libncurses5 (>= 6.6), libpciaccess0 (>= 0.18.1), libsdl2-2.0-0 (>= 2.32.10), libstdc++6 (>= 15.2.0), libtinfo5 (>= 6.6), llvm (>= 22.1.3)
 Filename: ./umr_1.0.10-r0_amd64.deb
-Size: 2479720
-MD5sum: 3e494b5bc3186c354148f5952d9fa26f
-SHA1: a96e1272299ddf663c099b70c3747a3112baf0f9
-SHA256: a80f8e66b69e89c4c2f72835083bbfb9322117ebf5fc3e016a06d49f1a6e2c73
-SHA512: c789b8d182678bf97fb151740ecd98d659b6ff5b3fddda3c4cb65c1b27f05d55197bdfaace5ed93f95f6f88d48bb57da07df62136d3ac8a1b74e47d629e7cdab
+Size: 2481836
+MD5sum: b027be79b5f84cb2a6b13e957a36413f
+SHA1: 05bf429c7e751f15be11c2567310f1fac7b5ab08
+SHA256: 90e1476e7142f22a73f9772bfdc778aade14b8da9d05165d293412a8f9aad9c6
+SHA512: 1a9e0487d9eee43d1d7786dbb42de59871f17d7d3b0ec2b5488818662fa2bc58cb7543748dde6b69ee4cf5edff93f2017f15a5ff7bd452b18ffe64acae586925
 Description: AMD UMR (Unified Memory Reader) tool
  Tool for reading AMD GPU memory
 OE: umr
@@ -100078,13 +101859,13 @@ Priority: optional
 Section: devel
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Provides: libv4l-dbg
-Recommends: glibc-dbg, libgcc-dbg, libjpeg-turbo-dbg, libstdc++-dbg, libudev-dbg, libv4l-dbg, media-ctl-dbg, systemd-dbg
+Recommends: alsa-lib-dbg, glibc-dbg, libgcc-dbg, libgl-mesa-dbg, libjpeg-turbo-dbg, libstdc++-dbg, libudev-dbg, libv4l-dbg, media-ctl-dbg, qtbase-dbg, systemd-dbg
 Filename: ./v4l-utils-dbg_1.32.0-r0_amd64.deb
-Size: 5696832
-MD5sum: ca5fd3cd95e09e4b0890164c9e770e69
-SHA1: 87404cfc1dcdd8399aa22badbbfbcea26d9e1115
-SHA256: 40a491c65a2e47458f983eafd5df648a9e02419ed764e3ad2d1cef7f200d243d
-SHA512: 1a7fbab64a467810c8407998e63c8d7ccd8300a2f3ba705c0da2b7f086636c7e8f5fa6c2d752166360cfaf7c56c51924aff602acd34eb1cc84b451529a6f8fba
+Size: 7578872
+MD5sum: b12d72add1dd7eea1a536a77f3ba164f
+SHA1: 7985497539fedb02ca2ade0f51fcfabb154b4ac6
+SHA256: 171c4f661ee34c9045abf6f4c210c95556d88fcd24b44f6590ac78dacdc56df3
+SHA512: dc7398f9f1a9b62add5efa907b74ee38311c97c24ced5d20b6e5a177621a7ab11c7a67ad94e9b40e0ad102853c54a28a648e15008464da8006a195ecd9c12e1d
 Homepage: https://git.linuxtv.org/v4l-utils.git
 Description: v4l2 and IR applications - Debugging files
  v4l2 and IR applications.  This package contains ELF symbols and related
@@ -100099,13 +101880,13 @@ Priority: optional
 Section: devel
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Depends: libv4l, media-ctl
-Recommends: alsa-lib-dev, glibc-dev, jpeg-dev, libgcc-dev, libstdc++-dev, libv4l-dev, systemd-dev, udev-dev, v4l-utils (= 1.32.0-r0)
+Recommends: alsa-lib-dev, glibc-dev, jpeg-dev, libgcc-dev, libstdc++-dev, libv4l-dev, qtbase-dev, systemd-dev, udev-dev, v4l-utils (= 1.32.0-r0)
 Filename: ./v4l-utils-dev_1.32.0-r0_amd64.deb
-Size: 1012
-MD5sum: 4fe51d58fbb8d4dc76b0d53e043331c6
-SHA1: 9b103f2ba3998c38bbd39ea8e344cc39bf2e6381
-SHA256: 76a6384f9b056f1625acff4c9acc16adeb4d77ecff313e86cdc5d4b1e722c0d2
-SHA512: 759aff56af0bd6da66275a208ccbfec9519810e6fa180074f918533879f6433d1119c003c9fed8fa04aa8d4207180a446f6a1355b5ae64320e54d5f238c1a575
+Size: 1020
+MD5sum: a64b816093c88d634c75b93d647c757c
+SHA1: 20d26b6204b2a052d7c072a1e06fdf7e546c8b15
+SHA256: 38a1099460be4514102c9fd3127413760a2a32c509295e907a72dd567549027e
+SHA512: 09c507efcda14a3a5e41be315150263b90134e24280dfeba2779c3f943e56c04c5532c971f1ecfb1556b62dd5bd717b7445f405c908e5d87ac9a695e91ec9f92
 Homepage: https://git.linuxtv.org/v4l-utils.git
 Description: v4l2 and IR applications - Development files
  v4l2 and IR applications.  This package contains symbolic links, header
@@ -100995,13 +102776,13 @@ Version: 1.3.0-r0
 Priority: optional
 Section: base
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.131), wayland (>= 1.24.0)
+Depends: libc6 (>= 2.43+git0+ce1013a197), libdrm2 (>= 2.4.133), wayland (>= 1.24.0)
 Filename: ./wayland-utils_1.3.0-r0_amd64.deb
 Size: 18976
-MD5sum: 2300d5269b3adec0c8e3c343fd3e5637
-SHA1: 3fe5f237b1d467b96739c3f1d6e4369c926a0fef
-SHA256: a44fbab633439f2eedecb8e7ce3a592c6bb17fc467be54cc0fdb82b6f0134904
-SHA512: ff36f2b2ea23d6fcb8e38c14aaae12d51effd2b45dea3dcc62faa8ffe6e598871cff50aafbdb08fdab0e05454d43e49ef4b60a15326c15f0618364cd84f5bc6a
+MD5sum: 03e5f4549c0897b4ab159d0c18c089b1
+SHA1: 4fb793d44160532cd068980743b4a9b6ad9f48f8
+SHA256: 51525742b262f3c21b96de6d4dc14b8ae4876c32450b49c83c5e59ec8b2a8ac9
+SHA512: 4b5e3f2ee3dd40341a4993f63b29b73f7016ae557312c694de64190c4e881383969efae63983eba3301c0ae4dd98c248db14e5b53ff823817b551fdf4e9a8e15
 Homepage: http://wayland.freedesktop.org
 Description: Wayland utilities
  Wayland-utils contains (for now) wayland-info, a utility for displaying
@@ -101055,6 +102836,26 @@ Description: Weston, a Wayland compositor - Debugging files
 OE: weston
 PackageArch: zen5
 
+Package: weston-dbg
+Architecture: amd64
+Version: 16.0.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: cairo-dbg, fontconfig-dbg, glib-2.0-dbg, glibc-dbg, libdisplay-info-dbg, libdrm-dbg, libegl-mesa-dbg, libevdev-dbg, libgbm-dbg, libgles2-mesa-dbg, libinput-dbg, libjpeg-turbo-dbg, libpng-dbg, libsystemd-dbg, libudev-dbg, libweston-16-dbg, libx11-dbg, libx11-xcb-dbg, libxcb-composite-dbg, libxcb-dbg, libxcb-render-dbg, libxcb-shm-dbg, libxcb-xfixes-dbg, libxcb-xkb-dbg, libxcursor-dbg, libxkbcommon-dbg, pango-dbg, pixman-dbg, seatd-dbg, wayland-dbg
+Filename: ./weston-dbg_16.0.0-r0_amd64.deb
+Size: 3445916
+MD5sum: 23fea84951e9035eb678a1e69acad4bc
+SHA1: 8a75d9449438bfe05f9ad5777e6fd2d736adaf70
+SHA256: 79b56c68690d7244e5da3e30d1814c46e28fdaecec84772d6cfa5c6bb9396146
+SHA512: c7a3cfc7ae875bac6219825ebf407df65f780b0e218c0cfa0b73641b839a8ef35042b398963cb31a0eca3e08bb71872b78e42d0fdabc2fc0d36c31d2191f4a9c
+Homepage: http://wayland.freedesktop.org
+Description: Weston, a Wayland compositor - Debugging files
+ Weston is the reference implementation of a Wayland compositor  This
+ package contains ELF symbols and related sources for debugging purposes.
+OE: weston
+PackageArch: zen5
+
 Package: weston-dev
 Architecture: amd64
 Version: 15.0.1-r0
@@ -101077,6 +102878,28 @@ Description: Weston, a Wayland compositor - Development files
 OE: weston
 PackageArch: zen5
 
+Package: weston-dev
+Architecture: amd64
+Version: 16.0.0-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libweston-16, libxkbcommon-dev, pixman-dev, wayland-dev, wayland-protocols-dev, weston
+Recommends: base-files-dev, base-passwd-dev, cairo-dev, dbus-dev, drm-dev, fontconfig-dev, gdk-pixbuf-dev, glib-2.0-dev, glibc-dev, jpeg-dev, libdisplay-info-dev, libdrm-dev, libegl-mesa-dev, libevdev-dev, libgbm-dev, libgles2-mesa-dev, libinput-dev, libjpeg-turbo-dev, libpng-dev, libsystemd-dev, libudev-dev, libweston-16-dev, libx11-dev, libx11-xcb-dev, libxcb-composite-dev, libxcb-dev, libxcb-render-dev, libxcb-shm-dev, libxcb-xfixes-dev, libxcb-xkb-dev, libxcursor-dev, libxkbcommon-dev, mtdev-dev, pango-dev, pixman-dev, seatd-dev, shadow-dev, shadow-sysroot-dev, systemd-dev, udev-dev, wayland-dev, wayland-protocols-dev, weston (= 16.0.0-r0), xkeyboard-config-dev, xwayland-dev
+Filename: ./weston-dev_16.0.0-r0_amd64.deb
+Size: 36080
+MD5sum: 63edf48c51bfcea32cdaf541aba0ff9f
+SHA1: 4ae1e538185ebef6ad7461ce23a1869e38db01a3
+SHA256: c8389ad9127231397a7acffa1310c3a7fe8cef59512c9da856d4e0ae051c1ceb
+SHA512: d51cdd5d3cf43df86c29efa507540e35cf98fcebdc5e02cb35011109e986bca472f7c9058295a53573cf3e3af4ceb42fb6fd533a8052d17be226e1b32d27f00e
+Homepage: http://wayland.freedesktop.org
+Description: Weston, a Wayland compositor - Development files
+ Weston is the reference implementation of a Wayland compositor  This
+ package contains symbolic links, header files, and related items
+ necessary for software development.
+OE: weston
+PackageArch: zen5
+
 Package: weston-examples
 Architecture: amd64
 Version: 15.0.1-r0
@@ -101090,6 +102913,25 @@ MD5sum: d09e95c5d75fbb9c7da150c668d5b5bf
 SHA1: f06887f559322ff00559ae7c75702369819cf92f
 SHA256: 4edd5acc801a43c3a11a07eca4b740606971bdc031eacf3dbd3803b1e300300a
 SHA512: 219fda2bfcee1c705941b303b3bd4117308b0839371ea4831c96801ccd427b994156e585314d46e3698db6f94f3893bfa358d48f66d691907f18ff8a5226ce79
+Homepage: http://wayland.freedesktop.org
+Description: Weston, a Wayland compositor
+ Weston is the reference implementation of a Wayland compositor
+OE: weston
+PackageArch: zen5
+
+Package: weston-examples
+Architecture: amd64
+Version: 16.0.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libc6 (>= 2.43+git0+ce1013a197), libcairo2 (>= 1.18.4), libdrm2 (>= 2.4.133), libegl-mesa (>= 26.2.1), libfontconfig1 (>= 2.17.1), libgbm1 (>= 26.2.1), libgles2-mesa (>= 26.2.1), libglib-2.0-0 (>= 2.88.0), libjpeg62 (>= 3.1.3), libpixman-1-0 (>= 0.42.2), libpng16-16 (>= 1.6.56), libudev1 (>= 259.5), libweston-16-0 (>= 16.0.0), libxkbcommon0 (>= 1.7.0), pango (>= 1.57.0), wayland (>= 1.24.0)
+Filename: ./weston-examples_16.0.0-r0_amd64.deb
+Size: 424996
+MD5sum: c02a0cba9512933f3fde950da6c195e3
+SHA1: 70bf64bc43076f210b2aa14ecc6e9eae96d7c230
+SHA256: 01a4debc909cb7cc9f3c546ccbd9a3041ff1d220e5e2c107a2518849b962f986
+SHA512: 9ef480868f6b28fb2508b84c7525d3f06716eefc2785641840289801fd905f0f432553422500d810a3de21b9621dc47c4714666d0a800f3aba6d9cb2782ed368
 Homepage: http://wayland.freedesktop.org
 Description: Weston, a Wayland compositor
  Weston is the reference implementation of a Wayland compositor
@@ -101171,6 +103013,25 @@ Description: Weston, a Wayland compositor
 OE: weston
 PackageArch: zen5
 
+Package: weston-xwayland
+Architecture: amd64
+Version: 16.0.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libc6 (>= 2.43+git0+ce1013a197), libcairo2 (>= 1.18.4), libfontconfig1 (>= 2.17.1), libglib-2.0-0 (>= 2.88.0), libjpeg62 (>= 3.1.3), libpixman-1-0 (>= 0.42.2), libpng16-16 (>= 1.6.56), libweston-16-0 (>= 16.0.0), libxcb-composite0 (>= 1.17.0), libxcb-render0 (>= 1.17.0), libxcb-xfixes0 (>= 1.17.0), libxcb1 (>= 1.17.0), libxcursor1 (>= 1.2.2), pango (>= 1.57.0), wayland (>= 1.24.0), xwayland
+Filename: ./weston-xwayland_16.0.0-r0_amd64.deb
+Size: 39168
+MD5sum: 2d5ae96f770caf1906942fe600322367
+SHA1: 38f625ffe7c8ce2d17b9edffb352580f55d3b3cc
+SHA256: 1c0cbb94cb400ff8994f298d0a59bc370b509af11031315a7f90c72ad3461762
+SHA512: 18584a2801e2e9d5176b187f9e7e624e7a7e92329f09a2a3268913c83e7087d64b71bf12abdf9841b59accdc46f8126346e3742ec910c571cdbe133d102e2303
+Homepage: http://wayland.freedesktop.org
+Description: Weston, a Wayland compositor
+ Weston is the reference implementation of a Wayland compositor
+OE: weston
+PackageArch: zen5
+
 Package: weston
 Architecture: amd64
 Version: 15.0.1-r0
@@ -101185,6 +103046,26 @@ MD5sum: 590bb32a1917560c8e04f391a56d9234
 SHA1: 71041a90ca38b5d3b041d5a58a1e25c5a219c904
 SHA256: 24791dea01e8729abe8bee9f50de281f9d55dec0279ad76566c400b95bd0507f
 SHA512: e2ffe4191f8ec83998ce60ae4b3a87508118414cda2d7eb5fc563d239d2dca871590804b0b899f0ba68ff24dc1fb081147da0d88e79dd4a8180d2466a5ea7b7d
+Homepage: http://wayland.freedesktop.org
+Description: Weston, a Wayland compositor
+ Weston is the reference implementation of a Wayland compositor
+OE: weston
+PackageArch: zen5
+
+Package: weston
+Architecture: amd64
+Version: 16.0.0-r0
+Priority: optional
+Section: base
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: base-files, base-passwd, libc6 (>= 2.43+git0+ce1013a197), libcairo2 (>= 1.18.4), libdisplay-info3 (>= 0.3.0), libevdev (>= 1.13.6), libfontconfig1 (>= 2.17.1), libglib-2.0-0 (>= 2.88.0), libinput10 (>= 1.30.1), libjpeg62 (>= 3.1.3), libpixman-1-0 (>= 0.42.2), libpng16-16 (>= 1.6.56), libsystemd0 (>= 259.5), libweston-16-0 (>= 16.0.0), libxkbcommon0 (>= 1.7.0), pango (>= 1.57.0), shadow, wayland (>= 1.24.0), xkeyboard-config
+Recommends: liberation-fonts, weston-init
+Filename: ./weston_16.0.0-r0_amd64.deb
+Size: 566544
+MD5sum: 0df473d72ba6225a31851e16ccf9e1d2
+SHA1: 1fda3f497a8c63595cb8b5b2e32f8963b79a299e
+SHA256: de60ab03ad3ac2ccc837392cc7aa3d48c0adf9118383afc1e4e909353925ee74
+SHA512: 854714f515351003578f23b0a5d318e3afe48d8a98f63b3999ba4613cf06044f335a3a77709602b0a010cd22d7b3119f1d7faea82aede0047a95846bb094ce4d
 Homepage: http://wayland.freedesktop.org
 Description: Weston, a Wayland compositor
  Weston is the reference implementation of a Wayland compositor
@@ -101396,6 +103277,82 @@ Description: XCB: The X protocol C binding headers - Development files
  extensibility.  This package contains symbolic links, header files, and
  related items necessary for software development.
 OE: xcb-proto
+PackageArch: zen5
+
+Package: xcb-util-wm-dbg
+Architecture: amd64
+Version: 0.4.2-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Recommends: glibc-dbg, libxcb-dbg
+Filename: ./xcb-util-wm-dbg_0.4.2-r0_amd64.deb
+Size: 38760
+MD5sum: 3be9e65afd6c33712eb81ce00333a5d6
+SHA1: aeefd7386f40f76ed654d2799c307062f1623eac
+SHA256: 8d25b6f85525f6d66f69cfd2ca2699e96add6b0a84d5bbe6edae9b723dd264ce
+SHA512: b9c61523f91ff98bfcaf377db99fb2738b256c2be6bc3be6ded2b256f3526208fcd44784a78888bbadabfab7d583e910ba56084f69f1dbfc7e43f671adef4738
+Homepage: http://xcb.freedesktop.org/XcbUtil/
+Description: XCB: The X protocol C binding utilities - Debugging files
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension libraries.
+ These experimental libraries provide convenience functions and interfaces
+ which make the raw X protocol more usable. Some of the libraries also
+ provide client-side code which is not strictly part of the X protocol but
+ which have traditionally been provided by Xlib.  This package contains
+ ELF symbols and related sources for debugging purposes.
+OE: xcb-util-wm
+PackageArch: zen5
+
+Package: xcb-util-wm-dev
+Architecture: amd64
+Version: 0.4.2-r0
+Priority: optional
+Section: devel
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libxcb-dev, xcb-util-wm
+Recommends: glibc-dev, libxcb-dev, xcb-util-wm (= 0.4.2-r0)
+Filename: ./xcb-util-wm-dev_0.4.2-r0_amd64.deb
+Size: 15500
+MD5sum: 0c84fc8e5a459bfd0f9ae78637831b72
+SHA1: 1621cb689fba9e3ccd4f633c8c042239d09c105d
+SHA256: d7456ebb4c13de65e81e6ee8da347dc23a21f24eb730d4ce75085b2abd1caa2f
+SHA512: 2ca19a06df444464f1fd2239700cb4603a16632e824e3e3305006597852620c02c12523c0b476e894865ace0fee6652fc6cf4306320ce049dfe5a435202f51ef
+Homepage: http://xcb.freedesktop.org/XcbUtil/
+Description: XCB: The X protocol C binding utilities - Development files
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension libraries.
+ These experimental libraries provide convenience functions and interfaces
+ which make the raw X protocol more usable. Some of the libraries also
+ provide client-side code which is not strictly part of the X protocol but
+ which have traditionally been provided by Xlib.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+OE: xcb-util-wm
+PackageArch: zen5
+
+Package: xcb-util-wm
+Architecture: amd64
+Version: 0.4.2-r0
+Priority: optional
+Section: x11/libs
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: libc6 (>= 2.43+git0+ce1013a197), libxcb1 (>= 1.17.0)
+Filename: ./xcb-util-wm_0.4.2-r0_amd64.deb
+Size: 16832
+MD5sum: d75c718f27c9ea0df99bb2e4f44ff806
+SHA1: 425adb28f040487c6b88379e58eb944cdb07e75c
+SHA256: cadbd32a4e3e3dbef3332c5440f59a0ce4f386dedd300366fd5fce2016b062b8
+SHA512: a427a83ca648730b95ed9acc834be4150225bbe082021fa90dd4d064659d1a0471b75c5908aaae4793e9d779fc89f17296a5daa7f8606b5b56795fb716c5b85f
+Homepage: http://xcb.freedesktop.org/XcbUtil/
+Description: XCB: The X protocol C binding utilities
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension libraries.
+ These experimental libraries provide convenience functions and interfaces
+ which make the raw X protocol more usable. Some of the libraries also
+ provide client-side code which is not strictly part of the X protocol but
+ which have traditionally been provided by Xlib.
+OE: xcb-util-wm
 PackageArch: zen5
 
 Package: xhost-dbg
@@ -101935,13 +103892,13 @@ Version: 24.1.9-r0
 Priority: optional
 Section: base
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-Depends: libc6 (>= 2.43+git0+ce1013a197), libcrypto3 (>= 3.5.6), libdrm2 (>= 2.4.131), libegl, libepoxy0 (>= 1.5.10), libgbm1 (>= 26.1.4), libgl-mesa (>= 26.1.4), libpixman-1-0 (>= 0.42.2), libtirpc3 (>= 1.3.7), libxau6 (>= 1.0.11), libxcvt (>= 0.1.2), libxdmcp6 (>= 1.1.5), libxfont2-2 (>= 2.0.6), libxshmfence1 (>= 1.3.2), wayland (>= 1.24.0), xkbcomp
+Depends: libc6 (>= 2.43+git0+ce1013a197), libcrypto3 (>= 3.5.6), libdrm2 (>= 2.4.133), libegl, libepoxy0 (>= 1.5.10), libgbm1 (>= 26.2.1), libgl-mesa (>= 26.2.1), libpixman-1-0 (>= 0.42.2), libtirpc3 (>= 1.3.7), libxau6 (>= 1.0.11), libxcvt (>= 0.1.2), libxdmcp6 (>= 1.1.5), libxfont2-2 (>= 2.0.6), libxshmfence1 (>= 1.3.2), wayland (>= 1.24.0), xkbcomp
 Filename: ./xwayland_24.1.9-r0_amd64.deb
 Size: 890500
-MD5sum: c3bfdd0a083639eef01cd36c245a35dd
-SHA1: eb7acba927d1a3f5b832449e94b5de314a612b5e
-SHA256: ed1fab01eed96174298edd62f7afe1a6cb397da2c006596418e8b504eb7150d1
-SHA512: 2a3b61f4d607be01d919e85aa987302f220f359690228d8202d603de3f08f5818991dbffb36a5994891412a047060fda3188877ea53d7ab3dffdc5bb5bd6bfdd
+MD5sum: ef1144882a84043979b2ad4d4de049eb
+SHA1: 57a322fcdc6fbe5a16c0b6b469c323245b9b4ce5
+SHA256: ecfd414bdbf6ec2aef0b7d9fefb98006588eee37ba63a41240a36060532da596
+SHA512: 8dff47c1fda1b21164b8e9d6d88cbb14ca46bf72850cbb490055849fcc055c384bd03019d9a3e4c9c203e39ecd114a49ffcb8454262156567b272f95aa77798c
 Homepage: https://fedoraproject.org/wiki/Changes/XwaylandStandalone
 Description: XWayland is an X Server that runs under Wayland.
  XWayland is an X Server running as a Wayland client, and thus is capable
